@@ -1,0 +1,17 @@
+[project]
+name = "sca"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+similarity = [
+    "sentence-transformers>=2.0",
+    "torch>=2.0",
+]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
