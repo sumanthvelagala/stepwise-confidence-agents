@@ -17,9 +17,18 @@ nibs/
 └── run_nibs.py              # CLI entry point
 
 results/
-├── pilot_tasks_1_3_9_38/results.json   # raw trajectories (tasks 1,3,9,38 × 20 trials)
-├── pilot_tasks_25_40_48/results.json   # raw trajectories (tasks 25,40,48 × 20 trials)
-└── nibs_all_tasks.json                 # NIBS scores output
+├── pilot/
+│   ├── tasks_1_3_9_38/results.json    # 20-trial runs — tasks 1,3,9,38
+│   └── tasks_25_40_48/results.json    # 20-trial runs — tasks 25,40,48
+├── probe/
+│   ├── batch_1action/results.json     # 3-trial probe — tasks 5,6,11,15,19,24
+│   ├── batch_2action/results.json     # 3-trial probe — tasks 1,3,9,14,21,38
+│   ├── batch_3to4action/results.json  # 3-trial probe — tasks 2,17,22,23,29,37
+│   ├── new_batch1/results.json        # 3-trial probe — tasks 13,16,20,25,27,35
+│   ├── new_batch2/results.json        # 3-trial probe — tasks 36,40,45,47,48,49
+│   ├── remaining_batch/results.json   # 3-trial probe — tasks 4,10,12,18,26,28,30,31,34,39,41,42,43,46
+│   └── ratelimit_tasks/results.json   # 3-trial probe — tasks 34,35,42,44,45 (sequential retry)
+└── nibs_all_tasks.json                # NIBS scores output
 
 docs/
 └── diagnostic_agent_design.md          # design doc for future diagnostic agent
@@ -137,8 +146,8 @@ Pass multiple files to merge tasks across runs:
 
 ```bash
 python run_nibs.py \
-  ../results/pilot_tasks_1_3_9_38/results.json \
-  ../results/pilot_tasks_25_40_48/results.json \
+  ../results/pilot/tasks_1_3_9_38/results.json \
+  ../results/pilot/tasks_25_40_48/results.json \
   --output ../results/nibs_all_tasks.json
 ```
 
