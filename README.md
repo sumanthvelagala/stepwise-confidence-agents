@@ -19,7 +19,10 @@ nibs/
 results/
 ├── pilot/
 │   ├── tasks_1_3_9_38/results.json    # 20-trial runs — tasks 1,3,9,38
-│   └── tasks_25_40_48/results.json    # 20-trial runs — tasks 25,40,48
+│   ├── tasks_25_40_48/results.json    # 20-trial runs — tasks 25,40,48
+│   ├── task_34/results.json           # 20-trial runs — task 34
+│   ├── task_28/results.json           # 20-trial runs — task 28 (always pass)
+│   └── task_37/results.json           # 20-trial runs — task 37 (always fail)
 ├── probe/
 │   ├── batch_1action/results.json     # 3-trial probe — tasks 5,6,11,15,19,24
 │   ├── batch_2action/results.json     # 3-trial probe — tasks 1,3,9,14,21,38
@@ -27,11 +30,12 @@ results/
 │   ├── new_batch1/results.json        # 3-trial probe — tasks 13,16,20,25,27,35
 │   ├── new_batch2/results.json        # 3-trial probe — tasks 36,40,45,47,48,49
 │   ├── remaining_batch/results.json   # 3-trial probe — tasks 4,10,12,18,26,28,30,31,34,39,41,42,43,46
-│   └── ratelimit_tasks/results.json   # 3-trial probe — tasks 34,35,42,44,45 (sequential retry)
-└── nibs_all_tasks.json                # NIBS scores output
-
-docs/
-└── diagnostic_agent_design.md          # design doc for future diagnostic agent
+│   ├── ratelimit_tasks/results.json   # 3-trial probe — tasks 34,35,42,44,45 (sequential retry)
+│   ├── task_7/results.json            # 3-trial probe — task 7
+│   ├── task_8/results.json            # 3-trial probe — task 8
+│   ├── task_32/results.json           # 3-trial probe — task 32
+│   └── task_33/results.json           # 3-trial probe — task 33
+└── nibs_all_tasks.json                # NIBS scores for all scoreable tasks
 ```
 
 ---
@@ -55,8 +59,8 @@ pip install pytest
 ### 1. Clone this repo
 
 ```bash
-git clone <repo-url>
-cd <repo>
+git clone https://github.com/sumanthvelagala/stepwise-confidence-agents.git
+cd stepwise-confidence-agents
 ```
 
 ### 2. Install tau2-bench
@@ -82,7 +86,7 @@ Create `tau2-bench/.env`:
 GROQ_API_KEY=your_groq_key_here
 ```
 
-Get a free key at [console.groq.com](https://console.groq.com). We use `groq/gpt-oss-20b` — cheapest model with reliable tool calling.
+Get a free key at [console.groq.com](https://console.groq.com). We use `groq/openai/gpt-oss-20b` — the model ID on Groq is `openai/gpt-oss-20b`, so LiteLLM needs the `groq/` prefix to route it correctly.
 
 ---
 
@@ -95,27 +99,35 @@ NIBS requires tasks where the model sometimes passes and sometimes genuinely fai
 ```bash
 cd tau2-bench
 tau2 run \
-  --agent-llm groq/gpt-oss-20b \
-  --user-llm groq/gpt-oss-20b \
+  --agent-llm groq/openai/gpt-oss-20b \
+  --user-llm groq/openai/gpt-oss-20b \
   --domain airline \
   --task-ids 1 2 3 4 5 6 \
   --num-trials 3 \
+  --max-concurrency 1 \
   --save-to probe_batch1
 ```
 
 Results saved to `tau2-bench/data/simulations/probe_batch1/results.json`.
 
+> **Important — use `--max-concurrency 1`:** Running multiple tasks in parallel hits Groq's 250k TPM rate limit and causes infrastructure errors. Sequential runs are slower but reliable.
+
 Check results — keep only tasks with both `reward=1.0` and `reward=0.0` runs. Drop tasks that always pass, always fail, or have all infrastructure errors (`reward=None`).
+
+#### Known infrastructure errors
+
+Some tasks consistently produce infra errors regardless of concurrency. The model outputs a corrupted tool name containing a special token (`send_certificate<|channel|>commentary`), which Groq rejects before any conversation is recorded. These show up as `reward=None, messages=[]`. Tasks 2, 5, 6, 10, 23, 45 are 100% broken this way — skip them.
 
 ### Pilot phase — 20 trials on selected tasks
 
 ```bash
 tau2 run \
-  --agent-llm groq/gpt-oss-20b \
-  --user-llm groq/gpt-oss-20b \
+  --agent-llm groq/openai/gpt-oss-20b \
+  --user-llm groq/openai/gpt-oss-20b \
   --domain airline \
   --task-ids 3 9 25 40 48 \
   --num-trials 20 \
+  --max-concurrency 1 \
   --save-to pilot_tasks_main
 ```
 
@@ -199,10 +211,13 @@ A low step_confidence flags a step as anomalous relative to what successful runs
 
 ## Results
 
-| Task | Gap (success − fail) | Interpretation |
-|------|----------------------|----------------|
-| 40 | +0.200 | NIBS pinpoints exact failing step (step 4, score=0.0) |
-| 25 | +0.140 | Clear separation |
-| 9  | +0.121 | Clear separation |
-| 3  | +0.003 | Near zero — failures are policy-level, not tool-selection errors |
-| 48 | -0.029 | Reversed — agent uses correct tools but fails at reasoning. Reveals limit of tool_sim, motivates GIBS |
+| Task | Successes | Fails | Gap (success − fail) | Interpretation |
+|------|-----------|-------|----------------------|----------------|
+| 40 | 18 | 2 | +0.200 | Strong — NIBS pinpoints exact failing step |
+| 25 | 15 | 2 | +0.140 | Clear separation |
+| 9  | 12 | 2 | +0.121 | Clear separation |
+| 34 | 6  | 12 | +0.037 | Weak positive |
+| 1  | 8  | 1  | +0.034 | Weak positive |
+| 3  | 8  | 9  | +0.003 | Near zero — failures are policy-level, not tool-selection errors |
+| 48 | 8  | 12 | -0.029 | Reversed — agent uses correct tools but fails at reasoning. Reveals limit of tool_sim, motivates GIBS |
+| 38 | 5  | 0  | N/A    | No fails — not scored |
