@@ -22,7 +22,15 @@ results/
 │   ├── tasks_25_40_48/results.json    # 20-trial runs — tasks 25,40,48
 │   ├── task_34/results.json           # 20-trial runs — task 34
 │   ├── task_28/results.json           # 20-trial runs — task 28 (always pass)
-│   └── task_37/results.json           # 20-trial runs — task 37 (always fail)
+│   ├── task_37/results.json           # 20-trial runs — task 37 (always fail)
+│   ├── task_38_topup1/results.json    # 15-trial top-up — task 38
+│   ├── task_38_topup2/results.json    # 5-trial top-up — task 38
+│   ├── task_1_topup/results.json      # 12-trial top-up — task 1
+│   ├── task_3_topup/results.json      # 3-trial top-up — task 3
+│   ├── task_3_topup2/results.json     # 1-trial top-up — task 3
+│   ├── task_9_topup/results.json      # 6-trial top-up — task 9
+│   ├── task_25_topup/results.json     # 3-trial top-up — task 25
+│   └── task_34_topup/results.json     # 2-trial top-up — task 34
 ├── probe/
 │   ├── batch_1action/results.json     # 3-trial probe — tasks 5,6,11,15,19,24
 │   ├── batch_2action/results.json     # 3-trial probe — tasks 1,3,9,14,21,38
@@ -160,6 +168,15 @@ Pass multiple files to merge tasks across runs:
 python run_nibs.py \
   ../results/pilot/tasks_1_3_9_38/results.json \
   ../results/pilot/tasks_25_40_48/results.json \
+  ../results/pilot/task_34/results.json \
+  ../results/pilot/task_38_topup1/results.json \
+  ../results/pilot/task_38_topup2/results.json \
+  ../results/pilot/task_1_topup/results.json \
+  ../results/pilot/task_3_topup/results.json \
+  ../results/pilot/task_3_topup2/results.json \
+  ../results/pilot/task_9_topup/results.json \
+  ../results/pilot/task_25_topup/results.json \
+  ../results/pilot/task_34_topup/results.json \
   --output ../results/nibs_all_tasks.json
 ```
 
@@ -213,11 +230,11 @@ A low step_confidence flags a step as anomalous relative to what successful runs
 
 | Task | Successes | Fails | Gap (success − fail) | Interpretation |
 |------|-----------|-------|----------------------|----------------|
-| 40 | 18 | 2 | +0.200 | Strong — NIBS pinpoints exact failing step |
-| 25 | 15 | 2 | +0.140 | Clear separation |
-| 9  | 12 | 2 | +0.121 | Clear separation |
-| 34 | 6  | 12 | +0.037 | Weak positive |
-| 1  | 8  | 1  | +0.034 | Weak positive |
-| 3  | 8  | 9  | +0.003 | Near zero — failures are policy-level, not tool-selection errors |
+| 40 | 18 | 2  | +0.200 | Strong — NIBS pinpoints exact failing step |
+| 25 | 18 | 2  | +0.149 | Clear separation |
+| 9  | 16 | 4  | +0.090 | Clear separation |
+| 38 | 15 | 5  | +0.057 | Moderate positive |
+| 34 | 6  | 14 | +0.047 | Weak positive |
+| 1  | 20 | 1  | +0.001 | Near zero — almost always passes, only 1 fail |
+| 3  | 11 | 9  | -0.009 | Near zero — failures are policy-level, not tool-selection errors |
 | 48 | 8  | 12 | -0.029 | Reversed — agent uses correct tools but fails at reasoning. Reveals limit of tool_sim, motivates GIBS |
-| 38 | 5  | 0  | N/A    | No fails — not scored |
