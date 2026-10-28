@@ -1,0 +1,195 @@
+{
+  "graph_id": "task48_c890f90b",
+  "topology": "paper_literal",
+  "nodes": [
+    {
+      "id": "ROOT",
+      "kind": "root",
+      "text": null,
+      "event": null,
+      "scorable": false
+    },
+    {
+      "id": "N:s0",
+      "kind": "agent_message",
+      "text": "Hi! How can I help you today?",
+      "event": "s0",
+      "scorable": true
+    },
+    {
+      "id": "N:u1",
+      "kind": "user_turn",
+      "text": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd like to cancel it. I'm hoping to get a full refund. Can you help me with that?",
+      "event": "u1",
+      "scorable": false
+    },
+    {
+      "id": "N:s2",
+      "kind": "agent_message",
+      "text": "Sure, I can help with that. To proceed, could you please provide: 1. Your user ID (the ID you use to log in to our system). 2. The reservation ID of the flight you'd like to cancel. 3. The reason you're cancelling (e.g., change of plan, airline cancelled flight, other). Once I have those details, I'll confirm the cancellation rules and, if everything is in order, we can process the refund.",
+      "event": "s2",
+      "scorable": true
+    },
+    {
+      "id": "N:u3",
+      "kind": "user_turn",
+      "text": "Sure thing. My user ID is anya_garcia_5901 and the reservation ID is 3RK2T9. I booked the flight about 10 hours ago by mistake, so I'm looking for a full refund.",
+      "event": "u3",
+      "scorable": false
+    },
+    {
+      "id": "N:s4",
+      "kind": "tool_result",
+      "text": "Tool result: reservation_id: 3RK2T9; user_id: anya_garcia_5901; origin: MCO; destination: SFO; flight_type: one_way; cabin: basic_economy; flights[0].flight_number: HAT214; flights[0].origin: MCO; flights[0].destination: PHX; flights[0].date: 2024-05-19; flights[0].price: 57; flights[1].flight_number: HAT009; flights[1].origin: PHX; flights[1].destination: SFO; flights[1].date: 2024-05-20; flights[1].price: 83; passengers[0].first_name: Anya; passengers[0].last_name: Garcia; passengers[0].dob: 1992-11-12; passengers[1].first_name: Mei; passengers[1].last_name: Lee; passengers[1].dob: 1989-12-13; payment_history[0].payment_id: gift_card_2550356; payment_history[0].amount: 280; created_at: 2024-05-02T06:02:56; total_baggages: 0; nonfree_baggages: 0; insurance: no; status: null.",
+      "event": "s4",
+      "scorable": true
+    },
+    {
+      "id": "N:s6",
+      "kind": "agent_message",
+      "text": "I'm sorry, but I can't process a cancellation for that reservation. According to our records, the booking was created on 2024-05-02, which is more than 24 hours ago. Because the flight is a basic-economy segment, you don't have travel insurance, and the airline hasn't cancelled the flight, the cancellation rules do not allow a refund. If you'd like to discuss any other options or have additional questions, please let me know.",
+      "event": "s6",
+      "scorable": true
+    },
+    {
+      "id": "N:u7",
+      "kind": "user_turn",
+      "text": "I'm really sure I booked it just about 10 hours ago, not on May 2nd. I double-checked my email confirmation and the timestamp on the booking page shows it was created this morning. Because it's so recent, I'm hoping you can still process a full refund. Could you please double-check the booking time again or let me know if there's a way to appeal this decision?",
+      "event": "u7",
+      "scorable": false
+    },
+    {
+      "id": "N:s8",
+      "kind": "tool_result",
+      "text": "Tool result: Transfer successful",
+      "event": "s8",
+      "scorable": true
+    },
+    {
+      "id": "N:s10",
+      "kind": "agent_message",
+      "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+      "event": "s10",
+      "scorable": true
+    },
+    {
+      "id": "N:u11",
+      "kind": "user_turn",
+      "text": "The user was transferred to a human agent.",
+      "event": "u11",
+      "scorable": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "ROOT->N:s0",
+      "src": "ROOT",
+      "dst": "N:s0",
+      "text": "Hi! How can I help you today?",
+      "event": "s0",
+      "roles": [
+        "root"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "ROOT->N:u1",
+      "src": "ROOT",
+      "dst": "N:u1",
+      "text": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd like to cancel it. I'm hoping to get a full refund. Can you help me with that?",
+      "event": "u1",
+      "roles": [
+        "root"
+      ],
+      "scorable": false
+    },
+    {
+      "id": "ROOT->N:s2",
+      "src": "ROOT",
+      "dst": "N:s2",
+      "text": "Sure, I can help with that. To proceed, could you please provide: 1. Your user ID (the ID you use to log in to our system). 2. The reservation ID of the flight you'd like to cancel. 3. The reason you're cancelling (e.g., change of plan, airline cancelled flight, other). Once I have those details, I'll confirm the cancellation rules and, if everything is in order, we can process the refund.",
+      "event": "s2",
+      "roles": [
+        "root"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "ROOT->N:u3",
+      "src": "ROOT",
+      "dst": "N:u3",
+      "text": "Sure thing. My user ID is anya_garcia_5901 and the reservation ID is 3RK2T9. I booked the flight about 10 hours ago by mistake, so I'm looking for a full refund.",
+      "event": "u3",
+      "roles": [
+        "root"
+      ],
+      "scorable": false
+    },
+    {
+      "id": "N:u3->N:s4",
+      "src": "N:u3",
+      "dst": "N:s4",
+      "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+      "event": "s4",
+      "roles": [
+        "data"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "ROOT->N:s6",
+      "src": "ROOT",
+      "dst": "N:s6",
+      "text": "I'm sorry, but I can't process a cancellation for that reservation. According to our records, the booking was created on 2024-05-02, which is more than 24 hours ago. Because the flight is a basic-economy segment, you don't have travel insurance, and the airline hasn't cancelled the flight, the cancellation rules do not allow a refund. If you'd like to discuss any other options or have additional questions, please let me know.",
+      "event": "s6",
+      "roles": [
+        "root"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "ROOT->N:u7",
+      "src": "ROOT",
+      "dst": "N:u7",
+      "text": "I'm really sure I booked it just about 10 hours ago, not on May 2nd. I double-checked my email confirmation and the timestamp on the booking page shows it was created this morning. Because it's so recent, I'm hoping you can still process a full refund. Could you please double-check the booking time again or let me know if there's a way to appeal this decision?",
+      "event": "u7",
+      "roles": [
+        "root"
+      ],
+      "scorable": false
+    },
+    {
+      "id": "N:s4->N:s8",
+      "src": "N:s4",
+      "dst": "N:s8",
+      "text": "Call transfer_to_human_agents with summary = User claims booking was made 10 hours ago but system shows created_at 2024-05-02. User wants to appeal cancellation decision..",
+      "event": "s8",
+      "roles": [
+        "data"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "ROOT->N:s10",
+      "src": "ROOT",
+      "dst": "N:s10",
+      "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+      "event": "s10",
+      "roles": [
+        "root"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "ROOT->N:u11",
+      "src": "ROOT",
+      "dst": "N:u11",
+      "text": "The user was transferred to a human agent.",
+      "event": "u11",
+      "roles": [
+        "root"
+      ],
+      "scorable": false
+    }
+  ]
+}

@@ -1,0 +1,1550 @@
+{
+  "model": {
+    "model": "microsoft/deberta-large-mnli",
+    "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+    "device": "mps",
+    "encoding": "code_sep_string",
+    "overlength": "truncate",
+    "entailment_index": 2,
+    "id2label": {
+      "0": "CONTRADICTION",
+      "1": "NEUTRAL",
+      "2": "ENTAILMENT"
+    },
+    "max_length": 512,
+    "torch": "2.14.1",
+    "transformers": "5.21.0"
+  },
+  "n_truncated_text_pairs_scored": 1,
+  "runs": {
+    "primary": {
+      "configuration": "primary",
+      "direction": "max_bidirectional",
+      "topology": "event_context",
+      "mcs_config": {
+        "tau_v": 0.7,
+        "tau_e": 0.7,
+        "top_k": 10,
+        "check_source_nodes": true,
+        "expansion_pool": "all_candidates",
+        "require_same_kind": true
+      },
+      "query": "task48_7f5cbcd7",
+      "reference": "task48_c890f90b",
+      "size": 11,
+      "seed": [
+        "N:s2->N:u3",
+        "N:s2->N:u3"
+      ],
+      "n_candidates": 5,
+      "n_seeds": 5,
+      "n_query_edges": 13,
+      "n_reference_edges": 11,
+      "node_map": {
+        "N:s2": "N:s2",
+        "N:u3": "N:u3",
+        "N:s4": "N:s4",
+        "N:u1": "N:u1",
+        "N:s0": "N:s0",
+        "ROOT": "ROOT"
+      },
+      "mapped_edges": [
+        {
+          "query_edge": "N:s2->N:u3",
+          "reference_edge": "N:s2->N:u3",
+          "query_event": "u3",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure thing! My user ID is anya_garcia_5901 and the reservation (confirmation) number is 3…",
+          "s_edge": 0.9952,
+          "s_src": 0.9949,
+          "s_tgt": 0.9952,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:u3->N:s4",
+          "reference_edge": "N:u3->N:s4",
+          "query_event": "s4",
+          "roles": [
+            "context",
+            "data"
+          ],
+          "operation": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "s_edge": 0.9843,
+          "s_src": 0.9952,
+          "s_tgt": 0.9782,
+          "truncated_text_used": true
+        },
+        {
+          "query_edge": "N:u1->N:s2",
+          "reference_edge": "N:u1->N:s2",
+          "query_event": "s2",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "s_edge": 0.9949,
+          "s_src": 0.9924,
+          "s_tgt": 0.9949,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:s0->N:u1",
+          "reference_edge": "N:s0->N:u1",
+          "query_event": "u1",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd…",
+          "s_edge": 0.9924,
+          "s_src": 0.9909,
+          "s_tgt": 0.9924,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s0",
+          "reference_edge": "ROOT->N:s0",
+          "query_event": "s0",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi! How can I help you today?",
+          "s_edge": 0.9909,
+          "s_src": 1.0,
+          "s_tgt": 0.9909,
+          "truncated_text_used": false
+        }
+      ],
+      "agent_steps": [
+        {
+          "event": "s0",
+          "kind": "agent_message",
+          "text": "Hi! How can I help you today?",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          },
+          "mapped_to": "N:s0"
+        },
+        {
+          "event": "s2",
+          "kind": "agent_message",
+          "text": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u1->N:s2": "N:u1->N:s2"
+          },
+          "mapped_to": "N:s2"
+        },
+        {
+          "event": "s4",
+          "kind": "tool_result",
+          "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          },
+          "mapped_to": "N:s4"
+        },
+        {
+          "event": "s6",
+          "kind": "tool_result",
+          "text": "Call cancel_reservation with reservation_id = 3RK2T9.",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s4->N:s6": null,
+            "N:u3->N:s6": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s8",
+          "kind": "agent_message",
+          "text": "Your reservation 3RK2T9 has been cancelled successfully. Because the booking was made wit…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s6->N:s8": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s10",
+          "kind": "agent_message",
+          "text": "Your refund will be credited back to the original payment method (gift card 2550356) with…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u9->N:s10": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s12",
+          "kind": "agent_message",
+          "text": "You're very welcome! If anything comes up, just let me know. Have a wonderful day!",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u11->N:s12": null
+          },
+          "mapped_to": null
+        }
+      ],
+      "candidates": [
+        {
+          "e1": "N:s2->N:u3",
+          "e2": "N:s2->N:u3",
+          "s_edge": 0.9951789379119873,
+          "s_src": 0.9949171543121338,
+          "s_tgt": 0.9951789379119873,
+          "score": 1.9903578758239746
+        },
+        {
+          "e1": "N:u1->N:s2",
+          "e2": "N:u1->N:s2",
+          "s_edge": 0.9949171543121338,
+          "s_src": 0.992422878742218,
+          "s_tgt": 0.9949171543121338,
+          "score": 1.9898343086242676
+        },
+        {
+          "e1": "N:s0->N:u1",
+          "e2": "N:s0->N:u1",
+          "s_edge": 0.992422878742218,
+          "s_src": 0.9909459352493286,
+          "s_tgt": 0.992422878742218,
+          "score": 1.984845757484436
+        },
+        {
+          "e1": "ROOT->N:s0",
+          "e2": "ROOT->N:s0",
+          "s_edge": 0.9909459352493286,
+          "s_src": 1.0,
+          "s_tgt": 0.9909459352493286,
+          "score": 1.9818918704986572
+        },
+        {
+          "e1": "N:u3->N:s4",
+          "e2": "N:u3->N:s4",
+          "s_edge": 0.9842930436134338,
+          "s_src": 0.9951789379119873,
+          "s_tgt": 0.9782212376594543,
+          "score": 1.9625142812728882
+        }
+      ]
+    },
+    "ablation_one_way": {
+      "configuration": "ablation_one_way",
+      "direction": "one_way",
+      "topology": "event_context",
+      "mcs_config": {
+        "tau_v": 0.7,
+        "tau_e": 0.7,
+        "top_k": 10,
+        "check_source_nodes": true,
+        "expansion_pool": "all_candidates",
+        "require_same_kind": true
+      },
+      "query": "task48_7f5cbcd7",
+      "reference": "task48_c890f90b",
+      "size": 5,
+      "seed": [
+        "N:s0->N:u1",
+        "N:s0->N:u1"
+      ],
+      "n_candidates": 3,
+      "n_seeds": 3,
+      "n_query_edges": 13,
+      "n_reference_edges": 11,
+      "node_map": {
+        "N:s0": "N:s0",
+        "N:u1": "N:u1",
+        "ROOT": "ROOT"
+      },
+      "mapped_edges": [
+        {
+          "query_edge": "N:s0->N:u1",
+          "reference_edge": "N:s0->N:u1",
+          "query_event": "u1",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd…",
+          "s_edge": 0.9924,
+          "s_src": 0.9909,
+          "s_tgt": 0.9924,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s0",
+          "reference_edge": "ROOT->N:s0",
+          "query_event": "s0",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi! How can I help you today?",
+          "s_edge": 0.9909,
+          "s_src": 1.0,
+          "s_tgt": 0.9909,
+          "truncated_text_used": false
+        }
+      ],
+      "agent_steps": [
+        {
+          "event": "s0",
+          "kind": "agent_message",
+          "text": "Hi! How can I help you today?",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          },
+          "mapped_to": "N:s0"
+        },
+        {
+          "event": "s2",
+          "kind": "agent_message",
+          "text": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u1->N:s2": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s4",
+          "kind": "tool_result",
+          "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u3->N:s4": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s6",
+          "kind": "tool_result",
+          "text": "Call cancel_reservation with reservation_id = 3RK2T9.",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s4->N:s6": null,
+            "N:u3->N:s6": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s8",
+          "kind": "agent_message",
+          "text": "Your reservation 3RK2T9 has been cancelled successfully. Because the booking was made wit…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s6->N:s8": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s10",
+          "kind": "agent_message",
+          "text": "Your refund will be credited back to the original payment method (gift card 2550356) with…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u9->N:s10": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s12",
+          "kind": "agent_message",
+          "text": "You're very welcome! If anything comes up, just let me know. Have a wonderful day!",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u11->N:s12": null
+          },
+          "mapped_to": null
+        }
+      ],
+      "candidates": [
+        {
+          "e1": "N:s0->N:u1",
+          "e2": "N:s0->N:u1",
+          "s_edge": 0.992422878742218,
+          "s_src": 0.9909459352493286,
+          "s_tgt": 0.992422878742218,
+          "score": 1.984845757484436
+        },
+        {
+          "e1": "ROOT->N:s0",
+          "e2": "ROOT->N:s0",
+          "s_edge": 0.9909459352493286,
+          "s_src": 1.0,
+          "s_tgt": 0.9909459352493286,
+          "score": 1.9818918704986572
+        },
+        {
+          "e1": "N:u3->N:s4",
+          "e2": "N:u3->N:s4",
+          "s_edge": 0.9842930436134338,
+          "s_src": 0.9951789379119873,
+          "s_tgt": 0.9782212376594543,
+          "score": 1.9625142812728882
+        }
+      ]
+    },
+    "ablation_author_pool_top_k": {
+      "configuration": "ablation_author_pool_top_k",
+      "direction": "max_bidirectional",
+      "topology": "event_context",
+      "mcs_config": {
+        "tau_v": 0.7,
+        "tau_e": 0.7,
+        "top_k": 10,
+        "check_source_nodes": true,
+        "expansion_pool": "top_k",
+        "require_same_kind": true
+      },
+      "query": "task48_7f5cbcd7",
+      "reference": "task48_c890f90b",
+      "size": 11,
+      "seed": [
+        "N:s2->N:u3",
+        "N:s2->N:u3"
+      ],
+      "n_candidates": 5,
+      "n_seeds": 5,
+      "n_query_edges": 13,
+      "n_reference_edges": 11,
+      "node_map": {
+        "N:s2": "N:s2",
+        "N:u3": "N:u3",
+        "N:s4": "N:s4",
+        "N:u1": "N:u1",
+        "N:s0": "N:s0",
+        "ROOT": "ROOT"
+      },
+      "mapped_edges": [
+        {
+          "query_edge": "N:s2->N:u3",
+          "reference_edge": "N:s2->N:u3",
+          "query_event": "u3",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure thing! My user ID is anya_garcia_5901 and the reservation (confirmation) number is 3…",
+          "s_edge": 0.9952,
+          "s_src": 0.9949,
+          "s_tgt": 0.9952,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:u3->N:s4",
+          "reference_edge": "N:u3->N:s4",
+          "query_event": "s4",
+          "roles": [
+            "context",
+            "data"
+          ],
+          "operation": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "s_edge": 0.9843,
+          "s_src": 0.9952,
+          "s_tgt": 0.9782,
+          "truncated_text_used": true
+        },
+        {
+          "query_edge": "N:u1->N:s2",
+          "reference_edge": "N:u1->N:s2",
+          "query_event": "s2",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "s_edge": 0.9949,
+          "s_src": 0.9924,
+          "s_tgt": 0.9949,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:s0->N:u1",
+          "reference_edge": "N:s0->N:u1",
+          "query_event": "u1",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd…",
+          "s_edge": 0.9924,
+          "s_src": 0.9909,
+          "s_tgt": 0.9924,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s0",
+          "reference_edge": "ROOT->N:s0",
+          "query_event": "s0",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi! How can I help you today?",
+          "s_edge": 0.9909,
+          "s_src": 1.0,
+          "s_tgt": 0.9909,
+          "truncated_text_used": false
+        }
+      ],
+      "agent_steps": [
+        {
+          "event": "s0",
+          "kind": "agent_message",
+          "text": "Hi! How can I help you today?",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          },
+          "mapped_to": "N:s0"
+        },
+        {
+          "event": "s2",
+          "kind": "agent_message",
+          "text": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u1->N:s2": "N:u1->N:s2"
+          },
+          "mapped_to": "N:s2"
+        },
+        {
+          "event": "s4",
+          "kind": "tool_result",
+          "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          },
+          "mapped_to": "N:s4"
+        },
+        {
+          "event": "s6",
+          "kind": "tool_result",
+          "text": "Call cancel_reservation with reservation_id = 3RK2T9.",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s4->N:s6": null,
+            "N:u3->N:s6": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s8",
+          "kind": "agent_message",
+          "text": "Your reservation 3RK2T9 has been cancelled successfully. Because the booking was made wit…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s6->N:s8": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s10",
+          "kind": "agent_message",
+          "text": "Your refund will be credited back to the original payment method (gift card 2550356) with…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u9->N:s10": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s12",
+          "kind": "agent_message",
+          "text": "You're very welcome! If anything comes up, just let me know. Have a wonderful day!",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u11->N:s12": null
+          },
+          "mapped_to": null
+        }
+      ],
+      "candidates": [
+        {
+          "e1": "N:s2->N:u3",
+          "e2": "N:s2->N:u3",
+          "s_edge": 0.9951789379119873,
+          "s_src": 0.9949171543121338,
+          "s_tgt": 0.9951789379119873,
+          "score": 1.9903578758239746
+        },
+        {
+          "e1": "N:u1->N:s2",
+          "e2": "N:u1->N:s2",
+          "s_edge": 0.9949171543121338,
+          "s_src": 0.992422878742218,
+          "s_tgt": 0.9949171543121338,
+          "score": 1.9898343086242676
+        },
+        {
+          "e1": "N:s0->N:u1",
+          "e2": "N:s0->N:u1",
+          "s_edge": 0.992422878742218,
+          "s_src": 0.9909459352493286,
+          "s_tgt": 0.992422878742218,
+          "score": 1.984845757484436
+        },
+        {
+          "e1": "ROOT->N:s0",
+          "e2": "ROOT->N:s0",
+          "s_edge": 0.9909459352493286,
+          "s_src": 1.0,
+          "s_tgt": 0.9909459352493286,
+          "score": 1.9818918704986572
+        },
+        {
+          "e1": "N:u3->N:s4",
+          "e2": "N:u3->N:s4",
+          "s_edge": 0.9842930436134338,
+          "s_src": 0.9951789379119873,
+          "s_tgt": 0.9782212376594543,
+          "score": 1.9625142812728882
+        }
+      ]
+    },
+    "ablation_author_source_rule": {
+      "configuration": "ablation_author_source_rule",
+      "direction": "max_bidirectional",
+      "topology": "event_context",
+      "mcs_config": {
+        "tau_v": 0.7,
+        "tau_e": 0.7,
+        "top_k": 10,
+        "check_source_nodes": false,
+        "expansion_pool": "all_candidates",
+        "require_same_kind": true
+      },
+      "query": "task48_7f5cbcd7",
+      "reference": "task48_c890f90b",
+      "size": 11,
+      "seed": [
+        "N:s2->N:u3",
+        "N:s2->N:u3"
+      ],
+      "n_candidates": 5,
+      "n_seeds": 5,
+      "n_query_edges": 13,
+      "n_reference_edges": 11,
+      "node_map": {
+        "N:s2": "N:s2",
+        "N:u3": "N:u3",
+        "N:s4": "N:s4",
+        "N:u1": "N:u1",
+        "N:s0": "N:s0",
+        "ROOT": "ROOT"
+      },
+      "mapped_edges": [
+        {
+          "query_edge": "N:s2->N:u3",
+          "reference_edge": "N:s2->N:u3",
+          "query_event": "u3",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure thing! My user ID is anya_garcia_5901 and the reservation (confirmation) number is 3…",
+          "s_edge": 0.9952,
+          "s_src": 0.9949,
+          "s_tgt": 0.9952,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:u3->N:s4",
+          "reference_edge": "N:u3->N:s4",
+          "query_event": "s4",
+          "roles": [
+            "context",
+            "data"
+          ],
+          "operation": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "s_edge": 0.9843,
+          "s_src": 0.9952,
+          "s_tgt": 0.9782,
+          "truncated_text_used": true
+        },
+        {
+          "query_edge": "N:u1->N:s2",
+          "reference_edge": "N:u1->N:s2",
+          "query_event": "s2",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "s_edge": 0.9949,
+          "s_src": 0.9924,
+          "s_tgt": 0.9949,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:s0->N:u1",
+          "reference_edge": "N:s0->N:u1",
+          "query_event": "u1",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd…",
+          "s_edge": 0.9924,
+          "s_src": 0.9909,
+          "s_tgt": 0.9924,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s0",
+          "reference_edge": "ROOT->N:s0",
+          "query_event": "s0",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi! How can I help you today?",
+          "s_edge": 0.9909,
+          "s_src": 1.0,
+          "s_tgt": 0.9909,
+          "truncated_text_used": false
+        }
+      ],
+      "agent_steps": [
+        {
+          "event": "s0",
+          "kind": "agent_message",
+          "text": "Hi! How can I help you today?",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          },
+          "mapped_to": "N:s0"
+        },
+        {
+          "event": "s2",
+          "kind": "agent_message",
+          "text": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u1->N:s2": "N:u1->N:s2"
+          },
+          "mapped_to": "N:s2"
+        },
+        {
+          "event": "s4",
+          "kind": "tool_result",
+          "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          },
+          "mapped_to": "N:s4"
+        },
+        {
+          "event": "s6",
+          "kind": "tool_result",
+          "text": "Call cancel_reservation with reservation_id = 3RK2T9.",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s4->N:s6": null,
+            "N:u3->N:s6": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s8",
+          "kind": "agent_message",
+          "text": "Your reservation 3RK2T9 has been cancelled successfully. Because the booking was made wit…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s6->N:s8": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s10",
+          "kind": "agent_message",
+          "text": "Your refund will be credited back to the original payment method (gift card 2550356) with…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u9->N:s10": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s12",
+          "kind": "agent_message",
+          "text": "You're very welcome! If anything comes up, just let me know. Have a wonderful day!",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u11->N:s12": null
+          },
+          "mapped_to": null
+        }
+      ],
+      "candidates": [
+        {
+          "e1": "N:s2->N:u3",
+          "e2": "N:s2->N:u3",
+          "s_edge": 0.9951789379119873,
+          "s_src": 0.9949171543121338,
+          "s_tgt": 0.9951789379119873,
+          "score": 1.9903578758239746
+        },
+        {
+          "e1": "N:u1->N:s2",
+          "e2": "N:u1->N:s2",
+          "s_edge": 0.9949171543121338,
+          "s_src": 0.992422878742218,
+          "s_tgt": 0.9949171543121338,
+          "score": 1.9898343086242676
+        },
+        {
+          "e1": "N:s0->N:u1",
+          "e2": "N:s0->N:u1",
+          "s_edge": 0.992422878742218,
+          "s_src": 0.9909459352493286,
+          "s_tgt": 0.992422878742218,
+          "score": 1.984845757484436
+        },
+        {
+          "e1": "ROOT->N:s0",
+          "e2": "ROOT->N:s0",
+          "s_edge": 0.9909459352493286,
+          "s_src": 1.0,
+          "s_tgt": 0.9909459352493286,
+          "score": 1.9818918704986572
+        },
+        {
+          "e1": "N:u3->N:s4",
+          "e2": "N:u3->N:s4",
+          "s_edge": 0.9842930436134338,
+          "s_src": 0.9951789379119873,
+          "s_tgt": 0.9782212376594543,
+          "score": 1.9625142812728882
+        }
+      ]
+    },
+    "ablation_paper_literal_topology": {
+      "configuration": "ablation_paper_literal_topology",
+      "direction": "max_bidirectional",
+      "topology": "paper_literal",
+      "mcs_config": {
+        "tau_v": 0.7,
+        "tau_e": 0.7,
+        "top_k": 10,
+        "check_source_nodes": true,
+        "expansion_pool": "all_candidates",
+        "require_same_kind": true
+      },
+      "query": "task48_7f5cbcd7",
+      "reference": "task48_c890f90b",
+      "size": 11,
+      "seed": [
+        "ROOT->N:u3",
+        "ROOT->N:u3"
+      ],
+      "n_candidates": 5,
+      "n_seeds": 5,
+      "n_query_edges": 12,
+      "n_reference_edges": 10,
+      "node_map": {
+        "ROOT": "ROOT",
+        "N:u3": "N:u3",
+        "N:s0": "N:s0",
+        "N:u1": "N:u1",
+        "N:s2": "N:s2",
+        "N:s4": "N:s4"
+      },
+      "mapped_edges": [
+        {
+          "query_edge": "ROOT->N:u3",
+          "reference_edge": "ROOT->N:u3",
+          "query_event": "u3",
+          "roles": [
+            "root"
+          ],
+          "operation": "Sure thing! My user ID is anya_garcia_5901 and the reservation (confirmation) number is 3…",
+          "s_edge": 0.9952,
+          "s_src": 1.0,
+          "s_tgt": 0.9952,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s0",
+          "reference_edge": "ROOT->N:s0",
+          "query_event": "s0",
+          "roles": [
+            "root"
+          ],
+          "operation": "Hi! How can I help you today?",
+          "s_edge": 0.9909,
+          "s_src": 1.0,
+          "s_tgt": 0.9909,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:u1",
+          "reference_edge": "ROOT->N:u1",
+          "query_event": "u1",
+          "roles": [
+            "root"
+          ],
+          "operation": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd…",
+          "s_edge": 0.9924,
+          "s_src": 1.0,
+          "s_tgt": 0.9924,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s2",
+          "reference_edge": "ROOT->N:s2",
+          "query_event": "s2",
+          "roles": [
+            "root"
+          ],
+          "operation": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "s_edge": 0.9949,
+          "s_src": 1.0,
+          "s_tgt": 0.9949,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:u3->N:s4",
+          "reference_edge": "N:u3->N:s4",
+          "query_event": "s4",
+          "roles": [
+            "data"
+          ],
+          "operation": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "s_edge": 0.9843,
+          "s_src": 0.9952,
+          "s_tgt": 0.9782,
+          "truncated_text_used": true
+        }
+      ],
+      "agent_steps": [
+        {
+          "event": "s0",
+          "kind": "agent_message",
+          "text": "Hi! How can I help you today?",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          },
+          "mapped_to": "N:s0"
+        },
+        {
+          "event": "s2",
+          "kind": "agent_message",
+          "text": "Sure, I can help with that. Could you please provide your user ID and the reservation ID …",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s2": "ROOT->N:s2"
+          },
+          "mapped_to": "N:s2"
+        },
+        {
+          "event": "s4",
+          "kind": "tool_result",
+          "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          },
+          "mapped_to": "N:s4"
+        },
+        {
+          "event": "s6",
+          "kind": "tool_result",
+          "text": "Call cancel_reservation with reservation_id = 3RK2T9.",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u3->N:s6": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s8",
+          "kind": "agent_message",
+          "text": "Your reservation 3RK2T9 has been cancelled successfully. Because the booking was made wit…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "ROOT->N:s8": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s10",
+          "kind": "agent_message",
+          "text": "Your refund will be credited back to the original payment method (gift card 2550356) with…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "ROOT->N:s10": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s12",
+          "kind": "agent_message",
+          "text": "You're very welcome! If anything comes up, just let me know. Have a wonderful day!",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "ROOT->N:s12": null
+          },
+          "mapped_to": null
+        }
+      ],
+      "candidates": [
+        {
+          "e1": "ROOT->N:u3",
+          "e2": "ROOT->N:u3",
+          "s_edge": 0.9951789379119873,
+          "s_src": 1.0,
+          "s_tgt": 0.9951789379119873,
+          "score": 1.9903578758239746
+        },
+        {
+          "e1": "ROOT->N:s2",
+          "e2": "ROOT->N:s2",
+          "s_edge": 0.9949171543121338,
+          "s_src": 1.0,
+          "s_tgt": 0.9949171543121338,
+          "score": 1.9898343086242676
+        },
+        {
+          "e1": "ROOT->N:u1",
+          "e2": "ROOT->N:u1",
+          "s_edge": 0.992422878742218,
+          "s_src": 1.0,
+          "s_tgt": 0.992422878742218,
+          "score": 1.984845757484436
+        },
+        {
+          "e1": "ROOT->N:s0",
+          "e2": "ROOT->N:s0",
+          "s_edge": 0.9909459352493286,
+          "s_src": 1.0,
+          "s_tgt": 0.9909459352493286,
+          "score": 1.9818918704986572
+        },
+        {
+          "e1": "N:u3->N:s4",
+          "e2": "N:u3->N:s4",
+          "s_edge": 0.9842930436134338,
+          "s_src": 0.9951789379119873,
+          "s_tgt": 0.9782212376594543,
+          "score": 1.9625142812728882
+        }
+      ]
+    },
+    "control_success_vs_success_primary": {
+      "configuration": "control_success_vs_success_primary",
+      "direction": "max_bidirectional",
+      "topology": "event_context",
+      "mcs_config": {
+        "tau_v": 0.7,
+        "tau_e": 0.7,
+        "top_k": 10,
+        "check_source_nodes": true,
+        "expansion_pool": "all_candidates",
+        "require_same_kind": true
+      },
+      "query": "task48_c890f90b",
+      "reference": "task48_655b2a43",
+      "size": 11,
+      "seed": [
+        "N:u1->N:s2",
+        "N:u1->N:s2"
+      ],
+      "n_candidates": 7,
+      "n_seeds": 7,
+      "n_query_edges": 11,
+      "n_reference_edges": 11,
+      "node_map": {
+        "N:u1": "N:u1",
+        "N:s2": "N:s2",
+        "N:u3": "N:u3",
+        "N:s0": "N:s0",
+        "N:s4": "N:s4",
+        "ROOT": "ROOT"
+      },
+      "mapped_edges": [
+        {
+          "query_edge": "N:u1->N:s2",
+          "reference_edge": "N:u1->N:s2",
+          "query_event": "s2",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure, I can help with that. To proceed, could you please provide: 1. Your user ID (the ID…",
+          "s_edge": 0.9937,
+          "s_src": 0.9924,
+          "s_tgt": 0.9937,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:s2->N:u3",
+          "reference_edge": "N:s2->N:u3",
+          "query_event": "u3",
+          "roles": [
+            "context"
+          ],
+          "operation": "Sure thing. My user ID is anya_garcia_5901 and the reservation ID is 3RK2T9. I booked the…",
+          "s_edge": 0.9922,
+          "s_src": 0.9937,
+          "s_tgt": 0.9922,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:s0->N:u1",
+          "reference_edge": "N:s0->N:u1",
+          "query_event": "u1",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd…",
+          "s_edge": 0.9924,
+          "s_src": 0.9909,
+          "s_tgt": 0.9924,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:u3->N:s4",
+          "reference_edge": "N:u3->N:s4",
+          "query_event": "s4",
+          "roles": [
+            "context",
+            "data"
+          ],
+          "operation": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "s_edge": 0.9843,
+          "s_src": 0.9922,
+          "s_tgt": 0.9782,
+          "truncated_text_used": true
+        },
+        {
+          "query_edge": "ROOT->N:s0",
+          "reference_edge": "ROOT->N:s0",
+          "query_event": "s0",
+          "roles": [
+            "context"
+          ],
+          "operation": "Hi! How can I help you today?",
+          "s_edge": 0.9909,
+          "s_src": 1.0,
+          "s_tgt": 0.9909,
+          "truncated_text_used": false
+        }
+      ],
+      "agent_steps": [
+        {
+          "event": "s0",
+          "kind": "agent_message",
+          "text": "Hi! How can I help you today?",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          },
+          "mapped_to": "N:s0"
+        },
+        {
+          "event": "s2",
+          "kind": "agent_message",
+          "text": "Sure, I can help with that. To proceed, could you please provide: 1. Your user ID (the ID…",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u1->N:s2": "N:u1->N:s2"
+          },
+          "mapped_to": "N:s2"
+        },
+        {
+          "event": "s4",
+          "kind": "tool_result",
+          "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          },
+          "mapped_to": "N:s4"
+        },
+        {
+          "event": "s6",
+          "kind": "agent_message",
+          "text": "I'm sorry, but I can't process a cancellation for that reservation. According to our reco…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s4->N:s6": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s8",
+          "kind": "tool_result",
+          "text": "Call transfer_to_human_agents with summary = User claims booking was made 10 hours ago bu…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:u7->N:s8": null,
+            "N:s4->N:s8": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s10",
+          "kind": "agent_message",
+          "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s8->N:s10": null
+          },
+          "mapped_to": null
+        }
+      ],
+      "candidates": [
+        {
+          "e1": "N:s10->N:u11",
+          "e2": "N:s10->N:u11",
+          "s_edge": 0.9970646500587463,
+          "s_src": 0.9920239448547363,
+          "s_tgt": 0.9970646500587463,
+          "score": 1.9941293001174927
+        },
+        {
+          "e1": "N:u1->N:s2",
+          "e2": "N:u1->N:s2",
+          "s_edge": 0.993696391582489,
+          "s_src": 0.992422878742218,
+          "s_tgt": 0.993696391582489,
+          "score": 1.987392783164978
+        },
+        {
+          "e1": "N:s0->N:u1",
+          "e2": "N:s0->N:u1",
+          "s_edge": 0.992422878742218,
+          "s_src": 0.9909459352493286,
+          "s_tgt": 0.992422878742218,
+          "score": 1.984845757484436
+        },
+        {
+          "e1": "N:s2->N:u3",
+          "e2": "N:s2->N:u3",
+          "s_edge": 0.9922317266464233,
+          "s_src": 0.993696391582489,
+          "s_tgt": 0.9922317266464233,
+          "score": 1.9844634532928467
+        },
+        {
+          "e1": "N:s8->N:s10",
+          "e2": "N:s8->N:s10",
+          "s_edge": 0.9920239448547363,
+          "s_src": 0.9942789077758789,
+          "s_tgt": 0.9920239448547363,
+          "score": 1.9840478897094727
+        },
+        {
+          "e1": "ROOT->N:s0",
+          "e2": "ROOT->N:s0",
+          "s_edge": 0.9909459352493286,
+          "s_src": 1.0,
+          "s_tgt": 0.9909459352493286,
+          "score": 1.9818918704986572
+        },
+        {
+          "e1": "N:u3->N:s4",
+          "e2": "N:u3->N:s4",
+          "s_edge": 0.9842930436134338,
+          "s_src": 0.9922317266464233,
+          "s_tgt": 0.9782212376594543,
+          "score": 1.9625142812728882
+        }
+      ]
+    },
+    "control_success_vs_success_ablation_paper_literal_topology": {
+      "configuration": "control_success_vs_success_ablation_paper_literal_topology",
+      "direction": "max_bidirectional",
+      "topology": "paper_literal",
+      "mcs_config": {
+        "tau_v": 0.7,
+        "tau_e": 0.7,
+        "top_k": 10,
+        "check_source_nodes": true,
+        "expansion_pool": "all_candidates",
+        "require_same_kind": true
+      },
+      "query": "task48_c890f90b",
+      "reference": "task48_655b2a43",
+      "size": 15,
+      "seed": [
+        "ROOT->N:u11",
+        "ROOT->N:u11"
+      ],
+      "n_candidates": 7,
+      "n_seeds": 7,
+      "n_query_edges": 10,
+      "n_reference_edges": 9,
+      "node_map": {
+        "ROOT": "ROOT",
+        "N:u11": "N:u11",
+        "N:s0": "N:s0",
+        "N:u1": "N:u1",
+        "N:s2": "N:s2",
+        "N:u3": "N:u3",
+        "N:s10": "N:s10",
+        "N:s4": "N:s4"
+      },
+      "mapped_edges": [
+        {
+          "query_edge": "ROOT->N:u11",
+          "reference_edge": "ROOT->N:u11",
+          "query_event": "u11",
+          "roles": [
+            "root"
+          ],
+          "operation": "The user was transferred to a human agent.",
+          "s_edge": 0.9971,
+          "s_src": 1.0,
+          "s_tgt": 0.9971,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s0",
+          "reference_edge": "ROOT->N:s0",
+          "query_event": "s0",
+          "roles": [
+            "root"
+          ],
+          "operation": "Hi! How can I help you today?",
+          "s_edge": 0.9909,
+          "s_src": 1.0,
+          "s_tgt": 0.9909,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:u1",
+          "reference_edge": "ROOT->N:u1",
+          "query_event": "u1",
+          "roles": [
+            "root"
+          ],
+          "operation": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd…",
+          "s_edge": 0.9924,
+          "s_src": 1.0,
+          "s_tgt": 0.9924,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s2",
+          "reference_edge": "ROOT->N:s2",
+          "query_event": "s2",
+          "roles": [
+            "root"
+          ],
+          "operation": "Sure, I can help with that. To proceed, could you please provide: 1. Your user ID (the ID…",
+          "s_edge": 0.9937,
+          "s_src": 1.0,
+          "s_tgt": 0.9937,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:u3",
+          "reference_edge": "ROOT->N:u3",
+          "query_event": "u3",
+          "roles": [
+            "root"
+          ],
+          "operation": "Sure thing. My user ID is anya_garcia_5901 and the reservation ID is 3RK2T9. I booked the…",
+          "s_edge": 0.9922,
+          "s_src": 1.0,
+          "s_tgt": 0.9922,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "ROOT->N:s10",
+          "reference_edge": "ROOT->N:s10",
+          "query_event": "s10",
+          "roles": [
+            "root"
+          ],
+          "operation": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+          "s_edge": 0.992,
+          "s_src": 1.0,
+          "s_tgt": 0.992,
+          "truncated_text_used": false
+        },
+        {
+          "query_edge": "N:u3->N:s4",
+          "reference_edge": "N:u3->N:s4",
+          "query_event": "s4",
+          "roles": [
+            "data"
+          ],
+          "operation": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "s_edge": 0.9843,
+          "s_src": 0.9922,
+          "s_tgt": 0.9782,
+          "truncated_text_used": true
+        }
+      ],
+      "agent_steps": [
+        {
+          "event": "s0",
+          "kind": "agent_message",
+          "text": "Hi! How can I help you today?",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          },
+          "mapped_to": "N:s0"
+        },
+        {
+          "event": "s2",
+          "kind": "agent_message",
+          "text": "Sure, I can help with that. To proceed, could you please provide: 1. Your user ID (the ID…",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s2": "ROOT->N:s2"
+          },
+          "mapped_to": "N:s2"
+        },
+        {
+          "event": "s4",
+          "kind": "tool_result",
+          "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          },
+          "mapped_to": "N:s4"
+        },
+        {
+          "event": "s6",
+          "kind": "agent_message",
+          "text": "I'm sorry, but I can't process a cancellation for that reservation. According to our reco…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "ROOT->N:s6": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s8",
+          "kind": "tool_result",
+          "text": "Call transfer_to_human_agents with summary = User claims booking was made 10 hours ago bu…",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "N:s4->N:s8": null
+          },
+          "mapped_to": null
+        },
+        {
+          "event": "s10",
+          "kind": "agent_message",
+          "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s10": "ROOT->N:s10"
+          },
+          "mapped_to": "N:s10"
+        }
+      ],
+      "candidates": [
+        {
+          "e1": "ROOT->N:u11",
+          "e2": "ROOT->N:u11",
+          "s_edge": 0.9970646500587463,
+          "s_src": 1.0,
+          "s_tgt": 0.9970646500587463,
+          "score": 1.9941293001174927
+        },
+        {
+          "e1": "ROOT->N:s2",
+          "e2": "ROOT->N:s2",
+          "s_edge": 0.993696391582489,
+          "s_src": 1.0,
+          "s_tgt": 0.993696391582489,
+          "score": 1.987392783164978
+        },
+        {
+          "e1": "ROOT->N:u1",
+          "e2": "ROOT->N:u1",
+          "s_edge": 0.992422878742218,
+          "s_src": 1.0,
+          "s_tgt": 0.992422878742218,
+          "score": 1.984845757484436
+        },
+        {
+          "e1": "ROOT->N:u3",
+          "e2": "ROOT->N:u3",
+          "s_edge": 0.9922317266464233,
+          "s_src": 1.0,
+          "s_tgt": 0.9922317266464233,
+          "score": 1.9844634532928467
+        },
+        {
+          "e1": "ROOT->N:s10",
+          "e2": "ROOT->N:s10",
+          "s_edge": 0.9920239448547363,
+          "s_src": 1.0,
+          "s_tgt": 0.9920239448547363,
+          "score": 1.9840478897094727
+        },
+        {
+          "e1": "ROOT->N:s0",
+          "e2": "ROOT->N:s0",
+          "s_edge": 0.9909459352493286,
+          "s_src": 1.0,
+          "s_tgt": 0.9909459352493286,
+          "score": 1.9818918704986572
+        },
+        {
+          "e1": "N:u3->N:s4",
+          "e2": "N:u3->N:s4",
+          "s_edge": 0.9842930436134338,
+          "s_src": 0.9922317266464233,
+          "s_tgt": 0.9782212376594543,
+          "score": 1.9625142812728882
+        }
+      ]
+    }
+  }
+}

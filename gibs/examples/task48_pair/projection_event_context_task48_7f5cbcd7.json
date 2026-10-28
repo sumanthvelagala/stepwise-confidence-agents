@@ -1,0 +1,243 @@
+{
+  "graph_id": "task48_7f5cbcd7",
+  "topology": "event_context",
+  "nodes": [
+    {
+      "id": "ROOT",
+      "kind": "root",
+      "text": null,
+      "event": null,
+      "scorable": false
+    },
+    {
+      "id": "N:s0",
+      "kind": "agent_message",
+      "text": "Hi! How can I help you today?",
+      "event": "s0",
+      "scorable": true
+    },
+    {
+      "id": "N:u1",
+      "kind": "user_turn",
+      "text": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd like to cancel it. I'm hoping to get a full refund. Can you help me with that?",
+      "event": "u1",
+      "scorable": false
+    },
+    {
+      "id": "N:s2",
+      "kind": "agent_message",
+      "text": "Sure, I can help with that. Could you please provide your user ID and the reservation ID for the flight you'd like to cancel?",
+      "event": "s2",
+      "scorable": true
+    },
+    {
+      "id": "N:u3",
+      "kind": "user_turn",
+      "text": "Sure thing! My user ID is anya_garcia_5901 and the reservation (confirmation) number is 3RK2T9. I booked this flight about 10 hours ago by mistake and I'm hoping to get a full refund.",
+      "event": "u3",
+      "scorable": false
+    },
+    {
+      "id": "N:s4",
+      "kind": "tool_result",
+      "text": "Tool result: reservation_id: 3RK2T9; user_id: anya_garcia_5901; origin: MCO; destination: SFO; flight_type: one_way; cabin: basic_economy; flights[0].flight_number: HAT214; flights[0].origin: MCO; flights[0].destination: PHX; flights[0].date: 2024-05-19; flights[0].price: 57; flights[1].flight_number: HAT009; flights[1].origin: PHX; flights[1].destination: SFO; flights[1].date: 2024-05-20; flights[1].price: 83; passengers[0].first_name: Anya; passengers[0].last_name: Garcia; passengers[0].dob: 1992-11-12; passengers[1].first_name: Mei; passengers[1].last_name: Lee; passengers[1].dob: 1989-12-13; payment_history[0].payment_id: gift_card_2550356; payment_history[0].amount: 280; created_at: 2024-05-02T06:02:56; total_baggages: 0; nonfree_baggages: 0; insurance: no; status: null.",
+      "event": "s4",
+      "scorable": true
+    },
+    {
+      "id": "N:s6",
+      "kind": "tool_result",
+      "text": "Tool result: reservation_id: 3RK2T9; user_id: anya_garcia_5901; origin: MCO; destination: SFO; flight_type: one_way; cabin: basic_economy; flights[0].flight_number: HAT214; flights[0].origin: MCO; flights[0].destination: PHX; flights[0].date: 2024-05-19; flights[0].price: 57; flights[1].flight_number: HAT009; flights[1].origin: PHX; flights[1].destination: SFO; flights[1].date: 2024-05-20; flights[1].price: 83; passengers[0].first_name: Anya; passengers[0].last_name: Garcia; passengers[0].dob: 1992-11-12; passengers[1].first_name: Mei; passengers[1].last_name: Lee; passengers[1].dob: 1989-12-13; payment_history[0].payment_id: gift_card_2550356; payment_history[0].amount: 280; payment_history[1].payment_id: gift_card_2550356; payment_history[1].amount: -280; created_at: 2024-05-02T06:02:56; total_baggages: 0; nonfree_baggages: 0; insurance: no; status: cancelled.",
+      "event": "s6",
+      "scorable": true
+    },
+    {
+      "id": "N:s8",
+      "kind": "agent_message",
+      "text": "Your reservation 3RK2T9 has been cancelled successfully. Because the booking was made within the last 24 hours, you are eligible for a full refund. The refund will be processed back to the original payment method (gift card 2550356) and should appear in your account within 5-7 business days. If you have any other questions or need further assistance, just let me know!",
+      "event": "s8",
+      "scorable": true
+    },
+    {
+      "id": "N:u9",
+      "kind": "user_turn",
+      "text": "Thank you for confirming the cancellation. I appreciate that the refund will be processed back to the original payment method. Could you let me know exactly when I can expect the refund to appear on my account? Also, is there anything else I need to do on my end to ensure the refund goes through smoothly?",
+      "event": "u9",
+      "scorable": false
+    },
+    {
+      "id": "N:s10",
+      "kind": "agent_message",
+      "text": "Your refund will be credited back to the original payment method (gift card 2550356) within 5-7 business days. There's nothing else you need to do-once the cancellation is processed, the refund will automatically be issued. If you don't see the credit within that window, feel free to let me know and I'll check on it for you.",
+      "event": "s10",
+      "scorable": true
+    },
+    {
+      "id": "N:u11",
+      "kind": "user_turn",
+      "text": "You're welcome! If you don't see the credit within the 5-7 business days, just let me know and I'll look into it for you. Otherwise, you're all set. Have a great day!",
+      "event": "u11",
+      "scorable": false
+    },
+    {
+      "id": "N:s12",
+      "kind": "agent_message",
+      "text": "You're very welcome! If anything comes up, just let me know. Have a wonderful day!",
+      "event": "s12",
+      "scorable": true
+    },
+    {
+      "id": "N:u13",
+      "kind": "user_turn",
+      "text": "The user ended the conversation.",
+      "event": "u13",
+      "scorable": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "ROOT->N:s0",
+      "src": "ROOT",
+      "dst": "N:s0",
+      "text": "Hi! How can I help you today?",
+      "event": "s0",
+      "roles": [
+        "context"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:s0->N:u1",
+      "src": "N:s0",
+      "dst": "N:u1",
+      "text": "Hi, I'm Anya Garcia. I booked a flight this morning-about 10 hours ago-by mistake and I'd like to cancel it. I'm hoping to get a full refund. Can you help me with that?",
+      "event": "u1",
+      "roles": [
+        "context"
+      ],
+      "scorable": false
+    },
+    {
+      "id": "N:u1->N:s2",
+      "src": "N:u1",
+      "dst": "N:s2",
+      "text": "Sure, I can help with that. Could you please provide your user ID and the reservation ID for the flight you'd like to cancel?",
+      "event": "s2",
+      "roles": [
+        "context"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:s2->N:u3",
+      "src": "N:s2",
+      "dst": "N:u3",
+      "text": "Sure thing! My user ID is anya_garcia_5901 and the reservation (confirmation) number is 3RK2T9. I booked this flight about 10 hours ago by mistake and I'm hoping to get a full refund.",
+      "event": "u3",
+      "roles": [
+        "context"
+      ],
+      "scorable": false
+    },
+    {
+      "id": "N:u3->N:s4",
+      "src": "N:u3",
+      "dst": "N:s4",
+      "text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+      "event": "s4",
+      "roles": [
+        "context",
+        "data"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:s4->N:s6",
+      "src": "N:s4",
+      "dst": "N:s6",
+      "text": "Call cancel_reservation with reservation_id = 3RK2T9.",
+      "event": "s6",
+      "roles": [
+        "context"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:u3->N:s6",
+      "src": "N:u3",
+      "dst": "N:s6",
+      "text": "Call cancel_reservation with reservation_id = 3RK2T9.",
+      "event": "s6",
+      "roles": [
+        "data"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:s6->N:s8",
+      "src": "N:s6",
+      "dst": "N:s8",
+      "text": "Your reservation 3RK2T9 has been cancelled successfully. Because the booking was made within the last 24 hours, you are eligible for a full refund. The refund will be processed back to the original payment method (gift card 2550356) and should appear in your account within 5-7 business days. If you have any other questions or need further assistance, just let me know!",
+      "event": "s8",
+      "roles": [
+        "context"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:s8->N:u9",
+      "src": "N:s8",
+      "dst": "N:u9",
+      "text": "Thank you for confirming the cancellation. I appreciate that the refund will be processed back to the original payment method. Could you let me know exactly when I can expect the refund to appear on my account? Also, is there anything else I need to do on my end to ensure the refund goes through smoothly?",
+      "event": "u9",
+      "roles": [
+        "context"
+      ],
+      "scorable": false
+    },
+    {
+      "id": "N:u9->N:s10",
+      "src": "N:u9",
+      "dst": "N:s10",
+      "text": "Your refund will be credited back to the original payment method (gift card 2550356) within 5-7 business days. There's nothing else you need to do-once the cancellation is processed, the refund will automatically be issued. If you don't see the credit within that window, feel free to let me know and I'll check on it for you.",
+      "event": "s10",
+      "roles": [
+        "context"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:s10->N:u11",
+      "src": "N:s10",
+      "dst": "N:u11",
+      "text": "You're welcome! If you don't see the credit within the 5-7 business days, just let me know and I'll look into it for you. Otherwise, you're all set. Have a great day!",
+      "event": "u11",
+      "roles": [
+        "context"
+      ],
+      "scorable": false
+    },
+    {
+      "id": "N:u11->N:s12",
+      "src": "N:u11",
+      "dst": "N:s12",
+      "text": "You're very welcome! If anything comes up, just let me know. Have a wonderful day!",
+      "event": "s12",
+      "roles": [
+        "context"
+      ],
+      "scorable": true
+    },
+    {
+      "id": "N:s12->N:u13",
+      "src": "N:s12",
+      "dst": "N:u13",
+      "text": "The user ended the conversation.",
+      "event": "u13",
+      "roles": [
+        "context"
+      ],
+      "scorable": false
+    }
+  ]
+}

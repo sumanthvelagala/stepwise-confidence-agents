@@ -1,0 +1,33 @@
+%% Query graph; green = mapped into the reference by MCS, red = unmapped. Edge labels: operation roles.
+flowchart TD
+    ROOT["ROOT<br/>↦ ROOT"]
+    N_s0["N:s0 · agent_message<br/>Hi! How can I help you today?<br/>↦ N:s0"]
+    N_u1["N:u1 · user_turn<br/>Hi, I'm Anya Garcia. I booked a flight this morning-about 1…<br/>↦ N:u1"]
+    N_s2["N:s2 · agent_message<br/>Sure, I can help with that. Could you please provide your u…<br/>↦ N:s2"]
+    N_u3["N:u3 · user_turn<br/>Sure thing! My user ID is anya_garcia_5901 and the reservat…<br/>↦ N:u3"]
+    N_s4["N:s4 · tool_result<br/>CALL get_reservation_details with reservation_id = 3RK2T9.<br/>OBS reservation_id: 3RK2T9; user_id: anya_garcia…<br/>↦ N:s4"]
+    N_s6["N:s6 · tool_result<br/>CALL cancel_reservation with reservation_id = 3RK2T9.<br/>OBS reservation_id: 3RK2T9; user_id: anya_garcia…"]
+    N_s8["N:s8 · agent_message<br/>Your reservation 3RK2T9 has been cancelled successfully. Be…"]
+    N_u9["N:u9 · user_turn<br/>Thank you for confirming the cancellation. I appreciate tha…"]
+    N_s10["N:s10 · agent_message<br/>Your refund will be credited back to the original payment m…"]
+    N_u11["N:u11 · user_turn<br/>You're welcome! If you don't see the credit within the 5-7 …"]
+    N_s12["N:s12 · agent_message<br/>You're very welcome! If anything comes up, just let me know…"]
+    N_u13["N:u13 · user_turn<br/>The user ended the conversation."]
+    ROOT -->|context| N_s0
+    N_s0 -->|context| N_u1
+    N_u1 -->|context| N_s2
+    N_s2 -->|context| N_u3
+    N_u3 -->|context+data| N_s4
+    N_s4 -->|context| N_s6
+    N_u3 -.->|data| N_s6
+    N_s6 -->|context| N_s8
+    N_s8 -->|context| N_u9
+    N_u9 -->|context| N_s10
+    N_s10 -->|context| N_u11
+    N_u11 -->|context| N_s12
+    N_s12 -->|context| N_u13
+    classDef mapped fill:#e6f4ea,stroke:#137333,color:#111;
+    classDef unmapped fill:#fce8e6,stroke:#c5221f,color:#111;
+    class ROOT,N_s0,N_u1,N_s2,N_u3,N_s4 mapped;
+    class N_s6,N_s8,N_u9,N_s10,N_u11,N_s12,N_u13 unmapped;
+    linkStyle 0,1,2,3,4 stroke:#137333,stroke-width:3px;

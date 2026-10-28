@@ -1,0 +1,551 @@
+{
+ "note": "Manual F-b judgements of the seed-0 samples in c5_summary.json -> samples.<variant>.sample_seed0 (1-based index). Unlisted indices were judged 'same_act'. One reviewer, not blind. C3 judgements are those reported in REPORT_c4.md \u00a75 (same sampling rule, same sample).",
+ "judgements": {
+  "C3": [
+   {
+    "i": 1,
+    "pair": "T25 d7a124a4 s4 -> d2135fe7 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 2,
+    "pair": "T25 2e0c25a6 s28 -> ab3d173b s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 3,
+    "pair": "T25 f81eaa6a s4 -> 291cfe67 s4",
+    "ctx": false,
+    "judgement": "same_act"
+   },
+   {
+    "i": 4,
+    "pair": "T25 8c8332b6 s4 -> cc2b26ea s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 5,
+    "pair": "T48 fc2b9a57 s2 -> 655b2a43 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 6,
+    "pair": "T25 16aac895 s10 -> 1e01a088 s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 7,
+    "pair": "T25 b03440a4 s4 -> cc2b26ea s4",
+    "ctx": false,
+    "judgement": "same_act"
+   },
+   {
+    "i": 8,
+    "pair": "T25 b03440a4 s4 -> 0f0f7358 s4",
+    "ctx": false,
+    "judgement": "same_act"
+   },
+   {
+    "i": 9,
+    "pair": "T25 8c8332b6 s18 -> 142fde74 s22",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 10,
+    "pair": "T25 f81eaa6a s4 -> d2135fe7 s4",
+    "ctx": false,
+    "judgement": "same_act"
+   },
+   {
+    "i": 11,
+    "pair": "T25 d7a124a4 s4 -> 8c8332b6 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 12,
+    "pair": "T25 1e01a088 s4 -> b03440a4 s4",
+    "ctx": false,
+    "judgement": "same_act"
+   },
+   {
+    "i": 13,
+    "pair": "T25 ab3d173b s10 -> b91137fb s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 14,
+    "pair": "T25 2aca18ff s24 -> b03440a4 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 15,
+    "pair": "T25 c801d833 s28 -> 291cfe67 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 16,
+    "pair": "T25 0f0f7358 s18 -> cc2b26ea s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 17,
+    "pair": "T25 b03440a4 s4 -> b91137fb s4",
+    "ctx": false,
+    "judgement": "same_act"
+   },
+   {
+    "i": 18,
+    "pair": "T9 ce95f0bf s2 -> d5b7b555 s2",
+    "ctx": true,
+    "judgement": "borderline"
+   },
+   {
+    "i": 19,
+    "pair": "T25 16aac895 s10 -> cd5be315 s8",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 20,
+    "pair": "T9 ce95f0bf s2 -> ed3e4cc7 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 21,
+    "pair": "T25 f81eaa6a s4 -> 1e01a088 s4",
+    "ctx": false,
+    "judgement": "same_act"
+   },
+   {
+    "i": 22,
+    "pair": "T9 7cd3469e s14 -> 39937705 s8",
+    "ctx": false,
+    "judgement": "borderline"
+   },
+   {
+    "i": 23,
+    "pair": "T25 cc2b26ea s4 -> 8c8332b6 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 24,
+    "pair": "T25 51d355a9 s10 -> bb73aded s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 25,
+    "pair": "T25 142fde74 s10 -> d3366062 s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 26,
+    "pair": "T25 b91137fb s18 -> 8c8332b6 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 27,
+    "pair": "T25 d2135fe7 s4 -> d3366062 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 28,
+    "pair": "T25 6f12b024 s32 -> 1e01a088 s20",
+    "ctx": false,
+    "judgement": "conflicting_facts"
+   },
+   {
+    "i": 29,
+    "pair": "T25 c801d833 s28 -> f81eaa6a s20",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 30,
+    "pair": "T9 d5b7b555 s2 -> bb968e44 s2",
+    "ctx": true,
+    "judgement": "borderline"
+   }
+  ],
+  "C4": [
+   {
+    "i": 1,
+    "pair": "T25 f81eaa6a s20 -> d2135fe7 s20",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 2,
+    "pair": "T25 2aca18ff s26 -> c801d833 s10",
+    "ctx": true,
+    "judgement": "borderline"
+   },
+   {
+    "i": 3,
+    "pair": "T25 d2135fe7 s10 -> cc2b26ea s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 4,
+    "pair": "T25 6f12b024 s32 -> d2135fe7 s20",
+    "ctx": true,
+    "judgement": "conflicting_facts"
+   },
+   {
+    "i": 5,
+    "pair": "T25 2e0c25a6 s4 -> cd5be315 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 6,
+    "pair": "T48 a6fb29f3 s2 -> adcf197e s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 7,
+    "pair": "T25 142fde74 s4 -> cd5be315 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 8,
+    "pair": "T25 ab3d173b s10 -> b91137fb s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 9,
+    "pair": "T25 a92c9234 s18 -> c801d833 s24",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 10,
+    "pair": "T25 2e0c25a6 s24 -> 16aac895 s10",
+    "ctx": true,
+    "judgement": "borderline"
+   },
+   {
+    "i": 11,
+    "pair": "T25 d7a124a4 s4 -> cd5be315 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 12,
+    "pair": "T25 d3366062 s22 -> a92c9234 s22",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 13,
+    "pair": "T25 f81eaa6a s12 -> b91137fb s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 14,
+    "pair": "T25 1e01a088 s10 -> 0f0f7358 s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 15,
+    "pair": "T25 a92c9234 s10 -> ab3d173b s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 16,
+    "pair": "T25 291cfe67 s4 -> d3366062 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 17,
+    "pair": "T25 b91137fb s10 -> f81eaa6a s12",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 18,
+    "pair": "T25 6f12b024 s32 -> d3366062 s22",
+    "ctx": true,
+    "judgement": "conflicting_facts"
+   },
+   {
+    "i": 19,
+    "pair": "T25 d7a124a4 s4 -> b03440a4 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 20,
+    "pair": "T25 0f0f7358 s18 -> b03440a4 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 21,
+    "pair": "T25 ab3d173b s18 -> 291cfe67 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 22,
+    "pair": "T9 ce95f0bf s2 -> 49f89baf s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 23,
+    "pair": "T25 16aac895 s10 -> 8c8332b6 s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 24,
+    "pair": "T9 ce95f0bf s2 -> 882b4bd9 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 25,
+    "pair": "T25 d2135fe7 s10 -> c801d833 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 26,
+    "pair": "T9 49f89baf s2 -> ed3e4cc7 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 27,
+    "pair": "T25 c801d833 s4 -> 0f0f7358 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 28,
+    "pair": "T25 d3366062 s4 -> d2135fe7 s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 29,
+    "pair": "T25 142fde74 s22 -> a92c9234 s22",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 30,
+    "pair": "T25 d7a124a4 s10 -> b91137fb s10",
+    "ctx": true,
+    "judgement": "same_act"
+   }
+  ],
+  "C5": [
+   {
+    "i": 1,
+    "pair": "T25 b03440a4 s10 -> cc2b26ea s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 2,
+    "pair": "T25 bb73aded s10 -> 291cfe67 s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 3,
+    "pair": "T48 fc2b9a57 s2 -> 655b2a43 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 4,
+    "pair": "T25 2aca18ff s24 -> 16aac895 s26",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 5,
+    "pair": "T25 d2135fe7 s10 -> 1e01a088 s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 6,
+    "pair": "T25 cc2b26ea s4 -> d2135fe7 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 7,
+    "pair": "T25 b91137fb s10 -> ab3d173b s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 8,
+    "pair": "T25 8c8332b6 s4 -> 16aac895 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 9,
+    "pair": "T25 cc2b26ea s18 -> b03440a4 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 10,
+    "pair": "T25 ab3d173b s18 -> 291cfe67 s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 11,
+    "pair": "T25 51d355a9 s4 -> 291cfe67 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 12,
+    "pair": "T25 1e01a088 s10 -> 8c8332b6 s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 13,
+    "pair": "T25 cd5be315 s20 -> f81eaa6a s20",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 14,
+    "pair": "T9 71270d8b s2 -> bb968e44 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 15,
+    "pair": "T25 2e0c25a6 s10 -> 1e01a088 s10",
+    "ctx": true,
+    "judgement": "different_act"
+   },
+   {
+    "i": 16,
+    "pair": "T9 71270d8b s2 -> ce95f0bf s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 17,
+    "pair": "T9 a567caf8 s2 -> d5b7b555 s2",
+    "ctx": true,
+    "judgement": "borderline"
+   },
+   {
+    "i": 18,
+    "pair": "T25 d7a124a4 s10 -> c801d833 s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 19,
+    "pair": "T25 291cfe67 s18 -> cc2b26ea s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 20,
+    "pair": "T25 d3366062 s22 -> 142fde74 s22",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 21,
+    "pair": "T25 6f12b024 s8 -> b91137fb s10",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 22,
+    "pair": "T25 0f0f7358 s18 -> 2e0c25a6 s28",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 23,
+    "pair": "T25 8c8332b6 s18 -> b91137fb s18",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 24,
+    "pair": "T9 bb968e44 s2 -> 39937705 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 25,
+    "pair": "T9 49f89baf s2 -> 882b4bd9 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 26,
+    "pair": "T25 a92c9234 s22 -> 2aca18ff s24",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 27,
+    "pair": "T25 cc2b26ea s4 -> 8c8332b6 s4",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 28,
+    "pair": "T25 d3366062 s22 -> d2135fe7 s20",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 29,
+    "pair": "T9 bb968e44 s2 -> 882b4bd9 s2",
+    "ctx": true,
+    "judgement": "same_act"
+   },
+   {
+    "i": 30,
+    "pair": "T25 a92c9234 s22 -> f81eaa6a s20",
+    "ctx": true,
+    "judgement": "same_act"
+   }
+  ]
+ }
+}

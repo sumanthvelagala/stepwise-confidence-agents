@@ -1,0 +1,33 @@
+%% Task 48 · simulation c890f90b-c308-4088-8936-3ab785a6ee88 · reward 1.0 (success)
+%% Generated from results/pilot/tasks_25_40_48/results.json. Full text lives in trajectory_graph.json.
+flowchart TD
+    s0["<b>s0 · AgentStep · step 0</b> · msg 0 · message<br/>Hi! How can I help you today?"]
+    u1(["<b>u1 · UserTurn</b> · msg 1<br/>Hi, I’m Anya Garcia. I booked a flight this<br/>morning—about 10 hours ago—by mistake and I’d<br/>like to cancel it. I’m hoping to get a full<br/>refund. Can you help me with that?"])
+    s2["<b>s2 · AgentStep · step 1</b> · msg 2 · message<br/>Sure, I can help with that. To proceed, could<br/>you please provide: 1. Your user ID (the ID you<br/>use to log in to our system). 2. The reservation<br/>ID of the flight you’d like to cancel. 3. The<br/>reason you’re cancelling (e.g., change of plan,<br/>airline cancelled flight, other). Once I have<br/>those details, I’ll confirm the cancellation<br/>rules and, if everything is in order, we can<br/>process the refund."]
+    u3(["<b>u3 · UserTurn</b> · msg 3<br/>Sure thing. My user ID is anya_garcia_5901<br/>and the reservation ID is 3RK2T9. I booked<br/>the flight about 10 hours ago by mistake, so I’m<br/>looking for a full refund."])
+    s4[["<b>s4 · AgentStep · step 2</b> · msg 4+5 · tool_call<br/><b>CALL</b> get_reservation_details(reservation_id=#quot;3RK2T9#quot;)<br/><b>OBS</b> error=false · created_at=2024-05-02T06:02:56 ·<br/>cabin=basic_economy · insurance=no · status=null<br/>· one_way MCO→SFO · flights: HAT214 MCO→PHX<br/>2024-05-19; HAT009 PHX→SFO 2024-05-20 ·<br/>passengers: Anya Garcia 1992-11-12; Mei Lee<br/>1989-12-13 · paid: gift_card_2550356 $280"]]
+    s6["<b>s6 · AgentStep · step 3</b> · msg 6 · message<br/>I’m sorry, but I can’t process a cancellation<br/>for that reservation. According to our records,<br/>the booking was created on 2024‑05‑02, which<br/>is more than 24 hours ago. Because the flight is<br/>a basic‑economy segment, you don’t have travel<br/>insurance, and the airline hasn’t cancelled the<br/>flight, the cancellation rules do not allow a<br/>refund. If you’d like to discuss any other<br/>options or have additional questions, please let<br/>me know."]
+    u7(["<b>u7 · UserTurn</b> · msg 7<br/>I’m really sure I booked it just about 10 hours<br/>ago, not on May 2nd. I double‑checked my email<br/>confirmation and the timestamp on the booking<br/>page shows it was created this morning. Because<br/>it’s so recent, I’m hoping you can still process<br/>a full refund. Could you please double‑check the<br/>booking time again or let me know if there’s a<br/>way to appeal this decision?"])
+    s8[["<b>s8 · AgentStep · step 4</b> · msg 8+9 · tool_call<br/><b>CALL</b> transfer_to_human_agents(summary=#quot;User claims booking was made 10 hours<br/>ago but system shows created_at 2024-05-02. User<br/>wants to appeal cancellation decision.#quot;)<br/><b>OBS</b> error=false · Transfer successful"]]
+    s10["<b>s10 · AgentStep · step 5</b> · msg 10 · message<br/>YOU ARE BEING TRANSFERRED TO A HUMAN AGENT.<br/>PLEASE HOLD ON."]
+    u11(["<b>u11 · UserTurn</b> · msg 11<br/>#35;#35;#35;TRANSFER#35;#35;#35;"])
+
+    s0 -->|temporal| u1
+    u1 -->|temporal| s2
+    s2 -->|temporal| u3
+    u3 -->|temporal| s4
+    s4 -->|temporal| s6
+    s6 -->|temporal| u7
+    u7 -->|temporal| s8
+    s8 -->|temporal| s10
+    s10 -->|temporal| u11
+    u3 -.->|"data_dependency: 3RK2T9"| s4
+    s4 -.->|"data_dependency: 2024-05-02"| s8
+
+    classDef agentMsg fill:#e8f0fe,stroke:#1a56db,color:#111;
+    classDef agentTool fill:#e6f4ea,stroke:#137333,color:#111;
+    classDef user fill:#fef7e0,stroke:#b06000,color:#111;
+    class s0,s2,s6,s10 agentMsg;
+    class s4,s8 agentTool;
+    class u1,u3,u7,u11 user;
+    linkStyle 9,10 stroke:#c5221f,stroke-width:2px,stroke-dasharray:5 4;

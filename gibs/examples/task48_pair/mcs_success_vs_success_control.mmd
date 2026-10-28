@@ -1,0 +1,29 @@
+%% Query graph; green = mapped into the reference by MCS, red = unmapped. Edge labels: operation roles.
+flowchart TD
+    ROOT["ROOT<br/>↦ ROOT"]
+    N_s0["N:s0 · agent_message<br/>Hi! How can I help you today?<br/>↦ N:s0"]
+    N_u1["N:u1 · user_turn<br/>Hi, I'm Anya Garcia. I booked a flight this morning-about 1…<br/>↦ N:u1"]
+    N_s2["N:s2 · agent_message<br/>Sure, I can help with that. To proceed, could you please pr…<br/>↦ N:s2"]
+    N_u3["N:u3 · user_turn<br/>Sure thing. My user ID is anya_garcia_5901 and the reservat…<br/>↦ N:u3"]
+    N_s4["N:s4 · tool_result<br/>CALL get_reservation_details with reservation_id = 3RK2T9.<br/>OBS reservation_id: 3RK2T9; user_id: anya_garcia…<br/>↦ N:s4"]
+    N_s6["N:s6 · agent_message<br/>I'm sorry, but I can't process a cancellation for that rese…"]
+    N_u7["N:u7 · user_turn<br/>I'm really sure I booked it just about 10 hours ago, not on…"]
+    N_s8["N:s8 · tool_result<br/>CALL transfer_to_human_agents with summary = User claims bo…<br/>OBS Transfer successful"]
+    N_s10["N:s10 · agent_message<br/>YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."]
+    N_u11["N:u11 · user_turn<br/>The user was transferred to a human agent."]
+    ROOT -->|context| N_s0
+    N_s0 -->|context| N_u1
+    N_u1 -->|context| N_s2
+    N_s2 -->|context| N_u3
+    N_u3 -->|context+data| N_s4
+    N_s4 -->|context| N_s6
+    N_s6 -->|context| N_u7
+    N_u7 -->|context| N_s8
+    N_s4 -.->|data| N_s8
+    N_s8 -->|context| N_s10
+    N_s10 -->|context| N_u11
+    classDef mapped fill:#e6f4ea,stroke:#137333,color:#111;
+    classDef unmapped fill:#fce8e6,stroke:#c5221f,color:#111;
+    class ROOT,N_s0,N_u1,N_s2,N_u3,N_s4 mapped;
+    class N_s6,N_u7,N_s8,N_s10,N_u11 unmapped;
+    linkStyle 0,1,2,3,4 stroke:#137333,stroke-width:3px;

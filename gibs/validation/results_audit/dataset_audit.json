@@ -1,0 +1,3765 @@
+{
+ "files": [
+  {
+   "file": "results/pilot/task_1_topup/results.json",
+   "simulations": 12,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "1"
+   ]
+  },
+  {
+   "file": "results/pilot/task_25_topup/results.json",
+   "simulations": 3,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "25"
+   ]
+  },
+  {
+   "file": "results/pilot/task_28/results.json",
+   "simulations": 20,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "28"
+   ]
+  },
+  {
+   "file": "results/pilot/task_34/results.json",
+   "simulations": 20,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "34"
+   ]
+  },
+  {
+   "file": "results/pilot/task_34_topup/results.json",
+   "simulations": 2,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "34"
+   ]
+  },
+  {
+   "file": "results/pilot/task_37/results.json",
+   "simulations": 20,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "37"
+   ]
+  },
+  {
+   "file": "results/pilot/task_38_topup1/results.json",
+   "simulations": 15,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "38"
+   ]
+  },
+  {
+   "file": "results/pilot/task_38_topup2/results.json",
+   "simulations": 5,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "38"
+   ]
+  },
+  {
+   "file": "results/pilot/task_3_topup/results.json",
+   "simulations": 3,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "3"
+   ]
+  },
+  {
+   "file": "results/pilot/task_3_topup2/results.json",
+   "simulations": 1,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "3"
+   ]
+  },
+  {
+   "file": "results/pilot/task_9_topup/results.json",
+   "simulations": 6,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "9"
+   ]
+  },
+  {
+   "file": "results/pilot/tasks_1_3_9_38/results.json",
+   "simulations": 80,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "1",
+    "3",
+    "9",
+    "38"
+   ]
+  },
+  {
+   "file": "results/pilot/tasks_25_40_48/results.json",
+   "simulations": 60,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "25",
+    "40",
+    "48"
+   ]
+  },
+  {
+   "file": "results/probe/batch_1action/results.json",
+   "simulations": 18,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "5",
+    "6",
+    "11",
+    "15",
+    "19",
+    "24"
+   ]
+  },
+  {
+   "file": "results/probe/batch_2action/results.json",
+   "simulations": 18,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "1",
+    "3",
+    "9",
+    "14",
+    "21",
+    "38"
+   ]
+  },
+  {
+   "file": "results/probe/batch_3to4action/results.json",
+   "simulations": 18,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "2",
+    "17",
+    "22",
+    "23",
+    "29",
+    "37"
+   ]
+  },
+  {
+   "file": "results/probe/new_batch1/results.json",
+   "simulations": 18,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "13",
+    "16",
+    "20",
+    "25",
+    "27",
+    "35"
+   ]
+  },
+  {
+   "file": "results/probe/new_batch2/results.json",
+   "simulations": 18,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "36",
+    "40",
+    "45",
+    "47",
+    "48",
+    "49"
+   ]
+  },
+  {
+   "file": "results/probe/ratelimit_tasks/results.json",
+   "simulations": 15,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "34",
+    "35",
+    "42",
+    "44",
+    "45"
+   ]
+  },
+  {
+   "file": "results/probe/remaining_batch/results.json",
+   "simulations": 42,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "4",
+    "10",
+    "12",
+    "18",
+    "26",
+    "28",
+    "30",
+    "31",
+    "34",
+    "39",
+    "41",
+    "42",
+    "43",
+    "46"
+   ]
+  },
+  {
+   "file": "results/probe/task_2/results.json",
+   "simulations": 20,
+   "regime": "openai/gpt-oss:20b T=1.0",
+   "tasks": [
+    "2"
+   ]
+  },
+  {
+   "file": "results/probe/task_32/results.json",
+   "simulations": 3,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "32"
+   ]
+  },
+  {
+   "file": "results/probe/task_33/results.json",
+   "simulations": 3,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "33"
+   ]
+  },
+  {
+   "file": "results/probe/task_4/results.json",
+   "simulations": 24,
+   "regime": "openai/gpt-oss:20b T=1.0",
+   "tasks": [
+    "4"
+   ]
+  },
+  {
+   "file": "results/probe/task_5/results.json",
+   "simulations": 20,
+   "regime": "openai/gpt-oss:20b T=1.0",
+   "tasks": [
+    "5"
+   ]
+  },
+  {
+   "file": "results/probe/task_7/results.json",
+   "simulations": 3,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "7"
+   ]
+  },
+  {
+   "file": "results/probe/task_8/results.json",
+   "simulations": 3,
+   "regime": "groq/openai/gpt-oss-20b T=0.0",
+   "tasks": [
+    "8"
+   ]
+  }
+ ],
+ "n_files": 27,
+ "n_simulation_records": 470,
+ "n_unique_uuids": 470,
+ "uuids_in_more_than_one_file": 0,
+ "n_tasks": 49,
+ "regimes": {
+  "groq/openai/gpt-oss-20b T=0.0": 406,
+  "openai/gpt-oss:20b T=1.0": 64
+ },
+ "rewards": {
+  "1.0": 206,
+  "None": 124,
+  "0.0": 140
+ },
+ "per_task": {
+  "1": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_1_topup/results.json",
+    "results/pilot/tasks_1_3_9_38/results.json",
+    "results/probe/batch_2action/results.json"
+   ],
+   "unique_sims": 35,
+   "infrastructure_or_no_reward": 11,
+   "terminations": {
+    "user_stop": 24,
+    "infrastructure_error": 11
+   },
+   "success": 22,
+   "failed": 2,
+   "success_rate": 0.917,
+   "distinct_successful": 21,
+   "exact_duplicate_groups": 1,
+   "exact_duplicate_extra_copies": 1,
+   "failed_reward_components": {
+    "DB": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 2,
+    "unverified|failed_run": 11,
+    "unverified|success_run": 185,
+    "valid|failed_run": 2,
+    "valid|success_run": 60
+   },
+   "negatives": [
+    {
+     "run": "b4afd67b",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "7de7b1db",
+     "step": "s10",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    }
+   ],
+   "n_negatives": 2,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": "NIBS / earlier GIBS scores"
+  },
+  "2": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0",
+    "openai/gpt-oss:20b T=1.0"
+   ],
+   "files": [
+    "results/probe/batch_3to4action/results.json",
+    "results/probe/task_2/results.json"
+   ],
+   "unique_sims": 23,
+   "infrastructure_or_no_reward": 4,
+   "terminations": {
+    "infrastructure_error": 4,
+    "max_steps": 11,
+    "user_stop": 7,
+    "too_many_errors": 1
+   },
+   "success": 3,
+   "failed": 16,
+   "success_rate": 0.158,
+   "distinct_successful": 3,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "?": 12,
+    "DB": 4
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 4,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "attempted_incorrect|failed_run": 1,
+    "incorrect|failed_run": 5,
+    "unverified|failed_run": 317,
+    "unverified|success_run": 34,
+    "valid|failed_run": 59,
+    "valid|success_run": 5
+   },
+   "negatives": [
+    {
+     "run": "8bd97885",
+     "step": "s24",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "e928e9a4",
+     "step": "s34",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "ddac947f",
+     "step": "s32",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "308f6fa8",
+     "step": "s28",
+     "tool": "book_reservation",
+     "label": "attempted_incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; book_reservation attempted (tool error)"
+    },
+    {
+     "run": "cf21575e",
+     "step": "s4",
+     "tool": "book_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; book_reservation executed"
+    },
+    {
+     "run": "e1ac360b",
+     "step": "s42",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    }
+   ],
+   "n_negatives": 6,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 10,
+   "dev_use": null,
+   "earlier_exposure": "earlier GIBS scores"
+  },
+  "3": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_3_topup/results.json",
+    "results/pilot/task_3_topup2/results.json",
+    "results/pilot/tasks_1_3_9_38/results.json",
+    "results/probe/batch_2action/results.json"
+   ],
+   "unique_sims": 27,
+   "infrastructure_or_no_reward": 4,
+   "terminations": {
+    "user_stop": 23,
+    "infrastructure_error": 4
+   },
+   "success": 12,
+   "failed": 11,
+   "success_rate": 0.522,
+   "distinct_successful": 12,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "COMMUNICATE": 11
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "get_user_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "attempted_incorrect|failed_run": 1,
+    "unverified|failed_run": 38,
+    "unverified|success_run": 50,
+    "valid|failed_run": 14,
+    "valid|success_run": 27
+   },
+   "negatives": [
+    {
+     "run": "2710c03e",
+     "step": "s10",
+     "tool": "update_reservation_passengers",
+     "label": "attempted_incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_passengers attempted (tool error)"
+    }
+   ],
+   "n_negatives": 1,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 10,
+   "dev_use": "NLI probe",
+   "earlier_exposure": null
+  },
+  "4": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0",
+    "openai/gpt-oss:20b T=1.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json",
+    "results/probe/task_4/results.json"
+   ],
+   "unique_sims": 27,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 22,
+    "infrastructure_error": 2,
+    "max_steps": 3
+   },
+   "success": 19,
+   "failed": 6,
+   "success_rate": 0.76,
+   "distinct_successful": 19,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "?": 3,
+    "DB": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "attempted_incorrect|failed_run": 2,
+    "incorrect|failed_run": 5,
+    "unverified|failed_run": 60,
+    "unverified|success_run": 145,
+    "valid|failed_run": 34,
+    "valid|success_run": 68
+   },
+   "negatives": [
+    {
+     "run": "eca8b3cd",
+     "step": "s4",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "a5469ad0",
+     "step": "s10",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "e9e545f0",
+     "step": "s4",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "259d9890",
+     "step": "s12",
+     "tool": "send_certificate",
+     "label": "attempted_incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate attempted (tool error)"
+    },
+    {
+     "run": "259d9890",
+     "step": "s14",
+     "tool": "send_certificate",
+     "label": "attempted_incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate attempted (tool error)"
+    },
+    {
+     "run": "259d9890",
+     "step": "s20",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "259d9890",
+     "step": "s48",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    }
+   ],
+   "n_negatives": 7,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 2,
+   "dev_use": "validation pairs V7,V8; tests",
+   "earlier_exposure": null
+  },
+  "5": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0",
+    "openai/gpt-oss:20b T=1.0"
+   ],
+   "files": [
+    "results/probe/batch_1action/results.json",
+    "results/probe/task_5/results.json"
+   ],
+   "unique_sims": 23,
+   "infrastructure_or_no_reward": 7,
+   "terminations": {
+    "infrastructure_error": 7,
+    "user_stop": 15,
+    "too_many_errors": 1
+   },
+   "success": 14,
+   "failed": 2,
+   "success_rate": 0.875,
+   "distinct_successful": 14,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 1,
+    "?": 1
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "attempted_incorrect|failed_run": 1,
+    "incorrect|failed_run": 1,
+    "unverified|failed_run": 32,
+    "unverified|success_run": 86,
+    "valid|failed_run": 2,
+    "valid|success_run": 6
+   },
+   "negatives": [
+    {
+     "run": "c0810635",
+     "step": "s20",
+     "tool": "send_certificate",
+     "label": "attempted_incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate attempted (tool error)"
+    },
+    {
+     "run": "c0810635",
+     "step": "s24",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    }
+   ],
+   "n_negatives": 2,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 1,
+   "dev_use": null,
+   "earlier_exposure": "earlier GIBS scores"
+  },
+  "6": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_1action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 3,
+   "terminations": {
+    "infrastructure_error": 3
+   },
+   "success": 0,
+   "failed": 0,
+   "success_rate": null,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {},
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "7": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/task_7/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 0,
+   "failed": 3,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB+COMMUNICATE": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "get_reservation_details",
+    "update_reservation_flights",
+    "cancel_reservation",
+    "cancel_reservation"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "cancel_reservation",
+    "cancel_reservation"
+   ],
+   "nl_assertions": 4,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 3,
+    "unverified|failed_run": 23,
+    "valid|failed_run": 7
+   },
+   "negatives": [
+    {
+     "run": "39faed8b",
+     "step": "s8",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: '59xx6w' != 'xehm4b'"
+    },
+    {
+     "run": "c0be2f86",
+     "step": "s16",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: '59xx6w' != 'xehm4b'; args.flights: (('hat007', '2024-05-19'), ('hat174', '2024-05-29')) != (('hat005', '2024-05-20'), ('hat178', '2024-05-30'))"
+    },
+    {
+     "run": "c0be2f86",
+     "step": "s18",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: '59xx6w' != 'xehm4b'"
+    }
+   ],
+   "n_negatives": 3,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 1,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "8": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/task_8/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "user_stop": 2,
+    "infrastructure_error": 1
+   },
+   "success": 0,
+   "failed": 2,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "search_direct_flight",
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "book_reservation"
+   ],
+   "nl_assertions": 4,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 1,
+    "unverified|failed_run": 16,
+    "valid|failed_run": 4
+   },
+   "negatives": [
+    {
+     "run": "8393b191",
+     "step": "s20",
+     "tool": "book_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.total_baggages: 2.0 != 0.0"
+    }
+   ],
+   "n_negatives": 1,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 1,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "9": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_9_topup/results.json",
+    "results/pilot/tasks_1_3_9_38/results.json",
+    "results/probe/batch_2action/results.json"
+   ],
+   "unique_sims": 29,
+   "infrastructure_or_no_reward": 8,
+   "terminations": {
+    "user_stop": 21,
+    "infrastructure_error": 8
+   },
+   "success": 17,
+   "failed": 4,
+   "success_rate": 0.81,
+   "distinct_successful": 17,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 4
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "search_direct_flight"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 4,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 8,
+    "unverified|failed_run": 41,
+    "unverified|success_run": 103,
+    "valid|failed_run": 4,
+    "valid|success_run": 23
+   },
+   "negatives": [
+    {
+     "run": "68290327",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "7a9248ed",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "7a9248ed",
+     "step": "s14",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "7a9248ed",
+     "step": "s26",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_flights executed"
+    },
+    {
+     "run": "71270d8b",
+     "step": "s14",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "71270d8b",
+     "step": "s16",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "71270d8b",
+     "step": "s30",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_flights executed"
+    },
+    {
+     "run": "7e3e8b73",
+     "step": "s16",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    }
+   ],
+   "n_negatives": 8,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": "pilot; validation pair V6; tests",
+   "earlier_exposure": null
+  },
+  "10": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 3,
+   "terminations": {
+    "infrastructure_error": 3
+   },
+   "success": 0,
+   "failed": 0,
+   "success_rate": null,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {},
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "11": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_1action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 0,
+   "failed": 3,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB+COMMUNICATE": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 6,
+    "valid|failed_run": 3
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 3,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "12": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 1,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 1,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "search_direct_flight",
+    "search_direct_flight",
+    "calculate",
+    "update_reservation_baggages"
+   ],
+   "gold_writes": [
+    "update_reservation_baggages"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 7,
+    "valid|success_run": 4
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "13": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch1/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 3,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 3,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "transfer_to_human_agents"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 11,
+    "valid|success_run": 3
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "14": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_2action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "user_stop": 2,
+    "infrastructure_error": 1
+   },
+   "success": 0,
+   "failed": 2,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 1,
+   "exact_duplicate_extra_copies": 1,
+   "failed_reward_components": {
+    "DB+COMMUNICATE": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "cancel_reservation",
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "cancel_reservation",
+    "book_reservation"
+   ],
+   "nl_assertions": 5,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 4,
+    "valid|failed_run": 2
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 2,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "15": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_1action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 3,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 3,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 31,
+    "valid|success_run": 3
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "16": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch1/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 3,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 3,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 23,
+    "valid|success_run": 3
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "17": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_3to4action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 0,
+   "failed": 1,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 1
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "update_reservation_flights",
+    "update_reservation_passengers",
+    "update_reservation_baggages"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "update_reservation_passengers",
+    "update_reservation_baggages"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 2,
+    "unverified|failed_run": 8
+   },
+   "negatives": [
+    {
+     "run": "22a53766",
+     "step": "s10",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: 'um3og5' != 'fq8ape'; args.nonfree_baggages: 3.0 != 0.0"
+    },
+    {
+     "run": "22a53766",
+     "step": "s16",
+     "tool": "update_reservation_passengers",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: 'um3og5' != 'fq8ape'; args.passengers: (('omar', 'rossi', '1970-06-06'), ('omar', 'rossi', '1970-06-06')) != (('omar', 'rossi', '1970-06-06'),)"
+    }
+   ],
+   "n_negatives": 2,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "18": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 0,
+   "failed": 1,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB+COMMUNICATE": 1
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 6,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 13,
+    "valid|failed_run": 1
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 1,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "19": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_1action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "user_stop": 2,
+    "infrastructure_error": 1
+   },
+   "success": 0,
+   "failed": 2,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "cancel_reservation"
+   ],
+   "gold_writes": [
+    "cancel_reservation"
+   ],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 15,
+    "valid|failed_run": 2
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 2,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "20": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch1/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "infrastructure_error": 1,
+    "user_stop": 2
+   },
+   "success": 0,
+   "failed": 2,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "book_reservation"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 15,
+    "valid|failed_run": 1
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 2,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "21": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_2action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "user_stop": 2,
+    "infrastructure_error": 1
+   },
+   "success": 0,
+   "failed": 2,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "update_reservation_flights",
+    "update_reservation_baggages"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "update_reservation_baggages"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 2,
+    "unverified|failed_run": 16
+   },
+   "negatives": [
+    {
+     "run": "7e4d6621",
+     "step": "s14",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: 'aqlbtl' != 'obut9v'; args.total_baggages: 1.0 != 2.0; args.nonfree_baggages: 1.0 != 0.0; args.payment_id: 'credit_card_9879898' != 'gift_card_6276644'"
+    },
+    {
+     "run": "1af0a871",
+     "step": "s14",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: 'aqlbtl' != 'obut9v'; args.total_baggages: 1.0 != 2.0; args.payment_id: 'gift_card_7480005' != 'gift_card_6276644'"
+    }
+   ],
+   "n_negatives": 2,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "22": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_3to4action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 0,
+   "failed": 1,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 1
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "update_reservation_flights",
+    "update_reservation_passengers",
+    "update_reservation_baggages"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "update_reservation_passengers",
+    "update_reservation_baggages"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 1,
+    "unverified|failed_run": 10,
+    "valid|failed_run": 1
+   },
+   "negatives": [
+    {
+     "run": "7fce58e6",
+     "step": "s20",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "duplicate successful update_reservation_baggages after the gold-matching one"
+    }
+   ],
+   "n_negatives": 1,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "23": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_3to4action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 3,
+   "terminations": {
+    "infrastructure_error": 3
+   },
+   "success": 0,
+   "failed": 0,
+   "success_rate": null,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "cancel_reservation",
+    "book_reservation",
+    "book_reservation",
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "cancel_reservation",
+    "book_reservation",
+    "book_reservation",
+    "book_reservation"
+   ],
+   "nl_assertions": 8,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {},
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "24": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_1action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 0,
+   "failed": 3,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "book_reservation"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 18,
+    "valid|failed_run": 2
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 3,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "25": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_25_topup/results.json",
+    "results/pilot/tasks_25_40_48/results.json",
+    "results/probe/new_batch1/results.json"
+   ],
+   "unique_sims": 26,
+   "infrastructure_or_no_reward": 4,
+   "terminations": {
+    "user_stop": 22,
+    "infrastructure_error": 4
+   },
+   "success": 19,
+   "failed": 3,
+   "success_rate": 0.864,
+   "distinct_successful": 19,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "book_reservation"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 2,
+    "unverified|failed_run": 48,
+    "unverified|success_run": 207,
+    "valid|failed_run": 1,
+    "valid|success_run": 19
+   },
+   "negatives": [
+    {
+     "run": "d7a124a4",
+     "step": "s40",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful cancel_reservation; the gold actions contain no cancel_reservation"
+    },
+    {
+     "run": "6f12b024",
+     "step": "s30",
+     "tool": "book_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": true,
+     "reason": "conflicts with gold action: args.flights: (('hat097', '2024-05-21'), ('hat267', '2024-05-21')) != (('hat097', '2024-05-17'), ('hat251', '2024-05-17')); args.payment_methods: (('credit_card_3563913', 171.0), ('gift_card_8516878', 128.0)) != (('credit_card_3563913', 247.0), ('gift_card_8516878', 128.0))"
+    }
+   ],
+   "n_negatives": 2,
+   "n_same_tool_negatives": 1,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 1,
+   "dev_use": "pilot; validation pair V4; NLI probe; tests",
+   "earlier_exposure": null
+  },
+  "26": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 1,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 1,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 4,
+    "valid|success_run": 1
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "27": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch1/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 3,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 3,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 20,
+    "valid|success_run": 4
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "28": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_28/results.json",
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 23,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 21,
+    "infrastructure_error": 2
+   },
+   "success": 21,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 16,
+   "exact_duplicate_groups": 2,
+   "exact_duplicate_extra_copies": 5,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [],
+   "gold_writes": [],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 65,
+    "valid|success_run": 21
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "29": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/batch_3to4action/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "user_stop": 2,
+    "infrastructure_error": 1
+   },
+   "success": 0,
+   "failed": 2,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "cancel_reservation",
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "cancel_reservation",
+    "book_reservation"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 3,
+    "unverified|failed_run": 21,
+    "valid|failed_run": 3
+   },
+   "negatives": [
+    {
+     "run": "9a0f8c29",
+     "step": "s24",
+     "tool": "book_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "duplicate successful book_reservation after the gold-matching one"
+    },
+    {
+     "run": "3de9f90f",
+     "step": "s20",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful update_reservation_flights; the gold actions contain no update_reservation_flights"
+    },
+    {
+     "run": "3de9f90f",
+     "step": "s22",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful update_reservation_baggages; the gold actions contain no update_reservation_baggages"
+    }
+   ],
+   "n_negatives": 3,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "30": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 1,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 1,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "search_direct_flight",
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 5,
+    "valid|success_run": 3
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "31": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 0,
+   "failed": 1,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 1
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 1,
+    "unverified|failed_run": 7
+   },
+   "negatives": [
+    {
+     "run": "357b4cd4",
+     "step": "s12",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_flights executed"
+    }
+   ],
+   "n_negatives": 1,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "32": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/task_32/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 0,
+   "failed": 3,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "search_direct_flight",
+    "update_reservation_flights",
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 10,
+    "valid|failed_run": 6
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 3,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "33": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/task_33/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "user_stop": 2,
+    "infrastructure_error": 1
+   },
+   "success": 0,
+   "failed": 2,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 2
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "search_direct_flight",
+    "search_direct_flight",
+    "update_reservation_flights",
+    "update_reservation_baggages"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "update_reservation_baggages"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 1,
+    "unverified|failed_run": 25,
+    "valid|failed_run": 4
+   },
+   "negatives": [
+    {
+     "run": "367813ae",
+     "step": "s26",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "duplicate successful update_reservation_baggages after the gold-matching one"
+    }
+   ],
+   "n_negatives": 1,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 1,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "34": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_34/results.json",
+    "results/pilot/task_34_topup/results.json",
+    "results/probe/ratelimit_tasks/results.json",
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 28,
+   "infrastructure_or_no_reward": 6,
+   "terminations": {
+    "user_stop": 22,
+    "infrastructure_error": 6
+   },
+   "success": 7,
+   "failed": 15,
+   "success_rate": 0.318,
+   "distinct_successful": 7,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 15
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "attempted_incorrect|failed_run": 2,
+    "incorrect|failed_run": 18,
+    "unverified|failed_run": 147,
+    "unverified|success_run": 62,
+    "valid|success_run": 3
+   },
+   "negatives": [
+    {
+     "run": "886c8342",
+     "step": "s20",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "1f26fb96",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "f46751f7",
+     "step": "s14",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "2a9a7a9b",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "961e1883",
+     "step": "s22",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "f9c4ac47",
+     "step": "s18",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_flights executed"
+    },
+    {
+     "run": "f9c4ac47",
+     "step": "s20",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_baggages executed"
+    },
+    {
+     "run": "878520c9",
+     "step": "s10",
+     "tool": "update_reservation_flights",
+     "label": "attempted_incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_flights attempted (tool error)"
+    },
+    {
+     "run": "878520c9",
+     "step": "s14",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "89213734",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "8526dbd8",
+     "step": "s28",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_flights executed"
+    },
+    {
+     "run": "8526dbd8",
+     "step": "s30",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_baggages executed"
+    },
+    {
+     "run": "9ef26bab",
+     "step": "s18",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "0c9db7b6",
+     "step": "s20",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "138de73e",
+     "step": "s22",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "8f55c91e",
+     "step": "s16",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "40eebde5",
+     "step": "s14",
+     "tool": "update_reservation_flights",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_flights executed"
+    },
+    {
+     "run": "40eebde5",
+     "step": "s16",
+     "tool": "update_reservation_baggages",
+     "label": "attempted_incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_baggages attempted (tool error)"
+    },
+    {
+     "run": "40eebde5",
+     "step": "s18",
+     "tool": "update_reservation_baggages",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; update_reservation_baggages executed"
+    },
+    {
+     "run": "6ea3b7da",
+     "step": "s16",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    }
+   ],
+   "n_negatives": 20,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": "validation pair V5; NLI probe",
+   "earlier_exposure": null
+  },
+  "35": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch1/results.json",
+    "results/probe/ratelimit_tasks/results.json"
+   ],
+   "unique_sims": 6,
+   "infrastructure_or_no_reward": 5,
+   "terminations": {
+    "infrastructure_error": 5,
+    "user_stop": 1
+   },
+   "success": 0,
+   "failed": 1,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 1
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "book_reservation"
+   ],
+   "gold_writes": [
+    "book_reservation"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 1,
+    "unverified|failed_run": 15,
+    "valid|failed_run": 1
+   },
+   "negatives": [
+    {
+     "run": "b846744a",
+     "step": "s30",
+     "tool": "book_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.flights: (('hat023', '2024-05-24'),) != (('hat069', '2024-05-24'), ('hat258', '2024-05-24')); args.passengers: (('aarav', 'ahmed', '1981-05-26'), ('daiki', 'li', '1980-12-24')) != (('aarav', 'ahmed', '1981-05-26'),); args.payment_methods: (('credit_card_9074831', 326.0),) != (('credit_card_9074831', 290.0),)"
+    }
+   ],
+   "n_negatives": 1,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "36": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch2/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 3,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 3,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 16,
+    "valid|success_run": 7
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "37": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_37/results.json",
+    "results/probe/batch_3to4action/results.json"
+   ],
+   "unique_sims": 23,
+   "infrastructure_or_no_reward": 1,
+   "terminations": {
+    "user_stop": 22,
+    "infrastructure_error": 1
+   },
+   "success": 0,
+   "failed": 22,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 1,
+   "exact_duplicate_extra_copies": 2,
+   "failed_reward_components": {
+    "DB": 22
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "search_direct_flight",
+    "search_direct_flight",
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 3,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 6,
+    "unverified|failed_run": 122,
+    "valid|failed_run": 41
+   },
+   "negatives": [
+    {
+     "run": "7deefe96",
+     "step": "s22",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful cancel_reservation; the gold actions contain no cancel_reservation"
+    },
+    {
+     "run": "d2db94da",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful cancel_reservation; the gold actions contain no cancel_reservation"
+    },
+    {
+     "run": "d8607d0a",
+     "step": "s24",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful cancel_reservation; the gold actions contain no cancel_reservation"
+    },
+    {
+     "run": "06ba801b",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful cancel_reservation; the gold actions contain no cancel_reservation"
+    },
+    {
+     "run": "c5ffcf31",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful cancel_reservation; the gold actions contain no cancel_reservation"
+    },
+    {
+     "run": "0d8a9378",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "successful cancel_reservation; the gold actions contain no cancel_reservation"
+    }
+   ],
+   "n_negatives": 6,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 16,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "38": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/task_38_topup1/results.json",
+    "results/pilot/task_38_topup2/results.json",
+    "results/pilot/tasks_1_3_9_38/results.json",
+    "results/probe/batch_2action/results.json"
+   ],
+   "unique_sims": 43,
+   "infrastructure_or_no_reward": 21,
+   "terminations": {
+    "user_stop": 22,
+    "infrastructure_error": 21
+   },
+   "success": 17,
+   "failed": 5,
+   "success_rate": 0.773,
+   "distinct_successful": 17,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 5
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 4,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 7,
+    "unverified|failed_run": 88,
+    "unverified|success_run": 204,
+    "valid|failed_run": 11,
+    "valid|success_run": 38
+   },
+   "negatives": [
+    {
+     "run": "ab924380",
+     "step": "s18",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "27315975",
+     "step": "s44",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "27315975",
+     "step": "s46",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "eceaa3f6",
+     "step": "s30",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "eceaa3f6",
+     "step": "s32",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "b1f37269",
+     "step": "s26",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    },
+    {
+     "run": "5c851a65",
+     "step": "s54",
+     "tool": "send_certificate",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; send_certificate executed"
+    }
+   ],
+   "n_negatives": 7,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": "validation pair V9; pilot cost screening",
+   "earlier_exposure": null
+  },
+  "39": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 0,
+   "failed": 1,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 1
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "cancel_reservation",
+    "cancel_reservation",
+    "cancel_reservation"
+   ],
+   "gold_writes": [
+    "cancel_reservation",
+    "cancel_reservation",
+    "cancel_reservation"
+   ],
+   "nl_assertions": 4,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 5,
+    "valid|failed_run": 5
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 1,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "40": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/tasks_25_40_48/results.json",
+    "results/probe/new_batch2/results.json"
+   ],
+   "unique_sims": 23,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 23
+   },
+   "success": 20,
+   "failed": 3,
+   "success_rate": 0.87,
+   "distinct_successful": 13,
+   "exact_duplicate_groups": 6,
+   "exact_duplicate_extra_copies": 8,
+   "failed_reward_components": {
+    "DB": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details",
+    "update_reservation_passengers"
+   ],
+   "gold_writes": [
+    "update_reservation_passengers"
+   ],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 1,
+    "unverified|failed_run": 13,
+    "unverified|success_run": 84,
+    "valid|failed_run": 3,
+    "valid|success_run": 40
+   },
+   "negatives": [
+    {
+     "run": "b4901df6",
+     "step": "s10",
+     "tool": "update_reservation_passengers",
+     "label": "incorrect",
+     "tool_in_successful_runs": true,
+     "reason": "conflicts with gold action: args.passengers: (('anya', 'garcia', '1992-11-12'), ('mei', 'garcia', '1992-07-15')) != (('anya', 'garcia', '1992-11-12'), ('mei', 'garcia', '1989-12-13'))"
+    }
+   ],
+   "n_negatives": 1,
+   "n_same_tool_negatives": 1,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 2,
+   "dev_use": "validation pair V3; NLI probe; tests",
+   "earlier_exposure": null
+  },
+  "41": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 1,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 1,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 2,
+    "valid|success_run": 7
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "42": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/ratelimit_tasks/results.json",
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 6,
+   "infrastructure_or_no_reward": 3,
+   "terminations": {
+    "user_stop": 3,
+    "infrastructure_error": 3
+   },
+   "success": 0,
+   "failed": 3,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "cancel_reservation",
+    "cancel_reservation"
+   ],
+   "gold_writes": [
+    "cancel_reservation",
+    "cancel_reservation"
+   ],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 4,
+    "unverified|failed_run": 14,
+    "valid|failed_run": 18
+   },
+   "negatives": [
+    {
+     "run": "ec3d7c00",
+     "step": "s14",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: 'hsr97w' != 'fdz0t5'"
+    },
+    {
+     "run": "cdd54c3d",
+     "step": "s18",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: 'hsr97w' != 'fdz0t5'"
+    },
+    {
+     "run": "69591e6d",
+     "step": "s22",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "conflicts with gold action: args.reservation_id: 'se9kel' != 'fdz0t5'"
+    },
+    {
+     "run": "69591e6d",
+     "step": "s26",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "duplicate successful cancel_reservation after the gold-matching one"
+    }
+   ],
+   "n_negatives": 4,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "43": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 1,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 1,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 3,
+    "valid|success_run": 6
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "44": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/ratelimit_tasks/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 0,
+   "failed": 3,
+   "success_rate": 0.0,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {
+    "DB": 3
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_user_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "get_reservation_details",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "search_direct_flight",
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights"
+   ],
+   "gold_writes": [
+    "update_reservation_flights",
+    "update_reservation_flights",
+    "update_reservation_flights"
+   ],
+   "nl_assertions": 5,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|failed_run": 20,
+    "valid|failed_run": 28
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 3,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "45": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch2/results.json",
+    "results/probe/ratelimit_tasks/results.json"
+   ],
+   "unique_sims": 6,
+   "infrastructure_or_no_reward": 6,
+   "terminations": {
+    "infrastructure_error": 6
+   },
+   "success": 0,
+   "failed": 0,
+   "success_rate": null,
+   "distinct_successful": 0,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 2,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {},
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "46": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/remaining_batch/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "user_stop": 1,
+    "infrastructure_error": 2
+   },
+   "success": 1,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 1,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 3,
+    "valid|success_run": 1
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "47": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch2/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 2,
+   "terminations": {
+    "infrastructure_error": 2,
+    "user_stop": 1
+   },
+   "success": 1,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 1,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 10,
+    "valid|success_run": 2
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  },
+  "48": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/pilot/tasks_25_40_48/results.json",
+    "results/probe/new_batch2/results.json"
+   ],
+   "unique_sims": 23,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 23
+   },
+   "success": 10,
+   "failed": 13,
+   "success_rate": 0.435,
+   "distinct_successful": 8,
+   "exact_duplicate_groups": 3,
+   "exact_duplicate_extra_copies": 4,
+   "failed_reward_components": {
+    "DB": 13
+   },
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "incorrect|failed_run": 13,
+    "unverified|failed_run": 59,
+    "unverified|success_run": 34,
+    "valid|failed_run": 13,
+    "valid|success_run": 20
+   },
+   "negatives": [
+    {
+     "run": "7f5cbcd7",
+     "step": "s6",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "b081606a",
+     "step": "s8",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "4a280c26",
+     "step": "s6",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "fc2b9a57",
+     "step": "s8",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "be82d372",
+     "step": "s8",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "a6fb29f3",
+     "step": "s6",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "fcce7c71",
+     "step": "s6",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "73c78a0d",
+     "step": "s18",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "d5456653",
+     "step": "s6",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "c4902f46",
+     "step": "s12",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "24ec2605",
+     "step": "s8",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "058388c8",
+     "step": "s6",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    },
+    {
+     "run": "afce6c04",
+     "step": "s10",
+     "tool": "cancel_reservation",
+     "label": "incorrect",
+     "tool_in_successful_runs": false,
+     "reason": "gold actions contain no write; cancel_reservation executed"
+    }
+   ],
+   "n_negatives": 13,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": "pilot; validation pairs V1,V2; NLI probe; v0.1 example; tests",
+   "earlier_exposure": null
+  },
+  "49": {
+   "regimes": [
+    "groq/openai/gpt-oss-20b T=0.0"
+   ],
+   "files": [
+    "results/probe/new_batch2/results.json"
+   ],
+   "unique_sims": 3,
+   "infrastructure_or_no_reward": 0,
+   "terminations": {
+    "user_stop": 3
+   },
+   "success": 3,
+   "failed": 0,
+   "success_rate": 1.0,
+   "distinct_successful": 3,
+   "exact_duplicate_groups": 0,
+   "exact_duplicate_extra_copies": 0,
+   "failed_reward_components": {},
+   "reward_basis": [
+    "DB",
+    "COMMUNICATE"
+   ],
+   "gold_actions": [
+    "get_reservation_details"
+   ],
+   "gold_writes": [],
+   "nl_assertions": 1,
+   "unbuildable_step_graphs": 0,
+   "rule_labels": {
+    "unverified|success_run": 9,
+    "valid|success_run": 6
+   },
+   "negatives": [],
+   "n_negatives": 0,
+   "n_same_tool_negatives": 0,
+   "successful_runs_with_rule_incorrect_step": 0,
+   "failed_runs_without_rule_incorrect_step": 0,
+   "dev_use": null,
+   "earlier_exposure": null
+  }
+ },
+ "tool_inventory": {
+  "1": {
+   "cancel_reservation|failed_run|ok": 2,
+   "get_flight_status|success_run|ok": 1,
+   "get_reservation_details|failed_run|ok": 2,
+   "get_reservation_details|success_run|error": 1,
+   "get_reservation_details|success_run|ok": 105,
+   "get_user_details|failed_run|ok": 2,
+   "get_user_details|success_run|ok": 22,
+   "search_direct_flight|success_run|ok": 3,
+   "search_onestop_flight|success_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 21
+  },
+  "2": {
+   "assistant<|channel|>json|failed_run|error": 4,
+   "book_reservation|failed_run|error": 1,
+   "book_reservation|failed_run|ok": 1,
+   "get_flight_number_for_reservation|success_run|error": 1,
+   "get_flight_status|failed_run|error": 1,
+   "get_flight_status|failed_run|ok": 7,
+   "get_reservation_details|failed_run|ok": 31,
+   "get_reservation_details|success_run|ok": 1,
+   "get_user_details|failed_run|error": 9,
+   "get_user_details|failed_run|ok": 28,
+   "get_user_details|success_run|error": 1,
+   "get_user_details|success_run|ok": 1,
+   "get_user_info<|channel|>commentary|failed_run|error": 1,
+   "list|failed_run|error": 1,
+   "list_all_airports|failed_run|ok": 1,
+   "search_direct_flight|failed_run|ok": 54,
+   "search_direct_flight|success_run|ok": 4,
+   "search_direct_flight<|channel|>commentary|failed_run|error": 9,
+   "search_onestop_flight|failed_run|error": 2,
+   "search_onestop_flight|failed_run|ok": 52,
+   "search_onestop_flight|success_run|ok": 3,
+   "send_certificate|failed_run|ok": 4,
+   "transfer_to_human_agents|failed_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 3,
+   "transfer_to_team|success_run|error": 1
+  },
+  "3": {
+   "get_reservation_details|failed_run|ok": 8,
+   "get_reservation_details|success_run|ok": 10,
+   "get_user_details|failed_run|ok": 2,
+   "get_user_details|success_run|ok": 11,
+   "transfer_to_human_agents|failed_run|ok": 4,
+   "transfer_to_human_agents|success_run|ok": 7,
+   "update_reservation_passengers|failed_run|error": 1
+  },
+  "4": {
+   "assistant<|channel|>json|failed_run|error": 1,
+   "get_flight_status|failed_run|error": 2,
+   "get_flight_status|success_run|error": 3,
+   "get_reservation_details|failed_run|ok": 22,
+   "get_reservation_details|success_run|error": 9,
+   "get_reservation_details|success_run|ok": 34,
+   "get_user_details|failed_run|error": 2,
+   "get_user_details|failed_run|ok": 10,
+   "get_user_details|success_run|error": 1,
+   "get_user_details|success_run|ok": 20,
+   "search_direct_flight|failed_run|ok": 1,
+   "search_direct_flight|success_run|ok": 1,
+   "send_certificate|failed_run|error": 2,
+   "send_certificate|failed_run|ok": 5,
+   "send_message|failed_run|error": 5,
+   "transfer|failed_run|error": 4,
+   "transfer|success_run|error": 1,
+   "transfer_to_human_agent|failed_run|error": 1,
+   "transfer_to_human_agents|failed_run|ok": 3,
+   "transfer_to_human_agents|success_run|error": 3,
+   "transfer_to_human_agents|success_run|ok": 15,
+   "transfer_to_human_agents<|channel|>commentary|success_run|error": 1
+  },
+  "5": {
+   "assistant/get_flight_status|failed_run|error": 2,
+   "assistant/get_flight_status<|channel|>commentary|failed_run|error": 5,
+   "assistant/get_user_details|failed_run|error": 1,
+   "assistant/get_user_details<|channel|>commentary|failed_run|error": 2,
+   "get_flight_status|success_run|ok": 2,
+   "get_user_details|failed_run|ok": 1,
+   "send_certificate|failed_run|error": 1,
+   "send_certificate|failed_run|ok": 1,
+   "transfer_to_human_agents|failed_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 6
+  },
+  "6": {},
+  "7": {
+   "cancel_reservation|failed_run|ok": 2,
+   "get_reservation_details|failed_run|ok": 12,
+   "get_user_details|failed_run|ok": 3,
+   "transfer_to_human_agents|failed_run|ok": 1,
+   "update_reservation_flights|failed_run|ok": 1
+  },
+  "8": {
+   "book_reservation|failed_run|error": 2,
+   "book_reservation|failed_run|ok": 1,
+   "get_user_details|failed_run|ok": 2,
+   "search_direct_flight|failed_run|ok": 4,
+   "search_onestop_flight|failed_run|ok": 1
+  },
+  "9": {
+   "cancel_reservation|failed_run|ok": 6,
+   "get_flight_status|failed_run|ok": 1,
+   "get_flight_status|success_run|ok": 5,
+   "get_reservation_details|failed_run|ok": 12,
+   "get_reservation_details|success_run|ok": 40,
+   "get_user_details|failed_run|ok": 2,
+   "get_user_details|success_run|ok": 6,
+   "search_direct_flight|failed_run|ok": 8,
+   "search_direct_flight|success_run|ok": 11,
+   "search_onestop_flight|failed_run|ok": 3,
+   "transfer_to_human_agents|failed_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 16,
+   "update_reservation_flights|failed_run|ok": 2
+  },
+  "10": {},
+  "11": {
+   "transfer_to_human_agents|failed_run|ok": 3
+  },
+  "12": {
+   "get_reservation_details|success_run|ok": 1,
+   "search_direct_flight|success_run|ok": 2,
+   "update_reservation_baggages|success_run|ok": 1
+  },
+  "13": {
+   "get_reservation_details|success_run|ok": 3,
+   "transfer_to_human_agents|success_run|ok": 3
+  },
+  "14": {
+   "transfer_to_human_agents|failed_run|ok": 2
+  },
+  "15": {
+   "get_flight_status|success_run|ok": 1,
+   "get_reservation_details|success_run|ok": 3,
+   "get_user_details|success_run|ok": 3,
+   "search_direct_flight|success_run|ok": 6,
+   "search_onestop_flight|success_run|ok": 6,
+   "update_reservation_flights|success_run|ok": 3
+  },
+  "16": {
+   "get_reservation_details|success_run|ok": 3,
+   "get_user_details|success_run|ok": 3,
+   "search_direct_flight|success_run|ok": 3,
+   "search_onestop_flight|success_run|ok": 3,
+   "update_reservation_flights|success_run|ok": 3
+  },
+  "17": {
+   "get_reservation_details|failed_run|ok": 1,
+   "get_user_details|failed_run|ok": 1,
+   "update_reservation_baggages|failed_run|ok": 1,
+   "update_reservation_passengers|failed_run|ok": 1
+  },
+  "18": {
+   "get_flight_status|failed_run|ok": 2,
+   "get_reservation_details|failed_run|ok": 4,
+   "get_user_details|failed_run|ok": 1,
+   "search_direct_flight|failed_run|ok": 1,
+   "transfer_to_human_agents|failed_run|ok": 1,
+   "update_reservation_flights|failed_run|error": 1
+  },
+  "19": {
+   "get_reservation_details|failed_run|ok": 4,
+   "get_user_details|failed_run|error": 2,
+   "get_user_details|failed_run|ok": 2,
+   "transfer_to_human_agents|failed_run|ok": 2
+  },
+  "20": {
+   "get_user_details|failed_run|error": 1,
+   "get_user_details|failed_run|ok": 2,
+   "search_direct_flight|failed_run|ok": 1,
+   "search_onestop_flight|failed_run|ok": 1,
+   "transfer_to_human_agents|failed_run|ok": 1
+  },
+  "21": {
+   "get_reservation_details|failed_run|ok": 4,
+   "get_user_details|failed_run|ok": 2,
+   "search_direct_flight|failed_run|ok": 2,
+   "update_reservation_baggages|failed_run|ok": 2
+  },
+  "22": {
+   "get_reservation_details|failed_run|ok": 3,
+   "get_user_details|failed_run|ok": 1,
+   "update_reservation_baggages|failed_run|ok": 1,
+   "update_reservation_passengers|failed_run|ok": 1
+  },
+  "23": {},
+  "24": {
+   "get_reservation_details|failed_run|ok": 1,
+   "get_user_details|failed_run|ok": 3,
+   "transfer_to_human_agents|failed_run|ok": 3
+  },
+  "25": {
+   "book_reservation|failed_run|error": 8,
+   "book_reservation|failed_run|ok": 1,
+   "book_reservation|success_run|error": 39,
+   "book_reservation|success_run|ok": 19,
+   "cancel_reservation|failed_run|ok": 1,
+   "get_flight_status|failed_run|ok": 4,
+   "get_flight_status|success_run|ok": 2,
+   "get_reservation_details|failed_run|ok": 3,
+   "get_reservation_details|success_run|ok": 19,
+   "get_user_details|failed_run|error": 2,
+   "get_user_details|failed_run|ok": 3,
+   "get_user_details|success_run|error": 17,
+   "get_user_details|success_run|ok": 21,
+   "search_direct_flight|failed_run|ok": 4,
+   "search_direct_flight|success_run|ok": 8,
+   "search_onestop_flight|success_run|ok": 1,
+   "transfer_to_human_agents|failed_run|ok": 1
+  },
+  "26": {
+   "get_reservation_details|success_run|ok": 1,
+   "get_user_details|success_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 1
+  },
+  "27": {
+   "get_flight_status|success_run|ok": 3,
+   "get_reservation_details|success_run|error": 1,
+   "get_reservation_details|success_run|ok": 3,
+   "get_user_details|success_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 3
+  },
+  "28": {
+   "get_reservation_details|success_run|ok": 20,
+   "transfer_to_human_agents|success_run|ok": 21
+  },
+  "29": {
+   "book_reservation|failed_run|error": 2,
+   "book_reservation|failed_run|ok": 1,
+   "cancel_reservation|failed_run|ok": 1,
+   "get_flight_status|failed_run|ok": 1,
+   "get_reservation_details|failed_run|ok": 2,
+   "get_user_details|failed_run|ok": 2,
+   "search_direct_flight|failed_run|ok": 7,
+   "update_reservation_baggages|failed_run|ok": 1,
+   "update_reservation_flights|failed_run|ok": 1
+  },
+  "30": {
+   "get_reservation_details|success_run|ok": 1,
+   "get_user_details|success_run|ok": 1,
+   "search_direct_flight|success_run|ok": 1,
+   "update_reservation_flights|success_run|ok": 1
+  },
+  "31": {
+   "get_reservation_details|failed_run|ok": 1,
+   "get_user_details|failed_run|ok": 1,
+   "search_direct_flight|failed_run|ok": 1,
+   "update_reservation_flights|failed_run|ok": 1
+  },
+  "32": {
+   "get_reservation_details|failed_run|ok": 2,
+   "get_user_details|failed_run|ok": 2,
+   "transfer_to_human_agents|failed_run|ok": 3
+  },
+  "33": {
+   "get_reservation_details|failed_run|ok": 2,
+   "get_user_details|failed_run|ok": 2,
+   "search_direct_flight|failed_run|ok": 5,
+   "update_reservation_baggages|failed_run|ok": 1,
+   "update_reservation_flights|failed_run|ok": 1
+  },
+  "34": {
+   "cancel_reservation|failed_run|ok": 12,
+   "get_flight_status|success_run|ok": 1,
+   "get_reservation_details|failed_run|ok": 15,
+   "get_reservation_details|success_run|ok": 6,
+   "get_user_details|failed_run|ok": 10,
+   "get_user_details|success_run|ok": 4,
+   "search_direct_flight|failed_run|ok": 31,
+   "search_direct_flight|success_run|ok": 15,
+   "transfer_to_human_agents|success_run|ok": 3,
+   "update_reservation_baggages|failed_run|error": 1,
+   "update_reservation_baggages|failed_run|ok": 3,
+   "update_reservation_flights|failed_run|error": 1,
+   "update_reservation_flights|failed_run|ok": 3
+  },
+  "35": {
+   "book_reservation|failed_run|error": 1,
+   "book_reservation|failed_run|ok": 1,
+   "get_flight_status|failed_run|ok": 1,
+   "get_reservation_details|failed_run|ok": 1,
+   "get_user_details|failed_run|ok": 1,
+   "search_direct_flight|failed_run|ok": 1,
+   "transfer_to_human_agents|failed_run|ok": 1
+  },
+  "36": {
+   "get_reservation_details|success_run|ok": 3,
+   "search_direct_flight|success_run|ok": 4,
+   "transfer_to_human_agents|success_run|ok": 4
+  },
+  "37": {
+   "cancel_reservation|failed_run|ok": 6,
+   "get_flight_status|failed_run|ok": 12,
+   "get_reservation_details|failed_run|ok": 41,
+   "get_user_details|failed_run|ok": 12,
+   "search_direct_flight|failed_run|ok": 9,
+   "transfer_to_human_agents|failed_run|ok": 20,
+   "update_reservation_flights|failed_run|error": 1,
+   "update_reservation_flights|failed_run|ok": 5
+  },
+  "38": {
+   "cancel_reservation|failed_run|ok": 2,
+   "get_flight_status|failed_run|ok": 16,
+   "get_flight_status|success_run|error": 1,
+   "get_flight_status|success_run|ok": 28,
+   "get_reservation_details|failed_run|ok": 9,
+   "get_reservation_details|success_run|ok": 24,
+   "get_user_details|failed_run|error": 4,
+   "get_user_details|failed_run|ok": 5,
+   "get_user_details|success_run|error": 3,
+   "get_user_details|success_run|ok": 17,
+   "search_direct_flight|success_run|ok": 1,
+   "send_certificate|failed_run|ok": 5,
+   "transfer_to_human_agents|failed_run|ok": 2,
+   "transfer_to_human_agents|success_run|ok": 11
+  },
+  "39": {
+   "get_flight_status|failed_run|ok": 3,
+   "get_reservation_details|failed_run|ok": 3,
+   "get_user_details|failed_run|ok": 1,
+   "transfer_to_human_agents|failed_run|ok": 1
+  },
+  "40": {
+   "get_reservation_details|failed_run|ok": 1,
+   "get_reservation_details|success_run|ok": 20,
+   "transfer_to_human_agents|failed_run|ok": 2,
+   "update_reservation_passengers|failed_run|ok": 1,
+   "update_reservation_passengers|success_run|ok": 20
+  },
+  "41": {
+   "get_reservation_details|success_run|ok": 5,
+   "get_user_details|success_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 1
+  },
+  "42": {
+   "cancel_reservation|failed_run|ok": 5,
+   "get_flight_status|failed_run|ok": 3,
+   "get_reservation_details|failed_run|ok": 14,
+   "get_user_details|failed_run|ok": 3
+  },
+  "43": {
+   "get_reservation_details|success_run|ok": 4,
+   "get_user_details|success_run|ok": 1,
+   "search_direct_flight|success_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 1
+  },
+  "44": {
+   "get_flight_status|failed_run|ok": 2,
+   "get_reservation_details|failed_run|ok": 15,
+   "get_user_details|failed_run|ok": 3,
+   "search_direct_flight|failed_run|ok": 9,
+   "transfer_to_human_agents|failed_run|ok": 1
+  },
+  "45": {},
+  "46": {
+   "transfer_to_human_agents|success_run|ok": 1
+  },
+  "47": {
+   "get_reservation_details|success_run|ok": 1,
+   "get_user_details|success_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 1
+  },
+  "48": {
+   "cancel_reservation|failed_run|ok": 13,
+   "get_flight_status|failed_run|ok": 1,
+   "get_reservation_details|failed_run|ok": 13,
+   "get_reservation_details|success_run|ok": 10,
+   "get_user_details|failed_run|ok": 1,
+   "get_user_details|success_run|ok": 1,
+   "transfer_to_human_agents|success_run|ok": 10
+  },
+  "49": {
+   "get_reservation_details|success_run|ok": 3,
+   "transfer_to_human_agents|success_run|ok": 3
+  }
+ }
+}

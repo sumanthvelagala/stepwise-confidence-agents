@@ -1,0 +1,16 @@
+{
+  "model": "microsoft/deberta-large-mnli",
+  "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+  "device": "mps",
+  "encoding": "code_sep_string",
+  "overlength": "truncate",
+  "entailment_index": 2,
+  "id2label": {
+    "0": "CONTRADICTION",
+    "1": "NEUTRAL",
+    "2": "ENTAILMENT"
+  },
+  "max_length": 512,
+  "torch": "2.14.1",
+  "transformers": "5.21.0"
+}

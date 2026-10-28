@@ -1,0 +1,6230 @@
+{
+ "plan": "gibs/validation/c4_plan.md",
+ "tasks": {
+  "48": {
+   "n_success": 10,
+   "n_failed": 13,
+   "cost_C4": {
+    "seconds": 0.7,
+    "nli_forward_passes_uncached": 0,
+    "nli_directional_pairs_requested": 5096,
+    "n_mcs_runs": 220
+   },
+   "label_counts": {
+    "success|unverified": 34,
+    "success|valid": 20,
+    "failed|unverified": 59,
+    "failed|valid": 13,
+    "failed|incorrect": 13
+   },
+   "distributions": {
+    "A|node|unverified|success": {
+     "n": 34,
+     "mean": 0.49,
+     "median": 0.444,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 10,
+      "[.25,.5)": 5,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "A|node|valid|success": {
+     "n": 20,
+     "mean": 0.967,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 16
+     }
+    },
+    "A|node|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.933,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 6
+     }
+    },
+    "A|node|valid:message|success": {
+     "n": 10,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "A|node|unverified|failed": {
+     "n": 59,
+     "mean": 0.359,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 31,
+      "(0,.25)": 3,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 15
+     }
+    },
+    "A|node|valid|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "A|node|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "A|node|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|ctx|unverified|success": {
+     "n": 34,
+     "mean": 0.487,
+     "median": 0.444,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 4,
+      "(0,.25)": 9,
+      "[.25,.5)": 5,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "A|ctx|valid|success": {
+     "n": 20,
+     "mean": 0.967,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 16
+     }
+    },
+    "A|ctx|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.933,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 6
+     }
+    },
+    "A|ctx|valid:message|success": {
+     "n": 10,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "A|ctx|unverified|failed": {
+     "n": 59,
+     "mean": 0.359,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 31,
+      "(0,.25)": 3,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 15
+     }
+    },
+    "A|ctx|valid|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "A|ctx|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "A|ctx|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|unverified|success": {
+     "n": 34,
+     "mean": 0.477,
+     "median": 0.556,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 4,
+      "(0,.25)": 3,
+      "[.25,.5)": 7,
+      "[.5,.75)": 16,
+      "[.75,1)": 3,
+      "1": 1
+     }
+    },
+    "C0|node|valid|success": {
+     "n": 20,
+     "mean": 0.545,
+     "median": 0.556,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 2,
+      "[.25,.5)": 3,
+      "[.5,.75)": 10,
+      "[.75,1)": 3,
+      "1": 1
+     }
+    },
+    "C0|node|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.422,
+     "median": 0.556,
+     "min": 0.0,
+     "max": 0.667,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 2,
+      "[.25,.5)": 1,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|valid:message|success": {
+     "n": 10,
+     "mean": 0.667,
+     "median": 0.556,
+     "min": 0.444,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 2,
+      "[.5,.75)": 4,
+      "[.75,1)": 3,
+      "1": 1
+     }
+    },
+    "C0|node|unverified|failed": {
+     "n": 59,
+     "mean": 0.322,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 35,
+      "(0,.25)": 1,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 13
+     }
+    },
+    "C0|node|valid|failed": {
+     "n": 13,
+     "mean": 0.508,
+     "median": 0.6,
+     "min": 0.3,
+     "max": 0.6,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.508,
+     "median": 0.6,
+     "min": 0.3,
+     "max": 0.6,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|unverified|success": {
+     "n": 34,
+     "mean": 0.294,
+     "median": 0.333,
+     "min": 0.0,
+     "max": 0.556,
+     "bins": {
+      "0": 10,
+      "(0,.25)": 7,
+      "[.25,.5)": 5,
+      "[.5,.75)": 12,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid|success": {
+     "n": 20,
+     "mean": 0.545,
+     "median": 0.556,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 2,
+      "[.25,.5)": 3,
+      "[.5,.75)": 10,
+      "[.75,1)": 3,
+      "1": 1
+     }
+    },
+    "C0|ctx|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.422,
+     "median": 0.556,
+     "min": 0.0,
+     "max": 0.667,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 2,
+      "[.25,.5)": 1,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid:message|success": {
+     "n": 10,
+     "mean": 0.667,
+     "median": 0.556,
+     "min": 0.444,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 2,
+      "[.5,.75)": 4,
+      "[.75,1)": 3,
+      "1": 1
+     }
+    },
+    "C0|ctx|unverified|failed": {
+     "n": 59,
+     "mean": 0.32,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 36,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 13
+     }
+    },
+    "C0|ctx|valid|failed": {
+     "n": 13,
+     "mean": 0.508,
+     "median": 0.6,
+     "min": 0.3,
+     "max": 0.6,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.508,
+     "median": 0.6,
+     "min": 0.3,
+     "max": 0.6,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|unverified|success": {
+     "n": 34,
+     "mean": 0.752,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 0,
+      "[.25,.5)": 5,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 20
+     }
+    },
+    "C3|node|valid|success": {
+     "n": 20,
+     "mean": 0.778,
+     "median": 0.889,
+     "min": 0.222,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 2,
+      "[.25,.5)": 1,
+      "[.5,.75)": 6,
+      "[.75,1)": 1,
+      "1": 10
+     }
+    },
+    "C3|node|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.556,
+     "median": 0.667,
+     "min": 0.222,
+     "max": 0.778,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 2,
+      "[.25,.5)": 1,
+      "[.5,.75)": 6,
+      "[.75,1)": 1,
+      "1": 0
+     }
+    },
+    "C3|node|valid:message|success": {
+     "n": 10,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "C3|node|unverified|failed": {
+     "n": 59,
+     "mean": 0.322,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 35,
+      "(0,.25)": 1,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 13
+     }
+    },
+    "C3|node|valid|failed": {
+     "n": 13,
+     "mean": 0.577,
+     "median": 0.7,
+     "min": 0.3,
+     "max": 0.7,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.577,
+     "median": 0.7,
+     "min": 0.3,
+     "max": 0.7,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|unverified|success": {
+     "n": 34,
+     "mean": 0.471,
+     "median": 0.444,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 9,
+      "(0,.25)": 4,
+      "[.25,.5)": 5,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "C3|ctx|valid|success": {
+     "n": 20,
+     "mean": 0.778,
+     "median": 0.889,
+     "min": 0.222,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 2,
+      "[.25,.5)": 1,
+      "[.5,.75)": 6,
+      "[.75,1)": 1,
+      "1": 10
+     }
+    },
+    "C3|ctx|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.556,
+     "median": 0.667,
+     "min": 0.222,
+     "max": 0.778,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 2,
+      "[.25,.5)": 1,
+      "[.5,.75)": 6,
+      "[.75,1)": 1,
+      "1": 0
+     }
+    },
+    "C3|ctx|valid:message|success": {
+     "n": 10,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "C3|ctx|unverified|failed": {
+     "n": 59,
+     "mean": 0.32,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 36,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 13
+     }
+    },
+    "C3|ctx|valid|failed": {
+     "n": 13,
+     "mean": 0.577,
+     "median": 0.7,
+     "min": 0.3,
+     "max": 0.7,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.577,
+     "median": 0.7,
+     "min": 0.3,
+     "max": 0.7,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 4,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|unverified|success": {
+     "n": 34,
+     "mean": 0.49,
+     "median": 0.444,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 10,
+      "[.25,.5)": 5,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "C4|node|valid|success": {
+     "n": 20,
+     "mean": 0.967,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 16
+     }
+    },
+    "C4|node|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.933,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 6
+     }
+    },
+    "C4|node|valid:message|success": {
+     "n": 10,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "C4|node|unverified|failed": {
+     "n": 59,
+     "mean": 0.325,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 33,
+      "(0,.25)": 3,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 13
+     }
+    },
+    "C4|node|valid|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "C4|node|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "C4|node|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|unverified|success": {
+     "n": 34,
+     "mean": 0.487,
+     "median": 0.444,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 4,
+      "(0,.25)": 9,
+      "[.25,.5)": 5,
+      "[.5,.75)": 6,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "C4|ctx|valid|success": {
+     "n": 20,
+     "mean": 0.967,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 16
+     }
+    },
+    "C4|ctx|valid:get_reservation_details|success": {
+     "n": 10,
+     "mean": 0.933,
+     "median": 1.0,
+     "min": 0.667,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 1,
+      "[.75,1)": 3,
+      "1": 6
+     }
+    },
+    "C4|ctx|valid:message|success": {
+     "n": 10,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 10
+     }
+    },
+    "C4|ctx|unverified|failed": {
+     "n": 59,
+     "mean": 0.325,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 33,
+      "(0,.25)": 3,
+      "[.25,.5)": 0,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 13
+     }
+    },
+    "C4|ctx|valid|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "C4|ctx|valid:get_reservation_details|failed": {
+     "n": 13,
+     "mean": 0.969,
+     "median": 1.0,
+     "min": 0.9,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 4,
+      "1": 9
+     }
+    },
+    "C4|ctx|incorrect|failed": {
+     "n": 13,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    }
+   },
+   "unexpected": [
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "07ec0bf6",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "59810305",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.333,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "5b5eaa71",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "655b2a43",
+     "success": true,
+     "step": "s10",
+     "label": "valid",
+     "value": 0.444,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "78c107ed",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "aa08e645",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.444,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "058388c8",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "4a280c26",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "d5456653",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "fcce7c71",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "07ec0bf6",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "59810305",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.333,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "5b5eaa71",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "655b2a43",
+     "success": true,
+     "step": "s10",
+     "label": "valid",
+     "value": 0.444,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "78c107ed",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "aa08e645",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.444,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "058388c8",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "4a280c26",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "d5456653",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "fcce7c71",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "07ec0bf6",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "59810305",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.333,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "78c107ed",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "058388c8",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "4a280c26",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "d5456653",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "fcce7c71",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "07ec0bf6",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "59810305",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.333,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "78c107ed",
+     "success": true,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.222,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "058388c8",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "4a280c26",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "d5456653",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "fcce7c71",
+     "success": false,
+     "step": "s2",
+     "label": "valid",
+     "value": 0.3,
+     "text": "Call get_reservation_details with reservation_id = 3RK2T9."
+    }
+   ],
+   "c4_vs_c3": {
+    "node": {
+     "steps": 139,
+     "increased": 26,
+     "decreased": 10,
+     "mean_change": 0.001,
+     "by_label": {
+      "valid": {
+       "increased": 22,
+       "decreased": 0,
+       "mean_change": 0.269
+      },
+      "incorrect": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "unverified": {
+       "increased": 4,
+       "decreased": 10,
+       "mean_change": -0.093
+      }
+     }
+    },
+    "ctx": {
+     "steps": 139,
+     "increased": 30,
+     "decreased": 0,
+     "mean_change": 0.07,
+     "by_label": {
+      "valid": {
+       "increased": 22,
+       "decreased": 0,
+       "mean_change": 0.269
+      },
+      "incorrect": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "unverified": {
+       "increased": 8,
+       "decreased": 0,
+       "mean_change": 0.009
+      }
+     }
+    }
+   },
+   "auroc": {
+    "A|node": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 1.0
+    },
+    "A|ctx": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 1.0
+    },
+    "C0|node": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 0.985
+    },
+    "C0|ctx": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 0.985
+    },
+    "C3|node": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 1.0
+    },
+    "C3|ctx": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 1.0
+    },
+    "C4|node": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 1.0
+    },
+    "C4|ctx": {
+     "n_pos": 33,
+     "n_neg": 13,
+     "auroc": 1.0
+    }
+   },
+   "curve_C4": {
+    "node": {
+     "1": {
+      "mean_abs_dev_from_full": 0.1048,
+      "mean_valid": 0.96,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.029
+     },
+     "2": {
+      "mean_abs_dev_from_full": 0.0659,
+      "mean_valid": 0.966,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.001
+     },
+     "3": {
+      "mean_abs_dev_from_full": 0.0535,
+      "mean_valid": 0.967,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.004
+     },
+     "5": {
+      "mean_abs_dev_from_full": 0.0339,
+      "mean_valid": 0.968,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.003
+     },
+     "8": {
+      "mean_abs_dev_from_full": 0.0145,
+      "mean_valid": 0.968,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.0
+     },
+     "all": {
+      "mean_abs_dev_from_full": 0.0,
+      "mean_valid": 0.968,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.0
+     }
+    },
+    "ctx": {
+     "1": {
+      "mean_abs_dev_from_full": 0.1023,
+      "mean_valid": 0.964,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.026
+     },
+     "2": {
+      "mean_abs_dev_from_full": 0.0651,
+      "mean_valid": 0.967,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.002
+     },
+     "3": {
+      "mean_abs_dev_from_full": 0.0529,
+      "mean_valid": 0.966,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.006
+     },
+     "5": {
+      "mean_abs_dev_from_full": 0.0333,
+      "mean_valid": 0.966,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.002
+     },
+     "8": {
+      "mean_abs_dev_from_full": 0.0142,
+      "mean_valid": 0.968,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.0
+     },
+     "all": {
+      "mean_abs_dev_from_full": 0.0,
+      "mean_valid": 0.968,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.0
+     }
+    }
+   },
+   "drift": {
+    "A": {
+     "pairs": 606,
+     "mean": 0.031,
+     "share_gt_0.25": 0.005,
+     "share_gt_0.5": 0.0
+    },
+    "C0": {
+     "pairs": 500,
+     "mean": 0.034,
+     "share_gt_0.25": 0.006,
+     "share_gt_0.5": 0.0
+    },
+    "C3": {
+     "pairs": 635,
+     "mean": 0.029,
+     "share_gt_0.25": 0.005,
+     "share_gt_0.5": 0.0
+    },
+    "C4": {
+     "pairs": 642,
+     "mean": 0.029,
+     "share_gt_0.25": 0.005,
+     "share_gt_0.5": 0.0
+    }
+   },
+   "safety": {
+    "A": {
+     "same_kind_message": 387,
+     "same_tool_compatible": 219,
+     "cross_kind": 56
+    },
+    "C0": {
+     "same_kind_message": 335,
+     "same_tool_compatible": 165
+    },
+    "C3": {
+     "same_kind_message": 419,
+     "same_tool_compatible": 216
+    },
+    "C4": {
+     "same_kind_message": 423,
+     "same_tool_compatible": 219
+    }
+   },
+   "lookup_groups_T48": {
+    "A": {
+     "LxL": {
+      "pairs": 84,
+      "rate": 1.0
+     },
+     "LxO": {
+      "pairs": 60,
+      "rate": 1.0
+     },
+     "OxL": {
+      "pairs": 48,
+      "rate": 1.0
+     },
+     "OxO": {
+      "pairs": 28,
+      "rate": 0.643
+     }
+    },
+    "C0": {
+     "LxL": {
+      "pairs": 84,
+      "rate": 1.0
+     },
+     "LxO": {
+      "pairs": 60,
+      "rate": 0.017
+     },
+     "OxL": {
+      "pairs": 48,
+      "rate": 0.021
+     },
+     "OxO": {
+      "pairs": 28,
+      "rate": 0.643
+     }
+    },
+    "C3": {
+     "LxL": {
+      "pairs": 84,
+      "rate": 1.0
+     },
+     "LxO": {
+      "pairs": 60,
+      "rate": 0.267
+     },
+     "OxL": {
+      "pairs": 48,
+      "rate": 0.146
+     },
+     "OxO": {
+      "pairs": 28,
+      "rate": 0.643
+     }
+    },
+    "C4": {
+     "LxL": {
+      "pairs": 84,
+      "rate": 1.0
+     },
+     "LxO": {
+      "pairs": 60,
+      "rate": 1.0
+     },
+     "OxL": {
+      "pairs": 48,
+      "rate": 1.0
+     },
+     "OxO": {
+      "pairs": 28,
+      "rate": 0.643
+     }
+    }
+   }
+  },
+  "9": {
+   "n_success": 17,
+   "n_failed": 4,
+   "cost_C4": {
+    "seconds": 2.0,
+    "nli_forward_passes_uncached": 0,
+    "nli_directional_pairs_requested": 11416,
+    "n_mcs_runs": 340
+   },
+   "label_counts": {
+    "success|unverified": 103,
+    "success|valid": 23,
+    "failed|unverified": 41,
+    "failed|valid": 4,
+    "failed|incorrect": 8
+   },
+   "distributions": {
+    "A|node|unverified|success": {
+     "n": 103,
+     "mean": 0.612,
+     "median": 0.688,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 7,
+      "(0,.25)": 10,
+      "[.25,.5)": 13,
+      "[.5,.75)": 37,
+      "[.75,1)": 18,
+      "1": 18
+     }
+    },
+    "A|node|valid|success": {
+     "n": 23,
+     "mean": 0.802,
+     "median": 1.0,
+     "min": 0.5,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "A|node|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.5,
+     "median": 0.5,
+     "min": 0.5,
+     "max": 0.5,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|node|valid:message|success": {
+     "n": 14,
+     "mean": 0.996,
+     "median": 1.0,
+     "min": 0.938,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "A|node|unverified|failed": {
+     "n": 41,
+     "mean": 0.392,
+     "median": 0.176,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 14,
+      "(0,.25)": 7,
+      "[.25,.5)": 2,
+      "[.5,.75)": 9,
+      "[.75,1)": 5,
+      "1": 4
+     }
+    },
+    "A|node|valid|failed": {
+     "n": 4,
+     "mean": 0.514,
+     "median": 0.529,
+     "min": 0.471,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 1,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|node|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.514,
+     "median": 0.529,
+     "min": 0.471,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 1,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|node|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|ctx|unverified|success": {
+     "n": 103,
+     "mean": 0.612,
+     "median": 0.688,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 7,
+      "(0,.25)": 10,
+      "[.25,.5)": 13,
+      "[.5,.75)": 37,
+      "[.75,1)": 18,
+      "1": 18
+     }
+    },
+    "A|ctx|valid|success": {
+     "n": 23,
+     "mean": 0.802,
+     "median": 1.0,
+     "min": 0.5,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "A|ctx|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.5,
+     "median": 0.5,
+     "min": 0.5,
+     "max": 0.5,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|ctx|valid:message|success": {
+     "n": 14,
+     "mean": 0.996,
+     "median": 1.0,
+     "min": 0.938,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "A|ctx|unverified|failed": {
+     "n": 41,
+     "mean": 0.392,
+     "median": 0.176,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 14,
+      "(0,.25)": 7,
+      "[.25,.5)": 2,
+      "[.5,.75)": 9,
+      "[.75,1)": 5,
+      "1": 4
+     }
+    },
+    "A|ctx|valid|failed": {
+     "n": 4,
+     "mean": 0.514,
+     "median": 0.529,
+     "min": 0.471,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 1,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|ctx|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.514,
+     "median": 0.529,
+     "min": 0.471,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 1,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|ctx|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|unverified|success": {
+     "n": 103,
+     "mean": 0.582,
+     "median": 0.688,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 11,
+      "[.25,.5)": 14,
+      "[.5,.75)": 38,
+      "[.75,1)": 26,
+      "1": 6
+     }
+    },
+    "C0|node|valid|success": {
+     "n": 23,
+     "mean": 0.372,
+     "median": 0.5,
+     "min": 0.0,
+     "max": 0.562,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 4,
+      "[.25,.5)": 6,
+      "[.5,.75)": 12,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.5,
+     "median": 0.5,
+     "min": 0.5,
+     "max": 0.5,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|valid:message|success": {
+     "n": 14,
+     "mean": 0.29,
+     "median": 0.281,
+     "min": 0.0,
+     "max": 0.562,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 4,
+      "[.25,.5)": 6,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|unverified|failed": {
+     "n": 41,
+     "mean": 0.364,
+     "median": 0.059,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 16,
+      "(0,.25)": 6,
+      "[.25,.5)": 2,
+      "[.5,.75)": 9,
+      "[.75,1)": 5,
+      "1": 3
+     }
+    },
+    "C0|node|valid|failed": {
+     "n": 4,
+     "mean": 0.514,
+     "median": 0.529,
+     "min": 0.471,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 1,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.514,
+     "median": 0.529,
+     "min": 0.471,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 1,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|unverified|success": {
+     "n": 103,
+     "mean": 0.402,
+     "median": 0.438,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 16,
+      "(0,.25)": 32,
+      "[.25,.5)": 5,
+      "[.5,.75)": 28,
+      "[.75,1)": 16,
+      "1": 6
+     }
+    },
+    "C0|ctx|valid|success": {
+     "n": 23,
+     "mean": 0.326,
+     "median": 0.375,
+     "min": 0.0,
+     "max": 0.562,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 4,
+      "[.25,.5)": 6,
+      "[.5,.75)": 10,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.389,
+     "median": 0.5,
+     "min": 0.0,
+     "max": 0.5,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 7,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid:message|success": {
+     "n": 14,
+     "mean": 0.286,
+     "median": 0.281,
+     "min": 0.0,
+     "max": 0.562,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 4,
+      "[.25,.5)": 6,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|unverified|failed": {
+     "n": 41,
+     "mean": 0.254,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 24,
+      "(0,.25)": 3,
+      "[.25,.5)": 1,
+      "[.5,.75)": 7,
+      "[.75,1)": 3,
+      "1": 3
+     }
+    },
+    "C0|ctx|valid|failed": {
+     "n": 4,
+     "mean": 0.397,
+     "median": 0.529,
+     "min": 0.0,
+     "max": 0.529,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.397,
+     "median": 0.529,
+     "min": 0.0,
+     "max": 0.529,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|unverified|success": {
+     "n": 103,
+     "mean": 0.716,
+     "median": 0.75,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 7,
+      "(0,.25)": 4,
+      "[.25,.5)": 6,
+      "[.5,.75)": 34,
+      "[.75,1)": 35,
+      "1": 17
+     }
+    },
+    "C3|node|valid|success": {
+     "n": 23,
+     "mean": 0.802,
+     "median": 1.0,
+     "min": 0.5,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "C3|node|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.5,
+     "median": 0.5,
+     "min": 0.5,
+     "max": 0.5,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|valid:message|success": {
+     "n": 14,
+     "mean": 0.996,
+     "median": 1.0,
+     "min": 0.938,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "C3|node|unverified|failed": {
+     "n": 41,
+     "mean": 0.406,
+     "median": 0.353,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 15,
+      "(0,.25)": 5,
+      "[.25,.5)": 2,
+      "[.5,.75)": 9,
+      "[.75,1)": 6,
+      "1": 4
+     }
+    },
+    "C3|node|valid|failed": {
+     "n": 4,
+     "mean": 0.529,
+     "median": 0.529,
+     "min": 0.529,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 4,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.529,
+     "median": 0.529,
+     "min": 0.529,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 4,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|unverified|success": {
+     "n": 103,
+     "mean": 0.426,
+     "median": 0.5,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 16,
+      "(0,.25)": 31,
+      "[.25,.5)": 4,
+      "[.5,.75)": 27,
+      "[.75,1)": 8,
+      "1": 17
+     }
+    },
+    "C3|ctx|valid|success": {
+     "n": 23,
+     "mean": 0.723,
+     "median": 0.938,
+     "min": 0.0,
+     "max": 0.938,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 7,
+      "[.75,1)": 14,
+      "1": 0
+     }
+    },
+    "C3|ctx|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.389,
+     "median": 0.5,
+     "min": 0.0,
+     "max": 0.5,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 7,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|valid:message|success": {
+     "n": 14,
+     "mean": 0.938,
+     "median": 0.938,
+     "min": 0.938,
+     "max": 0.938,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 14,
+      "1": 0
+     }
+    },
+    "C3|ctx|unverified|failed": {
+     "n": 41,
+     "mean": 0.274,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 24,
+      "(0,.25)": 2,
+      "[.25,.5)": 1,
+      "[.5,.75)": 7,
+      "[.75,1)": 3,
+      "1": 4
+     }
+    },
+    "C3|ctx|valid|failed": {
+     "n": 4,
+     "mean": 0.397,
+     "median": 0.529,
+     "min": 0.0,
+     "max": 0.529,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.397,
+     "median": 0.529,
+     "min": 0.0,
+     "max": 0.529,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|unverified|success": {
+     "n": 103,
+     "mean": 0.601,
+     "median": 0.688,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 9,
+      "(0,.25)": 9,
+      "[.25,.5)": 13,
+      "[.5,.75)": 37,
+      "[.75,1)": 18,
+      "1": 17
+     }
+    },
+    "C4|node|valid|success": {
+     "n": 23,
+     "mean": 0.802,
+     "median": 1.0,
+     "min": 0.5,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "C4|node|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.5,
+     "median": 0.5,
+     "min": 0.5,
+     "max": 0.5,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|valid:message|success": {
+     "n": 14,
+     "mean": 0.996,
+     "median": 1.0,
+     "min": 0.938,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "C4|node|unverified|failed": {
+     "n": 41,
+     "mean": 0.39,
+     "median": 0.176,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 8,
+      "[.25,.5)": 2,
+      "[.5,.75)": 9,
+      "[.75,1)": 5,
+      "1": 4
+     }
+    },
+    "C4|node|valid|failed": {
+     "n": 4,
+     "mean": 0.529,
+     "median": 0.529,
+     "min": 0.529,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 4,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.529,
+     "median": 0.529,
+     "min": 0.529,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 4,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|unverified|success": {
+     "n": 103,
+     "mean": 0.601,
+     "median": 0.688,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 9,
+      "(0,.25)": 9,
+      "[.25,.5)": 13,
+      "[.5,.75)": 37,
+      "[.75,1)": 18,
+      "1": 17
+     }
+    },
+    "C4|ctx|valid|success": {
+     "n": 23,
+     "mean": 0.802,
+     "median": 1.0,
+     "min": 0.5,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "C4|ctx|valid:search_direct_flight|success": {
+     "n": 9,
+     "mean": 0.5,
+     "median": 0.5,
+     "min": 0.5,
+     "max": 0.5,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 9,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|valid:message|success": {
+     "n": 14,
+     "mean": 0.996,
+     "median": 1.0,
+     "min": 0.938,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 1,
+      "1": 13
+     }
+    },
+    "C4|ctx|unverified|failed": {
+     "n": 41,
+     "mean": 0.389,
+     "median": 0.176,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 13,
+      "(0,.25)": 8,
+      "[.25,.5)": 2,
+      "[.5,.75)": 9,
+      "[.75,1)": 5,
+      "1": 4
+     }
+    },
+    "C4|ctx|valid|failed": {
+     "n": 4,
+     "mean": 0.529,
+     "median": 0.529,
+     "min": 0.529,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 4,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|valid:search_direct_flight|failed": {
+     "n": 4,
+     "mean": 0.529,
+     "median": 0.529,
+     "min": 0.529,
+     "max": 0.529,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 4,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|incorrect|failed": {
+     "n": 8,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 8,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    }
+   },
+   "unexpected": [
+    {
+     "variant": "A",
+     "target": "node",
+     "run": "71270d8b",
+     "success": false,
+     "step": "s10",
+     "label": "valid",
+     "value": 0.471,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "A",
+     "target": "ctx",
+     "run": "71270d8b",
+     "success": false,
+     "step": "s10",
+     "label": "valid",
+     "value": 0.471,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "1d04e6f3",
+     "success": true,
+     "step": "s14",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "39937705",
+     "success": true,
+     "step": "s8",
+     "label": "valid",
+     "value": 0.438,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "3d7ed3f2",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.062,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "49f89baf",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.25,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "67030d75",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.125,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "882b4bd9",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.312,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "a567caf8",
+     "success": true,
+     "step": "s14",
+     "label": "valid",
+     "value": 0.062,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "bb968e44",
+     "success": true,
+     "step": "s8",
+     "label": "valid",
+     "value": 0.438,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "ce95f0bf",
+     "success": true,
+     "step": "s6",
+     "label": "valid",
+     "value": 0.375,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "d5b7b555",
+     "success": true,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.25,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "f2974012",
+     "success": true,
+     "step": "s14",
+     "label": "valid",
+     "value": 0.125,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "71270d8b",
+     "success": false,
+     "step": "s10",
+     "label": "valid",
+     "value": 0.471,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "1d04e6f3",
+     "success": true,
+     "step": "s14",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "39937705",
+     "success": true,
+     "step": "s8",
+     "label": "valid",
+     "value": 0.375,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "3d7ed3f2",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.062,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "49f89baf",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "49f89baf",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.25,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "67030d75",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.125,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "7cd3469e",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "882b4bd9",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.312,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "a567caf8",
+     "success": true,
+     "step": "s14",
+     "label": "valid",
+     "value": 0.062,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "bb968e44",
+     "success": true,
+     "step": "s8",
+     "label": "valid",
+     "value": 0.438,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "ce95f0bf",
+     "success": true,
+     "step": "s6",
+     "label": "valid",
+     "value": 0.375,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "d5b7b555",
+     "success": true,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.25,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "f2974012",
+     "success": true,
+     "step": "s14",
+     "label": "valid",
+     "value": 0.125,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "71270d8b",
+     "success": false,
+     "step": "s10",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "49f89baf",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "7cd3469e",
+     "success": true,
+     "step": "s12",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "71270d8b",
+     "success": false,
+     "step": "s10",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call search_direct_flight with date = 2024-05-22; destination = MCO; origin = JFK."
+    }
+   ],
+   "c4_vs_c3": {
+    "node": {
+     "steps": 179,
+     "increased": 4,
+     "decreased": 26,
+     "mean_change": -0.069,
+     "by_label": {
+      "valid": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "incorrect": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "unverified": {
+       "increased": 4,
+       "decreased": 26,
+       "mean_change": -0.086
+      }
+     }
+    },
+    "ctx": {
+     "steps": 179,
+     "increased": 87,
+     "decreased": 0,
+     "mean_change": 0.14,
+     "by_label": {
+      "valid": {
+       "increased": 16,
+       "decreased": 0,
+       "mean_change": 0.086
+      },
+      "incorrect": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "unverified": {
+       "increased": 71,
+       "decreased": 0,
+       "mean_change": 0.158
+      }
+     }
+    }
+   },
+   "auroc": {
+    "A|node": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 1.0
+    },
+    "A|ctx": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 1.0
+    },
+    "C0|node": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 0.981
+    },
+    "C0|ctx": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 0.926
+    },
+    "C3|node": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 1.0
+    },
+    "C3|ctx": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 0.944
+    },
+    "C4|node": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 1.0
+    },
+    "C4|ctx": {
+     "n_pos": 27,
+     "n_neg": 8,
+     "auroc": 1.0
+    }
+   },
+   "curve_C4": {
+    "node": {
+     "1": {
+      "mean_abs_dev_from_full": 0.2229,
+      "mean_valid": 0.756,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.189
+     },
+     "2": {
+      "mean_abs_dev_from_full": 0.1447,
+      "mean_valid": 0.762,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.089
+     },
+     "3": {
+      "mean_abs_dev_from_full": 0.1121,
+      "mean_valid": 0.763,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.179
+     },
+     "5": {
+      "mean_abs_dev_from_full": 0.0834,
+      "mean_valid": 0.766,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.173
+     },
+     "8": {
+      "mean_abs_dev_from_full": 0.0562,
+      "mean_valid": 0.762,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.109
+     },
+     "all": {
+      "mean_abs_dev_from_full": 0.0,
+      "mean_valid": 0.761,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.0
+     }
+    },
+    "ctx": {
+     "1": {
+      "mean_abs_dev_from_full": 0.2243,
+      "mean_valid": 0.765,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.181
+     },
+     "2": {
+      "mean_abs_dev_from_full": 0.1433,
+      "mean_valid": 0.756,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.086
+     },
+     "3": {
+      "mean_abs_dev_from_full": 0.1119,
+      "mean_valid": 0.755,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.186
+     },
+     "5": {
+      "mean_abs_dev_from_full": 0.0839,
+      "mean_valid": 0.76,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.182
+     },
+     "8": {
+      "mean_abs_dev_from_full": 0.0563,
+      "mean_valid": 0.758,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.118
+     },
+     "all": {
+      "mean_abs_dev_from_full": 0.0,
+      "mean_valid": 0.761,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.0
+     }
+    }
+   },
+   "drift": {
+    "A": {
+     "pairs": 1591,
+     "mean": 0.083,
+     "share_gt_0.25": 0.101,
+     "share_gt_0.5": 0.003
+    },
+    "C0": {
+     "pairs": 1385,
+     "mean": 0.095,
+     "share_gt_0.25": 0.111,
+     "share_gt_0.5": 0.004
+    },
+    "C3": {
+     "pairs": 1793,
+     "mean": 0.086,
+     "share_gt_0.25": 0.108,
+     "share_gt_0.5": 0.003
+    },
+    "C4": {
+     "pairs": 1594,
+     "mean": 0.084,
+     "share_gt_0.25": 0.11,
+     "share_gt_0.5": 0.004
+    }
+   },
+   "safety": {
+    "A": {
+     "same_kind_message": 724,
+     "same_tool_compatible": 867,
+     "cross_kind": 21
+    },
+    "C0": {
+     "same_kind_message": 497,
+     "same_tool_compatible": 888
+    },
+    "C3": {
+     "same_kind_message": 722,
+     "same_tool_compatible": 1071
+    },
+    "C4": {
+     "same_kind_message": 725,
+     "same_tool_compatible": 869
+    }
+   },
+   "lookup_groups_T48": null
+  },
+  "25": {
+   "n_success": 19,
+   "n_failed": 3,
+   "cost_C4": {
+    "seconds": 9.4,
+    "nli_forward_passes_uncached": 0,
+    "nli_directional_pairs_requested": 58444,
+    "n_mcs_runs": 399
+   },
+   "label_counts": {
+    "success|unverified": 207,
+    "success|valid": 19,
+    "failed|unverified": 48,
+    "failed|valid": 1,
+    "failed|incorrect": 2
+   },
+   "distributions": {
+    "A|node|unverified|success": {
+     "n": 207,
+     "mean": 0.644,
+     "median": 0.778,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 15,
+      "(0,.25)": 28,
+      "[.25,.5)": 13,
+      "[.5,.75)": 47,
+      "[.75,1)": 45,
+      "1": 59
+     }
+    },
+    "A|node|valid|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "A|node|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "A|node|unverified|failed": {
+     "n": 48,
+     "mean": 0.419,
+     "median": 0.316,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 16,
+      "(0,.25)": 6,
+      "[.25,.5)": 6,
+      "[.5,.75)": 5,
+      "[.75,1)": 6,
+      "1": 9
+     }
+    },
+    "A|node|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|node|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|node|incorrect|failed": {
+     "n": 2,
+     "mean": 0.473,
+     "median": 0.473,
+     "min": 0.0,
+     "max": 0.947,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 1,
+      "1": 0
+     }
+    },
+    "A|ctx|unverified|success": {
+     "n": 207,
+     "mean": 0.623,
+     "median": 0.667,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 17,
+      "(0,.25)": 31,
+      "[.25,.5)": 16,
+      "[.5,.75)": 42,
+      "[.75,1)": 44,
+      "1": 57
+     }
+    },
+    "A|ctx|valid|success": {
+     "n": 19,
+     "mean": 0.854,
+     "median": 0.833,
+     "min": 0.556,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 10,
+      "1": 6
+     }
+    },
+    "A|ctx|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 0.854,
+     "median": 0.833,
+     "min": 0.556,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 10,
+      "1": 6
+     }
+    },
+    "A|ctx|unverified|failed": {
+     "n": 48,
+     "mean": 0.419,
+     "median": 0.316,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 16,
+      "(0,.25)": 6,
+      "[.25,.5)": 6,
+      "[.5,.75)": 5,
+      "[.75,1)": 6,
+      "1": 9
+     }
+    },
+    "A|ctx|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|ctx|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "A|ctx|incorrect|failed": {
+     "n": 2,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|unverified|success": {
+     "n": 207,
+     "mean": 0.582,
+     "median": 0.667,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 28,
+      "(0,.25)": 26,
+      "[.25,.5)": 22,
+      "[.5,.75)": 34,
+      "[.75,1)": 51,
+      "1": 46
+     }
+    },
+    "C0|node|valid|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "C0|node|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "C0|node|unverified|failed": {
+     "n": 48,
+     "mean": 0.361,
+     "median": 0.105,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 20,
+      "(0,.25)": 7,
+      "[.25,.5)": 5,
+      "[.5,.75)": 2,
+      "[.75,1)": 7,
+      "1": 7
+     }
+    },
+    "C0|node|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|node|incorrect|failed": {
+     "n": 2,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|unverified|success": {
+     "n": 207,
+     "mean": 0.459,
+     "median": 0.5,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 46,
+      "(0,.25)": 37,
+      "[.25,.5)": 19,
+      "[.5,.75)": 41,
+      "[.75,1)": 21,
+      "1": 43
+     }
+    },
+    "C0|ctx|valid|success": {
+     "n": 19,
+     "mean": 0.269,
+     "median": 0.278,
+     "min": 0.0,
+     "max": 0.5,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 6,
+      "[.25,.5)": 7,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 0.269,
+     "median": 0.278,
+     "min": 0.0,
+     "max": 0.5,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 6,
+      "[.25,.5)": 7,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|unverified|failed": {
+     "n": 48,
+     "mean": 0.295,
+     "median": 0.053,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 22,
+      "(0,.25)": 8,
+      "[.25,.5)": 5,
+      "[.5,.75)": 4,
+      "[.75,1)": 2,
+      "1": 7
+     }
+    },
+    "C0|ctx|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C0|ctx|incorrect|failed": {
+     "n": 2,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|unverified|success": {
+     "n": 207,
+     "mean": 0.609,
+     "median": 0.667,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 19,
+      "(0,.25)": 31,
+      "[.25,.5)": 25,
+      "[.5,.75)": 32,
+      "[.75,1)": 43,
+      "1": 57
+     }
+    },
+    "C3|node|valid|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "C3|node|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "C3|node|unverified|failed": {
+     "n": 48,
+     "mean": 0.381,
+     "median": 0.184,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 16,
+      "(0,.25)": 9,
+      "[.25,.5)": 7,
+      "[.5,.75)": 2,
+      "[.75,1)": 5,
+      "1": 9
+     }
+    },
+    "C3|node|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|node|incorrect|failed": {
+     "n": 2,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|unverified|success": {
+     "n": 207,
+     "mean": 0.473,
+     "median": 0.5,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 44,
+      "(0,.25)": 39,
+      "[.25,.5)": 19,
+      "[.5,.75)": 38,
+      "[.75,1)": 13,
+      "1": 54
+     }
+    },
+    "C3|ctx|valid|success": {
+     "n": 19,
+     "mean": 0.269,
+     "median": 0.278,
+     "min": 0.0,
+     "max": 0.5,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 6,
+      "[.25,.5)": 7,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 0.269,
+     "median": 0.278,
+     "min": 0.0,
+     "max": 0.5,
+     "bins": {
+      "0": 3,
+      "(0,.25)": 6,
+      "[.25,.5)": 7,
+      "[.5,.75)": 3,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|unverified|failed": {
+     "n": 48,
+     "mean": 0.299,
+     "median": 0.053,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 21,
+      "(0,.25)": 9,
+      "[.25,.5)": 5,
+      "[.5,.75)": 4,
+      "[.75,1)": 0,
+      "1": 9
+     }
+    },
+    "C3|ctx|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C3|ctx|incorrect|failed": {
+     "n": 2,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|unverified|success": {
+     "n": 207,
+     "mean": 0.623,
+     "median": 0.667,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 15,
+      "(0,.25)": 32,
+      "[.25,.5)": 21,
+      "[.5,.75)": 38,
+      "[.75,1)": 43,
+      "1": 58
+     }
+    },
+    "C4|node|valid|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "C4|node|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 1.0,
+     "median": 1.0,
+     "min": 1.0,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 19
+     }
+    },
+    "C4|node|unverified|failed": {
+     "n": 48,
+     "mean": 0.398,
+     "median": 0.237,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 15,
+      "(0,.25)": 9,
+      "[.25,.5)": 6,
+      "[.5,.75)": 3,
+      "[.75,1)": 6,
+      "1": 9
+     }
+    },
+    "C4|node|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|node|incorrect|failed": {
+     "n": 2,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|unverified|success": {
+     "n": 207,
+     "mean": 0.605,
+     "median": 0.667,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 17,
+      "(0,.25)": 36,
+      "[.25,.5)": 15,
+      "[.5,.75)": 41,
+      "[.75,1)": 42,
+      "1": 56
+     }
+    },
+    "C4|ctx|valid|success": {
+     "n": 19,
+     "mean": 0.854,
+     "median": 0.833,
+     "min": 0.556,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 10,
+      "1": 6
+     }
+    },
+    "C4|ctx|valid:book_reservation|success": {
+     "n": 19,
+     "mean": 0.854,
+     "median": 0.833,
+     "min": 0.556,
+     "max": 1.0,
+     "bins": {
+      "0": 0,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 3,
+      "[.75,1)": 10,
+      "1": 6
+     }
+    },
+    "C4|ctx|unverified|failed": {
+     "n": 48,
+     "mean": 0.398,
+     "median": 0.237,
+     "min": 0.0,
+     "max": 1.0,
+     "bins": {
+      "0": 15,
+      "(0,.25)": 9,
+      "[.25,.5)": 6,
+      "[.5,.75)": 3,
+      "[.75,1)": 6,
+      "1": 9
+     }
+    },
+    "C4|ctx|valid|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|valid:message|failed": {
+     "n": 1,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 1,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    },
+    "C4|ctx|incorrect|failed": {
+     "n": 2,
+     "mean": 0.0,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "bins": {
+      "0": 2,
+      "(0,.25)": 0,
+      "[.25,.5)": 0,
+      "[.5,.75)": 0,
+      "[.75,1)": 0,
+      "1": 0
+     }
+    }
+   },
+   "unexpected": [
+    {
+     "variant": "A",
+     "target": "node",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "A",
+     "target": "node",
+     "run": "6f12b024",
+     "success": false,
+     "step": "s30",
+     "label": "incorrect",
+     "value": 0.947,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "A",
+     "target": "ctx",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "node",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "142fde74",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "16aac895",
+     "success": true,
+     "step": "s24",
+     "label": "valid",
+     "value": 0.111,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "1e01a088",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "291cfe67",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "2aca18ff",
+     "success": true,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "2e0c25a6",
+     "success": true,
+     "step": "s26",
+     "label": "valid",
+     "value": 0.111,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "8c8332b6",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "a92c9234",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.056,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "b03440a4",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "b91137fb",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "bb73aded",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.167,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "c801d833",
+     "success": true,
+     "step": "s26",
+     "label": "valid",
+     "value": 0.056,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "cc2b26ea",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.278,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "d2135fe7",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.167,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "d3366062",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "f81eaa6a",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C0",
+     "target": "ctx",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C3",
+     "target": "node",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "142fde74",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "16aac895",
+     "success": true,
+     "step": "s24",
+     "label": "valid",
+     "value": 0.111,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "1e01a088",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "291cfe67",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "2aca18ff",
+     "success": true,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "2e0c25a6",
+     "success": true,
+     "step": "s26",
+     "label": "valid",
+     "value": 0.111,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "8c8332b6",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "a92c9234",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.056,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "b03440a4",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "b91137fb",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "bb73aded",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.167,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "c801d833",
+     "success": true,
+     "step": "s26",
+     "label": "valid",
+     "value": 0.056,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "cc2b26ea",
+     "success": true,
+     "step": "s16",
+     "label": "valid",
+     "value": 0.278,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "d2135fe7",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.167,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "d3366062",
+     "success": true,
+     "step": "s20",
+     "label": "valid",
+     "value": 0.0,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "f81eaa6a",
+     "success": true,
+     "step": "s18",
+     "label": "valid",
+     "value": 0.444,
+     "text": "Call book_reservation with cabin = economy; destination = SEA; flight_type = one_way; flights[0].dat"
+    },
+    {
+     "variant": "C3",
+     "target": "ctx",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C4",
+     "target": "node",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    },
+    {
+     "variant": "C4",
+     "target": "ctx",
+     "run": "51d355a9",
+     "success": false,
+     "step": "s22",
+     "label": "valid",
+     "value": 0.0,
+     "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON."
+    }
+   ],
+   "c4_vs_c3": {
+    "node": {
+     "steps": 277,
+     "increased": 33,
+     "decreased": 4,
+     "mean_change": 0.014,
+     "by_label": {
+      "valid": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "incorrect": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "unverified": {
+       "increased": 33,
+       "decreased": 4,
+       "mean_change": 0.015
+      }
+     }
+    },
+    "ctx": {
+     "steps": 277,
+     "increased": 130,
+     "decreased": 1,
+     "mean_change": 0.156,
+     "by_label": {
+      "valid": {
+       "increased": 19,
+       "decreased": 0,
+       "mean_change": 0.555
+      },
+      "incorrect": {
+       "increased": 0,
+       "decreased": 0,
+       "mean_change": 0.0
+      },
+      "unverified": {
+       "increased": 111,
+       "decreased": 1,
+       "mean_change": 0.126
+      }
+     }
+    }
+   },
+   "auroc": {
+    "A|node": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    },
+    "A|ctx": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    },
+    "C0|node": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    },
+    "C0|ctx": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    },
+    "C3|node": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    },
+    "C3|ctx": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    },
+    "C4|node": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    },
+    "C4|ctx": {
+     "n_pos": 20,
+     "n_neg": 2,
+     "auroc": null
+    }
+   },
+   "curve_C4": {
+    "node": {
+     "1": {
+      "mean_abs_dev_from_full": 0.1754,
+      "mean_valid": 0.95,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.045
+     },
+     "2": {
+      "mean_abs_dev_from_full": 0.1189,
+      "mean_valid": 0.95,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.045
+     },
+     "3": {
+      "mean_abs_dev_from_full": 0.0914,
+      "mean_valid": 0.95,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.045
+     },
+     "5": {
+      "mean_abs_dev_from_full": 0.0692,
+      "mean_valid": 0.95,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.045
+     },
+     "8": {
+      "mean_abs_dev_from_full": 0.0491,
+      "mean_valid": 0.95,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.045
+     },
+     "all": {
+      "mean_abs_dev_from_full": 0.0,
+      "mean_valid": 0.95,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.045
+     }
+    },
+    "ctx": {
+     "1": {
+      "mean_abs_dev_from_full": 0.1953,
+      "mean_valid": 0.799,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.183
+     },
+     "2": {
+      "mean_abs_dev_from_full": 0.1333,
+      "mean_valid": 0.816,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.071
+     },
+     "3": {
+      "mean_abs_dev_from_full": 0.1065,
+      "mean_valid": 0.804,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.136
+     },
+     "5": {
+      "mean_abs_dev_from_full": 0.0771,
+      "mean_valid": 0.813,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.1
+     },
+     "8": {
+      "mean_abs_dev_from_full": 0.0531,
+      "mean_valid": 0.814,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.07
+     },
+     "all": {
+      "mean_abs_dev_from_full": 0.0,
+      "mean_valid": 0.811,
+      "mean_incorrect": 0.0,
+      "unexpected_rate": 0.045
+     }
+    }
+   },
+   "drift": {
+    "A": {
+     "pairs": 3082,
+     "mean": 0.071,
+     "share_gt_0.25": 0.033,
+     "share_gt_0.5": 0.004
+    },
+    "C0": {
+     "pairs": 2841,
+     "mean": 0.064,
+     "share_gt_0.25": 0.02,
+     "share_gt_0.5": 0.0
+    },
+    "C3": {
+     "pairs": 2957,
+     "mean": 0.064,
+     "share_gt_0.25": 0.021,
+     "share_gt_0.5": 0.0
+    },
+    "C4": {
+     "pairs": 3028,
+     "mean": 0.07,
+     "share_gt_0.25": 0.034,
+     "share_gt_0.5": 0.004
+    }
+   },
+   "safety": {
+    "A": {
+     "same_kind_message": 1207,
+     "same_tool_compatible": 1799,
+     "cross_kind": 60,
+     "structured_conflict": 76
+    },
+    "C0": {
+     "same_kind_message": 1044,
+     "same_tool_compatible": 1797
+    },
+    "C3": {
+     "same_kind_message": 1149,
+     "same_tool_compatible": 1808
+    },
+    "C4": {
+     "same_kind_message": 1220,
+     "same_tool_compatible": 1808
+    }
+   },
+   "lookup_groups_T48": null
+  }
+ },
+ "audit_C4_mapped_agent_nodes": {
+  "T48|same_kind_message": 423,
+  "T48|same_tool_compatible": 219,
+  "T9|same_kind_message": 725,
+  "T9|same_tool_compatible": 869,
+  "T25|same_kind_message": 1220,
+  "T25|same_tool_compatible": 1808
+ },
+ "audit_C4_structured_conflicts": [],
+ "review": {
+  "labelled_new_or_remapped": [
+   {
+    "task": "48",
+    "query": "07ec0bf6",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "655b2a43",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "07ec0bf6",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "a41818c2",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "07ec0bf6",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "aa08e645",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "07ec0bf6",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "adcf197e",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "07ec0bf6",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "c890f90b",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "07ec0bf6",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "e6daf449",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "59810305",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "a41818c2",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "59810305",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "aa08e645",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "59810305",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "adcf197e",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "59810305",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "c890f90b",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "59810305",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "e6daf449",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "655b2a43",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "655b2a43",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "78c107ed",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "655b2a43",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "78c107ed",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "a41818c2",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "78c107ed",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "aa08e645",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "78c107ed",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "adcf197e",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "78c107ed",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "c890f90b",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "78c107ed",
+    "query_success": true,
+    "step": "s2",
+    "label": "valid",
+    "reference": "e6daf449",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "a41818c2",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "a41818c2",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "a41818c2",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "aa08e645",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "aa08e645",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "aa08e645",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "adcf197e",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "adcf197e",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "adcf197e",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "c890f90b",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "c890f90b",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "c890f90b",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "e6daf449",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "e6daf449",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "e6daf449",
+    "query_success": true,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "058388c8",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "655b2a43",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "058388c8",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "a41818c2",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "058388c8",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "aa08e645",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "058388c8",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "adcf197e",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "058388c8",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "c890f90b",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "058388c8",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "e6daf449",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "24ec2605",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "24ec2605",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "24ec2605",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "4a280c26",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "655b2a43",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "4a280c26",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "a41818c2",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "4a280c26",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "aa08e645",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "4a280c26",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "adcf197e",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "4a280c26",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "c890f90b",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "4a280c26",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "e6daf449",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "73c78a0d",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "73c78a0d",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "73c78a0d",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "7f5cbcd7",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "7f5cbcd7",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "7f5cbcd7",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "a6fb29f3",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "a6fb29f3",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "a6fb29f3",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "afce6c04",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "afce6c04",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "afce6c04",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "b081606a",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "b081606a",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "b081606a",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "be82d372",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "be82d372",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "be82d372",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "c4902f46",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "c4902f46",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "c4902f46",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "d5456653",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "655b2a43",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "d5456653",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "a41818c2",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "d5456653",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "aa08e645",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "d5456653",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "adcf197e",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "d5456653",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "c890f90b",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "d5456653",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "e6daf449",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fc2b9a57",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "07ec0bf6",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fc2b9a57",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "59810305",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fc2b9a57",
+    "query_success": false,
+    "step": "s4",
+    "label": "valid",
+    "reference": "78c107ed",
+    "c3_target": null,
+    "c4_target": "N:s2",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fcce7c71",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "655b2a43",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fcce7c71",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "a41818c2",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fcce7c71",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "aa08e645",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fcce7c71",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "adcf197e",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fcce7c71",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "c890f90b",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "fcce7c71",
+    "query_success": false,
+    "step": "s2",
+    "label": "valid",
+    "reference": "e6daf449",
+    "c3_target": null,
+    "c4_target": "N:s4",
+    "change": "newly matched",
+    "query_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "ref_text": "Call get_reservation_details with reservation_id = 3RK2T9.",
+    "c4_ctx": true
+   }
+  ],
+  "n_message_new_or_remapped": 123,
+  "message_sample_seed0": [
+   {
+    "task": "25",
+    "query": "6f12b024",
+    "query_success": false,
+    "step": "s32",
+    "label": "unverified",
+    "reference": "a92c9234",
+    "c3_target": null,
+    "c4_target": "N:s22",
+    "change": "newly matched",
+    "query_text": "✅ Booking confirmed! - Reservation ID: `HATHAT` - Passenger: Ivan Smith (DOB 1986-03-14) - Route: DTW → PHX → SEA - Date: May 21, 2024 - Cabin: Economy - Flights & Prices: - HAT097 (DTW → PHX) - $147 - HAT267 (PHX → SEA) - $152 - Total Fare: $299 - Payment: Gift card $128 + Credit card $171 - Baggag",
+    "ref_text": "✅ Your reservation has been confirmed! Reservation ID: `HATHAT` Passenger: Ivan Smith (DOB: 1986-03-14) Trip: One-way, DTW → SEA Flights: - HAT097 (DTW → PHX, 2024-05-17, $175) - HAT251 (PHX → SEA, 2024-05-17, $200) Cabin: Economy Checked bags: 0 Travel insurance: No Payment: - Gift card `gift_card_",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "2e0c25a6",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "f81eaa6a",
+    "c3_target": null,
+    "c4_target": "N:s12",
+    "change": "newly matched",
+    "query_text": "Here's what I've pulled together for the new reservation: | Item | Details | |------|---------| | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 (DTW → PHX, 2024-05-17, $158) <br>• HAT251 (PHX → SEA, 2024-05-17, $141) | | Total fare | $299 | | P",
+    "ref_text": "Here's the plan for the new reservation: | Item | Detail | |------|--------| | User ID | ivan_muller_7015 | | Trip type | one_way | | Origin | DTW | | Destination | SEA | | Cabin | economy | | Flights | 1️⃣ HAT097 (DTW → PHX, 2024-05-17, $158) <br> 2️⃣ HAT251 (PHX → SEA, 2024-05-17, $141) | | Passen",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "f81eaa6a",
+    "query_success": true,
+    "step": "s12",
+    "label": "unverified",
+    "reference": "8c8332b6",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Here's the plan for the new reservation: | Item | Detail | |------|--------| | User ID | ivan_muller_7015 | | Trip type | one_way | | Origin | DTW | | Destination | SEA | | Cabin | economy | | Flights | 1️⃣ HAT097 (DTW → PHX, 2024-05-17, $158) <br> 2️⃣ HAT251 (PHX → SEA, 2024-05-17, $141) | | Passen",
+    "ref_text": "Here's what I've gathered for the new booking: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Flight route | DTW → PHX → SEA (same as your current reservation) | | Date | 2024-05-17 | | Cabin | Economy | | Trip type | One-way | | Passengers | Ivan Smith (DOB 1986-03-14) | |",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "6f12b024",
+    "query_success": false,
+    "step": "s32",
+    "label": "unverified",
+    "reference": "d3366062",
+    "c3_target": null,
+    "c4_target": "N:s22",
+    "change": "newly matched",
+    "query_text": "✅ Booking confirmed! - Reservation ID: `HATHAT` - Passenger: Ivan Smith (DOB 1986-03-14) - Route: DTW → PHX → SEA - Date: May 21, 2024 - Cabin: Economy - Flights & Prices: - HAT097 (DTW → PHX) - $147 - HAT267 (PHX → SEA) - $152 - Total Fare: $299 - Payment: Gift card $128 + Credit card $171 - Baggag",
+    "ref_text": "✅ Your reservation has been created! Reservation ID: `HATHAT` Itinerary: - DTW → PHX (Flight HAT097, 2024-05-17, $175) - PHX → SEA (Flight HAT251, 2024-05-17, $200) Cabin: Economy Passengers: Ivan Smith (DOB 1986-03-14) Baggage: 0 checked bags Travel insurance: No Payment: - Gift card `gift_card_851",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "8c8332b6",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "f81eaa6a",
+    "c3_target": null,
+    "c4_target": "N:s12",
+    "change": "newly matched",
+    "query_text": "Here's what I've gathered for the new booking: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Flight route | DTW → PHX → SEA (same as your current reservation) | | Date | 2024-05-17 | | Cabin | Economy | | Trip type | One-way | | Passengers | Ivan Smith (DOB 1986-03-14) | |",
+    "ref_text": "Here's the plan for the new reservation: | Item | Detail | |------|--------| | User ID | ivan_muller_7015 | | Trip type | one_way | | Origin | DTW | | Destination | SEA | | Cabin | economy | | Flights | 1️⃣ HAT097 (DTW → PHX, 2024-05-17, $158) <br> 2️⃣ HAT251 (PHX → SEA, 2024-05-17, $141) | | Passen",
+    "c4_ctx": true
+   },
+   {
+    "task": "48",
+    "query": "adcf197e",
+    "query_success": true,
+    "step": "s6",
+    "label": "unverified",
+    "reference": "aa08e645",
+    "c3_target": "N:s6",
+    "c4_target": "N:s8",
+    "change": "re-mapped",
+    "query_text": "I'm sorry, but I can't process a cancellation for that reservation. According to our records, the booking was created on 2024-05-02, which is more than 24 hours ago. Our policy allows a full refund only if the reservation was made within the last 24 hours, the flight was cancelled by the airline, th",
+    "ref_text": "I've double-checked the reservation record for 3RK2T9. The booking was created on 2024-05-02 at 06:02 UTC (which is 2024-05-02 00:02 EST). That means the reservation is more than 24 hours old, so it does not meet the \"within 24 hours\" cancellation rule. Because the flight is a basic-economy ticket, ",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "291cfe67",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "c801d833",
+    "c3_target": "N:s10",
+    "c4_target": "N:s18",
+    "change": "re-mapped",
+    "query_text": "Here's what I've pulled together for the new reservation: | Item | Details | |------|---------| | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 (DTW → PHX, 2024-05-17, $158) <br>• HAT251 (PHX → SEA, 2024-05-17, $141) | | Total fare | $299 | | P",
+    "ref_text": "Here's the reservation I'm ready to create: | Item | Details | |------|---------| | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 (DTW → PHX, 2024-05-17, $158) <br>• HAT251 (PHX → SEA, 2024-05-17, $141) | | Total fare | $299 | | Passenger | Iva",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "bb73aded",
+    "query_success": true,
+    "step": "s12",
+    "label": "unverified",
+    "reference": "1e01a088",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Here's what I'm planning to do: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Passenger | Ivan Smith (DOB 1986-03-14) | | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 DTW→PHX (2024-05-17, $158) <br>• HAT251 PHX→SEA (",
+    "ref_text": "Sure! I'll need a few details before I can create the new reservation: 1. Passenger info - What's Ivan Smith's date of birth? 2. Payment - Since the total fare is $299 (below $400), I'll use your gift card and credit card. 3. Baggage & Insurance - You mentioned you don't need any checked bags or tra",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "bb73aded",
+    "query_success": true,
+    "step": "s12",
+    "label": "unverified",
+    "reference": "0f0f7358",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Here's what I'm planning to do: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Passenger | Ivan Smith (DOB 1986-03-14) | | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 DTW→PHX (2024-05-17, $158) <br>• HAT251 PHX→SEA (",
+    "ref_text": "Here's what I'd do to book the flight for Ivan Smith: | Detail | Value | |--------|-------| | User ID | `ivan_muller_7015` | | Trip type | `one_way` | | Origin | `DTW` | | Destination | `SEA` | | Cabin | `economy` | | Flights | 1) `HAT097` (DTW → PHX, 2024-05-17, $158) <br> 2) `HAT251` (PHX → SEA, 2",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "8c8332b6",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "bb73aded",
+    "c3_target": null,
+    "c4_target": "N:s12",
+    "change": "newly matched",
+    "query_text": "Here's what I've gathered for the new booking: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Flight route | DTW → PHX → SEA (same as your current reservation) | | Date | 2024-05-17 | | Cabin | Economy | | Trip type | One-way | | Passengers | Ivan Smith (DOB 1986-03-14) | |",
+    "ref_text": "Here's what I'm planning to do: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Passenger | Ivan Smith (DOB 1986-03-14) | | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 DTW→PHX (2024-05-17, $158) <br>• HAT251 PHX→SEA (",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "51d355a9",
+    "query_success": false,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "16aac895",
+    "c3_target": "N:s10",
+    "c4_target": "N:s16",
+    "change": "re-mapped",
+    "query_text": "Here's what I've pulled from your account: | Item | Details | |------|---------| | Current reservation | One-way DTW → SEA (2024-05-17) - flights HAT097 (DTW→PHX) & HAT251 (PHX→SEA) - cabin economy - 2 passengers (Ivan Muller & Isabella Moore) - $299 total fare - 2 checked bags - travel insurance ye",
+    "ref_text": "I'm ready to book the reservation for Ivan Smith. Before I proceed, could you please confirm that you'd like me to use the gift card ($128) and the credit card ($171) to cover the $299 fare? Just reply \"yes\" to confirm.",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "6f12b024",
+    "query_success": false,
+    "step": "s8",
+    "label": "unverified",
+    "reference": "2aca18ff",
+    "c3_target": null,
+    "c4_target": "N:s26",
+    "change": "newly matched",
+    "query_text": "Your travel certificate currently has $500.00 remaining. I can book a new reservation for Ivan Smith that follows the exact same itinerary as your current one (DTW → PHX → SEA on 2024-05-17, cabin economy). Since the total fare is $299, you'll pay with your gift card and credit card, and no baggage ",
+    "ref_text": "Your certificate balance is still $500.00.",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "2aca18ff",
+    "query_success": true,
+    "step": "s26",
+    "label": "unverified",
+    "reference": "ab3d173b",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Your certificate balance is still $500.00.",
+    "ref_text": "Your certificate balance is $500.00. The itinerary you'd like to duplicate (DTW → PHX → SEA on 2024-05-17) totals $299.00, so it will be paid with your gift card and credit card (no certificate needed). Would you like me to book this reservation for Ivan Smith? If so, please confirm with a simple \"y",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "b91137fb",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "f81eaa6a",
+    "c3_target": null,
+    "c4_target": "N:s12",
+    "change": "newly matched",
+    "query_text": "Here's what I've pulled together for the new reservation: | Item | Details | |------|---------| | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 (DTW → PHX, 2024-05-17, $158) <br>• HAT251 (PHX → SEA, 2024-05-17, $141) | | Total fare | $299 | | P",
+    "ref_text": "Here's the plan for the new reservation: | Item | Detail | |------|--------| | User ID | ivan_muller_7015 | | Trip type | one_way | | Origin | DTW | | Destination | SEA | | Cabin | economy | | Flights | 1️⃣ HAT097 (DTW → PHX, 2024-05-17, $158) <br> 2️⃣ HAT251 (PHX → SEA, 2024-05-17, $141) | | Passen",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "2aca18ff",
+    "query_success": true,
+    "step": "s26",
+    "label": "unverified",
+    "reference": "d3366062",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Your certificate balance is still $500.00.",
+    "ref_text": "Here's what I've gathered: | Item | Details | |------|---------| | Certificate balance | $500.00 | | Itinerary | DTW → PHX → SEA (same as your current reservation) | | Cabin | Economy | | Passenger | Ivan Smith (DOB 1986-03-14) | | Baggage | 0 checked bags | | Travel insurance | No | | Total fare | ",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "c801d833",
+    "query_success": true,
+    "step": "s24",
+    "label": "unverified",
+    "reference": "a92c9234",
+    "c3_target": null,
+    "c4_target": "N:s18",
+    "change": "newly matched",
+    "query_text": "I'm ready to book the reservation, but the system shows the total fare for the two flights as $375 (not $299). To match that amount, we'll need to adjust the payment split. Would you like to keep the $128 from your gift card and use the remaining $247 from your credit card? If you'd prefer a differe",
+    "ref_text": "I'm ready to book the reservation, but I need to confirm the total fare. The system shows the combined price for the two flight segments as $375. Is that the amount you expect to pay?",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "16aac895",
+    "query_success": true,
+    "step": "s20",
+    "label": "unverified",
+    "reference": "d2135fe7",
+    "c3_target": null,
+    "c4_target": "N:s16",
+    "change": "newly matched",
+    "query_text": "I'm ready to book the reservation, but the system requires the payment amounts to add up to the full fare of $375 (the fare plus applicable taxes/fees). You'd like to use your gift card ($128) and credit card for the rest. That would cover $299, leaving $76 short. Would you like me to use your credi",
+    "ref_text": "I'm ready to book the reservation, but the system is telling me the total fare is $375 (including taxes/fees). To match that amount, we'll need to adjust the payment split: - Gift card: $128 (full balance) - Credit card: $247 Does that look good to you? If so, I'll proceed with the booking.",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "bb73aded",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "1e01a088",
+    "c3_target": "N:s10",
+    "c4_target": "N:s14",
+    "change": "re-mapped",
+    "query_text": "Sure thing! I'll set up a new reservation that mirrors your current one, but for Ivan Smith. Before I can book it, I just need a couple of quick details: 1. Ivan Smith's date of birth (YYYY-MM-DD) 2. Confirm that you'd like the reservation without checked bags and without travel insurance. Once I ha",
+    "ref_text": "Here's the plan for the new reservation: - Trip type: one-way - Origin → Destination: DTW → SEA - Cabin: economy (same as your current booking) - Flights: 1. HAT097 (DTW → PHX) - $158 2. HAT251 (PHX → SEA) - $141 Total fare: $299 - Passenger: Ivan Smith (DOB 1986-03-14) - Checked bags: 0 (no extra b",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "0f0f7358",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "c801d833",
+    "c3_target": "N:s10",
+    "c4_target": "N:s18",
+    "change": "re-mapped",
+    "query_text": "Here's what I'd do to book the flight for Ivan Smith: | Detail | Value | |--------|-------| | User ID | `ivan_muller_7015` | | Trip type | `one_way` | | Origin | `DTW` | | Destination | `SEA` | | Cabin | `economy` | | Flights | 1) `HAT097` (DTW → PHX, 2024-05-17, $158) <br> 2) `HAT251` (PHX → SEA, 2",
+    "ref_text": "Here's the reservation I'm ready to create: | Item | Details | |------|---------| | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 (DTW → PHX, 2024-05-17, $158) <br>• HAT251 (PHX → SEA, 2024-05-17, $141) | | Total fare | $299 | | Passenger | Iva",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "2aca18ff",
+    "query_success": true,
+    "step": "s26",
+    "label": "unverified",
+    "reference": "16aac895",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Your certificate balance is still $500.00.",
+    "ref_text": "Here's what I've gathered: | Item | Details | |------|---------| | Certificate balance | $500.00 | | Itinerary | DTW → PHX → SEA (same as your current reservation) | | Cabin | Economy | | Passenger | Ivan Smith (DOB 1986-03-14) | | Baggage | 0 checked bags | | Travel insurance | No | | Total fare | ",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "6f12b024",
+    "query_success": false,
+    "step": "s32",
+    "label": "unverified",
+    "reference": "0f0f7358",
+    "c3_target": null,
+    "c4_target": "N:s18",
+    "change": "newly matched",
+    "query_text": "✅ Booking confirmed! - Reservation ID: `HATHAT` - Passenger: Ivan Smith (DOB 1986-03-14) - Route: DTW → PHX → SEA - Date: May 21, 2024 - Cabin: Economy - Flights & Prices: - HAT097 (DTW → PHX) - $147 - HAT267 (PHX → SEA) - $152 - Total Fare: $299 - Payment: Gift card $128 + Credit card $171 - Baggag",
+    "ref_text": "Your reservation has been created successfully! Here are the details: - Reservation ID: `HATHAT` - Trip type: One-way - Origin: DTW → SEA (via PHX) - Cabin: Economy - Flights: - HAT097 (DTW → PHX, 2024-05-17, $175) - HAT251 (PHX → SEA, 2024-05-17, $200) - Passenger: Ivan Smith (DOB 1986-03-14) - Che",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "f81eaa6a",
+    "query_success": true,
+    "step": "s12",
+    "label": "unverified",
+    "reference": "2e0c25a6",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Here's the plan for the new reservation: | Item | Detail | |------|--------| | User ID | ivan_muller_7015 | | Trip type | one_way | | Origin | DTW | | Destination | SEA | | Cabin | economy | | Flights | 1️⃣ HAT097 (DTW → PHX, 2024-05-17, $158) <br> 2️⃣ HAT251 (PHX → SEA, 2024-05-17, $141) | | Passen",
+    "ref_text": "Here's what I've pulled together for the new reservation: | Item | Details | |------|---------| | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 (DTW → PHX, 2024-05-17, $158) <br>• HAT251 (PHX → SEA, 2024-05-17, $141) | | Total fare | $299 | | P",
+    "c4_ctx": true
+   },
+   {
+    "task": "9",
+    "query": "71270d8b",
+    "query_success": false,
+    "step": "s34",
+    "label": "unverified",
+    "reference": "ed3e4cc7",
+    "c3_target": null,
+    "c4_target": "N:s14",
+    "change": "newly matched",
+    "query_text": "You're very welcome, Aarav! I'm glad everything's sorted out. If you think of any seat preferences, special meals, or anything else before you fly, just drop me a line and I'll take care of it for you. Have a fantastic trip to Orlando-enjoy the sunshine and the theme parks! 🌞✈️",
+    "ref_text": "You're very welcome! If anything else comes up, just let me know. Have a fantastic day!",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "cc2b26ea",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "bb73aded",
+    "c3_target": "N:s10",
+    "c4_target": "N:s12",
+    "change": "re-mapped",
+    "query_text": "Here's what I've gathered: | Item | Details | |------|---------| | Certificate balance | $500.00 | | Itinerary | DTW → PHX → SEA (same as your current reservation) | | Cabin | Economy | | Passenger | Ivan Smith (DOB 1986-03-14) | | Baggage | 0 checked bags | | Travel insurance | No | | Total fare | ",
+    "ref_text": "Here's what I'm planning to do: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Passenger | Ivan Smith (DOB 1986-03-14) | | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 DTW→PHX (2024-05-17, $158) <br>• HAT251 PHX→SEA (",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "1e01a088",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "f81eaa6a",
+    "c3_target": null,
+    "c4_target": "N:s12",
+    "change": "newly matched",
+    "query_text": "Sure! I'll need a few details before I can create the new reservation: 1. Passenger info - What's Ivan Smith's date of birth? 2. Payment - Since the total fare is $299 (below $400), I'll use your gift card and credit card. 3. Baggage & Insurance - You mentioned you don't need any checked bags or tra",
+    "ref_text": "Here's the plan for the new reservation: | Item | Detail | |------|--------| | User ID | ivan_muller_7015 | | Trip type | one_way | | Origin | DTW | | Destination | SEA | | Cabin | economy | | Flights | 1️⃣ HAT097 (DTW → PHX, 2024-05-17, $158) <br> 2️⃣ HAT251 (PHX → SEA, 2024-05-17, $141) | | Passen",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "bb73aded",
+    "query_success": true,
+    "step": "s12",
+    "label": "unverified",
+    "reference": "a92c9234",
+    "c3_target": null,
+    "c4_target": "N:s10",
+    "change": "newly matched",
+    "query_text": "Here's what I'm planning to do: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Passenger | Ivan Smith (DOB 1986-03-14) | | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 DTW→PHX (2024-05-17, $158) <br>• HAT251 PHX→SEA (",
+    "ref_text": "Here's what I'm planning to do for you: | Item | Details | |------|---------| | Passenger | Ivan Smith (DOB: 1986-03-14) | | Trip type | One-way | | Origin / Destination | DTW → SEA | | Flights | 1️⃣ HAT097 (DTW → PHX, 2024-05-17, $158) <br> 2️⃣ HAT251 (PHX → SEA, 2024-05-17, $141) | | Cabin | Econo",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "d2135fe7",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "c801d833",
+    "c3_target": null,
+    "c4_target": "N:s18",
+    "change": "newly matched",
+    "query_text": "Here's what I've gathered: | Item | Details | |------|---------| | User ID | `ivan_muller_7015` | | Certificate balance | $500.00 | | Current reservation | One-way from DTW to SEA (economy) - two segments: HAT097 (DTW→PHX) $158 + HAT251 (PHX→SEA) $141 | | Total fare | $299.00 | | Payment plan | Sinc",
+    "ref_text": "Here's the reservation I'm ready to create: | Item | Details | |------|---------| | Trip type | One-way | | Origin | DTW | | Destination | SEA | | Cabin | Economy | | Flights | • HAT097 (DTW → PHX, 2024-05-17, $158) <br>• HAT251 (PHX → SEA, 2024-05-17, $141) | | Total fare | $299 | | Passenger | Iva",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "cc2b26ea",
+    "query_success": true,
+    "step": "s10",
+    "label": "unverified",
+    "reference": "2aca18ff",
+    "c3_target": null,
+    "c4_target": "N:s26",
+    "change": "newly matched",
+    "query_text": "Here's what I've gathered: | Item | Details | |------|---------| | Certificate balance | $500.00 | | Itinerary | DTW → PHX → SEA (same as your current reservation) | | Cabin | Economy | | Passenger | Ivan Smith (DOB 1986-03-14) | | Baggage | 0 checked bags | | Travel insurance | No | | Total fare | ",
+    "ref_text": "Your certificate balance is still $500.00.",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "0f0f7358",
+    "query_success": true,
+    "step": "s20",
+    "label": "unverified",
+    "reference": "cd5be315",
+    "c3_target": null,
+    "c4_target": "N:s24",
+    "change": "newly matched",
+    "query_text": "You're all set! Just make sure to: 1. Check the flight status a day before departure to confirm any last-minute changes. 2. Arrive at the airport at least 2 hours before the scheduled departure for a one-way flight. 3. Have your ID and reservation confirmation handy for check-in. If anything comes u",
+    "ref_text": "You're welcome! If you need anything else, feel free to reach out. Have a great day!",
+    "c4_ctx": true
+   },
+   {
+    "task": "25",
+    "query": "2aca18ff",
+    "query_success": true,
+    "step": "s26",
+    "label": "unverified",
+    "reference": "bb73aded",
+    "c3_target": null,
+    "c4_target": "N:s20",
+    "change": "newly matched",
+    "query_text": "Your certificate balance is still $500.00.",
+    "ref_text": "✅ Your new reservation has been created! - Reservation ID: `HATHAT` - Passenger: Ivan Smith (DOB 1986-03-14) - Trip: One-way, DTW → SEA (via PHX) - Cabin: Economy - Flights & Prices: - HAT097 DTW→PHX - $175 - HAT251 PHX→SEA - $200 - Total fare: $375 - Payment: - Gift card `gift_card_8516878` - $128 ",
+    "c4_ctx": true
+   }
+  ]
+ }
+}

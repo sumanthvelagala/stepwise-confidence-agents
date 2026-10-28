@@ -1,0 +1,445 @@
+task,run,success,multiplicity,step,kind,what,label,n_refs,cap,exact,text,m_node_C4,m_ctx_C4,m_node_C5,m_ctx_C5,m_node_C6,m_ctx_C6,exact_hit_node,exact_pairs,nonexact_supported_pairs,exact_hit_ctx
+1,01e99231,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,01e99231,True,1,s2,message,message,unverified,20,,,Sure thing! To confirm whether your reservation can be cancelled and to calculate the refu,0.6,0.6,0.05,0.05,0.05,0.05,,,,
+1,01e99231,True,1,s4,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,01e99231,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,01e99231,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,01e99231,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,01e99231,True,1,s12,message,message,unverified,20,,,"I'm looking through your bookings for a flight from Philadelphia (PHL) to LaGuardia (LGA),",0.4,0.4,0.1,0.1,0.1,0.1,,,,
+1,01e99231,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,01e99231,True,1,s16,message,message,unverified,20,,,I've searched your account for a booking from Philadelphia (PHL) to LaGuardia (LGA) on Oct,0.45,0.45,0.15,0.15,0.15,0.15,,,,
+1,01e99231,True,1,s18,tool_call,get_reservation_details,unverified,20,,0.0,Call get_reservation_details with reservation_id = ABC-123456.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,01e99231,True,1,s20,message,message,unverified,20,,,"I'm sorry, but I couldn't locate a reservation with the ID ""ABC-123456"" in our system. It'",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,01e99231,True,1,s22,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez requests cancellation of res,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,01e99231,True,1,s24,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.0,0.0,0.95,0.95,,,,
+1,03d5d7f7,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,03d5d7f7,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To check if your reservation can be cancelled, I'll need the reservation ",0.5,0.5,0.4,0.4,0.4,0.4,,,,
+1,03d5d7f7,True,1,s4,message,message,unverified,20,,,"Sure thing! To find the exact reservation, I'll need a bit more info about the flight. Cou",0.5,0.5,0.1,0.1,0.1,0.1,,,,
+1,03d5d7f7,True,1,s6,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,03d5d7f7,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,03d5d7f7,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,03d5d7f7,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,03d5d7f7,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,03d5d7f7,True,1,s16,message,message,unverified,20,,,I'm looking through your account for a reservation that matches a flight from Philadelphia,0.3,0.3,0.2,0.2,0.2,0.2,,,,
+1,03d5d7f7,True,1,s18,message,message,unverified,20,,,I'm still unable to locate a reservation that matches a PHL → LGA flight on 2026-10-15 in ,0.1,0.1,0.0,0.0,0.0,0.0,,,,
+1,03d5d7f7,True,1,s20,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a flight fro,0.05,0.05,0.05,0.05,0.05,0.05,0,0,1,0
+1,03d5d7f7,True,1,s22,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.05,0.05,0.95,0.95,,,,
+1,1e36b2aa,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,1e36b2aa,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To check if your reservation can be cancelled, I'll need the reservation ",0.5,0.5,0.4,0.4,0.4,0.4,,,,
+1,1e36b2aa,True,1,s4,message,message,unverified,20,,,"Sure! To find the reservation, I'll need a bit more info about the flight: 1. The date you",0.1,0.1,0.1,0.1,0.1,0.1,,,,
+1,1e36b2aa,True,1,s6,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,1e36b2aa,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,1e36b2aa,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,1e36b2aa,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,1e36b2aa,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,1e36b2aa,True,1,s16,message,message,unverified,20,,,"I've looked through your current reservations, but none of them match a flight from Philad",0.4,0.4,0.05,0.05,0.05,0.05,,,,
+1,1e36b2aa,True,1,s18,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,1e36b2aa,True,1,s20,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel reservation ,0.4,0.4,0.4,0.4,0.4,0.4,0,0,8,0
+1,1e36b2aa,True,1,s22,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.4,0.4,0.95,0.95,,,,
+1,28836f5c,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,28836f5c,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,28836f5c,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,28836f5c,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,28836f5c,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,28836f5c,True,1,s10,message,message,unverified,20,,,I'm happy to help you with the cancellation. To check the cancellation rules and process i,0.45,0.45,0.3,0.3,0.3,0.3,,,,
+1,28836f5c,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,28836f5c,True,1,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,28836f5c,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel reservation ,0.4,0.4,0.4,0.4,0.4,0.4,0,0,8,0
+1,28836f5c,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.4,0.4,0.95,0.95,,,,
+1,2ad07cc8,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,2ad07cc8,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,2ad07cc8,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,2ad07cc8,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,2ad07cc8,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,2ad07cc8,True,1,s10,message,message,unverified,20,,,"I'm happy to help you with the cancellation. To proceed, could you please provide the rese",0.6,0.6,0.25,0.25,0.25,0.25,,,,
+1,2ad07cc8,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,2ad07cc8,True,1,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,2ad07cc8,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel reservation ,0.45,0.45,0.45,0.45,0.45,0.45,0,0,9,0
+1,2ad07cc8,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.45,0.45,0.95,0.95,,,,
+1,38cff2ac,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,38cff2ac,True,1,s2,message,message,unverified,20,,,"Sure, I can help you with that. To determine if a refund is possible, I'll need to check t",0.8,0.8,0.4,0.4,0.4,0.4,,,,
+1,38cff2ac,True,1,s4,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,38cff2ac,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,38cff2ac,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,38cff2ac,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,38cff2ac,True,1,s12,message,message,unverified,20,,,"I'm looking through your recent bookings, but I don't see a reservation that matches a fli",0.3,0.3,0.1,0.1,0.1,0.1,,,,
+1,38cff2ac,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,38cff2ac,True,1,s16,message,message,unverified,20,,,I'm still unable to locate a reservation that matches a flight from Philadelphia (PHL) to ,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,38cff2ac,True,1,s18,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,38cff2ac,True,1,s20,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a flight fro,0.3,0.3,0.3,0.3,0.3,0.3,0,0,6,0
+1,38cff2ac,True,1,s22,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.3,0.3,0.95,0.95,,,,
+1,482b2f43,True,2,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,482b2f43,True,2,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,482b2f43,True,2,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,482b2f43,True,2,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,482b2f43,True,2,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,482b2f43,True,2,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,482b2f43,True,2,s12,message,message,unverified,20,,,"I'm happy to help with the cancellation. To proceed, I'll need the reservation ID for the ",0.55,0.55,0.1,0.1,0.1,0.1,,,,
+1,482b2f43,True,2,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,482b2f43,True,2,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User wants to cancel reservation Q69X3R but c,0.55,0.55,0.55,0.55,0.55,0.55,0,0,11,0
+1,482b2f43,True,2,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.55,0.55,0.95,0.95,,,,
+1,4d2aebc8,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,4d2aebc8,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To check if your reservation can be cancelled, I'll need the reservation ",0.5,0.5,0.4,0.4,0.4,0.4,,,,
+1,4d2aebc8,True,1,s4,message,message,unverified,20,,,"Got it. To find the exact reservation, could you let me know the date of the flight (or th",0.55,0.55,0.2,0.2,0.2,0.2,,,,
+1,4d2aebc8,True,1,s6,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,4d2aebc8,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,4d2aebc8,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,4d2aebc8,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,4d2aebc8,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,4d2aebc8,True,1,s16,tool_call,search_direct_flight,unverified,20,,0.0,Call search_direct_flight with date = 2024-10-15; destination = LGA; origin = PHL.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,4d2aebc8,True,1,s18,tool_call,search_onestop_flight,unverified,20,,0.0,Call search_onestop_flight with date = 2024-10-15; destination = LGA; origin = PHL.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,4d2aebc8,True,1,s20,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,4d2aebc8,True,1,s22,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a flight fro,0.45,0.45,0.45,0.45,0.45,0.45,0,0,9,0
+1,4d2aebc8,True,1,s24,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.45,0.45,0.95,0.95,,,,
+1,5902aaff,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,5902aaff,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,5902aaff,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,5902aaff,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,5902aaff,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,5902aaff,True,1,s10,message,message,unverified,20,,,"I'm happy to help you with the cancellation. To proceed, I need to locate the reservation ",0.75,0.75,0.25,0.25,0.25,0.25,,,,
+1,5902aaff,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,5902aaff,True,1,s14,message,message,unverified,20,,,I'm looking for the reservation that includes the flight from Philadelphia (PHL) to LaGuar,0.25,0.25,0.15,0.15,0.15,0.15,,,,
+1,5902aaff,True,1,s16,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,5902aaff,True,1,s18,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a reservatio,0.45,0.05,0.45,0.05,0.45,0.05,0,0,9,0
+1,5902aaff,True,1,s20,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.45,0.45,0.95,0.95,,,,
+1,59c70af1,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,59c70af1,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,59c70af1,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,59c70af1,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,59c70af1,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,59c70af1,True,1,s10,message,message,unverified,20,,,"I'm happy to help with the cancellation. To proceed, I'll need the reservation ID for the ",0.45,0.45,0.25,0.25,0.25,0.25,,,,
+1,59c70af1,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,59c70af1,True,1,s14,message,message,unverified,20,,,I'm looking for the reservation that matches a one-way flight from Philadelphia (PHL) to L,0.25,0.25,0.05,0.05,0.05,0.05,,,,
+1,59c70af1,True,1,s16,message,message,unverified,20,,,"I'm sorry, but I don't have the flight date on record. Could you please let me know the da",0.05,0.05,0.0,0.0,0.0,0.0,,,,
+1,59c70af1,True,1,s18,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,59c70af1,True,1,s20,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User wants to cancel a flight from Philadelph,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,59c70af1,True,1,s22,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.0,0.0,0.95,0.95,,,,
+1,6a64cc1c,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,6a64cc1c,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,6a64cc1c,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,6a64cc1c,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,6a64cc1c,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,6a64cc1c,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,6a64cc1c,True,1,s12,message,message,unverified,20,,,"I'm happy to help with the cancellation. To proceed, I'll need the reservation ID for the ",0.55,0.55,0.1,0.1,0.1,0.1,,,,
+1,6a64cc1c,True,1,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,6a64cc1c,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User wants to cancel reservation Q69X3R (PHL ,0.35,0.35,0.35,0.35,0.35,0.35,0,0,7,0
+1,6a64cc1c,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.35,0.35,0.95,0.95,,,,
+1,72de648d,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,72de648d,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To check if your reservation can be cancelled, I'll need the reservation ",0.5,0.5,0.4,0.4,0.4,0.4,,,,
+1,72de648d,True,1,s4,message,message,unverified,20,,,"Sure thing! To find the exact reservation, I'll need a bit more info about the flight. Cou",0.5,0.5,0.1,0.1,0.1,0.1,,,,
+1,72de648d,True,1,s6,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,72de648d,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,72de648d,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,72de648d,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,72de648d,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,72de648d,True,1,s16,tool_call,search_direct_flight,unverified,20,,0.0,Call search_direct_flight with date = 2024-05-15; destination = LGA; origin = PHL.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,72de648d,True,1,s18,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,72de648d,True,1,s20,tool_call,get_flight_status,unverified,20,,0.0,Call get_flight_status with date = 2024-05-20; flight_number = HAT024.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,72de648d,True,1,s22,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User wants to cancel a flight from PHL to LGA,0.05,0.05,0.05,0.05,0.05,0.05,0,0,1,0
+1,72de648d,True,1,s24,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.05,0.05,0.95,0.95,,,,
+1,7de7b1db,False,1,s0,message,message,unverified,21,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,7de7b1db,False,1,s2,message,message,unverified,21,,,Sure thing! To confirm whether your reservation can be cancelled and to calculate the refu,0.619,0.619,0.095,0.095,0.095,0.095,,,,
+1,7de7b1db,False,1,s4,tool_call,get_user_details,valid,21,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,21,21,0,21
+1,7de7b1db,False,1,s6,tool_call,get_reservation_details,unverified,21,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,21,21,0,21
+1,7de7b1db,False,1,s8,message,message,unverified,21,,,I've located the reservation you mentioned (ID MZDDS4). Here's what I see: | Item | Detail,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,7de7b1db,False,1,s10,tool_call,cancel_reservation,incorrect,21,,0.0,Call cancel_reservation with reservation_id = MZDDS4.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,7de7b1db,False,1,s12,message,message,unverified,21,,,"Your reservation MZDDS4 has been cancelled. A full refund of $12,531 will be credited back",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,916880f7,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,916880f7,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,916880f7,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,916880f7,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,916880f7,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,916880f7,True,1,s10,message,message,unverified,20,,,I'm happy to help you with the cancellation. Could you please let me know the reservation ,0.5,0.5,0.25,0.25,0.25,0.25,,,,
+1,916880f7,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,916880f7,True,1,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,916880f7,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User wants to cancel a flight segment from PH,0.05,0.05,0.05,0.05,0.05,0.05,0,0,1,0
+1,916880f7,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.05,0.05,0.95,0.95,,,,
+1,9affc6f1,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,9affc6f1,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,9affc6f1,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,9affc6f1,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,9affc6f1,True,1,s8,message,message,unverified,20,,,"I'm sorry, but I couldn't find a reservation for a flight from Philadelphia (PHL) to LaGua",0.45,0.45,0.0,0.0,0.0,0.0,,,,
+1,9affc6f1,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,9affc6f1,True,1,s12,message,message,unverified,20,,,I'm still unable to locate a reservation for a flight from Philadelphia (PHL) to LaGuardia,0.3,0.3,0.15,0.15,0.15,0.15,,,,
+1,9affc6f1,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,9affc6f1,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a flight fro,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,9affc6f1,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.0,0.0,0.95,0.95,,,,
+1,b4afd67b,False,1,s0,message,message,unverified,21,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,b4afd67b,False,1,s2,message,message,unverified,21,,,Sure thing! To confirm whether your reservation can be cancelled and to calculate the refu,0.619,0.619,0.095,0.095,0.095,0.095,,,,
+1,b4afd67b,False,1,s4,tool_call,get_user_details,valid,21,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,21,21,0,21
+1,b4afd67b,False,1,s6,tool_call,get_reservation_details,unverified,21,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,21,21,0,21
+1,b4afd67b,False,1,s8,message,message,unverified,21,,,"Sure, I can help you cancel the reservation. To proceed, I'll need the reason for the canc",0.095,0.095,0.0,0.0,0.0,0.0,,,,
+1,b4afd67b,False,1,s10,message,message,unverified,21,,,Your reservation (ID MZDDS4) can be cancelled because it is a business-class flight and no,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,b4afd67b,False,1,s12,tool_call,cancel_reservation,incorrect,21,,0.0,Call cancel_reservation with reservation_id = MZDDS4.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,b4afd67b,False,1,s14,message,message,unverified,21,,,"Your reservation (ID MZDDS4) has been cancelled. A full refund of $12,531 will be credited",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,b762c775,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,b762c775,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To check if your reservation can be cancelled, I'll need the reservation ",0.5,0.5,0.4,0.4,0.4,0.4,,,,
+1,b762c775,True,1,s4,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,b762c775,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,b762c775,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,b762c775,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,b762c775,True,1,s12,message,message,unverified,20,,,I'm looking through your bookings to find the flight from Philadelphia (PHL) to LaGuardia ,0.4,0.4,0.15,0.15,0.15,0.15,,,,
+1,b762c775,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,b762c775,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a flight fro,0.05,0.05,0.05,0.05,0.05,0.05,0,0,1,0
+1,b762c775,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.05,0.05,0.95,0.95,,,,
+1,c8510466,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,c8510466,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To confirm whether your reservation can be cancelled and to explain the r",0.65,0.65,0.4,0.4,0.4,0.4,,,,
+1,c8510466,True,1,s4,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,c8510466,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,c8510466,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,c8510466,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,c8510466,True,1,s12,message,message,unverified,20,,,"I'm happy to help you cancel the flight, Raj. To do that, I'll need the reservation ID for",0.3,0.3,0.15,0.15,0.15,0.15,,,,
+1,c8510466,True,1,s14,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,c8510466,True,1,s16,message,message,unverified,20,,,I've checked your account for a booking that matches a flight from Philadelphia (PHL) to L,0.3,0.3,0.1,0.1,0.1,0.1,,,,
+1,c8510466,True,1,s18,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,c8510466,True,1,s20,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User wants to cancel a flight from PHL to LGA,0.1,0.1,0.1,0.1,0.1,0.1,0,0,2,0
+1,c8510466,True,1,s22,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.1,0.1,0.95,0.95,,,,
+1,d1038e43,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,d1038e43,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,d1038e43,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,d1038e43,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,d1038e43,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,d1038e43,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,d1038e43,True,1,s12,message,message,unverified,20,,,"I'm happy to help. To proceed with a cancellation, I'll need the reservation ID for the fl",0.85,0.85,0.2,0.2,0.2,0.2,,,,
+1,d1038e43,True,1,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,d1038e43,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User requests cancellation of reservation Q69,0.35,0.35,0.35,0.35,0.35,0.35,0,0,7,0
+1,d1038e43,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.35,0.35,0.95,0.95,,,,
+1,e1c19138,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,e1c19138,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,e1c19138,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,e1c19138,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,e1c19138,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,e1c19138,True,1,s10,message,message,unverified,20,,,I'm happy to help. Could you please provide the reservation ID for the flight from Philade,0.45,0.45,0.3,0.3,0.3,0.3,,,,
+1,e1c19138,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,e1c19138,True,1,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,e1c19138,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a flight fro,0.3,0.05,0.3,0.05,0.3,0.05,0,0,6,0
+1,e1c19138,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.3,0.3,0.95,0.95,,,,
+1,f7ecd082,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,f7ecd082,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To check if your reservation can be cancelled, I'll need the reservation ",0.35,0.35,0.35,0.35,0.35,0.35,,,,
+1,f7ecd082,True,1,s4,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,f7ecd082,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,f7ecd082,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,f7ecd082,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,f7ecd082,True,1,s12,message,message,unverified,20,,,I'm looking through your reservations to find the one that's from Philadelphia (PHL) to La,0.35,0.35,0.2,0.2,0.2,0.2,,,,
+1,f7ecd082,True,1,s14,message,message,unverified,20,,,Sure thing. Could you let me know either the flight date (YYYY-MM-DD) or the flight number,0.3,0.3,0.0,0.0,0.0,0.0,,,,
+1,f7ecd082,True,1,s16,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,f7ecd082,True,1,s18,message,message,unverified,20,,,I'm still looking for the reservation that's from Philadelphia (PHL) to LaGuardia (LGA). I,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,f7ecd082,True,1,s20,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,f7ecd082,True,1,s22,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a reservatio,0.3,0.3,0.3,0.3,0.3,0.3,0,0,6,0
+1,f7ecd082,True,1,s24,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.3,0.3,0.95,0.95,,,,
+1,fd63c723,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,fd63c723,True,1,s2,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd63c723,True,1,s4,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd63c723,True,1,s6,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd63c723,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd63c723,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd63c723,True,1,s12,tool_call,search_direct_flight,unverified,20,,0.0,Call search_direct_flight with date = 2024-05-20; destination = LGA; origin = PHL.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+1,fd63c723,True,1,s14,tool_call,get_reservation_details,valid,20,0.75,0.75,Call get_reservation_details with reservation_id = Q69X3R.,0.75,0.75,0.75,0.75,0.75,0.75,15,15,0,15
+1,fd63c723,True,1,s16,tool_call,transfer_to_human_agents,unverified,20,,0.0,Call transfer_to_human_agents with summary = User Raj Sanchez wants to cancel a flight fro,0.4,0.05,0.4,0.05,0.4,0.05,0,0,8,0
+1,fd63c723,True,1,s18,message,message,valid,20,0.95,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.95,0.95,0.4,0.4,0.95,0.95,,,,
+1,fd922b45,True,1,s0,message,message,unverified,20,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+1,fd922b45,True,1,s2,message,message,unverified,20,,,"Sure thing, Raj! To check if your reservation can be cancelled, I'll need the reservation ",0.5,0.5,0.4,0.4,0.4,0.4,,,,
+1,fd922b45,True,1,s4,message,message,unverified,20,,,"Sure! To find the reservation, I'll need a bit more info about the flight: 1. The date you",0.1,0.1,0.1,0.1,0.1,0.1,,,,
+1,fd922b45,True,1,s6,tool_call,get_user_details,valid,20,1.0,1.0,Call get_user_details with user_id = raj_sanchez_7340.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd922b45,True,1,s8,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = MZDDS4.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd922b45,True,1,s10,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = 60RX9E.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd922b45,True,1,s12,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = S5IK51.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd922b45,True,1,s14,message,message,unverified,20,,,I'm looking through your reservations for a flight from Philadelphia (PHL) to LaGuardia (L,0.35,0.35,0.15,0.15,0.15,0.15,,,,
+1,fd922b45,True,1,s16,message,message,unverified,20,,,I've searched all of your current reservations for a flight from Philadelphia (PHL) to LaG,0.25,0.25,0.0,0.0,0.0,0.0,,,,
+1,fd922b45,True,1,s18,message,message,unverified,20,,,"You can simply attach the confirmation email to this chat (just click the ""Attach file"" bu",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+1,fd922b45,True,1,s20,tool_call,get_reservation_details,unverified,20,,1.0,Call get_reservation_details with reservation_id = OUEA45.,1.0,1.0,1.0,1.0,1.0,1.0,20,20,0,20
+1,fd922b45,True,1,s22,message,message,unverified,20,,,I've searched all of your current reservations for a flight from Philadelphia (PHL) to LaG,0.05,0.05,0.1,0.1,0.1,0.1,,,,
+28,08612f57,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,08612f57,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,08612f57,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.467,0.4,0.467,0.4,0.467,0.4,0,0,7,0
+28,08612f57,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.467,0.467,1.0,1.0,,,,
+28,09434e24,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,09434e24,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,09434e24,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi requests cancellation of re,0.933,0.4,0.933,0.4,0.933,0.4,0,0,14,0
+28,09434e24,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.933,0.933,1.0,1.0,,,,
+28,0c438dbc,True,5,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,0c438dbc,True,5,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,0c438dbc,True,5,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.933,0.4,0.933,0.4,0.933,0.4,0,0,14,0
+28,0c438dbc,True,5,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.933,0.933,1.0,1.0,,,,
+28,44d5362e,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,44d5362e,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,44d5362e,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.467,0.4,0.467,0.4,0.467,0.4,0,0,7,0
+28,44d5362e,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.467,0.467,1.0,1.0,,,,
+28,5f671c53,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,5f671c53,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,5f671c53,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.933,0.4,0.933,0.4,0.933,0.4,0,0,14,0
+28,5f671c53,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.933,0.933,1.0,1.0,,,,
+28,63398713,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,63398713,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,63398713,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.067,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.667,0.667,0.667,0.667,0.667,0.667,1,1,9,1
+28,63398713,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.667,0.667,1.0,1.0,,,,
+28,65fe6fb0,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,65fe6fb0,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.867,0.867,0.867,0.867,0.867,0.867,13,14,0,13
+28,65fe6fb0,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.6,0.6,0.6,0.6,0.6,0.6,0,0,9,0
+28,65fe6fb0,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.6,0.6,1.0,1.0,,,,
+28,84a643cd,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,84a643cd,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,84a643cd,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.067,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.667,0.667,0.667,0.667,0.667,0.667,1,1,9,1
+28,84a643cd,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.667,0.667,1.0,1.0,,,,
+28,885a4291,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,885a4291,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,885a4291,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.667,0.667,0.667,0.667,0.667,0.667,0,0,10,0
+28,885a4291,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.667,0.667,1.0,1.0,,,,
+28,8a0ad602,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,8a0ad602,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,8a0ad602,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.467,0.4,0.467,0.4,0.467,0.4,0,0,7,0
+28,8a0ad602,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.467,0.467,1.0,1.0,,,,
+28,8dcadc85,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,8dcadc85,True,1,s2,message,message,unverified,15,,,"Sure, I can help with that. Could you please provide your user ID?",0.067,0.067,0.067,0.067,0.067,0.067,,,,
+28,8dcadc85,True,1,s4,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,8dcadc85,True,1,s6,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User wants to cancel reservation SI5UKW but c,0.667,0.667,0.667,0.667,0.667,0.667,0,0,10,0
+28,8dcadc85,True,1,s8,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.667,0.667,1.0,1.0,,,,
+28,a571b161,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,a571b161,True,1,s2,message,message,unverified,15,,,"Sure thing, Amelia! Before I can confirm the refund details, could you let me know the rea",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+28,a571b161,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.133,0.133,0.133,0.133,0.133,0.133,0,0,2,0
+28,a571b161,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.133,0.133,1.0,1.0,,,,
+28,b2edc5b6,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,b2edc5b6,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,b2edc5b6,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.8,0.8,0.8,0.8,0.8,0.8,0,0,12,0
+28,b2edc5b6,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.8,0.8,1.0,1.0,,,,
+28,b6b8a2fb,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,b6b8a2fb,True,1,s2,message,message,unverified,15,,,"Sure, I can help with that. Could you please provide your user ID?",0.067,0.067,0.067,0.067,0.067,0.067,,,,
+28,b6b8a2fb,True,1,s4,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.867,0.867,0.867,0.867,0.867,0.867,13,14,0,13
+28,b6b8a2fb,True,1,s6,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.6,0.6,0.6,0.6,0.6,0.6,0,0,9,0
+28,b6b8a2fb,True,1,s8,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.6,0.6,1.0,1.0,,,,
+28,b8986d26,True,2,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,b8986d26,True,2,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,b8986d26,True,2,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.467,0.4,0.467,0.4,0.467,0.4,0,0,7,0
+28,b8986d26,True,2,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.467,0.467,1.0,1.0,,,,
+28,f15c5adf,True,1,s0,message,message,unverified,15,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+28,f15c5adf,True,1,s2,tool_call,get_reservation_details,unverified,15,,0.933,Call get_reservation_details with reservation_id = SI5UKW.,0.933,0.933,0.933,0.933,0.933,0.933,14,14,0,14
+28,f15c5adf,True,1,s4,tool_call,transfer_to_human_agents,unverified,15,,0.0,Call transfer_to_human_agents with summary = User Amelia Rossi wants to cancel reservation,0.667,0.667,0.667,0.667,0.667,0.667,0,0,10,0
+28,f15c5adf,True,1,s6,message,message,valid,15,1.0,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,1.0,1.0,0.667,0.667,1.0,1.0,,,,
+5,0562cba2,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,0562cba2,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the delay. Based on our policy, compensation for a delayed flight ",0.923,0.923,0.615,0.615,0.615,0.615,,,,
+5,0562cba2,True,1,s4,message,message,unverified,13,,,"I'm sorry, but our policy only allows compensation for a flight that has been cancelled, r",0.846,0.846,0.385,0.385,0.385,0.385,,,,
+5,0562cba2,True,1,s6,message,message,unverified,13,,,"I'm sorry, but we're not able to issue a voucher or refund for a flight that was only dela",0.615,0.615,0.231,0.231,0.231,0.231,,,,
+5,0562cba2,True,1,s8,message,message,unverified,13,,,"I'm sorry, but I can't offer a voucher or refund for a flight that was only delayed. Our p",0.462,0.462,0.077,0.077,0.077,0.077,,,,
+5,0562cba2,True,1,s10,tool_call,transfer_to_human_agents,unverified,13,,0.0,Call transfer_to_human_agents with summary = User requests compensation for delayed flight,0.154,0.154,0.154,0.154,0.154,0.154,0,0,2,0
+5,0562cba2,True,1,s12,message,message,valid,13,0.385,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.385,0.385,0.154,0.154,0.385,0.385,,,,
+5,0562cba2,True,1,s14,message,message,unverified,13,,,I've connected you to a human agent who can assist you further. Thank you for your patienc,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,182bc535,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,182bc535,True,1,s2,message,message,unverified,13,,,I'm sorry to hear about the delay and the impact it's having on your meeting. According to,0.923,0.923,0.538,0.538,0.538,0.538,,,,
+5,182bc535,True,1,s4,message,message,unverified,13,,,"I'm sorry, but under our current policies we can only issue a compensation certificate if ",0.769,0.769,0.231,0.231,0.231,0.231,,,,
+5,182bc535,True,1,s6,tool_call,transfer_to_human_agents,unverified,13,,0.0,"Call transfer_to_human_agents with summary = User Mei Brown, Gold member, is requesting co",0.077,0.077,0.077,0.077,0.077,0.077,0,0,1,0
+5,182bc535,True,1,s8,message,message,valid,13,0.385,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.385,0.385,0.077,0.077,0.385,0.385,,,,
+5,1bae5088,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,1bae5088,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear how this delay has impacted your plans. Unfortunately, we're only able t",0.923,0.923,0.385,0.385,0.385,0.385,,,,
+5,1bae5088,True,1,s4,tool_call,transfer_to_human_agents,unverified,13,,0.0,Call transfer_to_human_agents with summary = User Mei Brown requests compensation for a de,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,1bae5088,True,1,s6,message,message,valid,13,0.385,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.385,0.385,0.0,0.0,0.385,0.385,,,,
+5,1bae5088,True,1,s8,message,message,unverified,13,,,Thank you for holding. A senior agent will be with you shortly.,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,2e3dad52,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,2e3dad52,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the delay. According to our current policy, compensation for a del",0.692,0.692,0.154,0.154,0.154,0.154,,,,
+5,2e3dad52,True,1,s4,message,message,unverified,13,,,"I'm sorry, but I'm not able to provide a compensation or voucher for this delay without a ",0.538,0.538,0.154,0.154,0.154,0.154,,,,
+5,2e3dad52,True,1,s6,message,message,unverified,13,,,"I'm very sorry for the inconvenience this delay has caused. Under our current policy, comp",0.923,0.923,0.462,0.462,0.462,0.462,,,,
+5,2e3dad52,True,1,s8,message,message,unverified,13,,,"I'm sorry, but I'm unable to offer a voucher or cash settlement for a delayed flight that ",0.462,0.462,0.385,0.385,0.385,0.385,,,,
+5,49475382,False,1,s0,message,message,unverified,14,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,49475382,False,1,s2,message,message,unverified,14,,,I'm sorry to hear that flight HAT045 is delayed. Could you please let me know the schedule,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s4,message,message,unverified,14,,,Could you please let me know the date on which flight HAT045 is scheduled (in the format Y,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s6,message,message,unverified,14,,,I understand how frustrating a delay can be when it impacts an important meeting. To prope,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s8,message,message,unverified,14,,,I understand. The flight's date is essential for me to confirm its status and the applicab,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s10,message,message,unverified,14,,,I'm sorry for the inconvenience. To confirm the latest status of flight HAT045 and determi,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s12,message,message,unverified,14,,,I'm sorry about the mix-up. To look up the flight's status and determine the available com,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s14,message,message,unverified,14,,,I understand this may be a bit inconvenient. To confirm the flight's current status and di,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s16,message,message,unverified,14,,,"I'm really sorry you're stuck without that date. Unfortunately, I can't pull up the flight",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s18,message,message,unverified,14,,,I'm truly sorry you're missing the departure date. Because the flight's status and the com,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s20,message,message,unverified,14,,,I'm really sorry that this delay is causing you trouble. Because flight HAT045's status an,0.214,0.214,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s22,tool_call,assistant/get_flight_status<|channel|>commentary,unverified,14,,0.0,Call assistant/get_flight_status<|channel|>commentary with departure_date = 2024-10-15; fl,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s24,tool_call,assistant/get_flight_status<|channel|>commentary,unverified,14,,0.0,Call assistant/get_flight_status<|channel|>commentary with departure_date = 2024-10-15; fl,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s26,tool_call,assistant/get_flight_status<|channel|>commentary,unverified,14,,0.0,Call assistant/get_flight_status<|channel|>commentary with date = 2024-10-15; flight = HAT,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s28,tool_call,assistant/get_flight_status,unverified,14,,0.0,Call assistant/get_flight_status with date = 2024-10-15; flight_number = HAT045.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s30,tool_call,assistant/get_flight_status<|channel|>commentary,unverified,14,,0.0,Call assistant/get_flight_status<|channel|>commentary with date = 2024-10-15; flight_numbe,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s32,tool_call,assistant/get_flight_status<|channel|>commentary,unverified,14,,0.0,Call assistant/get_flight_status<|channel|>commentary with date = 2024-10-15; flight_numbe,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s34,tool_call,assistant/get_flight_status,unverified,14,,0.0,Call assistant/get_flight_status with date = 2024-10-15; flight_number = HAT045.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s36,message,message,unverified,14,,,"I'm sorry for the inconvenience, but in order to look up the exact status of flight HAT045",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,49475382,False,1,s38,tool_call,assistant/get_user_details,unverified,14,,0.0,Call assistant/get_user_details with user_id = mei_brown_7075.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s40,tool_call,assistant/get_user_details<|channel|>commentary,unverified,14,,0.0,Call assistant/get_user_details<|channel|>commentary with user_id = mei_brown_7075.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,49475382,False,1,s42,tool_call,assistant/get_user_details<|channel|>commentary,unverified,14,,0.0,Call assistant/get_user_details<|channel|>commentary with user_id = mei_brown_7075.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,7db042b6,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,7db042b6,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the delay. According to our policy, compensation for a delayed fli",1.0,1.0,0.769,0.769,0.769,0.769,,,,
+5,7db042b6,True,1,s4,message,message,unverified,13,,,"I'm really sorry you're dealing with this inconvenience, but per our airline policy we can",0.846,0.846,0.308,0.308,0.308,0.308,,,,
+5,7db042b6,True,1,s6,message,message,unverified,13,,,"I'm sorry, but I'm not able to provide a refund or voucher for a delayed flight that you'r",0.692,0.692,0.231,0.231,0.231,0.231,,,,
+5,7db042b6,True,1,s8,tool_call,transfer_to_human_agents,unverified,13,,0.0,"Call transfer_to_human_agents with summary = User Mei Brown, Gold member, requests refund ",0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,7db042b6,True,1,s10,message,message,valid,13,0.385,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.385,0.385,0.0,0.0,0.385,0.385,,,,
+5,8cd08bf3,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,8cd08bf3,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the delay on flight HAT045. Unfortunately, the airline's policy on",0.846,0.846,0.308,0.308,0.308,0.308,,,,
+5,8cd08bf3,True,1,s4,message,message,unverified,13,,,I'm really sorry for the inconvenience caused by the delay. According to our current polic,0.846,0.846,0.462,0.462,0.462,0.462,,,,
+5,8cd08bf3,True,1,s6,message,message,unverified,13,,,"I'm very sorry you're still upset, and I understand how frustrating this is. According to ",0.769,0.769,0.231,0.231,0.231,0.231,,,,
+5,8cd08bf3,True,1,s8,message,message,unverified,13,,,I'm truly sorry that the delay has impacted your schedule. For a delayed flight we can onl,0.462,0.462,0.231,0.231,0.231,0.231,,,,
+5,8cd08bf3,True,1,s10,message,message,unverified,13,,,"I'm really sorry for the continued inconvenience. I've reviewed the policy thoroughly, and",0.308,0.308,0.154,0.154,0.154,0.154,,,,
+5,8cd08bf3,True,1,s12,message,message,unverified,13,,,I'm truly sorry that you're still dealing with this delay. After reviewing the policy agai,0.077,0.077,0.077,0.077,0.077,0.077,,,,
+5,8cd08bf3,True,1,s14,message,message,unverified,13,,,"Thank you for your understanding. Your reservation will stay unchanged, and no compensatio",0.231,0.231,0.0,0.0,0.0,0.0,,,,
+5,95dc32dd,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,95dc32dd,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the inconvenience. Unfortunately, we can't offer a monetary or vou",1.0,1.0,0.385,0.385,0.385,0.385,,,,
+5,95dc32dd,True,1,s4,message,message,unverified,13,,,"I'm sorry, but I'm not able to offer compensation for a delayed flight unless the flight i",0.846,0.846,0.538,0.538,0.538,0.538,,,,
+5,95dc32dd,True,1,s6,message,message,unverified,13,,,"I'm sorry, but I can't offer a monetary payout or voucher for a delayed flight unless you ",0.615,0.615,0.462,0.462,0.462,0.462,,,,
+5,95dc32dd,True,1,s8,message,message,unverified,13,,,"I'm sorry, but I'm not able to provide any monetary or voucher compensation for the delay ",0.462,0.462,0.231,0.231,0.231,0.231,,,,
+5,95dc32dd,True,1,s10,message,message,unverified,13,,,"I'm sorry, but I'm not able to provide a monetary payout or voucher for a delayed flight u",0.538,0.538,0.538,0.538,0.538,0.538,,,,
+5,a14bdf63,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,a14bdf63,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the delay, Mei. To be clear, the policy only allows a compensation",0.846,0.846,0.462,0.462,0.462,0.462,,,,
+5,a14bdf63,True,1,s4,message,message,unverified,13,,,"I'm sorry, but we're not able to offer compensation for a delayed flight when you choose t",1.0,1.0,0.231,0.231,0.231,0.231,,,,
+5,a14bdf63,True,1,s6,message,message,unverified,13,,,"I'm sorry, but we're not able to provide any compensation for a delayed flight if you choo",0.615,0.615,0.308,0.308,0.308,0.308,,,,
+5,a14bdf63,True,1,s8,message,message,unverified,13,,,"I'm really sorry you're experiencing this inconvenience. Unfortunately, our policy only al",0.615,0.615,0.308,0.308,0.308,0.308,,,,
+5,a14bdf63,True,1,s10,message,message,unverified,13,,,"I'm sorry, but we're unable to offer a refund or voucher for a delayed flight while you're",0.231,0.231,0.077,0.077,0.077,0.077,,,,
+5,a14bdf63,True,1,s12,message,message,unverified,13,,,"{""action"":""transfer_to_human_agents"",""parameters"":{""reason"":""User requests compensation fo",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,ac80c0d0,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,ac80c0d0,True,1,s2,tool_call,get_flight_status,unverified,13,,0.077,Call get_flight_status with date = 2024-05-15; flight_number = HAT045.,0.077,0.077,0.077,0.077,0.077,0.077,1,1,0,1
+5,ac80c0d0,True,1,s4,message,message,unverified,13,,,I'm sorry to hear about the delay. Because you're not requesting a change or cancellation ,0.538,0.538,0.077,0.077,0.077,0.077,,,,
+5,ac80c0d0,True,1,s6,message,message,unverified,13,,,"I'm sorry, but per our policy we can't offer a compensation for a delayed flight unless th",0.846,0.846,0.385,0.385,0.385,0.385,,,,
+5,ac80c0d0,True,1,s8,tool_call,transfer_to_human_agents,unverified,13,,0.0,"Call transfer_to_human_agents with summary = User is Gold member, delayed flight, wants mo",0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,ac80c0d0,True,1,s10,message,message,valid,13,0.385,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.385,0.385,0.0,0.0,0.385,0.385,,,,
+5,ac80c0d0,True,1,s12,message,message,unverified,13,,,I'll connect you with a supervisor right away. One moment please.,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s0,message,message,unverified,14,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,c0810635,False,1,s2,tool_call,transfer_to_human_agents,unverified,14,,0.0,Call transfer_to_human_agents with summary = User requested compensation for flight delay ,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,c0810635,False,1,s4,message,message,valid,14,0.429,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.429,0.429,0.0,0.0,0.429,0.429,,,,
+5,c0810635,False,1,s6,message,message,unverified,14,,,I'm sorry to hear about the delay and how it's impacting your meeting. Since you're a Gold,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s8,tool_call,get_user_details,valid,14,0.0,0.0,Call get_user_details with user_id = mei_brown_7075.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,c0810635,False,1,s10,message,message,unverified,14,,,"I'm looking into what can be offered for a delayed flight. Before I proceed, could you let",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s12,message,message,unverified,14,,,"I'm sorry about the confusion. To determine the exact compensation, could you please let m",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s14,message,message,unverified,14,,,I've confirmed the details: you're the single passenger on flight HAT045 (Phoenix → Seattl,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s16,message,message,unverified,14,,,I've looked closely at our policy for a delayed flight that stays on-schedule (like HAT045,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s18,message,message,unverified,14,,,"I'm sorry you're disappointed. Under the Airline Agent Policy, the only compensation we ca",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s20,tool_call,send_certificate,attempted_incorrect,14,,0.0,Call send_certificate with amount = 50; user_id = ?.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,c0810635,False,1,s22,message,message,unverified,14,,,Could you please provide your account ID (the user ID) so I can add the $50 certificate to,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c0810635,False,1,s24,tool_call,send_certificate,incorrect,14,,0.0,Call send_certificate with amount = 50; user_id = mei_brown_7075.,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0
+5,c0810635,False,1,s26,message,message,unverified,14,,,Excellent! ✅ A $50 travel certificate (certificate_3221322) has been added to your account,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c562d90a,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,c562d90a,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the delay, Mei. Unfortunately, we can't offer compensation for a d",0.538,0.538,0.154,0.154,0.154,0.154,,,,
+5,c562d90a,True,1,s4,message,message,unverified,13,,,"I'm sorry, but I'm not able to provide compensation for a delay when the flight is still s",0.923,0.923,0.231,0.231,0.231,0.231,,,,
+5,c562d90a,True,1,s6,message,message,unverified,13,,,"I'm sorry, but I can't provide compensation for a delay when the flight is still scheduled",0.615,0.615,0.231,0.231,0.231,0.231,,,,
+5,c562d90a,True,1,s8,message,message,unverified,13,,,"I'm sorry, but we can't offer compensation for a delay when the flight is still scheduled ",0.462,0.462,0.077,0.077,0.077,0.077,,,,
+5,c562d90a,True,1,s10,message,message,unverified,13,,,"I'm sorry, but I can't provide compensation for a delay when the flight is still scheduled",0.538,0.538,0.0,0.0,0.0,0.0,,,,
+5,c562d90a,True,1,s12,message,message,unverified,13,,,I'm sorry we couldn't find a solution that meets your expectations. If anything else comes,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,c763d132,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,c763d132,True,1,s2,message,message,unverified,13,,,"I'm sorry you're facing a delay. Unfortunately, our policy only allows compensation for a ",0.923,0.923,0.538,0.538,0.538,0.538,,,,
+5,c763d132,True,1,s4,message,message,unverified,13,,,"I'm sorry you're upset, and I understand why you'd like compensation. According to our pol",0.538,0.538,0.308,0.308,0.308,0.308,,,,
+5,c763d132,True,1,s6,message,message,unverified,13,,,"I'm sorry for the inconvenience you're experiencing, but according to our compensation pol",0.615,0.615,0.538,0.538,0.538,0.538,,,,
+5,c763d132,True,1,s8,message,message,unverified,13,,,I'm sorry to hear how this delay is affecting your plans. According to our current compens,0.538,0.538,0.231,0.231,0.231,0.231,,,,
+5,c763d132,True,1,s10,message,message,unverified,13,,,I'm really sorry that this delay is causing you such stress. I've reviewed the situation a,0.615,0.615,0.308,0.308,0.308,0.308,,,,
+5,c763d132,True,1,s12,message,message,unverified,13,,,"I'm sorry, but we're unable to offer a voucher or cash payout for a delayed flight if the ",0.154,0.154,0.0,0.0,0.0,0.0,,,,
+5,c763d132,True,1,s14,message,message,unverified,13,,,"I'm sorry, but we can't offer a voucher or cash payout for a delayed flight if the flight ",0.385,0.385,0.154,0.154,0.154,0.154,,,,
+5,d123e532,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,d123e532,True,1,s2,message,message,unverified,13,,,"I'm sorry to hear about the delay. According to our policy, compensation is offered for a ",0.923,0.923,0.615,0.615,0.615,0.615,,,,
+5,d123e532,True,1,s4,message,message,unverified,13,,,"I'm sorry, but I'm not able to offer any additional compensation for a delayed flight when",0.692,0.692,0.538,0.538,0.538,0.538,,,,
+5,d123e532,True,1,s6,message,message,unverified,13,,,"I'm sorry, but I'm not able to provide additional compensation for a delay when the flight",0.308,0.308,0.231,0.231,0.231,0.231,,,,
+5,d123e532,True,1,s8,message,message,unverified,13,,,"I'm sorry, but I'm not able to provide additional compensation for a delayed flight that i",0.615,0.615,0.538,0.538,0.538,0.538,,,,
+5,d123e532,True,1,s10,message,message,unverified,13,,,"I'm sorry, but I can't offer any additional compensation for a delayed flight that is not ",0.462,0.462,0.385,0.385,0.385,0.385,,,,
+5,f21e4586,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,f21e4586,True,1,s2,message,message,unverified,13,,,I'm sorry to hear that the delay is affecting your meeting. Because you'd like to keep the,0.769,0.769,0.385,0.385,0.385,0.385,,,,
+5,f21e4586,True,1,s4,message,message,unverified,13,,,"I understand how frustrating this has been. According to our policy, compensation for a de",0.846,0.846,0.077,0.077,0.077,0.077,,,,
+5,f21e4586,True,1,s6,message,message,unverified,13,,,"I'm sorry, but we're not able to provide a cash reimbursement for a delayed flight that re",0.846,0.846,0.077,0.077,0.077,0.077,,,,
+5,f21e4586,True,1,s8,message,message,unverified,13,,,"I'm sorry, but we can't provide a cash refund or any other type of direct compensation for",0.385,0.385,0.077,0.077,0.077,0.077,,,,
+5,f21e4586,True,1,s10,message,message,unverified,13,,,"I'm sorry, but under our current policies we can't provide a cash refund or any other dire",0.385,0.385,0.154,0.154,0.154,0.154,,,,
+5,f21e4586,True,1,s12,message,message,unverified,13,,,"I'm sorry, but we're not able to provide a cash credit to your original payment method for",0.154,0.154,0.0,0.0,0.0,0.0,,,,
+5,f21e4586,True,1,s14,message,message,unverified,13,,,"Thank you for your understanding, and I appreciate your patience. If there's anything else",0.0,0.0,0.0,0.0,0.0,0.0,,,,
+5,fed56038,True,1,s0,message,message,unverified,13,,,Hi! How can I help you today?,1.0,1.0,1.0,1.0,1.0,1.0,,,,
+5,fed56038,True,1,s2,tool_call,get_flight_status,unverified,13,,0.077,Call get_flight_status with flight_number = HAT045; date = 2024-05-15.,0.077,0.077,0.077,0.077,0.077,0.077,1,1,0,1
+5,fed56038,True,1,s4,message,message,unverified,13,,,I'm really sorry you're experiencing this delay. I've confirmed that flight HAT045 from Ph,0.769,0.769,0.077,0.077,0.077,0.077,,,,
+5,fed56038,True,1,s6,message,message,unverified,13,,,"I'm sorry, but we can only issue a travel-certificate compensation for a delayed flight if",0.923,0.923,0.154,0.154,0.154,0.154,,,,
+5,fed56038,True,1,s8,tool_call,transfer_to_human_agents,unverified,13,,0.0,Call transfer_to_human_agents with summary = User requests compensation for delay without ,0.077,0.077,0.077,0.077,0.077,0.077,0,0,1,0
+5,fed56038,True,1,s10,message,message,valid,13,0.385,,YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.,0.385,0.385,0.077,0.077,0.385,0.385,,,,

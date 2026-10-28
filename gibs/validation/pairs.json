@@ -1,0 +1,140 @@
+{
+  "description": "Pre-registered validation pairs for comparing MCS configurations A/B/C. Written before configuration C was implemented and before any A/B/C comparison was run. Step ids refer to schema-v0.2 step graphs (s = AgentStep, u = UserTurn, number = raw message index). 'demonstrably_incorrect' cites independent evidence (task policy, task NL assertions / gold actions, DB check); it is NOT inferred from the final reward alone. Expectations are predictions about matcher behaviour, not ground truth.",
+  "pairs": [
+    {
+      "id": "V1", "task": "48", "category": ["success_vs_failure"],
+      "query": {"file": "results/pilot/tasks_25_40_48/results.json", "sim": "7f5cbcd7", "reward": 0.0},
+      "reference": {"file": "results/pilot/tasks_25_40_48/results.json", "sim": "c890f90b", "reward": 1.0},
+      "already_observed": "Configuration B was run on this pair in gibs/examples/task48_pair (not blind for B).",
+      "demonstrably_incorrect": [
+        {"step": "s6", "action": "cancel_reservation(3RK2T9)", "evidence": "Task NL assertion 'Agent does not cancel 3RK2T9'. The s4 observation shows created_at 2024-05-02 (more than 24 h before the policy time 2024-05-15), cabin basic_economy, insurance no, and the airline did not cancel. The policy allows none of the cancellation conditions. DB check failed."}
+      ],
+      "expected": {
+        "all_configs": "s0, s2, s4 matched; s6 is the first unmatched agent step (cancel has no counterpart; NLI against any reference operation is about 0.1 or less); s8 to s12 unmatched.",
+        "C_vs_B": "identical to B (the lookup observations are identical, so the field check passes; the cancel is already rejected by NLI)."
+      },
+      "expected_first_unmatched": {"A": "s6", "B": "s6", "C": "s6"}
+    },
+    {
+      "id": "V2", "task": "48", "category": ["success_vs_success_different_paths"],
+      "query": {"file": "results/pilot/tasks_25_40_48/results.json", "sim": "c890f90b", "reward": 1.0},
+      "reference": {"file": "results/pilot/tasks_25_40_48/results.json", "sim": "655b2a43", "reward": 1.0},
+      "already_observed": "B and the paper-literal topology were run on this pair (not blind for those).",
+      "demonstrably_incorrect": [],
+      "expected": {
+        "B": "s0, s2, s4 matched; s6 (refusal message, no counterpart: the reference transfers directly), s8 (transfer, summaries worded differently) and s10 (identical notice, but disconnected) unmatched. 3 valid steps unmatched.",
+        "A": "As B, but s10 recovered through ROOT. 2 valid steps unmatched.",
+        "C_vs_B": "identical to B."
+      },
+      "expected_first_unmatched": {"A": "s6", "B": "s6", "C": "s6"}
+    },
+    {
+      "id": "V3", "task": "40", "category": ["success_vs_failure", "similar_observations_different_critical_fields"],
+      "query": {"file": "results/probe/new_batch2/results.json", "sim": "b4901df6", "reward": 0.0},
+      "reference": {"file": "results/probe/new_batch2/results.json", "sim": "f6000fbe", "reward": 1.0},
+      "demonstrably_incorrect": [
+        {"step": "s10", "action": "update_reservation_passengers with Mei Garcia dob 1992-07-15", "evidence": "The s8 observation (same reservation) lists the passenger's dob as 1989-12-13. The task's gold action uses dob 1989-12-13. The value came from a user-simulator turn (u7) that is not in the task scenario. DB check failed."}
+      ],
+      "expected": {
+        "all_configs": "s0, s2 matched (if the message paraphrases pass NLI). s6 (agent asks for the DOB) has no counterpart and is unmatched; it is NOT demonstrably incorrect (asking is not a policy violation). s10 update unmatched: NLI P03 = 0.457 < 0.7.",
+        "B": "s8 lookup: identical call and observation, but its context edge comes from u7 (DOB turn) while the reference's comes from 'Yes.', so m_ctx(s8) = 0. m_node(s8) may be 1 only if the data edge from u1 is connected to the MCS.",
+        "C_vs_B": "C additionally records a field rejection for the update (passengers[1].dob) if any update pair reaches the NLI thresholds; otherwise identical to B."
+      },
+      "expected_first_unmatched": {"A": "s6", "B": "s6", "C": "s6"},
+      "note": "Expected mismatch: the first unmatched step (s6) precedes the demonstrably incorrect step (s10)."
+    },
+    {
+      "id": "V4", "task": "25", "category": ["success_vs_failure", "identical_calls_different_instruction_wording"],
+      "query": {"file": "results/pilot/tasks_25_40_48/results.json", "sim": "d7a124a4", "reward": 0.0},
+      "reference": {"file": "results/pilot/task_25_topup/results.json", "sim": "ab3d173b", "reward": 1.0},
+      "demonstrably_incorrect": [
+        {"step": "s40", "action": "cancel_reservation(G72NSF)", "evidence": "No new booking was ever created (every book_reservation call returned an error). The user asked to cancel 'this booking' (the request), and the agent cancelled the user's existing reservation G72NSF. The task's gold actions contain no cancellation. DB check failed."}
+      ],
+      "harmless_errors": [{"step": "s2", "action": "get_user_details(user_id='?')", "evidence": "Hallucinated argument; the tool returned an error and nothing changed."}],
+      "expected": {
+        "all_configs": "s2 (erroneous '?' lookup) has no counterpart and is the first unmatched step. s40 cancel unmatched. The third booking attempt s26 is unmatched (injectivity: the reference has only one call with the same arguments).",
+        "B": "s18/s20 (book_reservation calls identical to reference s12/s14, both returning the same errors) follow different-wording confirmations and different event kinds (query context is a get_flight_status result, reference context is the user's 'yes'). m_ctx(s18) = m_ctx(s20) = 0. m_node may be 1 if they are connected through data edges.",
+        "C_vs_B": "identical to B (the identical calls pass the field check)."
+      },
+      "expected_first_unmatched": {"A": "s2", "B": "s2", "C": "s2"},
+      "note": "Identical write calls under same-intent confirmations worded differently. No genuinely contradictory-instruction pair exists in our data."
+    },
+    {
+      "id": "V5", "task": "34", "category": ["success_vs_failure"],
+      "query": {"file": "results/pilot/task_34/results.json", "sim": "2a9a7a9b", "reward": 0.0},
+      "reference": {"file": "results/pilot/task_34/results.json", "sim": "b47dbb44", "reward": 1.0},
+      "demonstrably_incorrect": [
+        {"step": "s12", "action": "cancel_reservation(HXDUBJ)", "evidence": "The user said 'cancel the entire request. I'd rather keep the original reservation unchanged'. Task NL assertion 'Agent should not make any changes'. DB check failed."}
+      ],
+      "expected": {
+        "all_configs": "s0 matched. s2 (lookup made directly after a long opening request) has a different context and a different data-dependency source text than the reference lookup s4 (made after a short ID turn). Expected unmatched, which makes s2 the first unmatched step (uncertain). s12 cancel unmatched.",
+        "C_vs_B": "identical to B."
+      },
+      "expected_first_unmatched": {"A": "s2", "B": "s2", "C": "s2"},
+      "uncertain": true,
+      "note": "Expected mismatch: the first unmatched step precedes the incorrect action, because the dialogues diverge early."
+    },
+    {
+      "id": "V6", "task": "9", "category": ["success_vs_failure"],
+      "query": {"file": "results/pilot/task_9_topup/results.json", "sim": "68290327", "reward": 0.0},
+      "reference": {"file": "results/pilot/task_9_topup/results.json", "sim": "67030d75", "reward": 1.0},
+      "demonstrably_incorrect": [
+        {"step": "s10", "action": "message offering to cancel NQNU5R", "evidence": "Task NL assertion: 'Check that Agent does not cancel NQNU5R. Flights that have already departed cannot be cancelled.' The message tells the user that NQNU5R can be cancelled."},
+        {"step": "s12", "action": "cancel_reservation(NQNU5R)", "evidence": "Same NL assertion; DB check failed."}
+      ],
+      "expected": {
+        "all_configs": "s0 to s8 matched (identical opening, calls and observations). s10 is the first unmatched step and is demonstrably incorrect. s12 and s14 unmatched.",
+        "C_vs_B": "identical to B."
+      },
+      "expected_first_unmatched": {"A": "s10", "B": "s10", "C": "s10"}
+    },
+    {
+      "id": "V7", "task": "4", "category": ["success_vs_failure", "similar_observations_different_critical_fields"],
+      "query": {"file": "results/probe/task_4/results.json", "sim": "259d9890", "reward": 0.0},
+      "reference": {"file": "results/probe/task_4/results.json", "sim": "ce8b1b6b", "reward": 1.0},
+      "demonstrably_incorrect": [
+        {"step": "s12", "action": "send_certificate({}) (attempt, tool error)", "evidence": "Task NL assertion 'Agent should not offer any compensation'. This is an attempted compensation; it failed with a tool error, so the state did not change."},
+        {"step": "s20", "action": "send_certificate(user_id, 100) (succeeds)", "evidence": "Same NL assertion; certificate_3221322 was created."}
+      ],
+      "expected": {
+        "all_configs": "s0 matched. s4 get_user_details matches the reference's s2 (identical call and observation). s6, s8, s10 reservation lookups match the reference's s8, s10, s12. s12 (send_certificate attempt) is unmatched and is the expected first unmatched step. If the query's s2 message fails to match the reference's s4 message, s2 is the first unmatched step instead (uncertain).",
+        "B": "Later get_user_details calls (s24, s32, s42) return a user record that also contains the new certificate in payment_methods. NLI may judge it equivalent to the reference's s2 observation (probe P07/P08). Injectivity allows only one of them to map to reference s2.",
+        "C_vs_B": "C rejects any pairing of a post-certificate get_user_details observation with the reference's pre-certificate observation (result.payment_methods). This is a hard incompatibility (same field, conflicting values)."
+      },
+      "expected_first_unmatched": {"A": "s12", "B": "s12", "C": "s12"},
+      "uncertain": true,
+      "note": "GPU regime (agent T=1.0). Both runs are from the same file."
+    },
+    {
+      "id": "V8", "task": "4", "category": ["success_vs_success_different_paths"],
+      "query": {"file": "results/probe/task_4/results.json", "sim": "ce8b1b6b", "reward": 1.0},
+      "reference": {"file": "results/probe/task_4/results.json", "sim": "54ecc816", "reward": 1.0},
+      "demonstrably_incorrect": [],
+      "expected": {
+        "all_configs": "Different valid paths: the query looks up four reservations; the reference asks follow-up questions instead. Expected: s0 matched; the reservation lookups s6 to s12 unmatched (no counterpart); transfer s16 unmatched (summaries differ). At least 4 of the 9 valid agent steps unmatched under B.",
+        "A": "may recover the transfer notice or other ROOT-attached messages.",
+        "C_vs_B": "identical to B."
+      },
+      "expected_first_unmatched": {"A": null, "B": null, "C": null},
+      "uncertain": true
+    },
+    {
+      "id": "V9", "task": "38", "category": ["success_vs_success_different_paths"],
+      "query": {"file": "results/pilot/task_38_topup1/results.json", "sim": "c59e7ab6", "reward": 1.0},
+      "reference": {"file": "results/pilot/task_38_topup1/results.json", "sim": "2a47da10", "reward": 1.0},
+      "demonstrably_incorrect": [],
+      "expected": {
+        "all_configs": "Shared opening: s0, s2, s4 (messages), s6 get_user_details, s8 get_reservation_details(SDZQKO). The paraphrased user turns u3/u5 may break the chain in B (probe P11). The reference also looks up 4OG6T3 and transfers; the query explains and closes. s12 get_flight_status(HAT228) is identical to the reference's s12, but its context differs (query: user turn u11; reference: observation of s10), so m_ctx(s12) = 0 in B. Messages s10, s14, s16, s18 have no counterpart.",
+        "C_vs_B": "identical to B."
+      },
+      "expected_first_unmatched": {"A": null, "B": null, "C": null},
+      "uncertain": true
+    }
+  ],
+  "category_coverage": {
+    "success_vs_failure": ["V1", "V3", "V4", "V5", "V6", "V7"],
+    "success_vs_success_different_paths": ["V2", "V8", "V9"],
+    "identical_calls_different_contextual_instructions": "Only same-intent instructions with different wording (V4). No passing/failing pair with identical calls under contradictory instructions exists in our trajectories. That case is covered by synthetic unit tests only.",
+    "similar_observations_different_critical_fields": ["V3 (update observation dob)", "V7 (user record payment_methods after a certificate)", "V1 (cancel vs lookup observation, different tools)"]
+  }
+}

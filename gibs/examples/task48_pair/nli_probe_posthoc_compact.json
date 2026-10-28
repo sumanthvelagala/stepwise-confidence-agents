@@ -1,0 +1,38 @@
+[
+  {
+    "id": "P04",
+    "rendering": "compact_json",
+    "tokens": 398,
+    "p_a_entails_b": 0.28729796409606934,
+    "p_b_entails_a": 0.3234621584415436,
+    "max": 0.3234621584415436,
+    "expectation": "low"
+  },
+  {
+    "id": "P06",
+    "rendering": "compact_json",
+    "tokens": 478,
+    "p_a_entails_b": 0.9814879894256592,
+    "p_b_entails_a": 0.9814879894256592,
+    "max": 0.9814879894256592,
+    "expectation": "high"
+  },
+  {
+    "id": "P07",
+    "rendering": "compact_json",
+    "tokens": 497,
+    "p_a_entails_b": 0.9677132964134216,
+    "p_b_entails_a": 0.8574740886688232,
+    "max": 0.9677132964134216,
+    "expectation": "low"
+  },
+  {
+    "id": "P08",
+    "rendering": "compact_json",
+    "tokens": 482,
+    "p_a_entails_b": 0.9717440605163574,
+    "p_b_entails_a": 0.9703710079193115,
+    "max": 0.9717440605163574,
+    "expectation": "low"
+  }
+]

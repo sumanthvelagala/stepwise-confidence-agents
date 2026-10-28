@@ -1,0 +1,948 @@
+{
+ "root": {
+  "48": {
+   "ROOT->ROOT": 220,
+   "non-ROOT": 1029,
+   "edge root<->root": 810,
+   "edge data<->data": 219
+  },
+  "9": {
+   "ROOT->ROOT": 340,
+   "non-ROOT": 2295,
+   "edge root<->root": 1426,
+   "edge data<->data": 968
+  },
+  "25": {
+   "ROOT->ROOT": 399,
+   "non-ROOT": 4375,
+   "edge root<->root": 2753,
+   "edge data<->data": 3904
+  }
+ },
+ "dependency_support": {
+  "48": {
+   "counts": {
+    "valid|pairs_node_mapped": 210,
+    "valid|mapped_data_edges": 210,
+    "valid|mapped_data_edge_source_kind_differs": 0,
+    "valid|mapped_data_edge_values_differ": 0,
+    "unverified|pairs_node_mapped": 9,
+    "unverified|mapped_data_edges": 9,
+    "unverified|mapped_data_edge_source_kind_differs": 0,
+    "unverified|mapped_data_edge_values_differ": 0,
+    "unverified|node_mapped_but_some_data_edge_unmapped": 1
+   },
+   "examples": [
+    {
+     "task": "48",
+     "query": "a41818c2",
+     "step": "s10",
+     "label": "unverified",
+     "reference": "adcf197e",
+     "ref_step": "N:s8",
+     "unmapped_data_edges": [
+      "N:u3->N:s10"
+     ],
+     "mapped_data_edges": {
+      "N:s4->N:s10": "N:s4->N:s8"
+     }
+    }
+   ]
+  },
+  "9": {
+   "counts": {
+    "unverified|pairs_node_mapped": 761,
+    "unverified|mapped_data_edges": 761,
+    "unverified|mapped_data_edge_source_kind_differs": 0,
+    "unverified|mapped_data_edge_values_differ": 27,
+    "valid|pairs_node_mapped": 108,
+    "valid|mapped_data_edges": 207,
+    "valid|mapped_data_edge_source_kind_differs": 0,
+    "valid|mapped_data_edge_values_differ": 9,
+    "unverified|node_mapped_but_some_data_edge_unmapped": 1
+   },
+   "examples": [
+    {
+     "task": "9",
+     "query": "71270d8b",
+     "step": "s6",
+     "label": "unverified",
+     "reference": "7cd3469e",
+     "ref_step": "N:s8",
+     "unmapped_data_edges": [
+      "N:u1->N:s6"
+     ],
+     "mapped_data_edges": {}
+    }
+   ]
+  },
+  "25": {
+   "counts": {
+    "unverified|pairs_node_mapped": 1280,
+    "unverified|mapped_data_edges": 2586,
+    "unverified|mapped_data_edge_source_kind_differs": 0,
+    "unverified|mapped_data_edge_values_differ": 16,
+    "valid|pairs_node_mapped": 342,
+    "valid|mapped_data_edges": 1318,
+    "valid|mapped_data_edge_source_kind_differs": 0,
+    "valid|mapped_data_edge_values_differ": 0,
+    "unverified|node_mapped_but_some_data_edge_unmapped": 68,
+    "valid|node_mapped_but_some_data_edge_unmapped": 50
+   },
+   "examples": [
+    {
+     "task": "25",
+     "query": "142fde74",
+     "step": "s18",
+     "label": "unverified",
+     "reference": "16aac895",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s18"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s18": "N:s8->N:s14",
+      "N:s6->N:s18": "N:s6->N:s14",
+      "N:u5->N:s18": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "142fde74",
+     "step": "s20",
+     "label": "valid",
+     "reference": "16aac895",
+     "ref_step": "N:s24",
+     "unmapped_data_edges": [
+      "N:u1->N:s20"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s20": "N:s8->N:s24",
+      "N:s6->N:s20": "N:s6->N:s24",
+      "N:u5->N:s20": "N:u5->N:s24"
+     }
+    },
+    {
+     "task": "25",
+     "query": "142fde74",
+     "step": "s16",
+     "label": "unverified",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s12",
+     "unmapped_data_edges": [
+      "N:u1->N:s16"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s16": "N:s8->N:s12",
+      "N:s6->N:s16": "N:s6->N:s12",
+      "N:u5->N:s16": "N:u5->N:s12"
+     }
+    },
+    {
+     "task": "25",
+     "query": "142fde74",
+     "step": "s18",
+     "label": "unverified",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s18"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s18": "N:s8->N:s14",
+      "N:s6->N:s18": "N:s6->N:s14",
+      "N:u5->N:s18": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "142fde74",
+     "step": "s20",
+     "label": "valid",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s16",
+     "unmapped_data_edges": [
+      "N:u1->N:s20"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s20": "N:s8->N:s16",
+      "N:s6->N:s20": "N:s6->N:s16",
+      "N:u5->N:s20": "N:u5->N:s16"
+     }
+    },
+    {
+     "task": "25",
+     "query": "142fde74",
+     "step": "s18",
+     "label": "unverified",
+     "reference": "d3366062",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s18"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s18": "N:s8->N:s14",
+      "N:s6->N:s18": "N:s6->N:s14",
+      "N:u5->N:s18": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "142fde74",
+     "step": "s20",
+     "label": "valid",
+     "reference": "d3366062",
+     "ref_step": "N:s20",
+     "unmapped_data_edges": [
+      "N:u1->N:s20"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s20": "N:s8->N:s20",
+      "N:s6->N:s20": "N:s6->N:s20",
+      "N:u5->N:s20": "N:u5->N:s20"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "142fde74",
+     "ref_step": "N:s18",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s18",
+      "N:s6->N:s14": "N:s6->N:s18",
+      "N:u5->N:s14": "N:u5->N:s18"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "142fde74",
+     "ref_step": "N:s20",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s20",
+      "N:s6->N:s24": "N:s6->N:s20",
+      "N:u5->N:s24": "N:u5->N:s20"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "291cfe67",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "291cfe67",
+     "ref_step": "N:s16",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s16",
+      "N:s6->N:s24": "N:s6->N:s16",
+      "N:u5->N:s24": "N:u5->N:s16"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "2aca18ff",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "2aca18ff",
+     "ref_step": "N:s22",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s22",
+      "N:s6->N:s24": "N:s6->N:s22",
+      "N:u5->N:s24": "N:u5->N:s22"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "2e0c25a6",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "2e0c25a6",
+     "ref_step": "N:s26",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s26",
+      "N:s6->N:s24": "N:s6->N:s26",
+      "N:u5->N:s24": "N:u5->N:s26"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "8c8332b6",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "8c8332b6",
+     "ref_step": "N:s16",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s16",
+      "N:s6->N:s24": "N:s6->N:s16",
+      "N:u5->N:s24": "N:u5->N:s16"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "a92c9234",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "a92c9234",
+     "ref_step": "N:s20",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s20",
+      "N:s6->N:s24": "N:s6->N:s20",
+      "N:u5->N:s24": "N:u5->N:s20"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "b91137fb",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "b91137fb",
+     "ref_step": "N:s16",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s16",
+      "N:s6->N:s24": "N:s6->N:s16",
+      "N:u5->N:s24": "N:u5->N:s16"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "c801d833",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s18",
+     "label": "unverified",
+     "reference": "c801d833",
+     "ref_step": "N:s22",
+     "unmapped_data_edges": [
+      "N:u1->N:s18"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s18": "N:s8->N:s22",
+      "N:s6->N:s18": "N:s6->N:s22",
+      "N:u5->N:s18": "N:u5->N:s22"
+     }
+    },
+    {
+     "task": "25",
+     "query": "16aac895",
+     "step": "s24",
+     "label": "valid",
+     "reference": "c801d833",
+     "ref_step": "N:s26",
+     "unmapped_data_edges": [
+      "N:u1->N:s24"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s24": "N:s8->N:s26",
+      "N:s6->N:s24": "N:s6->N:s26",
+      "N:u5->N:s24": "N:u5->N:s26"
+     }
+    },
+    {
+     "task": "25",
+     "query": "291cfe67",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "16aac895",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "291cfe67",
+     "step": "s16",
+     "label": "valid",
+     "reference": "16aac895",
+     "ref_step": "N:s24",
+     "unmapped_data_edges": [
+      "N:u1->N:s16"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s16": "N:s8->N:s24",
+      "N:s6->N:s16": "N:s6->N:s24",
+      "N:u5->N:s16": "N:u5->N:s24"
+     }
+    },
+    {
+     "task": "25",
+     "query": "291cfe67",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "291cfe67",
+     "step": "s16",
+     "label": "valid",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s16",
+     "unmapped_data_edges": [
+      "N:u1->N:s16"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s16": "N:s8->N:s16",
+      "N:s6->N:s16": "N:s6->N:s16",
+      "N:u5->N:s16": "N:u5->N:s16"
+     }
+    },
+    {
+     "task": "25",
+     "query": "291cfe67",
+     "step": "s12",
+     "label": "unverified",
+     "reference": "d3366062",
+     "ref_step": "N:s12",
+     "unmapped_data_edges": [
+      "N:u1->N:s12"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s12": "N:s8->N:s12",
+      "N:s6->N:s12": "N:s6->N:s12",
+      "N:u5->N:s12": "N:u5->N:s12"
+     }
+    },
+    {
+     "task": "25",
+     "query": "291cfe67",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "d3366062",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "291cfe67",
+     "step": "s16",
+     "label": "valid",
+     "reference": "d3366062",
+     "ref_step": "N:s20",
+     "unmapped_data_edges": [
+      "N:u1->N:s16"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s16": "N:s8->N:s20",
+      "N:s6->N:s16": "N:s6->N:s20",
+      "N:u5->N:s16": "N:u5->N:s20"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2aca18ff",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "16aac895",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2aca18ff",
+     "step": "s22",
+     "label": "valid",
+     "reference": "16aac895",
+     "ref_step": "N:s24",
+     "unmapped_data_edges": [
+      "N:u1->N:s22"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s22": "N:s8->N:s24",
+      "N:s6->N:s22": "N:s6->N:s24",
+      "N:u5->N:s22": "N:u5->N:s24"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2aca18ff",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2aca18ff",
+     "step": "s22",
+     "label": "valid",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s16",
+     "unmapped_data_edges": [
+      "N:u1->N:s22"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s22": "N:s8->N:s16",
+      "N:s6->N:s22": "N:s6->N:s16",
+      "N:u5->N:s22": "N:u5->N:s16"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2aca18ff",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "d3366062",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2aca18ff",
+     "step": "s22",
+     "label": "valid",
+     "reference": "d3366062",
+     "ref_step": "N:s20",
+     "unmapped_data_edges": [
+      "N:u1->N:s22"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s22": "N:s8->N:s20",
+      "N:s6->N:s22": "N:s6->N:s20",
+      "N:u5->N:s22": "N:u5->N:s20"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2e0c25a6",
+     "step": "s14",
+     "label": "unverified",
+     "reference": "16aac895",
+     "ref_step": "N:s14",
+     "unmapped_data_edges": [
+      "N:u1->N:s14"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s14": "N:s8->N:s14",
+      "N:s6->N:s14": "N:s6->N:s14",
+      "N:u5->N:s14": "N:u5->N:s14"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2e0c25a6",
+     "step": "s26",
+     "label": "valid",
+     "reference": "16aac895",
+     "ref_step": "N:s24",
+     "unmapped_data_edges": [
+      "N:u1->N:s26"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s26": "N:s8->N:s24",
+      "N:s6->N:s26": "N:s6->N:s24",
+      "N:u5->N:s26": "N:u5->N:s24"
+     }
+    },
+    {
+     "task": "25",
+     "query": "2e0c25a6",
+     "step": "s12",
+     "label": "unverified",
+     "reference": "cc2b26ea",
+     "ref_step": "N:s12",
+     "unmapped_data_edges": [
+      "N:u1->N:s12"
+     ],
+     "mapped_data_edges": {
+      "N:s8->N:s12": "N:s8->N:s12",
+      "N:s6->N:s12": "N:s6->N:s12",
+      "N:u5->N:s12": "N:u5->N:s12"
+     }
+    }
+   ]
+  }
+ },
+ "root_hanging_tool_calls": [
+  {
+   "task": "48",
+   "run": "aa08e645",
+   "step": "s10",
+   "tool": "transfer_to_human_agents",
+   "arguments": {
+    "summary": "User claims booking was made 10 hours ago but system shows May 2nd. Wants full refund. Policy says cannot cancel because >24h and basic economy without insurance. User wants supervisor."
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "0f0f7358",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "user123"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "142fde74",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "user123"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "16aac895",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "1e01a088",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "291cfe67",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "2aca18ff",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "2e0c25a6",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "8c8332b6",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "a92c9234",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "b03440a4",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "sara_doe_496"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "b91137fb",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "bb73aded",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "c801d833",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "cc2b26ea",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "d2135fe7",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "d3366062",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "f81eaa6a",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "sara_doe_496"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "51d355a9",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "51d355a9",
+   "step": "s20",
+   "tool": "transfer_to_human_agents",
+   "arguments": {
+    "summary": "User wants to add another payment method but only has one gift card and one credit card. No other payment methods available. Policy says cannot add certificate. Must transfer to human agent."
+   },
+   "label": "unverified"
+  },
+  {
+   "task": "25",
+   "run": "d7a124a4",
+   "step": "s2",
+   "tool": "get_user_details",
+   "arguments": {
+    "user_id": "?"
+   },
+   "label": "unverified"
+  }
+ ]
+}
