@@ -1,5 +1,9 @@
 # Step-Level Confidence Estimation for LLM Agents
 
+**New on `1000Trajectories-Pardha`:** the completed [1,000-trajectory Airline collection](results/free_asu/main-qwen38-27b-serial-none/README.md)
+(50 tasks × 20 runs, 680 passes / 320 failures) and [NIBS baseline results](results/fresh_all_tasks/baseline_preview/REPORT.md).
+Fresh GIBS/C4 learned results are still in progress. The existing experiments below are historical.
+
 **CSE598 Capstone — Team 11**
 
 We adapt the stepwise confidence attribution method of

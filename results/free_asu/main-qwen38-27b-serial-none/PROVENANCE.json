@@ -1,0 +1,11 @@
+{
+  "raw_results_sha256": "110767b28c353d0f8ee0c39bade66d116e55347291f66dca1fb18e66343073ec",
+  "baseline_metadata_reduced_snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c",
+  "trajectories_identical_between_raw_and_baseline_snapshot": true,
+  "tasks_identical_between_raw_and_baseline_snapshot": true,
+  "canonical_simulations_sha256": "c0734de290c1fc17e9bf84137a10014e57b55a2684bd9216924d4f878d7ef1e2",
+  "canonical_tasks_sha256": "109e16af0edede18d47d21d85f660e9af88add1cef54d86f9bf067b7b46e47a9",
+  "canonical_json_encoding": "UTF-8, ensure_ascii=False, sort_keys=True, separators=(comma,colon)",
+  "baseline_csv_source_paths": "Project-relative; numerical scores and row identities unchanged. Source paths refer to the local frozen input snapshot.",
+  "published_results": "Completed trajectory collection and automatic-label NIBS baselines only; fresh GIBS/C4 pending."
+}

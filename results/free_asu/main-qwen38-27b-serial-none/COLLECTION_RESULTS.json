@@ -1,0 +1,15 @@
+{
+  "saved_graded_trajectories": 1000,
+  "tasks": 50,
+  "attempts_per_task": 20,
+  "official_benchmark_successes": 680,
+  "official_benchmark_failures": 320,
+  "official_benchmark_pass_rate": 0.68,
+  "distinct_task_content_classes": 1000,
+  "unbuildable_graphs": 0,
+  "reward_success_missing_expected_tool_names": 30,
+  "input_sha256": "110767b28c353d0f8ee0c39bade66d116e55347291f66dca1fb18e66343073ec",
+  "pre_resume_snapshots": 1,
+  "model": "qwen38-27b",
+  "confidence_method_accuracy": "Not measured by this collection report"
+}
