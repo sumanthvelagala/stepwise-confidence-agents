@@ -1,0 +1,8 @@
+{
+  "three_method_demo_matches_evaluation": true,
+  "graph_nodes_preserved_for_100_runs": true,
+  "all_dependency_edges_forward": true,
+  "additional_task_query_only_prediction_matches": true,
+  "trained_checkpoints": 48,
+  "author_function_numerical_checks": 4
+}

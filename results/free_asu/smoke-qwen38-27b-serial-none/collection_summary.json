@@ -1,0 +1,11 @@
+{
+  "simulations": 1,
+  "outcomes": {
+    "failure": 1
+  },
+  "tasks": {
+    "9": {
+      "failure": 1
+    }
+  }
+}

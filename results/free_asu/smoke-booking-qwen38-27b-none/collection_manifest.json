@@ -1,0 +1,100 @@
+{
+  "configuration": {
+    "tau2_commit": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+    "task_sha256": {
+      "25": "428b76f3db2801d0b7660543f86933a9b709637c1fb21adb992c1f10570b400c"
+    },
+    "model": "qwen38-27b",
+    "agent_temperature": 1.0,
+    "user_temperature": 0.0,
+    "context": 32768,
+    "max_tokens": 2048,
+    "max_steps": 200,
+    "max_errors": 10,
+    "seed": 300,
+    "concurrency": 1,
+    "simulation_timeout": 1200,
+    "trials": 1,
+    "backend": "asu",
+    "reasoning_effort_requested": "none",
+    "reasoning_passthrough": true,
+    "gateway_addons": "off",
+    "context_note": "Context is checked against catalog; server controls its window",
+    "model_weights": {
+      "catalog": {
+        "id": "qwen38-27b",
+        "model_type": "chat",
+        "context_window": 262144,
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "reasoning": {
+          "levels": {
+            "high": "high",
+            "low": "low",
+            "medium": "medium",
+            "none": "none"
+          },
+          "mode": "mapped"
+        },
+        "owned_by": "obleth"
+      },
+      "weight_digest": null,
+      "revision_limit": "Hosted catalog metadata is recorded; immutable weights are not exposed by this API"
+    }
+  },
+  "target_trajectories": 1,
+  "paid_api_calls": false,
+  "endpoint": "https://openai.rc.asu.edu/v1",
+  "source_sha256": "f0e63e08c2489ca2c5610014aec658e89ccc220f84f0cc8295e66883273f25da",
+  "collection_source_sha256": {
+    "run_tau2.py": "f0e63e08c2489ca2c5610014aec658e89ccc220f84f0cc8295e66883273f25da",
+    "asu.py": "654c2239dd0bcf769936da6a767ce0945c0c7c778451ae8d070951605d85d05e"
+  },
+  "started_utc": "2026-10-29T07:20:19.265489+00:00",
+  "before": {
+    "simulations": 0,
+    "outcomes": {},
+    "tasks": {}
+  },
+  "infra_error_limit": 10,
+  "invocations": [
+    {
+      "started_utc": "2026-10-29T07:20:19.265489+00:00",
+      "ended_utc": "2026-10-29T07:21:18.532205+00:00",
+      "endpoint": "https://openai.rc.asu.edu/v1",
+      "source_sha256": "f0e63e08c2489ca2c5610014aec658e89ccc220f84f0cc8295e66883273f25da",
+      "collection_source_sha256": {
+        "run_tau2.py": "f0e63e08c2489ca2c5610014aec658e89ccc220f84f0cc8295e66883273f25da",
+        "asu.py": "654c2239dd0bcf769936da6a767ce0945c0c7c778451ae8d070951605d85d05e"
+      },
+      "before": {
+        "simulations": 0,
+        "outcomes": {},
+        "tasks": {}
+      },
+      "after": {
+        "simulations": 1,
+        "outcomes": {
+          "success": 1
+        },
+        "tasks": {
+          "25": {
+            "success": 1
+          }
+        }
+      }
+    }
+  ],
+  "ended_utc": "2026-10-29T07:21:18.532205+00:00",
+  "after": {
+    "simulations": 1,
+    "outcomes": {
+      "success": 1
+    },
+    "tasks": {
+      "25": {
+        "success": 1
+      }
+    }
+  }
+}

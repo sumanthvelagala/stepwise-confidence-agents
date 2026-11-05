@@ -1,0 +1,30 @@
+{
+  "data": {
+    "cap5": {
+      "runs": 1000,
+      "tasks": 50,
+      "steps": 14145,
+      "genuine_pair_mappings_checked": 8456,
+      "saved_prediction_and_teacher_identity": "pass",
+      "target_averaging": "pass"
+    },
+    "cap17": {
+      "runs": 1000,
+      "tasks": 50,
+      "steps": 14145,
+      "genuine_pair_mappings_checked": 20102,
+      "saved_prediction_and_teacher_identity": "pass",
+      "target_averaging": "pass"
+    },
+    "examples": "Five genuine ranking claims verified",
+    "original_baseline_protection": "pass"
+  },
+  "browser": {
+    "offline_mode": "pass",
+    "http_mode": "pass",
+    "desktop_and_mobile": "pass",
+    "both_experiments_and_five_examples": "pass",
+    "javascript_errors": [],
+    "screenshots": "/Users/pardhapraneeth/stepwise-confidence-agents/demo_ui/qa"
+  }
+}

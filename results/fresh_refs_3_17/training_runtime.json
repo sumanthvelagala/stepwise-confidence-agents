@@ -1,0 +1,9 @@
+{
+  "python": "3.12.6 (v3.12.6:a4a2d2b0d85, Sep  6 2024, 16:08:03) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "versions": {
+    "torch": "2.5.1",
+    "transformers": "4.51.3",
+    "numpy": "1.26.4"
+  },
+  "targets": "Sol CUDA; NLI versions and hardware in sol_runtime.json"
+}

@@ -1,0 +1,15 @@
+{
+  "requested_minimum": 3,
+  "requested_maximum": 17,
+  "created_utc": "2026-10-30T03:56:39.258905+00:00",
+  "supersedes": "fresh_all_references",
+  "same_input_hash": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c",
+  "training_reference_sets_equal_to_uncapped": true,
+  "verified_query_count": 860,
+  "actual_training_reference_minimum": 3,
+  "actual_training_reference_maximum": 16,
+  "queries_with_different_nibs_reference_sets": 386,
+  "nibs_action": "Recalculate with actual maximum 17; do not copy uncapped baseline scores",
+  "protected_baseline": "fresh_all_tasks",
+  "reference_set_proof_sha256": "9903a80c891eec8be5654b06064a8cff4a0fd6a471d5e5acde0e6c2777fe438a"
+}

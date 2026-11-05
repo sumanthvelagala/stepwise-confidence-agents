@@ -1,0 +1,544 @@
+{
+  "original": {
+    "graph_id": "task3_2710c03e",
+    "topology": "paper_literal",
+    "nodes": [
+      {
+        "id": "ROOT",
+        "kind": "root",
+        "text": null,
+        "event": null,
+        "scorable": false
+      },
+      {
+        "id": "N:s0",
+        "kind": "agent_message",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "scorable": true
+      },
+      {
+        "id": "N:u1",
+        "kind": "user_turn",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out exactly how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so I'd like to know the total number in numeric form. Could you please tell me the exact allowance?",
+        "event": "u1",
+        "scorable": false
+      },
+      {
+        "id": "N:s2",
+        "kind": "agent_message",
+        "text": "Sure! To give you the exact free-checked-bag allowance, I just need a couple more details: 1. Cabin class for your flight (basic economy, economy, or business). 2. Number of passengers traveling on this reservation (including yourself). Once I have that, I can calculate the total free bags for your Gold membership.",
+        "event": "s2",
+        "scorable": true
+      },
+      {
+        "id": "N:u3",
+        "kind": "user_turn",
+        "text": "Thanks for the quick reply! I'm traveling alone, so that's just one passenger. I'm not sure what cabin class the flight is booked in-could you check that for me? Once I know the cabin, I'd like the exact total number of suitcases I'm allowed to bring.",
+        "event": "u3",
+        "scorable": false
+      },
+      {
+        "id": "N:s4",
+        "kind": "tool_result",
+        "text": "Tool result: reservation_id: JMO1MG; user_id: anya_garcia_5901; origin: DEN; destination: MIA; flight_type: one_way; cabin: economy; flights[0].flight_number: HAT255; flights[0].origin: DEN; flights[0].destination: MIA; flights[0].date: 2024-05-16; flights[0].price: 149; passengers[0].first_name: Anya; passengers[0].last_name: Garcia; passengers[0].dob: 1992-11-12; passengers[1].first_name: Raj; passengers[1].last_name: Jackson; passengers[1].dob: 1956-03-09; payment_history[0].payment_id: gift_card_2550356; payment_history[0].amount: 358; created_at: 2024-05-13T23:20:29; total_baggages: 1; nonfree_baggages: 0; insurance: yes; status: null.",
+        "event": "s4",
+        "scorable": true
+      },
+      {
+        "id": "N:s6",
+        "kind": "agent_message",
+        "text": "I've pulled up your reservation (JMO1MG). It shows: - Cabin: Economy - Passengers on the booking: 2 (Anya Garcia and Raj Jackson) You mentioned you're traveling alone. Could you confirm whether the second passenger is still part of the trip, or if the reservation should be for just you? Once I have the correct passenger count, I can give you the exact free-checked-bag allowance for your Gold membership.",
+        "event": "s6",
+        "scorable": true
+      },
+      {
+        "id": "N:u7",
+        "kind": "user_turn",
+        "text": "I'm only traveling on this trip-Raj isn't going. The reservation should be for just me. Could you update the passenger count to one and then give me the exact total number of suitcases I'm allowed to bring as a Gold member? I'd like the answer in numeric form.",
+        "event": "u7",
+        "scorable": false
+      },
+      {
+        "id": "N:s8",
+        "kind": "agent_message",
+        "text": "I'll need to update the passenger list for reservation JMO1MG to reflect that only you are traveling. Action to be taken: - Update the reservation's passenger list to a single passenger (Anya Garcia). Would you like me to proceed with this update? (Please reply \"yes\" to confirm.)",
+        "event": "s8",
+        "scorable": true
+      },
+      {
+        "id": "N:u9",
+        "kind": "user_turn",
+        "text": "Yes, please proceed.",
+        "event": "u9",
+        "scorable": false
+      },
+      {
+        "id": "N:s10",
+        "kind": "tool_result",
+        "text": "Tool error: Error: Number of passengers does not match",
+        "event": "s10",
+        "scorable": true
+      },
+      {
+        "id": "N:s12",
+        "kind": "tool_result",
+        "text": "Tool result: Transfer successful",
+        "event": "s12",
+        "scorable": true
+      },
+      {
+        "id": "N:s14",
+        "kind": "agent_message",
+        "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+        "event": "s14",
+        "scorable": true
+      },
+      {
+        "id": "N:u15",
+        "kind": "user_turn",
+        "text": "The user was transferred to a human agent.",
+        "event": "u15",
+        "scorable": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "ROOT->N:s0",
+        "src": "ROOT",
+        "dst": "N:s0",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u1",
+        "src": "ROOT",
+        "dst": "N:u1",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out exactly how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so I'd like to know the total number in numeric form. Could you please tell me the exact allowance?",
+        "event": "u1",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "ROOT->N:s2",
+        "src": "ROOT",
+        "dst": "N:s2",
+        "text": "Sure! To give you the exact free-checked-bag allowance, I just need a couple more details: 1. Cabin class for your flight (basic economy, economy, or business). 2. Number of passengers traveling on this reservation (including yourself). Once I have that, I can calculate the total free bags for your Gold membership.",
+        "event": "s2",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u3",
+        "src": "ROOT",
+        "dst": "N:u3",
+        "text": "Thanks for the quick reply! I'm traveling alone, so that's just one passenger. I'm not sure what cabin class the flight is booked in-could you check that for me? Once I know the cabin, I'd like the exact total number of suitcases I'm allowed to bring.",
+        "event": "u3",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:u1->N:s4",
+        "src": "N:u1",
+        "dst": "N:s4",
+        "text": "Call get_reservation_details with reservation_id = JMO1MG.",
+        "event": "s4",
+        "roles": [
+          "data"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:s6",
+        "src": "ROOT",
+        "dst": "N:s6",
+        "text": "I've pulled up your reservation (JMO1MG). It shows: - Cabin: Economy - Passengers on the booking: 2 (Anya Garcia and Raj Jackson) You mentioned you're traveling alone. Could you confirm whether the second passenger is still part of the trip, or if the reservation should be for just you? Once I have the correct passenger count, I can give you the exact free-checked-bag allowance for your Gold membership.",
+        "event": "s6",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u7",
+        "src": "ROOT",
+        "dst": "N:u7",
+        "text": "I'm only traveling on this trip-Raj isn't going. The reservation should be for just me. Could you update the passenger count to one and then give me the exact total number of suitcases I'm allowed to bring as a Gold member? I'd like the answer in numeric form.",
+        "event": "u7",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "ROOT->N:s8",
+        "src": "ROOT",
+        "dst": "N:s8",
+        "text": "I'll need to update the passenger list for reservation JMO1MG to reflect that only you are traveling. Action to be taken: - Update the reservation's passenger list to a single passenger (Anya Garcia). Would you like me to proceed with this update? (Please reply \"yes\" to confirm.)",
+        "event": "s8",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u9",
+        "src": "ROOT",
+        "dst": "N:u9",
+        "text": "Yes, please proceed.",
+        "event": "u9",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:s4->N:s10",
+        "src": "N:s4",
+        "dst": "N:s10",
+        "text": "Call update_reservation_passengers with passengers[0].dob = 1992-11-12; passengers[0].first_name = Anya; passengers[0].last_name = Garcia; reservation_id = JMO1MG.",
+        "event": "s10",
+        "roles": [
+          "data"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:u1->N:s10",
+        "src": "N:u1",
+        "dst": "N:s10",
+        "text": "Call update_reservation_passengers with passengers[0].dob = 1992-11-12; passengers[0].first_name = Anya; passengers[0].last_name = Garcia; reservation_id = JMO1MG.",
+        "event": "s10",
+        "roles": [
+          "data"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:u1->N:s12",
+        "src": "N:u1",
+        "dst": "N:s12",
+        "text": "Call transfer_to_human_agents with summary = User wants to change passenger count from 2 to 1 on reservation JMO1MG, which is not allowed by policy. Must transfer to human agent..",
+        "event": "s12",
+        "roles": [
+          "data"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:s14",
+        "src": "ROOT",
+        "dst": "N:s14",
+        "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+        "event": "s14",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u15",
+        "src": "ROOT",
+        "dst": "N:u15",
+        "text": "The user was transferred to a human agent.",
+        "event": "u15",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      }
+    ]
+  },
+  "state_aware": {
+    "graph_id": "task3_2710c03e",
+    "topology": "state_aware",
+    "nodes": [
+      {
+        "id": "ROOT",
+        "kind": "root",
+        "text": null,
+        "event": null,
+        "scorable": false
+      },
+      {
+        "id": "N:s0",
+        "kind": "agent_message",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "scorable": true
+      },
+      {
+        "id": "N:u1",
+        "kind": "user_turn",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out exactly how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so I'd like to know the total number in numeric form. Could you please tell me the exact allowance?",
+        "event": "u1",
+        "scorable": false
+      },
+      {
+        "id": "N:s2",
+        "kind": "agent_message",
+        "text": "Sure! To give you the exact free-checked-bag allowance, I just need a couple more details: 1. Cabin class for your flight (basic economy, economy, or business). 2. Number of passengers traveling on this reservation (including yourself). Once I have that, I can calculate the total free bags for your Gold membership.",
+        "event": "s2",
+        "scorable": true
+      },
+      {
+        "id": "N:u3",
+        "kind": "user_turn",
+        "text": "Thanks for the quick reply! I'm traveling alone, so that's just one passenger. I'm not sure what cabin class the flight is booked in-could you check that for me? Once I know the cabin, I'd like the exact total number of suitcases I'm allowed to bring.",
+        "event": "u3",
+        "scorable": false
+      },
+      {
+        "id": "N:s4",
+        "kind": "tool_result",
+        "text": "Tool result: reservation_id: JMO1MG; user_id: anya_garcia_5901; origin: DEN; destination: MIA; flight_type: one_way; cabin: economy; flights[0].flight_number: HAT255; flights[0].origin: DEN; flights[0].destination: MIA; flights[0].date: 2024-05-16; flights[0].price: 149; passengers[0].first_name: Anya; passengers[0].last_name: Garcia; passengers[0].dob: 1992-11-12; passengers[1].first_name: Raj; passengers[1].last_name: Jackson; passengers[1].dob: 1956-03-09; payment_history[0].payment_id: gift_card_2550356; payment_history[0].amount: 358; created_at: 2024-05-13T23:20:29; total_baggages: 1; nonfree_baggages: 0; insurance: yes; status: null.",
+        "event": "s4",
+        "scorable": true
+      },
+      {
+        "id": "N:s6",
+        "kind": "agent_message",
+        "text": "I've pulled up your reservation (JMO1MG). It shows: - Cabin: Economy - Passengers on the booking: 2 (Anya Garcia and Raj Jackson) You mentioned you're traveling alone. Could you confirm whether the second passenger is still part of the trip, or if the reservation should be for just you? Once I have the correct passenger count, I can give you the exact free-checked-bag allowance for your Gold membership.",
+        "event": "s6",
+        "scorable": true
+      },
+      {
+        "id": "N:u7",
+        "kind": "user_turn",
+        "text": "I'm only traveling on this trip-Raj isn't going. The reservation should be for just me. Could you update the passenger count to one and then give me the exact total number of suitcases I'm allowed to bring as a Gold member? I'd like the answer in numeric form.",
+        "event": "u7",
+        "scorable": false
+      },
+      {
+        "id": "N:s8",
+        "kind": "agent_message",
+        "text": "I'll need to update the passenger list for reservation JMO1MG to reflect that only you are traveling. Action to be taken: - Update the reservation's passenger list to a single passenger (Anya Garcia). Would you like me to proceed with this update? (Please reply \"yes\" to confirm.)",
+        "event": "s8",
+        "scorable": true
+      },
+      {
+        "id": "N:u9",
+        "kind": "user_turn",
+        "text": "Yes, please proceed.",
+        "event": "u9",
+        "scorable": false
+      },
+      {
+        "id": "N:s10",
+        "kind": "tool_result",
+        "text": "Tool error: Error: Number of passengers does not match",
+        "event": "s10",
+        "scorable": true
+      },
+      {
+        "id": "N:s12",
+        "kind": "tool_result",
+        "text": "Tool result: Transfer successful",
+        "event": "s12",
+        "scorable": true
+      },
+      {
+        "id": "N:s14",
+        "kind": "agent_message",
+        "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+        "event": "s14",
+        "scorable": true
+      },
+      {
+        "id": "N:u15",
+        "kind": "user_turn",
+        "text": "The user was transferred to a human agent.",
+        "event": "u15",
+        "scorable": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "ROOT->N:s0",
+        "src": "ROOT",
+        "dst": "N:s0",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u1",
+        "src": "ROOT",
+        "dst": "N:u1",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out exactly how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so I'd like to know the total number in numeric form. Could you please tell me the exact allowance?",
+        "event": "u1",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:u1->N:s2",
+        "src": "N:u1",
+        "dst": "N:s2",
+        "text": "Sure! To give you the exact free-checked-bag allowance, I just need a couple more details: 1. Cabin class for your flight (basic economy, economy, or business). 2. Number of passengers traveling on this reservation (including yourself). Once I have that, I can calculate the total free bags for your Gold membership.",
+        "event": "s2",
+        "roles": [
+          "message_user_context"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u3",
+        "src": "ROOT",
+        "dst": "N:u3",
+        "text": "Thanks for the quick reply! I'm traveling alone, so that's just one passenger. I'm not sure what cabin class the flight is booked in-could you check that for me? Once I know the cabin, I'd like the exact total number of suitcases I'm allowed to bring.",
+        "event": "u3",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:u1->N:s4",
+        "src": "N:u1",
+        "dst": "N:s4",
+        "text": "Call get_reservation_details with reservation_id = JMO1MG.",
+        "event": "s4",
+        "roles": [
+          "original_provenance"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:u3->N:s6",
+        "src": "N:u3",
+        "dst": "N:s6",
+        "text": "I've pulled up your reservation (JMO1MG). It shows: - Cabin: Economy - Passengers on the booking: 2 (Anya Garcia and Raj Jackson) You mentioned you're traveling alone. Could you confirm whether the second passenger is still part of the trip, or if the reservation should be for just you? Once I have the correct passenger count, I can give you the exact free-checked-bag allowance for your Gold membership.",
+        "event": "s6",
+        "roles": [
+          "message_user_context"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:s4->N:s6",
+        "src": "N:s4",
+        "dst": "N:s6",
+        "text": "I've pulled up your reservation (JMO1MG). It shows: - Cabin: Economy - Passengers on the booking: 2 (Anya Garcia and Raj Jackson) You mentioned you're traveling alone. Could you confirm whether the second passenger is still part of the trip, or if the reservation should be for just you? Once I have the correct passenger count, I can give you the exact free-checked-bag allowance for your Gold membership.",
+        "event": "s6",
+        "roles": [
+          "message_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u7",
+        "src": "ROOT",
+        "dst": "N:u7",
+        "text": "I'm only traveling on this trip-Raj isn't going. The reservation should be for just me. Could you update the passenger count to one and then give me the exact total number of suitcases I'm allowed to bring as a Gold member? I'd like the answer in numeric form.",
+        "event": "u7",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:u7->N:s8",
+        "src": "N:u7",
+        "dst": "N:s8",
+        "text": "I'll need to update the passenger list for reservation JMO1MG to reflect that only you are traveling. Action to be taken: - Update the reservation's passenger list to a single passenger (Anya Garcia). Would you like me to proceed with this update? (Please reply \"yes\" to confirm.)",
+        "event": "s8",
+        "roles": [
+          "message_user_context"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:s4->N:s8",
+        "src": "N:s4",
+        "dst": "N:s8",
+        "text": "I'll need to update the passenger list for reservation JMO1MG to reflect that only you are traveling. Action to be taken: - Update the reservation's passenger list to a single passenger (Anya Garcia). Would you like me to proceed with this update? (Please reply \"yes\" to confirm.)",
+        "event": "s8",
+        "roles": [
+          "message_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u9",
+        "src": "ROOT",
+        "dst": "N:u9",
+        "text": "Yes, please proceed.",
+        "event": "u9",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:s4->N:s10",
+        "src": "N:s4",
+        "dst": "N:s10",
+        "text": "Call update_reservation_passengers with passengers[0].dob = 1992-11-12; passengers[0].first_name = Anya; passengers[0].last_name = Garcia; reservation_id = JMO1MG.",
+        "event": "s10",
+        "roles": [
+          "latest_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:s4->N:s12",
+        "src": "N:s4",
+        "dst": "N:s12",
+        "text": "Call transfer_to_human_agents with summary = User wants to change passenger count from 2 to 1 on reservation JMO1MG, which is not allowed by policy. Must transfer to human agent..",
+        "event": "s12",
+        "roles": [
+          "latest_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:u9->N:s14",
+        "src": "N:u9",
+        "dst": "N:s14",
+        "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+        "event": "s14",
+        "roles": [
+          "message_user_context"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:s12->N:s14",
+        "src": "N:s12",
+        "dst": "N:s14",
+        "text": "YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.",
+        "event": "s14",
+        "roles": [
+          "message_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u15",
+        "src": "ROOT",
+        "dst": "N:u15",
+        "text": "The user was transferred to a human agent.",
+        "event": "u15",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      }
+    ]
+  }
+}

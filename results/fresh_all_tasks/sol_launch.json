@@ -1,0 +1,12 @@
+{
+  "job_id": 66924222,
+  "followup_pid": 30582,
+  "submitted_utc": "2026-10-29T16:47:48.697974+00:00",
+  "replaced_jobs": [
+    66923128,
+    66924040
+  ],
+  "gpu": "full A100",
+  "python": "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/bin/python",
+  "maximum_gpu_jobs": 8
+}

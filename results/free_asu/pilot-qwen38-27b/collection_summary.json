@@ -1,0 +1,26 @@
+{
+  "simulations": 6,
+  "outcomes": {
+    "success": 6
+  },
+  "tasks": {
+    "0": {
+      "success": 1
+    },
+    "3": {
+      "success": 1
+    },
+    "9": {
+      "success": 1
+    },
+    "13": {
+      "success": 1
+    },
+    "25": {
+      "success": 1
+    },
+    "40": {
+      "success": 1
+    }
+  }
+}

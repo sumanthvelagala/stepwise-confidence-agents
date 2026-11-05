@@ -1,0 +1,17 @@
+{
+  "status": "superseded_by_reference_cap_17",
+  "pid": 29768,
+  "job_ids": [
+    66951841
+  ],
+  "started_utc": "2026-10-30T03:50:10.767952+00:00",
+  "maximum_gpu_jobs": 8,
+  "remote_output": "/scratch/ppudi/sca-free/project/results/fresh_all_references",
+  "sbatch_script": "/scratch/ppudi/sca-free/project/collection/sol_gibs_all_references.sbatch",
+  "sol_job": 66951841,
+  "sol_status": "RUNNING",
+  "sol_exit_code": null,
+  "checked_utc": "2026-10-30T03:58:23.916891+00:00",
+  "superseded_by": "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_refs_3_17",
+  "ended_utc": "2026-10-30T03:59:21.244358+00:00"
+}

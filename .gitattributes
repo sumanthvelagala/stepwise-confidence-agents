@@ -1,0 +1,6 @@
+# Keep recorded artifacts byte-for-byte identical to their provenance hashes.
+results/** -text
+demo_ui/dist/data/** -text
+*.pt -text
+*.pdf -text
+*.png -text

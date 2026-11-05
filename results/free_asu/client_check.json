@@ -1,0 +1,8 @@
+{
+  "litellm_version": "1.81.11",
+  "model": "qwen38-27b",
+  "forwarded_reasoning_effort": "none",
+  "forwarded_parallel_tool_calls": false,
+  "passed": true,
+  "model_api_calls": 0
+}

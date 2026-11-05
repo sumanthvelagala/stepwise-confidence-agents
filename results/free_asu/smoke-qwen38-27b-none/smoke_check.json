@@ -1,0 +1,4 @@
+{
+  "passed": false,
+  "reason": "smoke test contains no tool call"
+}

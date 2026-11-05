@@ -6,7 +6,7 @@ from gibs.graph.step_graph import build_step_graph
 from gibs.mcs.consensus import consensus_masks
 from gibs.mcs.mcs import MCSConfig, find_mcs
 from gibs.mcs.multi_component import find_mcs_multi
-from gibs.mcs.nli import Similarity, StubEntailment, symmetric_input_ids
+from gibs.mcs.nli import DEFAULT_REVISION, Similarity, StubEntailment, symmetric_input_ids
 from gibs.mcs.structured_fields import StructuredFieldValidator
 from gibs.tests.helpers import make_sim
 
@@ -16,7 +16,7 @@ from gibs.tests.helpers import make_sim
 def tok():
     transformers = pytest.importorskip("transformers")
     try:
-        return transformers.AutoTokenizer.from_pretrained("microsoft/deberta-large-mnli", local_files_only=True)
+        return transformers.AutoTokenizer.from_pretrained("microsoft/deberta-large-mnli", revision=DEFAULT_REVISION, local_files_only=True)
     except OSError:
         pytest.skip("tokenizer not cached locally")
 

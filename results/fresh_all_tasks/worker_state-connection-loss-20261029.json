@@ -1,0 +1,20 @@
+{
+  "status": "sol_connection_lost",
+  "pid": 30582,
+  "job_ids": [
+    66924222,
+    66937131
+  ],
+  "started_utc": "2026-10-29T16:50:18.015077+00:00",
+  "maximum_gpu_jobs": 8,
+  "sol_job": 66937131,
+  "sol_status": "RUNNING",
+  "sol_exit_code": null,
+  "checked_utc": "2026-10-29T21:42:35.201997+00:00",
+  "target_progress": {
+    "completed_query_targets": 481,
+    "total_eligible_queries": 860,
+    "elapsed_target_seconds_in_current_job": 2269
+  },
+  "error": "Sol SSH failed; reconnect VPN before resuming this monitor"
+}

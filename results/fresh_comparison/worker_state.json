@@ -1,0 +1,23 @@
+{
+  "status": "experiment_stopped_or_failed",
+  "pid": 67108,
+  "started_utc": "2026-10-29T14:44:22.263621+00:00",
+  "collection": "/Users/pardhapraneeth/stepwise-confidence-agents/results/free_asu/main-qwen38-27b-serial-none",
+  "maximum_references": 5,
+  "command": [
+    "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/bin/python",
+    "-m",
+    "gibs.fresh.experiment",
+    "all",
+    "--input",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/free_asu/main-qwen38-27b-serial-none/results.json",
+    "--output",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_comparison",
+    "--max-references",
+    "5"
+  ],
+  "experiment_started_utc": "2026-10-29T15:20:52.947046+00:00",
+  "experiment_pid": 92565,
+  "exit_code": -2,
+  "ended_utc": "2026-10-29T16:15:14.235708+00:00"
+}

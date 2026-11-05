@@ -1,0 +1,31 @@
+{
+  "mask": {
+    "s0": 1.0,
+    "s2": 0.0,
+    "s4": 0.0,
+    "s6": 1.0,
+    "s8": 0.0,
+    "s10": 1.0,
+    "s12": 0.0,
+    "s14": 1.0
+  },
+  "node_map": {
+    "ROOT": "ROOT",
+    "N:s14": "N:s18",
+    "N:s0": "N:s0",
+    "N:u1": "N:u1",
+    "N:u3": "N:u3",
+    "N:s6": "N:s10",
+    "N:s10": "N:s14",
+    "N:u11": "N:u19"
+  },
+  "edge_map": {
+    "ROOT->N:s14": "ROOT->N:s18",
+    "ROOT->N:s0": "ROOT->N:s0",
+    "ROOT->N:u1": "ROOT->N:u1",
+    "ROOT->N:u3": "ROOT->N:u3",
+    "ROOT->N:s6": "ROOT->N:s10",
+    "ROOT->N:s10": "ROOT->N:s14",
+    "ROOT->N:u11": "ROOT->N:u19"
+  }
+}

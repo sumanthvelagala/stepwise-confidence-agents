@@ -11,9 +11,39 @@ We adapt the stepwise confidence attribution method of
 > subgraph (MCS), and leave-one-out consensus scores. We have evaluated how well those scores cover verified-correct
 > steps.
 >
-> We have **not** trained the paper's GCN-based confidence predictor. We have **not** yet shown that the scores
-> detect incorrect actions: our data contain almost no "difficult" incorrect steps, meaning wrong calls to tools
-> that correct runs also use. Collecting such data (Phase 3B) is set up but has not started.
+> The **unified paper comparison** now runs semantic BERT-cosine NIBS, the PDF's trained BERT/GCN GIBS, and
+> C4-trained GIBS, alongside the older tool_sim baseline, released-code controls and a graph-structure ablation.
+> It uses 100 distinct trajectories across five tasks, three task-held-out folds, three seeds, and separate
+> additional-task tests. Original C4 is preserved. The revised graph improves core AUROC but worsens localization;
+> general error-detection accuracy remains unestablished because difficult errors and human labels are scarce.
+> See [prototype instructions](gibs/comparison/README.md), [evaluation plan](gibs/comparison/EVALUATION_PLAN.md)
+> and [actual results](results/paper_comparison/REPORT.md). Author-code equation checks are included.
+
+Fresh data collection used **ASU's free hosted Qwen3.8-27B**. The main
+**50 tasks × 20 attempts** collection completed: **1,000 graded trajectories,
+680 benchmark passes and 320 failures**. All graphs parse, with zero unresolved
+infrastructure failures. Fresh MCS generation, 24 GCN fits and held-out evaluation
+are complete. The agent's 68% task pass rate is not GIBS/C4 accuracy; independent
+human validation remains pending.
+See [status and monitoring](collection/STATUS.md) and the
+[collection plan](collection/ASU_RUN_PLAN.md). Existing comparison results use
+the historical Groq data, separate from this collection.
+
+A trained PDF-style GIBS predictor has also scored a **new Task 20 trajectory**
+without its reward, gold actions or references at inference: [executed demo](results/paper_gibs_working/DEMO.md).
+The all-task experiment in `results/fresh_all_tasks/` constructs fresh MCS targets
+on ASU Sol, then retrains paper GIBS and C4 locally. Four held-out task-group
+folds cover all 1,000 trajectories, with three seeds per method. Reference
+baselines and per-task coverage are reported separately when references or
+label classes are missing. See [fresh experiment instructions](gibs/fresh/README.md).
+See the [completed all-task comparison](results/fresh_all_tasks/REPORT.md).
+The completed [reference-cap comparison](results/fresh_refs_3_17/REFERENCE_CAP_COMPARISON.md)
+keeps the same dataset and compares minimum 3 / maximum 5 against maximum 17.
+The [local Phase 2 demo UI](demo_ui/README.md) includes both settings, their main
+findings, five actual demonstration cases, all 1,000 runs, per-step scores,
+actual MCS maps, training histories and a detailed worked example. The
+[demonstration report](demo_ui/DEMO_REPORT.md) explains both settings and the five cases. Open
+`demo_ui/dist/index.html` in a browser or use the Desktop launcher.
 
 ---
 
@@ -38,7 +68,7 @@ The paper gives two methods:
 
 ### Our adaptation
 
-- **Data:** τ²-bench Airline. An agent (here `gpt-oss-20b`) serves a simulated user and must read and modify a
+- **Data:** τ²-bench Airline. An agent (`gpt-oss-20b` historically; Qwen3.8-27B in the new collection) serves a simulated user and must read and modify a
   reservation database through tools (`get_reservation_details`, `book_reservation`, `cancel_reservation`, …),
   following an airline policy.
 - **Step types:** a step is a tool call with its result, or a message to the user.
@@ -191,7 +221,7 @@ tests and in every evaluation.
 | Source node | target node checked (code) | source and target nodes checked |
 | Targets | `m_node` | `m_node` and context-supported `m_ctx` |
 | References | correct runs of the problem | leave-one-out, exact-duplicate removal |
-| Predictor | GCN trained under an information-bottleneck objective | **not implemented** |
+| Predictor | BERT + GCN trained under an information-bottleneck objective | **implemented in `gibs/learned/`**: two-layer GCN, equation-6 loss, paper-style and C4 supervision; small agent-data prototype |
 
 **Related, earlier code.** `gibs/run_gibs.py`, `gibs/scoring/`, `gibs/similarity/` and `gibs/graph/builder.py` are an
 **earlier prototype** (tool and data-dependency matching plus a Weisfeiler–Leman graph kernel), and `nibs/` is the
@@ -373,7 +403,9 @@ exposed to earlier NIBS work.
    - error-localisation rank;
    - sensitivity to the number of references.
 5. **Baselines:** random, position heuristics, NLI-only matching (variant A) and NIBS.
-6. **GCN.** Consider training the paper's GCN predictor **only if** the consensus signal proves useful.
+6. **GCN.** The [unified comparison](gibs/comparison/README.md) separates paper semantic NIBS, PDF GIBS,
+   C4 and the older tool_sim baseline. The graph ablation improves AUROC but worsens localization.
+   Improve independent validation and data before claiming a general learned-model benefit.
 
 ---
 
@@ -387,6 +419,8 @@ requirements.md                   original Phase 1 (NIBS) requirements
 run_tau2_gpu.py                   legacy wrapper for a retired self-hosted endpoint (do not use)
 nibs/                             NIBS implementation, CLI, tests
 gibs/
+  comparison/                    paper semantic NIBS / PDF GIBS / C4 comparison, source checks and graph ablation
+  learned/                       trained BERT/GCN prototype, held-out-task evaluation, query-only inference
   graph/step_graph.py             step graph v0.2 (AgentStep / UserTurn; temporal + data_dependency edges)
   graph/event_projection.py       projected graph (paper_literal / event_context)
   mcs/nli.py                      DeBERTa-MNLI similarity, caching, symmetric truncation
@@ -409,7 +443,21 @@ results/pilot/, results/probe/    τ²-bench trajectories (results.json)
 
 The paper PDF is not included; see the arXiv link above.
 
-### Installation (GIBS analysis)
+### Unified paper NIBS / GIBS / C4 prototype
+
+```bash
+uv venv .venv --python python3.12  # skip if the environment already exists
+uv pip install --python .venv/bin/python -r gibs/requirements-learned-lock.txt
+.venv/bin/python -m gibs.comparison.run
+```
+
+See [the prototype guide](gibs/comparison/README.md) for standalone prediction, semantic NIBS, additional task
+cases, graph diagrams and the differences between the paper and released code. This run reuses saved real NLI/MCS
+pair mappings and trains the predictors. It does not regenerate trajectories or recompute NLI. Outputs are
+isolated in `results/paper_comparison/`. The earlier `gibs.learned.run_experiment` and `results/gibs_learned/`
+remain available as the initial three-task experiment.
+
+### Historical NLI/MCS analysis environment
 
 ```bash
 python3.13 -m venv .venv
@@ -447,28 +495,37 @@ All `compute` steps are resumable and never overwrite existing result files.
 
 ### Benchmark and model configuration
 
-**Existing trajectories** (all files):
+**Historical trajectories**:
 - τ²-bench commit `5bfa7e37b36656b37dc6d022156be6563c1007f3` (tau2 1.0.1);
 - the same airline policy text in every file;
 - `max_steps` 200, `max_errors` 10, seed 42 or 300;
 - agent and user `groq/openai/gpt-oss-20b` at temperature 0;
 - tasks 2, 4 and 5 also have runs from a local `gpt-oss:20b` at agent temperature 1.0.
 
-**Phase 3B (planned):**
-- the same commit;
-- agent `groq/openai/gpt-oss-20b` at temperature **1.0**; user at temperature **0.0**;
-- seed 300; max steps 200; max errors 10.
+**Fresh collection (current):**
+- the same commit, through ASU Research Computing's free API;
+- agent and user `openai/qwen38-27b`, at temperatures **1.0** and **0.0**;
+- reasoning disabled and parallel tool calls disabled with explicit client passthrough;
+- seed 300; max steps 200; max errors 10; four concurrent simulations;
+- configuration, source hashes and model catalog metadata recorded separately.
 
 **Environment:**
 - `bash gibs/validation/phase3b_bootstrap.sh` recreates the τ²-bench environment in `../tau2-bench`: Python 3.12, the
   locked dependencies, and the one locked runtime dependency that the core install misses (`websockets==15.0.1`,
   hash-checked).
-- Put `GROQ_API_KEY` in `../tau2-bench/.env`. That file is git-ignored; never commit it.
+- Current collection reads the Voyager key from the ignored `.env.asu` file; benchmark dotenv loading is disabled.
 - Run τ²-bench as `../tau2-bench/.venv/bin/tau2`, not `uv run`.
-- Check every new results file with `gibs/validation/phase3b_check_run.py` before adding it to this repository. It
-  scans for credentials and verifies the configuration.
+- Audit new ASU data with `python3 -m collection.audit <output-directory>`. The collection job also writes an
+  audit automatically on completion. The older `phase3b_check_run.py` checks historical Groq-specific settings.
 
 ### NIBS (earlier work)
+
+The original NIBS scorer now has a retrospective evaluation on the five milestone
+tasks, with automatic-label error ranking, localization, random and last-step-first
+baselines, and a blind human-review sheet. Run `python3 -B nibs/run_evaluation.py`
+(standard library only). See [the report](results/nibs_evaluation/REPORT.md) and
+[evaluation/review instructions](nibs/README.md). Human validation is still pending;
+these development-task results do not establish general error-localization accuracy.
 
 ```bash
 cd nibs && python run_nibs.py ../results/pilot/tasks_25_40_48/results.json --aggregation max --k-min 3

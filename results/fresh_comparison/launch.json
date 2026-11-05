@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-29T08:30:12.432972+00:00",
+  "pid": 59419,
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/bin/python",
+    "-m",
+    "gibs.fresh.wait_for_collection",
+    "--max-references",
+    "5",
+    "--output",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_comparison"
+  ],
+  "status_at_launch": "waiting_for_collection"
+}

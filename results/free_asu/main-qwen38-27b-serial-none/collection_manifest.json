@@ -1,0 +1,1116 @@
+{
+  "configuration": {
+    "tau2_commit": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+    "task_sha256": {
+      "0": "1d8acbe2dac38aa92504453b9f32a2c2b66eb7419586096c3b8a0e63f2ae3033",
+      "1": "97149203fb29b5d8f8badcab9e912f627b3c24c3dba815f385635019d5ba35e7",
+      "2": "4da7e03b935b5102713ca50e5e871ad2bb5800e9287b59e3e1559ccb08692c94",
+      "3": "3237866d43ef3e131902f24318548bd15f92d20c444fdc588d360d84e8316561",
+      "4": "6ba6789d5e555e889eb26b21d039426abefab91cc35b70b7ead87518aef33a32",
+      "5": "f24a914960457e0caf14c5737ec906e0a0d86e342104e26c142660078c43762f",
+      "6": "97cbfc434f20fb591e15a38cf0089f1bc2c09ea8486f88ab1555f0395d24a337",
+      "7": "30700c24fae2ed56a80b93948b13ba34880574dcf0a8922b2e205de7bdd2610a",
+      "8": "415a3d24e502c5b1499e404266aed5bf5b155bf9f5f432e53e4b4424d33d3ecd",
+      "9": "5f22669923f850ea31d4cbc260ec21dcbe5a5fc2f1306925eda58c295d51a8ec",
+      "10": "633debbb173b50ec2b547eb3e895f432d16cc47ec5e2667a0571506846c5d320",
+      "11": "9efaffcc8899537595d89a16f2bd58611e9b58f6fee90401e1092b433c8b2ef9",
+      "12": "2f22ec9c8c6a3302ac475cbf60ded0d8df37b4cc5dd3576d63862a080d63f506",
+      "13": "3e0f7f7365f5d6c102ee1858bc9ad06f67239eb0dd6df6e9c6d3ba2f8ee090f3",
+      "14": "fc21060dc4e8afa0cc8d0e64cb1bfb38fa767955106d498d8011caa94e0ab534",
+      "15": "1dcd7985c9d67bea83a0a3445b537b6db797e4ba018c3cb1dec900fc2077e1be",
+      "16": "40d6864960faddbfc828811585f4268065874e7c888deb645cec855d33df5ae0",
+      "17": "a83aa78313694cf10be97cfb01054393e7002b7691cc52797e6f877ad7606b44",
+      "18": "50a10f9891b6ef7ba2d94c01120d6aeebb3abc6c2cd8321f51e1f90c1711102d",
+      "19": "aa9c6f4125be03c936316fe1549c302bd925e713798ae378e23859b149e15b73",
+      "20": "7c199562a4e77c1b4c679ee25ba1d3b096e5ca741a476cad9f85f3ba198923ea",
+      "21": "fba5afb0b0beec19c4ac256982739c5761265cf896a3da3c1a7887f4ccca5e82",
+      "22": "37b9051bd79ab89dfd25db9536e599d34545aa8052c56da28634bf5a3538a239",
+      "23": "91e7a1cde071eaf29caa19c47507f78aa74c25104ad342969ef5df1166fdb700",
+      "24": "0bf7a7d5bbb49dde150c4622249ee33840110fa385b778175dfb8c80afae40a0",
+      "25": "428b76f3db2801d0b7660543f86933a9b709637c1fb21adb992c1f10570b400c",
+      "26": "aa83496aef0ff3ea34aaef44dc6fba319873976ca99283e6bd6b65d87bea6044",
+      "27": "7d02177b84a57ac75664310e7b02a9cc46f2d1e95fbda8adc4fdff05d42c3f10",
+      "28": "b085a11fe66646279829fa026019d7ada0b3f74769439233a23f5a6decaaf931",
+      "29": "cdd56a303309472808512aeba73c1c9eac648050dc6ad0bd959a9ba6f34fe60e",
+      "30": "86a81789aa77523d8f97d0d050d99111fa539bd9528d51f38a99e93ef0e11ffd",
+      "31": "dab562a53ede2b1c71a30d840c52dcdb749fb50226e6400be943decc6a4ee9bb",
+      "32": "c6aedc58dc2129cd58c301cb2bfc3ba37682fc5af8d326ffd6bbd5230554e0ef",
+      "33": "4b3356eb93ed8b73a23f5a536613ae6540c77c564f3d2868c8a6dcdf0b6a9b36",
+      "34": "17525ecf80c3742db7576615692ee8df7602d943bd176e51a214a3e62bfb0e6b",
+      "35": "ae67c330f8c3c378a77b357978f56df028ccf3f2927793e8d9968ca67b286594",
+      "36": "7f416e025a3cbc39cc3f0d5a91183046e1e28ebf9856ce4db5e52f7b9d4fa93a",
+      "37": "007b76d68aa5a1e34869ec39bf1b3da5d8d9d36e1b43aa7912bb0277a4bc161c",
+      "38": "34117c7d12070f8f12bd3d03766a4d83cbd336429795320dc37f2319b87496c7",
+      "39": "59ecff131fe7df325b66cf2e8ac72a38721bf0b29a6f574cf77ffa2ecd20d63e",
+      "40": "3247039bd920a4ca10a58875d2aa7902d0b1fb6a5406d2cc7c5522c45e22b590",
+      "41": "ff848c81a5cc2501bdf228c3e96416db00175da37130b83c589993d7ee2c48d5",
+      "42": "b264e3775b90cd0c8e04da82590ae7665ae5ee19e2159cbc3f73582ba08e65a8",
+      "43": "ed3bdafe446a7c80e418b04932eee2a9e1cc25df50f3fe802cb967d67ee1ddef",
+      "44": "9f4520a361e47e05627b89f1d02231f6ee3c37774859a121c4d873973f763106",
+      "45": "96f89cf79a2629b9c6cf59dc2438c8bc714a3bf9a337cc528b9c67a690d43a8a",
+      "46": "93b2de13902b70663251948f05a4d6499f5f8d84387a9e7b7532950da899c566",
+      "47": "1e940072a531e9d2622916b3e4a8e293ee7e762372860a4c1ffe7d041049b50a",
+      "48": "cfd8699adab10c27c0ae65b4c753fdc6a28b0456d55eecd60fc20aeae0e204dc",
+      "49": "c78798dcbf32933a4f1927403ba900456f7c6c5141795d2cbf56fbf3be77567e"
+    },
+    "model": "qwen38-27b",
+    "agent_temperature": 1.0,
+    "user_temperature": 0.0,
+    "context": 32768,
+    "max_tokens": 2048,
+    "max_steps": 200,
+    "max_errors": 10,
+    "seed": 300,
+    "concurrency": 4,
+    "simulation_timeout": 1200,
+    "trials": 20,
+    "backend": "asu",
+    "reasoning_effort_requested": "none",
+    "reasoning_passthrough": true,
+    "parallel_tool_calls_requested": false,
+    "gateway_addons": "off",
+    "context_note": "Context is checked against catalog; server controls its window",
+    "model_weights": {
+      "catalog": {
+        "id": "qwen38-27b",
+        "model_type": "chat",
+        "context_window": 262144,
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "reasoning": {
+          "levels": {
+            "high": "high",
+            "low": "low",
+            "medium": "medium",
+            "none": "none"
+          },
+          "mode": "mapped"
+        },
+        "owned_by": "obleth"
+      },
+      "weight_digest": null,
+      "revision_limit": "Hosted catalog metadata is recorded; immutable weights are not exposed by this API"
+    }
+  },
+  "target_trajectories": 1000,
+  "paid_api_calls": false,
+  "endpoint": "https://openai.rc.asu.edu/v1",
+  "source_sha256": "70a2249959f0ec01e883d206080f0e6033e24c46e145067194a4afa392046362",
+  "collection_source_sha256": {
+    "run_tau2.py": "70a2249959f0ec01e883d206080f0e6033e24c46e145067194a4afa392046362",
+    "asu.py": "654c2239dd0bcf769936da6a767ce0945c0c7c778451ae8d070951605d85d05e"
+  },
+  "started_utc": "2026-10-29T14:43:46.530230+00:00",
+  "before": {
+    "simulations": 905,
+    "outcomes": {
+      "success": 611,
+      "failure": 293,
+      "infrastructure_error": 1
+    },
+    "tasks": {
+      "0": {
+        "success": 19
+      },
+      "1": {
+        "failure": 14,
+        "success": 5
+      },
+      "2": {
+        "success": 11,
+        "failure": 7
+      },
+      "3": {
+        "success": 19
+      },
+      "4": {
+        "success": 19
+      },
+      "5": {
+        "success": 16,
+        "failure": 2
+      },
+      "6": {
+        "success": 19
+      },
+      "7": {
+        "failure": 18
+      },
+      "8": {
+        "success": 17,
+        "failure": 1
+      },
+      "9": {
+        "success": 13,
+        "failure": 5
+      },
+      "10": {
+        "success": 17,
+        "failure": 1
+      },
+      "11": {
+        "success": 11,
+        "failure": 7
+      },
+      "12": {
+        "success": 12,
+        "failure": 6
+      },
+      "13": {
+        "success": 18
+      },
+      "14": {
+        "failure": 16,
+        "success": 2
+      },
+      "15": {
+        "success": 11,
+        "failure": 7
+      },
+      "16": {
+        "success": 10,
+        "failure": 8
+      },
+      "17": {
+        "failure": 13,
+        "success": 5
+      },
+      "18": {
+        "failure": 4,
+        "success": 14
+      },
+      "19": {
+        "success": 17,
+        "failure": 1
+      },
+      "20": {
+        "failure": 16,
+        "success": 2
+      },
+      "21": {
+        "failure": 16,
+        "success": 2
+      },
+      "22": {
+        "failure": 9,
+        "success": 9
+      },
+      "23": {
+        "failure": 7,
+        "success": 11
+      },
+      "24": {
+        "failure": 11,
+        "success": 7
+      },
+      "25": {
+        "success": 18
+      },
+      "26": {
+        "success": 18
+      },
+      "27": {
+        "success": 17,
+        "failure": 1
+      },
+      "28": {
+        "success": 17,
+        "failure": 1
+      },
+      "29": {
+        "failure": 16,
+        "success": 2
+      },
+      "30": {
+        "success": 18
+      },
+      "31": {
+        "success": 18
+      },
+      "32": {
+        "failure": 15,
+        "success": 3
+      },
+      "33": {
+        "success": 11,
+        "failure": 7
+      },
+      "34": {
+        "success": 18
+      },
+      "35": {
+        "failure": 11,
+        "success": 7
+      },
+      "36": {
+        "success": 18
+      },
+      "37": {
+        "failure": 8,
+        "success": 10
+      },
+      "38": {
+        "success": 16,
+        "failure": 2
+      },
+      "39": {
+        "success": 5,
+        "failure": 13
+      },
+      "40": {
+        "success": 14,
+        "failure": 4
+      },
+      "41": {
+        "failure": 8,
+        "success": 9,
+        "infrastructure_error": 1
+      },
+      "42": {
+        "success": 9,
+        "failure": 9
+      },
+      "43": {
+        "success": 15,
+        "failure": 3
+      },
+      "44": {
+        "failure": 17,
+        "success": 1
+      },
+      "45": {
+        "success": 18
+      },
+      "46": {
+        "success": 17,
+        "failure": 1
+      },
+      "47": {
+        "success": 11,
+        "failure": 7
+      },
+      "48": {
+        "success": 17,
+        "failure": 1
+      },
+      "49": {
+        "success": 18
+      }
+    }
+  },
+  "infra_error_limit": 10,
+  "invocations": [
+    {
+      "started_utc": "2026-10-29T07:28:49.331717+00:00",
+      "ended_utc": "2026-10-29T12:34:50.835762+00:00",
+      "endpoint": "https://openai.rc.asu.edu/v1",
+      "source_sha256": "70a2249959f0ec01e883d206080f0e6033e24c46e145067194a4afa392046362",
+      "collection_source_sha256": {
+        "run_tau2.py": "70a2249959f0ec01e883d206080f0e6033e24c46e145067194a4afa392046362",
+        "asu.py": "654c2239dd0bcf769936da6a767ce0945c0c7c778451ae8d070951605d85d05e"
+      },
+      "before": {
+        "simulations": 0,
+        "outcomes": {},
+        "tasks": {}
+      },
+      "after": {
+        "simulations": 905,
+        "outcomes": {
+          "success": 611,
+          "failure": 293,
+          "infrastructure_error": 1
+        },
+        "tasks": {
+          "0": {
+            "success": 19
+          },
+          "1": {
+            "failure": 14,
+            "success": 5
+          },
+          "2": {
+            "success": 11,
+            "failure": 7
+          },
+          "3": {
+            "success": 19
+          },
+          "4": {
+            "success": 19
+          },
+          "5": {
+            "success": 16,
+            "failure": 2
+          },
+          "6": {
+            "success": 19
+          },
+          "7": {
+            "failure": 18
+          },
+          "8": {
+            "success": 17,
+            "failure": 1
+          },
+          "9": {
+            "success": 13,
+            "failure": 5
+          },
+          "10": {
+            "success": 17,
+            "failure": 1
+          },
+          "11": {
+            "success": 11,
+            "failure": 7
+          },
+          "12": {
+            "success": 12,
+            "failure": 6
+          },
+          "13": {
+            "success": 18
+          },
+          "14": {
+            "failure": 16,
+            "success": 2
+          },
+          "15": {
+            "success": 11,
+            "failure": 7
+          },
+          "16": {
+            "success": 10,
+            "failure": 8
+          },
+          "17": {
+            "failure": 13,
+            "success": 5
+          },
+          "18": {
+            "failure": 4,
+            "success": 14
+          },
+          "19": {
+            "success": 17,
+            "failure": 1
+          },
+          "20": {
+            "failure": 16,
+            "success": 2
+          },
+          "21": {
+            "failure": 16,
+            "success": 2
+          },
+          "22": {
+            "failure": 9,
+            "success": 9
+          },
+          "23": {
+            "failure": 7,
+            "success": 11
+          },
+          "24": {
+            "failure": 11,
+            "success": 7
+          },
+          "25": {
+            "success": 18
+          },
+          "26": {
+            "success": 18
+          },
+          "27": {
+            "success": 17,
+            "failure": 1
+          },
+          "28": {
+            "success": 17,
+            "failure": 1
+          },
+          "29": {
+            "failure": 16,
+            "success": 2
+          },
+          "30": {
+            "success": 18
+          },
+          "31": {
+            "success": 18
+          },
+          "32": {
+            "failure": 15,
+            "success": 3
+          },
+          "33": {
+            "success": 11,
+            "failure": 7
+          },
+          "34": {
+            "success": 18
+          },
+          "35": {
+            "failure": 11,
+            "success": 7
+          },
+          "36": {
+            "success": 18
+          },
+          "37": {
+            "failure": 8,
+            "success": 10
+          },
+          "38": {
+            "success": 16,
+            "failure": 2
+          },
+          "39": {
+            "success": 5,
+            "failure": 13
+          },
+          "40": {
+            "success": 14,
+            "failure": 4
+          },
+          "41": {
+            "failure": 8,
+            "success": 9,
+            "infrastructure_error": 1
+          },
+          "42": {
+            "success": 9,
+            "failure": 9
+          },
+          "43": {
+            "success": 15,
+            "failure": 3
+          },
+          "44": {
+            "failure": 17,
+            "success": 1
+          },
+          "45": {
+            "success": 18
+          },
+          "46": {
+            "success": 17,
+            "failure": 1
+          },
+          "47": {
+            "success": 11,
+            "failure": 7
+          },
+          "48": {
+            "success": 17,
+            "failure": 1
+          },
+          "49": {
+            "success": 18
+          }
+        }
+      }
+    },
+    {
+      "started_utc": "2026-10-29T14:43:46.530230+00:00",
+      "ended_utc": "2026-10-29T15:20:28.794567+00:00",
+      "endpoint": "https://openai.rc.asu.edu/v1",
+      "source_sha256": "70a2249959f0ec01e883d206080f0e6033e24c46e145067194a4afa392046362",
+      "collection_source_sha256": {
+        "run_tau2.py": "70a2249959f0ec01e883d206080f0e6033e24c46e145067194a4afa392046362",
+        "asu.py": "654c2239dd0bcf769936da6a767ce0945c0c7c778451ae8d070951605d85d05e"
+      },
+      "before": {
+        "simulations": 905,
+        "outcomes": {
+          "success": 611,
+          "failure": 293,
+          "infrastructure_error": 1
+        },
+        "tasks": {
+          "0": {
+            "success": 19
+          },
+          "1": {
+            "failure": 14,
+            "success": 5
+          },
+          "2": {
+            "success": 11,
+            "failure": 7
+          },
+          "3": {
+            "success": 19
+          },
+          "4": {
+            "success": 19
+          },
+          "5": {
+            "success": 16,
+            "failure": 2
+          },
+          "6": {
+            "success": 19
+          },
+          "7": {
+            "failure": 18
+          },
+          "8": {
+            "success": 17,
+            "failure": 1
+          },
+          "9": {
+            "success": 13,
+            "failure": 5
+          },
+          "10": {
+            "success": 17,
+            "failure": 1
+          },
+          "11": {
+            "success": 11,
+            "failure": 7
+          },
+          "12": {
+            "success": 12,
+            "failure": 6
+          },
+          "13": {
+            "success": 18
+          },
+          "14": {
+            "failure": 16,
+            "success": 2
+          },
+          "15": {
+            "success": 11,
+            "failure": 7
+          },
+          "16": {
+            "success": 10,
+            "failure": 8
+          },
+          "17": {
+            "failure": 13,
+            "success": 5
+          },
+          "18": {
+            "failure": 4,
+            "success": 14
+          },
+          "19": {
+            "success": 17,
+            "failure": 1
+          },
+          "20": {
+            "failure": 16,
+            "success": 2
+          },
+          "21": {
+            "failure": 16,
+            "success": 2
+          },
+          "22": {
+            "failure": 9,
+            "success": 9
+          },
+          "23": {
+            "failure": 7,
+            "success": 11
+          },
+          "24": {
+            "failure": 11,
+            "success": 7
+          },
+          "25": {
+            "success": 18
+          },
+          "26": {
+            "success": 18
+          },
+          "27": {
+            "success": 17,
+            "failure": 1
+          },
+          "28": {
+            "success": 17,
+            "failure": 1
+          },
+          "29": {
+            "failure": 16,
+            "success": 2
+          },
+          "30": {
+            "success": 18
+          },
+          "31": {
+            "success": 18
+          },
+          "32": {
+            "failure": 15,
+            "success": 3
+          },
+          "33": {
+            "success": 11,
+            "failure": 7
+          },
+          "34": {
+            "success": 18
+          },
+          "35": {
+            "failure": 11,
+            "success": 7
+          },
+          "36": {
+            "success": 18
+          },
+          "37": {
+            "failure": 8,
+            "success": 10
+          },
+          "38": {
+            "success": 16,
+            "failure": 2
+          },
+          "39": {
+            "success": 5,
+            "failure": 13
+          },
+          "40": {
+            "success": 14,
+            "failure": 4
+          },
+          "41": {
+            "failure": 8,
+            "success": 9,
+            "infrastructure_error": 1
+          },
+          "42": {
+            "success": 9,
+            "failure": 9
+          },
+          "43": {
+            "success": 15,
+            "failure": 3
+          },
+          "44": {
+            "failure": 17,
+            "success": 1
+          },
+          "45": {
+            "success": 18
+          },
+          "46": {
+            "success": 17,
+            "failure": 1
+          },
+          "47": {
+            "success": 11,
+            "failure": 7
+          },
+          "48": {
+            "success": 17,
+            "failure": 1
+          },
+          "49": {
+            "success": 18
+          }
+        }
+      },
+      "after": {
+        "simulations": 1000,
+        "outcomes": {
+          "success": 680,
+          "failure": 320
+        },
+        "tasks": {
+          "0": {
+            "success": 20
+          },
+          "1": {
+            "failure": 15,
+            "success": 5
+          },
+          "2": {
+            "success": 13,
+            "failure": 7
+          },
+          "3": {
+            "success": 20
+          },
+          "4": {
+            "success": 20
+          },
+          "5": {
+            "success": 18,
+            "failure": 2
+          },
+          "6": {
+            "success": 20
+          },
+          "7": {
+            "failure": 20
+          },
+          "8": {
+            "success": 19,
+            "failure": 1
+          },
+          "9": {
+            "success": 14,
+            "failure": 6
+          },
+          "10": {
+            "success": 19,
+            "failure": 1
+          },
+          "11": {
+            "success": 13,
+            "failure": 7
+          },
+          "12": {
+            "success": 13,
+            "failure": 7
+          },
+          "13": {
+            "success": 20
+          },
+          "14": {
+            "failure": 18,
+            "success": 2
+          },
+          "15": {
+            "success": 13,
+            "failure": 7
+          },
+          "16": {
+            "success": 11,
+            "failure": 9
+          },
+          "17": {
+            "failure": 15,
+            "success": 5
+          },
+          "18": {
+            "failure": 4,
+            "success": 16
+          },
+          "19": {
+            "success": 18,
+            "failure": 2
+          },
+          "20": {
+            "failure": 17,
+            "success": 3
+          },
+          "21": {
+            "failure": 17,
+            "success": 3
+          },
+          "22": {
+            "failure": 10,
+            "success": 10
+          },
+          "23": {
+            "failure": 7,
+            "success": 13
+          },
+          "24": {
+            "failure": 12,
+            "success": 8
+          },
+          "25": {
+            "success": 20
+          },
+          "26": {
+            "success": 20
+          },
+          "27": {
+            "success": 19,
+            "failure": 1
+          },
+          "28": {
+            "success": 19,
+            "failure": 1
+          },
+          "29": {
+            "failure": 18,
+            "success": 2
+          },
+          "30": {
+            "success": 19,
+            "failure": 1
+          },
+          "31": {
+            "success": 20
+          },
+          "32": {
+            "failure": 17,
+            "success": 3
+          },
+          "33": {
+            "success": 12,
+            "failure": 8
+          },
+          "34": {
+            "success": 20
+          },
+          "35": {
+            "failure": 11,
+            "success": 9
+          },
+          "36": {
+            "success": 20
+          },
+          "37": {
+            "failure": 8,
+            "success": 12
+          },
+          "38": {
+            "success": 18,
+            "failure": 2
+          },
+          "39": {
+            "success": 5,
+            "failure": 15
+          },
+          "40": {
+            "success": 16,
+            "failure": 4
+          },
+          "41": {
+            "failure": 9,
+            "success": 11
+          },
+          "42": {
+            "success": 11,
+            "failure": 9
+          },
+          "43": {
+            "success": 16,
+            "failure": 4
+          },
+          "44": {
+            "failure": 18,
+            "success": 2
+          },
+          "45": {
+            "success": 20
+          },
+          "46": {
+            "success": 19,
+            "failure": 1
+          },
+          "47": {
+            "success": 12,
+            "failure": 8
+          },
+          "48": {
+            "success": 19,
+            "failure": 1
+          },
+          "49": {
+            "success": 20
+          }
+        }
+      }
+    }
+  ],
+  "ended_utc": "2026-10-29T15:20:28.794567+00:00",
+  "after": {
+    "simulations": 1000,
+    "outcomes": {
+      "success": 680,
+      "failure": 320
+    },
+    "tasks": {
+      "0": {
+        "success": 20
+      },
+      "1": {
+        "failure": 15,
+        "success": 5
+      },
+      "2": {
+        "success": 13,
+        "failure": 7
+      },
+      "3": {
+        "success": 20
+      },
+      "4": {
+        "success": 20
+      },
+      "5": {
+        "success": 18,
+        "failure": 2
+      },
+      "6": {
+        "success": 20
+      },
+      "7": {
+        "failure": 20
+      },
+      "8": {
+        "success": 19,
+        "failure": 1
+      },
+      "9": {
+        "success": 14,
+        "failure": 6
+      },
+      "10": {
+        "success": 19,
+        "failure": 1
+      },
+      "11": {
+        "success": 13,
+        "failure": 7
+      },
+      "12": {
+        "success": 13,
+        "failure": 7
+      },
+      "13": {
+        "success": 20
+      },
+      "14": {
+        "failure": 18,
+        "success": 2
+      },
+      "15": {
+        "success": 13,
+        "failure": 7
+      },
+      "16": {
+        "success": 11,
+        "failure": 9
+      },
+      "17": {
+        "failure": 15,
+        "success": 5
+      },
+      "18": {
+        "failure": 4,
+        "success": 16
+      },
+      "19": {
+        "success": 18,
+        "failure": 2
+      },
+      "20": {
+        "failure": 17,
+        "success": 3
+      },
+      "21": {
+        "failure": 17,
+        "success": 3
+      },
+      "22": {
+        "failure": 10,
+        "success": 10
+      },
+      "23": {
+        "failure": 7,
+        "success": 13
+      },
+      "24": {
+        "failure": 12,
+        "success": 8
+      },
+      "25": {
+        "success": 20
+      },
+      "26": {
+        "success": 20
+      },
+      "27": {
+        "success": 19,
+        "failure": 1
+      },
+      "28": {
+        "success": 19,
+        "failure": 1
+      },
+      "29": {
+        "failure": 18,
+        "success": 2
+      },
+      "30": {
+        "success": 19,
+        "failure": 1
+      },
+      "31": {
+        "success": 20
+      },
+      "32": {
+        "failure": 17,
+        "success": 3
+      },
+      "33": {
+        "success": 12,
+        "failure": 8
+      },
+      "34": {
+        "success": 20
+      },
+      "35": {
+        "failure": 11,
+        "success": 9
+      },
+      "36": {
+        "success": 20
+      },
+      "37": {
+        "failure": 8,
+        "success": 12
+      },
+      "38": {
+        "success": 18,
+        "failure": 2
+      },
+      "39": {
+        "success": 5,
+        "failure": 15
+      },
+      "40": {
+        "success": 16,
+        "failure": 4
+      },
+      "41": {
+        "failure": 9,
+        "success": 11
+      },
+      "42": {
+        "success": 11,
+        "failure": 9
+      },
+      "43": {
+        "success": 16,
+        "failure": 4
+      },
+      "44": {
+        "failure": 18,
+        "success": 2
+      },
+      "45": {
+        "success": 20
+      },
+      "46": {
+        "success": 19,
+        "failure": 1
+      },
+      "47": {
+        "success": 12,
+        "failure": 8
+      },
+      "48": {
+        "success": 19,
+        "failure": 1
+      },
+      "49": {
+        "success": 20
+      }
+    }
+  }
+}

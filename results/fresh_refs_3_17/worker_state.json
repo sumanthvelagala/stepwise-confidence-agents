@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "pid": 43747,
+  "job_ids": [
+    66952298,
+    66961487
+  ],
+  "started_utc": "2026-10-30T04:00:12.672642+00:00",
+  "maximum_gpu_jobs": 8,
+  "remote_output": "/scratch/ppudi/sca-free/project/results/fresh_refs_3_17",
+  "sbatch_script": "/scratch/ppudi/sca-free/project/collection/sol_gibs_refs_3_17.sbatch",
+  "sol_job": 66961487,
+  "sol_status": "COMPLETED",
+  "sol_exit_code": "0:0",
+  "checked_utc": "2026-10-30T09:04:54.694616+00:00",
+  "target_progress": {
+    "completed_query_targets": 860,
+    "total_eligible_queries": 860,
+    "elapsed_target_seconds_in_current_job": 2138
+  },
+  "connection_checked_utc": "2026-10-30T07:52:32.667131+00:00",
+  "training_command": [
+    "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/bin/python",
+    "-u",
+    "-m",
+    "gibs.fresh.experiment",
+    "train",
+    "--output",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_refs_3_17"
+  ],
+  "training_pid": 48286,
+  "comparison_report": "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_refs_3_17/REFERENCE_CAP_COMPARISON.md",
+  "ended_utc": "2026-10-30T09:25:49.133804+00:00"
+}

@@ -1,0 +1,71 @@
+{
+  "checked_utc": "2026-10-29T17:17:08.976807+00:00",
+  "snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c",
+  "all_runs": {
+    "runs": 1000,
+    "pass": 680,
+    "fail": 320
+  },
+  "mcs_progress": {
+    "paper_gibs_pdf": {
+      "completed_query_targets": 33,
+      "saved_pair_mappings": 162
+    },
+    "c4_gibs": {
+      "completed_query_targets": 33,
+      "saved_pair_mappings": 158
+    }
+  },
+  "eligible_supervised_queries_per_fold": {
+    "fold0": {
+      "train": {
+        "runs": 511,
+        "pass": 400,
+        "fail": 111
+      },
+      "validation": {
+        "runs": 129,
+        "pass": 102,
+        "fail": 27
+      }
+    },
+    "fold1": {
+      "train": {
+        "runs": 509,
+        "pass": 385,
+        "fail": 124
+      },
+      "validation": {
+        "runs": 131,
+        "pass": 99,
+        "fail": 32
+      }
+    },
+    "fold2": {
+      "train": {
+        "runs": 509,
+        "pass": 412,
+        "fail": 97
+      },
+      "validation": {
+        "runs": 131,
+        "pass": 106,
+        "fail": 25
+      }
+    },
+    "fold3": {
+      "train": {
+        "runs": 526,
+        "pass": 390,
+        "fail": 136
+      },
+      "validation": {
+        "runs": 134,
+        "pass": 101,
+        "fail": 33
+      }
+    }
+  },
+  "sampling": "Natural outcome distribution; per-task/outcome stratified partitions. No balanced sampler or outcome-class weighting.",
+  "training_stage": "Fresh MCS generation; GCN fitting starts after target completion."
+}

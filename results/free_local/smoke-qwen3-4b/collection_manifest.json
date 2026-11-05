@@ -1,0 +1,85 @@
+{
+  "configuration": {
+    "tau2_commit": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+    "task_sha256": {
+      "13": "3e0f7f7365f5d6c102ee1858bc9ad06f67239eb0dd6df6e9c6d3ba2f8ee090f3"
+    },
+    "model": "qwen3:4b",
+    "agent_temperature": 1.0,
+    "user_temperature": 0.0,
+    "thinking": false,
+    "context": 32768,
+    "max_tokens": 2048,
+    "max_steps": 200,
+    "max_errors": 10,
+    "seed": 300,
+    "concurrency": 1,
+    "simulation_timeout": 300,
+    "trials": 1,
+    "model_weights": {
+      "name": "qwen3:4b",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M"
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    }
+  },
+  "target_trajectories": 1,
+  "paid_api_calls": false,
+  "endpoint": "http://127.0.0.1:11434",
+  "source_sha256": "41ed1e41533b8f60c0dd5401b843d2f7b248c872646b4893797be5681fbfa701",
+  "started_utc": "2026-10-29T06:39:26.644070+00:00",
+  "before": {
+    "simulations": 0,
+    "outcomes": {},
+    "tasks": {}
+  },
+  "invocations": [
+    {
+      "started_utc": "2026-10-29T06:39:26.644070+00:00",
+      "ended_utc": "2026-10-29T06:46:18.621103+00:00",
+      "endpoint": "http://127.0.0.1:11434",
+      "source_sha256": "41ed1e41533b8f60c0dd5401b843d2f7b248c872646b4893797be5681fbfa701",
+      "before": {
+        "simulations": 0,
+        "outcomes": {},
+        "tasks": {}
+      },
+      "after": {
+        "simulations": 1,
+        "outcomes": {
+          "failure": 1
+        },
+        "tasks": {
+          "13": {
+            "failure": 1
+          }
+        }
+      }
+    }
+  ],
+  "ended_utc": "2026-10-29T06:46:18.621103+00:00",
+  "after": {
+    "simulations": 1,
+    "outcomes": {
+      "failure": 1
+    },
+    "tasks": {
+      "13": {
+        "failure": 1
+      }
+    }
+  }
+}

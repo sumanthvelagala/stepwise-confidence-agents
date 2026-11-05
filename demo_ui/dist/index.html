@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Stepwise — Airline confidence lab</title>
+  <meta name="description" content="Explore the completed 1,000-trajectory Airline experiment: NIBS, paper GIBS, and C4.">
+  <link rel="stylesheet" href="assets/style.css?v=2">
+  <script defer src="data/cap5/dashboard.js"></script><script defer src="data/cap17/dashboard.js"></script><script defer src="data/comparison.js"></script><script defer src="assets/worked-example.js"></script><script defer src="assets/app.js?v=2"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to results</a>
+<aside class="sidebar">
+  <a class="brand" href="#overview"><span class="brand-mark">↳</span><span>stepwise<span class="brand-sub">CONFIDENCE LAB</span></span></a>
+  <div class="side-label">EXPERIMENT WORKSPACE</div>
+  <nav aria-label="Main navigation">
+    <a href="#comparison" data-nav="comparison"><span>⇄</span> 3–5 vs 3–17</a>
+    <a href="#overview" data-nav="overview"><span>▤</span> Results overview</a>
+    <a href="#explorer" data-nav="explorer"><span>⌁</span> Trajectory explorer</a>
+    <a href="#diagnosis" data-nav="diagnosis"><span>◎</span> Why these results?</a>
+    <a href="#guide" data-nav="guide"><span>▧</span> Method walkthrough</a>
+  </nav>
+  <div class="side-note"><span class="live-dot"></span> Both experiments complete<p>50 tasks · same 1,000 trajectories<br>48 checkpoints across two settings</p></div>
+  <div class="side-foot">CSE598 · Team 11<br><span>Phase 2 demonstration</span></div>
+</aside>
+<main id="main">
+  <header class="topbar"><span>τ²-bench <span class="muted">/</span> Airline <span class="muted">/</span> <b id="breadcrumb">3–5 vs 3–17</b></span><label class="experiment-control"><span>Active experiment</span><select id="experiment" aria-label="Active experiment"><option value="cap5">3–5 references</option><option value="cap17" selected>3–17 references</option></select></label></header>
+  <div id="app" aria-live="polite"><div class="empty">Loading your experiment…</div></div>
+  <footer class="footer">Recorded benchmark data · Automatic step labels · Independent human review pending.<span id="source-stamp"></span></footer>
+</main>
+<div id="toast" role="status"></div>
+</body></html>

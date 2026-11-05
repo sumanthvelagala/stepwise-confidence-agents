@@ -1,0 +1,47 @@
+{
+  "job_id": "66946220",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "4.57.6",
+    "numpy": "2.3.5",
+    "networkx": "3.6.1"
+  },
+  "execution_source_sha256": {
+    "gibs/fresh/wait_for_collection.py": "e1f069285ab4a4ac180351b23159798bda1078d520d7d817934242e5b9750c3e",
+    "gibs/fresh/folds.py": "7c5231ce9ce6c25d18fdcda7c8081d5bb9f6335697205682958dca6104f5a5a3",
+    "gibs/fresh/crossfit.py": "8875dc7819a7c1589d2751c14f0bd1d922fb78ff728a2034ec5fc91813aa7908",
+    "gibs/fresh/__init__.py": "6d72a4eeb1d2518f3fcda596187008f6aaebdd349ced7266b3e7dd90cc86be98",
+    "gibs/fresh/experiment.py": "b1af84961167631e9e588569bd2aeac20362caceefdfc515ef4b0f42549f4664",
+    "gibs/mcs/nli.py": "c7ab3ae4afe0bc51a15686dc3ba0e8cdcb12103719bbf732a9f3a280850b25f9",
+    "gibs/mcs/mcs.py": "ce4755e9bf054e17679f8961a0bd0f0e5276ee095feb37f2a51b7808e211f79d",
+    "gibs/mcs/multi_component.py": "244f1e032a649bd4278e9e01c680d741290a1e55985fdae8b5cdc274cdaf434e"
+  },
+  "snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c",
+  "nli": {
+    "model": "microsoft/deberta-large-mnli",
+    "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+    "device": "cpu",
+    "encoding": "code_sep_string",
+    "overlength": "truncate",
+    "entailment_index": 2,
+    "id2label": {
+      "0": "CONTRADICTION",
+      "1": "NEUTRAL",
+      "2": "ENTAILMENT"
+    },
+    "max_length": 512,
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6"
+  },
+  "gpu_smoke_probabilities": [
+    0.9974228143692017,
+    0.0005019153468310833
+  ],
+  "cpu_smoke_probabilities": [
+    0.9974226951599121,
+    0.0005019158124923706
+  ],
+  "cpu_cuda_parity": true,
+  "primary_teacher_cache": "fresh CUDA cache; Mac masks are not mixed in"
+}

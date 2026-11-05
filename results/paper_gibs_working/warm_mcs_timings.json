@@ -1,0 +1,16 @@
+[
+  {
+    "query": "08335993-5c9a-4e87-89cb-29c4eaffc5a2",
+    "reference": "8e48eb60-2175-4eec-b8e0-d6b027c916d0",
+    "seconds": 38.85163058293983,
+    "uncached_nli_pairs": 234,
+    "matched_nodes": 13
+  },
+  {
+    "query": "08335993-5c9a-4e87-89cb-29c4eaffc5a2",
+    "reference": "b8802980-fc02-4c16-83ef-57d65f47ed6c",
+    "seconds": 73.67698579095304,
+    "uncached_nli_pairs": 324,
+    "matched_nodes": 17
+  }
+]

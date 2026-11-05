@@ -1,0 +1,13 @@
+{
+  "job_id": 66937131,
+  "followup_pid": 22215,
+  "restarted_utc": "2026-10-30T00:48:33.230209+00:00",
+  "previous_job_ids": [
+    66924222,
+    66937131
+  ],
+  "consumed_allocations_before_active_job": 1,
+  "maximum_jobs_in_this_monitor_including_active_job": 7,
+  "overall_allocation_bound": 8,
+  "reason": "Resume automatic follow-up after SSH connectivity returned; remote MCS job continued."
+}

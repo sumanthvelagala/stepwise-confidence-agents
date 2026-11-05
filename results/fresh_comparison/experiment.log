@@ -1,0 +1,84 @@
+Frozen 1000 distinct trajectories; split counts: {'train': 606, 'validation': 154, 'test': 240}
+Some weights of the model checkpoint at microsoft/deberta-large-mnli were not used when initializing DebertaForSequenceClassification: ['config']
+- This IS expected if you are initializing DebertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Fresh MCS teachers 1/660; elapsed 65s
+Fresh MCS teachers 2/660; elapsed 426s
+Fresh MCS teachers 3/660; elapsed 1302s
+Fresh MCS teachers 4/660; elapsed 1735s
+Fresh MCS teachers 5/660; elapsed 2023s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/fresh/experiment.py", line 379, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/fresh/experiment.py", line 375, in main
+    if args.stage in ('targets','all'): targets(args)
+                                        ^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/fresh/experiment.py", line 220, in targets
+    result = matcher(graphs[q['id']],graphs[r['id']],similarities[method],cfg,field_check=validator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/mcs/mcs.py", line 106, in find_mcs
+    sim.prefetch((e1["text"], e2["text"]) for e1 in g1.edges for e2 in g2.edges)
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/mcs/nli.py", line 242, in prefetch
+    bwd = self.model.entail_batch([(b, a) for a, b in pairs]) if self.direction == "max_bidirectional" \
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/mcs/nli.py", line 215, in entail_batch
+    probs = self.torch.softmax(self.model(**enc).logits.float(), dim=-1)[:, self.entail_index]
+                               ^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/transformers/models/deberta/modeling_deberta.py", line 1111, in forward
+    outputs = self.deberta(
+              ^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/transformers/models/deberta/modeling_deberta.py", line 805, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/transformers/models/deberta/modeling_deberta.py", line 608, in forward
+    hidden_states, att_m = layer_module(
+                           ^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/transformers/models/deberta/modeling_deberta.py", line 534, in forward
+    layer_output = self.output(intermediate_output, attention_output)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/transformers/models/deberta/modeling_deberta.py", line 505, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/lib/python3.12/site-packages/transformers/models/deberta/modeling_deberta.py", line 66, in forward
+    mean = hidden_states.mean(-1, keepdim=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

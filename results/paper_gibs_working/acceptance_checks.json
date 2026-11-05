@@ -1,0 +1,11 @@
+{
+  "checkpoint": "results/paper_comparison/checkpoints/core_oof_paper_gibs_pdf_25_seed7.pt",
+  "checkpoint_sha256": "ef9cf02387dec679ed867d7c5a9d8797b18945900dd9ab4606df6c1028fe9220",
+  "new_query_steps": 11,
+  "all_scores_finite_and_in_range": true,
+  "successful_references_used_at_inference": 0,
+  "query_gold_used": false,
+  "reward_and_gold_invariance_verified": true,
+  "trained_on": "Historical Groq data; fresh ASU retraining is separately queued",
+  "fresh_accuracy_established": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "monitoring_sol",
+  "pid": 28203,
+  "job_ids": [
+    66924222
+  ],
+  "started_utc": "2026-10-29T16:45:59.923966+00:00",
+  "maximum_gpu_jobs": 3,
+  "sol_job": 66924222,
+  "sol_status": "RUNNING",
+  "sol_exit_code": null,
+  "checked_utc": "2026-10-29T16:47:00.635468+00:00"
+}

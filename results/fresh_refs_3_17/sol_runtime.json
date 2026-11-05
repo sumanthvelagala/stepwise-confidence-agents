@@ -1,0 +1,63 @@
+{
+  "job_id": "66961487",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "4.57.6",
+    "numpy": "2.3.5",
+    "networkx": "3.6.1"
+  },
+  "execution_source_sha256": {
+    "gibs/fresh/wait_for_collection.py": "e1f069285ab4a4ac180351b23159798bda1078d520d7d817934242e5b9750c3e",
+    "gibs/fresh/folds.py": "7c5231ce9ce6c25d18fdcda7c8081d5bb9f6335697205682958dca6104f5a5a3",
+    "gibs/fresh/crossfit.py": "8875dc7819a7c1589d2751c14f0bd1d922fb78ff728a2034ec5fc91813aa7908",
+    "gibs/fresh/__init__.py": "6d72a4eeb1d2518f3fcda596187008f6aaebdd349ced7266b3e7dd90cc86be98",
+    "gibs/fresh/experiment.py": "b1af84961167631e9e588569bd2aeac20362caceefdfc515ef4b0f42549f4664",
+    "gibs/mcs/nli.py": "c7ab3ae4afe0bc51a15686dc3ba0e8cdcb12103719bbf732a9f3a280850b25f9",
+    "gibs/mcs/mcs.py": "ce4755e9bf054e17679f8961a0bd0f0e5276ee095feb37f2a51b7808e211f79d",
+    "gibs/mcs/multi_component.py": "244f1e032a649bd4278e9e01c680d741290a1e55985fdae8b5cdc274cdaf434e",
+    "gibs/comparison/graphs.py": "62780bac69b630e62d1d183b8eaaa3336c0c08c6cb7147c2b9156abdaa4851b3",
+    "gibs/comparison/run.py": "29f838cd5267885aafd993398b81cdbdb0246f7da43dad45f163b9d97d1e1ec2",
+    "gibs/comparison/semantic_nibs.py": "ba53f998e7ee0b5eccbfd5f07c256bc037d5bb7f44b21ec6dc72e977f2464b5b",
+    "gibs/learned/model.py": "21f0768c6da20c194d357a17905d9b00a2deaf770aff7c9c30243f12a8ada7ff",
+    "gibs/learned/data.py": "3c6426239345eb6b0dda675fa2f782a6c3313cac7d4eeedff0ad4dfe827d1bdc",
+    "gibs/learned/run_experiment.py": "3bb1ef0008a93e2284393de70a5bafa31b5d0d983bd62d6662ebcf12d99479ba",
+    "gibs/mcs/consensus.py": "a130e3c2e6a269aa2a510a88ac171dd452e992c00c1188aa0066e83a24b7d527",
+    "gibs/mcs/structured_fields.py": "d334c925677c7a21b2cebad453ef0cbced72d683504e2ab9b4b098403cc6b121",
+    "gibs/graph/step_graph.py": "58ae3f564f444a42ca3d6bfabd734829599e8aca083ccf5a1e67baadf82e69f2",
+    "gibs/graph/event_projection.py": "7293379987b701ef8ce842c4a81a15dbf70791893be8c705ef2b397714c41d2d",
+    "gibs/validation/step_verification_v2.py": "5ddac0b0d1af22199418b9f6b5607b96090c59f4da8bee5e43ff5aba99006ebc",
+    "nibs/run_evaluation.py": "32c3c19d8ffeef640bda8f9d57497e1b1db9dba65589db73925f7d2420262d1a",
+    "nibs/evaluation_metrics.py": "7a00c7f60b81c34e9908dfbcaf766310464bbacc5f23ea417a27802ca9f6f3b0",
+    "nibs/scoring/nibs.py": "8d566aefa4097cf527935d601f2e8157239d143713b2a3b6405203857d21500e",
+    "nibs/similarity/similarity.py": "2227eb9b417784b5a420c80c4552fab74044148daf35c7bace37d1be6bfadebb"
+  },
+  "snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c",
+  "nli": {
+    "model": "microsoft/deberta-large-mnli",
+    "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+    "device": "cuda",
+    "encoding": "code_sep_string",
+    "overlength": "truncate",
+    "entailment_index": 2,
+    "id2label": {
+      "0": "CONTRADICTION",
+      "1": "NEUTRAL",
+      "2": "ENTAILMENT"
+    },
+    "max_length": 512,
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6"
+  },
+  "gpu_smoke_probabilities": [
+    0.9974228143692017,
+    0.0005019153468310833
+  ],
+  "cpu_smoke_probabilities": [
+    0.9974226951599121,
+    0.0005019158124923706
+  ],
+  "cpu_cuda_parity": true,
+  "reference_rule": "Minimum 3; maximum 17 successful training references",
+  "primary_teacher_cache": "Existing pinned CUDA cache reused; Mac NLI masks not mixed in"
+}

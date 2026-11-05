@@ -1,0 +1,6 @@
+{
+  "source": "results/free_asu/main-qwen38-27b-serial-none/results.json",
+  "snapshot_input_sha256": "d8d8e471aed6949c83c44400faf5f6cf1419bc23a3e3b6535671a826b2dcab45",
+  "query_id": "bfa8c458-b7d9-4d99-8e21-252b28ca5834",
+  "query_reward_and_gold_removed": true
+}

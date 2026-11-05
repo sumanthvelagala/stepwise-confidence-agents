@@ -1,0 +1,342 @@
+{
+  "original": {
+    "graph_id": "task3_0ab1d7a2",
+    "topology": "paper_literal",
+    "nodes": [
+      {
+        "id": "ROOT",
+        "kind": "root",
+        "text": null,
+        "event": null,
+        "scorable": false
+      },
+      {
+        "id": "N:s0",
+        "kind": "agent_message",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "scorable": true
+      },
+      {
+        "id": "N:u1",
+        "kind": "user_turn",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so could you please tell me the exact number of bags I can check in? I'd appreciate a numeric answer.",
+        "event": "u1",
+        "scorable": false
+      },
+      {
+        "id": "N:s2",
+        "kind": "tool_result",
+        "text": "Tool result: user_id: anya_garcia_5901; name.first_name: Anya; name.last_name: Garcia; address.address1: 555 Highland Drive; address.address2: Suite 243; address.city: San Antonio; address.country: USA; address.state: TX; address.zip: 78256; email: anya.garcia8816@example.com; dob: 1992-11-12; payment_methods.gift_card_2550356.source: gift_card; payment_methods.gift_card_2550356.id: gift_card_2550356; payment_methods.gift_card_2550356.amount: 149.0; payment_methods.certificate_7583008.source: certificate; payment_methods.certificate_7583008.id: certificate_7583008; payment_methods.certificate_7583008.amount: 150.0; saved_passengers[0].first_name: Mei; saved_passengers[0].last_name: Lee; saved_passengers[0].dob: 1989-12-13; membership: silver; reservations[0]: 82K959; reservations[1]: 790JYN; reservations[2]: BE2L57; reservations[3]: CXBB4L; reservations[4]: TAMSDK; reservations[5]: 3RK2T9; reservations[6]: VAOW1B; reservations[7]: Q4MCUF; reservations[8]: JMO1MG.",
+        "event": "s2",
+        "scorable": true
+      },
+      {
+        "id": "N:s4",
+        "kind": "tool_result",
+        "text": "Tool result: reservation_id: JMO1MG; user_id: anya_garcia_5901; origin: DEN; destination: MIA; flight_type: one_way; cabin: economy; flights[0].flight_number: HAT255; flights[0].origin: DEN; flights[0].destination: MIA; flights[0].date: 2024-05-16; flights[0].price: 149; passengers[0].first_name: Anya; passengers[0].last_name: Garcia; passengers[0].dob: 1992-11-12; passengers[1].first_name: Raj; passengers[1].last_name: Jackson; passengers[1].dob: 1956-03-09; payment_history[0].payment_id: gift_card_2550356; payment_history[0].amount: 358; created_at: 2024-05-13T23:20:29; total_baggages: 1; nonfree_baggages: 0; insurance: yes; status: null.",
+        "event": "s4",
+        "scorable": true
+      },
+      {
+        "id": "N:s6",
+        "kind": "agent_message",
+        "text": "You're allowed to check in 4 bags.",
+        "event": "s6",
+        "scorable": true
+      },
+      {
+        "id": "N:u7",
+        "kind": "user_turn",
+        "text": "Thanks for the quick reply! Just to confirm, I'm allowed 4 bags in total, right?",
+        "event": "u7",
+        "scorable": false
+      },
+      {
+        "id": "N:s8",
+        "kind": "agent_message",
+        "text": "Yes, you're allowed a total of 4 checked bags.",
+        "event": "s8",
+        "scorable": true
+      },
+      {
+        "id": "N:u9",
+        "kind": "user_turn",
+        "text": "The user ended the conversation.",
+        "event": "u9",
+        "scorable": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "ROOT->N:s0",
+        "src": "ROOT",
+        "dst": "N:s0",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u1",
+        "src": "ROOT",
+        "dst": "N:u1",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so could you please tell me the exact number of bags I can check in? I'd appreciate a numeric answer.",
+        "event": "u1",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:u1->N:s2",
+        "src": "N:u1",
+        "dst": "N:s2",
+        "text": "Call get_user_details with user_id = anya_garcia_5901.",
+        "event": "s2",
+        "roles": [
+          "data"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:u1->N:s4",
+        "src": "N:u1",
+        "dst": "N:s4",
+        "text": "Call get_reservation_details with reservation_id = JMO1MG.",
+        "event": "s4",
+        "roles": [
+          "data"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:s6",
+        "src": "ROOT",
+        "dst": "N:s6",
+        "text": "You're allowed to check in 4 bags.",
+        "event": "s6",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u7",
+        "src": "ROOT",
+        "dst": "N:u7",
+        "text": "Thanks for the quick reply! Just to confirm, I'm allowed 4 bags in total, right?",
+        "event": "u7",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "ROOT->N:s8",
+        "src": "ROOT",
+        "dst": "N:s8",
+        "text": "Yes, you're allowed a total of 4 checked bags.",
+        "event": "s8",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u9",
+        "src": "ROOT",
+        "dst": "N:u9",
+        "text": "The user ended the conversation.",
+        "event": "u9",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      }
+    ]
+  },
+  "state_aware": {
+    "graph_id": "task3_0ab1d7a2",
+    "topology": "state_aware",
+    "nodes": [
+      {
+        "id": "ROOT",
+        "kind": "root",
+        "text": null,
+        "event": null,
+        "scorable": false
+      },
+      {
+        "id": "N:s0",
+        "kind": "agent_message",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "scorable": true
+      },
+      {
+        "id": "N:u1",
+        "kind": "user_turn",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so could you please tell me the exact number of bags I can check in? I'd appreciate a numeric answer.",
+        "event": "u1",
+        "scorable": false
+      },
+      {
+        "id": "N:s2",
+        "kind": "tool_result",
+        "text": "Tool result: user_id: anya_garcia_5901; name.first_name: Anya; name.last_name: Garcia; address.address1: 555 Highland Drive; address.address2: Suite 243; address.city: San Antonio; address.country: USA; address.state: TX; address.zip: 78256; email: anya.garcia8816@example.com; dob: 1992-11-12; payment_methods.gift_card_2550356.source: gift_card; payment_methods.gift_card_2550356.id: gift_card_2550356; payment_methods.gift_card_2550356.amount: 149.0; payment_methods.certificate_7583008.source: certificate; payment_methods.certificate_7583008.id: certificate_7583008; payment_methods.certificate_7583008.amount: 150.0; saved_passengers[0].first_name: Mei; saved_passengers[0].last_name: Lee; saved_passengers[0].dob: 1989-12-13; membership: silver; reservations[0]: 82K959; reservations[1]: 790JYN; reservations[2]: BE2L57; reservations[3]: CXBB4L; reservations[4]: TAMSDK; reservations[5]: 3RK2T9; reservations[6]: VAOW1B; reservations[7]: Q4MCUF; reservations[8]: JMO1MG.",
+        "event": "s2",
+        "scorable": true
+      },
+      {
+        "id": "N:s4",
+        "kind": "tool_result",
+        "text": "Tool result: reservation_id: JMO1MG; user_id: anya_garcia_5901; origin: DEN; destination: MIA; flight_type: one_way; cabin: economy; flights[0].flight_number: HAT255; flights[0].origin: DEN; flights[0].destination: MIA; flights[0].date: 2024-05-16; flights[0].price: 149; passengers[0].first_name: Anya; passengers[0].last_name: Garcia; passengers[0].dob: 1992-11-12; passengers[1].first_name: Raj; passengers[1].last_name: Jackson; passengers[1].dob: 1956-03-09; payment_history[0].payment_id: gift_card_2550356; payment_history[0].amount: 358; created_at: 2024-05-13T23:20:29; total_baggages: 1; nonfree_baggages: 0; insurance: yes; status: null.",
+        "event": "s4",
+        "scorable": true
+      },
+      {
+        "id": "N:s6",
+        "kind": "agent_message",
+        "text": "You're allowed to check in 4 bags.",
+        "event": "s6",
+        "scorable": true
+      },
+      {
+        "id": "N:u7",
+        "kind": "user_turn",
+        "text": "Thanks for the quick reply! Just to confirm, I'm allowed 4 bags in total, right?",
+        "event": "u7",
+        "scorable": false
+      },
+      {
+        "id": "N:s8",
+        "kind": "agent_message",
+        "text": "Yes, you're allowed a total of 4 checked bags.",
+        "event": "s8",
+        "scorable": true
+      },
+      {
+        "id": "N:u9",
+        "kind": "user_turn",
+        "text": "The user ended the conversation.",
+        "event": "u9",
+        "scorable": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "ROOT->N:s0",
+        "src": "ROOT",
+        "dst": "N:s0",
+        "text": "Hi! How can I help you today?",
+        "event": "s0",
+        "roles": [
+          "root"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u1",
+        "src": "ROOT",
+        "dst": "N:u1",
+        "text": "Hi, I'm Anya Garcia (user ID: anya_garcia_5901) and my confirmation number is JMO1MG. I'm trying to figure out how many suitcases I'm allowed to bring on my upcoming flight. I believe I'm a Gold member, so could you please tell me the exact number of bags I can check in? I'd appreciate a numeric answer.",
+        "event": "u1",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:u1->N:s2",
+        "src": "N:u1",
+        "dst": "N:s2",
+        "text": "Call get_user_details with user_id = anya_garcia_5901.",
+        "event": "s2",
+        "roles": [
+          "original_provenance"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:s2->N:s4",
+        "src": "N:s2",
+        "dst": "N:s4",
+        "text": "Call get_reservation_details with reservation_id = JMO1MG.",
+        "event": "s4",
+        "roles": [
+          "latest_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:u1->N:s6",
+        "src": "N:u1",
+        "dst": "N:s6",
+        "text": "You're allowed to check in 4 bags.",
+        "event": "s6",
+        "roles": [
+          "message_user_context"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:s4->N:s6",
+        "src": "N:s4",
+        "dst": "N:s6",
+        "text": "You're allowed to check in 4 bags.",
+        "event": "s6",
+        "roles": [
+          "message_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u7",
+        "src": "ROOT",
+        "dst": "N:u7",
+        "text": "Thanks for the quick reply! Just to confirm, I'm allowed 4 bags in total, right?",
+        "event": "u7",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      },
+      {
+        "id": "N:u7->N:s8",
+        "src": "N:u7",
+        "dst": "N:s8",
+        "text": "Yes, you're allowed a total of 4 checked bags.",
+        "event": "s8",
+        "roles": [
+          "message_user_context"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "N:s4->N:s8",
+        "src": "N:s4",
+        "dst": "N:s8",
+        "text": "Yes, you're allowed a total of 4 checked bags.",
+        "event": "s8",
+        "roles": [
+          "message_observation"
+        ],
+        "scorable": true
+      },
+      {
+        "id": "ROOT->N:u9",
+        "src": "ROOT",
+        "dst": "N:u9",
+        "text": "The user ended the conversation.",
+        "event": "u9",
+        "roles": [
+          "root"
+        ],
+        "scorable": false
+      }
+    ]
+  }
+}

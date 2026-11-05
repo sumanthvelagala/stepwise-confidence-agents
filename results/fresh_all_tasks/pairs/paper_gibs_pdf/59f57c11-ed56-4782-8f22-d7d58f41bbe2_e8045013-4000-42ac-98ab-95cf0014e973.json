@@ -1,0 +1,19 @@
+{
+  "mask": {
+    "s0": 1.0,
+    "s2": 1.0
+  },
+  "node_map": {
+    "ROOT": "ROOT",
+    "N:u3": "N:u41",
+    "N:s0": "N:s0",
+    "N:u1": "N:u1",
+    "N:s2": "N:s2"
+  },
+  "edge_map": {
+    "ROOT->N:u3": "ROOT->N:u41",
+    "ROOT->N:s0": "ROOT->N:s0",
+    "ROOT->N:u1": "ROOT->N:u1",
+    "ROOT->N:s2": "ROOT->N:s2"
+  }
+}

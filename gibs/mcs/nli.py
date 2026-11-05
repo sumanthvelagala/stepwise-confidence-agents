@@ -23,12 +23,34 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import time
 from pathlib import Path
 from typing import Iterable, Protocol
 
 DIRECTIONS = ("max_bidirectional", "one_way")
 DEFAULT_MODEL = "microsoft/deberta-large-mnli"
+DEFAULT_REVISION = "7296194b9009373def4f7c5dad292651e4b5cf4e"
 DEFAULT_CACHE_DIR = Path(os.environ.get("STEPWISE_NLI_CACHE", Path.home() / ".cache" / "stepwise_nli"))
+
+
+def read_cache(path):
+    """Recover only an interrupted final JSONL write; reject other corruption."""
+    values={}
+    if not path.exists():return values
+    offset=0;needs_newline=False
+    with path.open('rb') as stream:
+        for line in stream:
+            try:row=json.loads(line)
+            except json.JSONDecodeError:
+                if line.endswith(b'\n') or stream.read(1):raise
+                path.with_name(path.name+f'.interrupted-{time.time_ns()}').write_bytes(line)
+                with path.open('r+b') as repair:repair.truncate(offset)
+                needs_newline=False
+                break
+            values[row['k']]=row['p'];offset+=len(line);needs_newline=not line.endswith(b'\n')
+    if needs_newline:
+        with path.open('ab') as stream:stream.write(b'\n')
+    return values
 
 
 class OverlengthError(ValueError):
@@ -100,7 +122,7 @@ class DebertaEntailment:
 
     def __init__(self, model_name: str = DEFAULT_MODEL, device: str | None = None,
                  encoding: str = "code_sep_string", batch_size: int = 8, cache_dir: Path | None = DEFAULT_CACHE_DIR,
-                 overlength: str = "error"):
+                 overlength: str = "error", revision: str | None = None):
         import torch
         from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
@@ -117,14 +139,15 @@ class DebertaEntailment:
         self.encoding = encoding
         self.batch_size = batch_size
         self.device = device or ("mps" if torch.backends.mps.is_available() else "cpu")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_name, dtype=torch.float32)
+        revision = revision or (DEFAULT_REVISION if model_name == DEFAULT_MODEL else None)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, revision=revision)
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_name, revision=revision, torch_dtype=torch.float32)
         self.model.to(self.device).eval()
         labels = {v.lower(): int(k) for k, v in self.model.config.id2label.items()}
         self.entail_index = labels["entailment"]
         try:  # exact Hugging Face snapshot (commit) that was loaded
             from huggingface_hub import snapshot_download
-            self.revision = Path(snapshot_download(model_name, local_files_only=True)).name
+            self.revision = Path(snapshot_download(model_name, revision=revision, local_files_only=True)).name
         except Exception:
             self.revision = getattr(self.model.config, "_commit_hash", None) or "unknown"
         self.max_length = min(self.tokenizer.model_max_length, self.model.config.max_position_embeddings)
@@ -134,11 +157,7 @@ class DebertaEntailment:
             cache_dir.mkdir(parents=True, exist_ok=True)
             tag = f"{model_name.replace('/', '__')}__{self.revision[:12]}__{encoding}"
             self.cache_file = cache_dir / f"{tag}.jsonl"
-            if self.cache_file.exists():
-                with open(self.cache_file) as f:
-                    for line in f:
-                        rec = json.loads(line)
-                        self.cache[rec["k"]] = rec["p"]
+            self.cache=read_cache(self.cache_file)
 
     def with_encoding(self, encoding: str) -> "DebertaEntailment":
         """Same loaded weights, different input encoding, separate cache."""
@@ -149,11 +168,7 @@ class DebertaEntailment:
         other.truncated = set()
         if self.cache_file is not None:
             other.cache_file = self.cache_file.with_name(self.cache_file.name.replace(self.encoding, encoding))
-            if other.cache_file.exists():
-                with open(other.cache_file) as f:
-                    for line in f:
-                        rec = json.loads(line)
-                        other.cache[rec["k"]] = rec["p"]
+            other.cache=read_cache(other.cache_file)
         return other
 
     def with_overlength(self, overlength: str) -> "DebertaEntailment":
@@ -203,7 +218,6 @@ class DebertaEntailment:
             raise OverlengthError(f"{len(long)} pair(s) exceed {self.max_length} tokens "
                                   f"(e.g. {self.token_length(a, b)} tokens; premise starts {a[:60]!r})")
         self.truncated |= long
-        new = []
         with self.torch.no_grad():
             for truncate in (False, True):
                 todo = [p for p in unique if (p in long) == truncate and self._key(*p, truncate) not in self.cache]
@@ -212,13 +226,13 @@ class DebertaEntailment:
                     enc = {k: v.to(self.device) for k, v in self.encode(chunk, truncate=truncate).items()}
                     probs = self.torch.softmax(self.model(**enc).logits.float(), dim=-1)[:, self.entail_index]
                     self.n_forward += len(chunk)
+                    records=[]
                     for (a, b), p in zip(chunk, probs.cpu().tolist()):
                         self.cache[self._key(a, b, truncate)] = p
-                        new.append({"k": self._key(a, b, truncate), "p": p})
-        if new and self.cache_file is not None:
-            with open(self.cache_file, "a") as f:
-                for rec in new:
-                    f.write(json.dumps(rec) + "\n")
+                        records.append({"k": self._key(a, b, truncate), "p": p})
+                    if self.cache_file is not None:
+                        with self.cache_file.open('a') as stream:
+                            stream.write(''.join(json.dumps(rec)+'\n' for rec in records))
         return [self.cache[self._key(a, b, (a, b) in long)] for a, b in pairs]
 
 

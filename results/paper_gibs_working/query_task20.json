@@ -1,0 +1,1455 @@
+{
+  "simulations": [
+    {
+      "id": "bfa8c458-b7d9-4d99-8e21-252b28ca5834",
+      "task_id": "20",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Hi! How can I help you today?",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 0,
+          "timestamp": "2026-10-29T00:33:55.831492",
+          "cost": 0.0,
+          "usage": null,
+          "raw_data": null,
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": "Hi, I'd like to book a one-way flight from New York to Seattle on May 20.",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 1,
+          "timestamp": "2026-10-29T00:33:57.179670",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 23,
+            "prompt_tokens": 529
+          },
+          "raw_data": {
+            "id": "chatcmpl-6ea20932-f0a7-4392-b897-c9105761f67f",
+            "created": 1793259236,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Hi, I'd like to book a one-way flight from New York to Seattle on May 20.",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 23,
+              "prompt_tokens": 529,
+              "total_tokens": 552,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.021715,
+              "energy_wh": 0.064436
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "assistant",
+          "content": "Could you please provide your user ID so I can look up your profile?",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 2,
+          "timestamp": "2026-10-29T00:33:57.957253",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 16,
+            "prompt_tokens": 5079
+          },
+          "raw_data": {
+            "id": "chatcmpl-598cbcb9-7e22-4ae4-9aef-1f108435100b",
+            "created": 1793259237,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Could you please provide your user ID so I can look up your profile?",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 16,
+              "prompt_tokens": 5079,
+              "total_tokens": 5095,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 4480,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.013979,
+              "energy_wh": 0.04148
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 0.775193708948791,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": "Sure, my user ID is mia_li_3668.",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 3,
+          "timestamp": "2026-10-29T00:33:58.820643",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 15,
+            "prompt_tokens": 580
+          },
+          "raw_data": {
+            "id": "chatcmpl-e44cd7db-3b24-4cd7-96d0-bcebd9a8e9c3",
+            "created": 1793259238,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Sure, my user ID is mia_li_3668.",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 15,
+              "prompt_tokens": 580,
+              "total_tokens": 595,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.014326,
+              "energy_wh": 0.042509
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "assistant",
+          "content": "Let me look up your profile first.",
+          "tool_calls": [
+            {
+              "id": "chatcmpl-tool-863559a1e40f1979",
+              "name": "get_user_details",
+              "arguments": {
+                "user_id": "mia_li_3668"
+              },
+              "requestor": "assistant"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 4,
+          "timestamp": "2026-10-29T00:34:00.357107",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 42,
+            "prompt_tokens": 5122
+          },
+          "raw_data": {
+            "id": "chatcmpl-1e2094bd-551d-4f2b-978b-878c6dccbeaf",
+            "created": 1793259239,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": "Let me look up your profile first.",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"user_id\": \"mia_li_3668\"}",
+                        "name": "get_user_details"
+                      },
+                      "id": "chatcmpl-tool-863559a1e40f1979",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 42,
+              "prompt_tokens": 5122,
+              "total_tokens": 5164,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 4480,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.026428,
+              "energy_wh": 0.078422
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 1.5292012919671834,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "chatcmpl-tool-863559a1e40f1979",
+          "role": "tool",
+          "content": "{\"user_id\": \"mia_li_3668\", \"name\": {\"first_name\": \"Mia\", \"last_name\": \"Li\"}, \"address\": {\"address1\": \"975 Sunset Drive\", \"address2\": \"Suite 217\", \"city\": \"Austin\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"78750\"}, \"email\": \"mia.li3818@example.com\", \"dob\": \"1990-04-05\", \"payment_methods\": {\"credit_card_4421486\": {\"source\": \"credit_card\", \"id\": \"credit_card_4421486\", \"brand\": \"visa\", \"last_four\": \"7447\"}, \"certificate_4856383\": {\"source\": \"certificate\", \"id\": \"certificate_4856383\", \"amount\": 100.0}, \"certificate_7504069\": {\"source\": \"certificate\", \"id\": \"certificate_7504069\", \"amount\": 250.0}, \"credit_card_1955700\": {\"source\": \"credit_card\", \"id\": \"credit_card_1955700\", \"brand\": \"visa\", \"last_four\": \"1907\"}}, \"saved_passengers\": [{\"first_name\": \"Amelia\", \"last_name\": \"Ahmed\", \"dob\": \"1957-03-21\"}], \"membership\": \"gold\", \"reservations\": [\"NO6JO3\", \"AIXC49\", \"HKEG34\"]}",
+          "requestor": "assistant",
+          "error": false,
+          "turn_idx": 5,
+          "timestamp": "2026-10-29T00:34:00.357520"
+        },
+        {
+          "role": "assistant",
+          "content": "Thank you, Mia! Now let's find flights from New York (JFK) to Seattle (SEA) on May 20. Let me search for direct flights first.",
+          "tool_calls": [
+            {
+              "id": "chatcmpl-tool-ac29f8e03241c9f9",
+              "name": "search_direct_flight",
+              "arguments": {
+                "origin": "JFK",
+                "destination": "SEA",
+                "date": "2024-05-20"
+              },
+              "requestor": "assistant"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 6,
+          "timestamp": "2026-10-29T00:34:04.442620",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 97,
+            "prompt_tokens": 5547
+          },
+          "raw_data": {
+            "id": "chatcmpl-a16ee4c4-aecc-4f46-9a18-3bc173598d66",
+            "created": 1793259240,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": "Thank you, Mia! Now let's find flights from New York (JFK) to Seattle (SEA) on May 20. Let me search for direct flights first.",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"origin\": \"JFK\", \"destination\": \"SEA\", \"date\": \"2024-05-20\"}",
+                        "name": "search_direct_flight"
+                      },
+                      "id": "chatcmpl-tool-ac29f8e03241c9f9",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 97,
+              "prompt_tokens": 5547,
+              "total_tokens": 5644,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 4480,
+                "created_cache_tokens": 896,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.076259,
+              "energy_wh": 0.226288
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 4.078069542068988,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "chatcmpl-tool-ac29f8e03241c9f9",
+          "role": "tool",
+          "content": "[{\"flight_number\": \"HAT069\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"06:00:00\", \"scheduled_arrival_time_est\": \"12:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 17, \"economy\": 12, \"business\": 3}, \"prices\": {\"basic_economy\": 51, \"economy\": 121, \"business\": 239}}, {\"flight_number\": \"HAT083\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"01:00:00\", \"scheduled_arrival_time_est\": \"07:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 16, \"economy\": 7, \"business\": 3}, \"prices\": {\"basic_economy\": 87, \"economy\": 100, \"business\": 276}}]",
+          "requestor": "assistant",
+          "error": false,
+          "turn_idx": 7,
+          "timestamp": "2026-10-29T00:34:04.443317"
+        },
+        {
+          "role": "assistant",
+          "content": "Great news! I found two direct flights from JFK to SEA on May 20:\n\n1. **HAT083** \u2013 Departs 01:00, Arrives 07:00\n   - Basic Economy: $87 | Economy: $100 | Business: $276\n\n2. **HAT069** \u2013 Departs 06:00, Arrives 12:00\n   - Basic Economy: $51 | Economy: $121 | Business: $239\n\nWhich flight and cabin class would you like? Also, please provide the passenger details (first name, last name, and date of birth) \u2014 I see you have a saved passenger **Amelia Ahmed (DOB: 1957-03-21)**, would that be the passenger for this booking, or is it someone else?",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 8,
+          "timestamp": "2026-10-29T00:34:11.277095",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 192,
+            "prompt_tokens": 5914
+          },
+          "raw_data": {
+            "id": "chatcmpl-1518e2c3-b2fe-4cf2-b597-277a865571ee",
+            "created": 1793259244,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Great news! I found two direct flights from JFK to SEA on May 20:\n\n1. **HAT083** \u2013 Departs 01:00, Arrives 07:00\n   - Basic Economy: $87 | Economy: $100 | Business: $276\n\n2. **HAT069** \u2013 Departs 06:00, Arrives 12:00\n   - Basic Economy: $51 | Economy: $121 | Business: $239\n\nWhich flight and cabin class would you like? Also, please provide the passenger details (first name, last name, and date of birth) \u2014 I see you have a saved passenger **Amelia Ahmed (DOB: 1957-03-21)**, would that be the passenger for this booking, or is it someone else?",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 192,
+              "prompt_tokens": 5914,
+              "total_tokens": 6106,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 5376,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.134667,
+              "energy_wh": 0.399606
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 6.827900915872306,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": "I don't want to fly before 11am EST, so neither of those direct flights works for me. Do you have any other options, perhaps with a stopover?",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 9,
+          "timestamp": "2026-10-29T00:34:12.851718",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 37,
+            "prompt_tokens": 799
+          },
+          "raw_data": {
+            "id": "chatcmpl-58268a3f-62ab-4fe4-b899-c6e6ed5854c8",
+            "created": 1793259251,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "I don't want to fly before 11am EST, so neither of those direct flights works for me. Do you have any other options, perhaps with a stopover?",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 37,
+              "prompt_tokens": 799,
+              "total_tokens": 836,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.026357,
+              "energy_wh": 0.078209
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "assistant",
+          "content": "Let me search for one-stop flights that meet your criteria.",
+          "tool_calls": [
+            {
+              "id": "chatcmpl-tool-aae910d066d68e9e",
+              "name": "search_onestop_flight",
+              "arguments": {
+                "origin": "JFK",
+                "destination": "SEA",
+                "date": "2024-05-20"
+              },
+              "requestor": "assistant"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 10,
+          "timestamp": "2026-10-29T00:34:17.166227",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 6155
+          },
+          "raw_data": {
+            "id": "chatcmpl-f1239cba-5e41-48fe-9f33-a78aed0e790c",
+            "created": 1793259253,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": "Let me search for one-stop flights that meet your criteria.",
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"origin\": \"JFK\", \"destination\": \"SEA\", \"date\": \"2024-05-20\"}",
+                        "name": "search_onestop_flight"
+                      },
+                      "id": "chatcmpl-tool-aae910d066d68e9e",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 75,
+              "prompt_tokens": 6155,
+              "total_tokens": 6230,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 5376,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.081139,
+              "energy_wh": 0.240768
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 4.306172749958932,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "chatcmpl-tool-aae910d066d68e9e",
+          "role": "tool",
+          "content": "[[{\"flight_number\": \"HAT057\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"07:00:00\", \"scheduled_arrival_time_est\": \"09:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 7, \"economy\": 3, \"business\": 9}, \"prices\": {\"basic_economy\": 76, \"economy\": 141, \"business\": 477}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}], [{\"flight_number\": \"HAT136\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"19:00:00\", \"scheduled_arrival_time_est\": \"21:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 15, \"economy\": 14, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 152, \"business\": 277}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}], [{\"flight_number\": \"HAT218\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"18:00:00\", \"scheduled_arrival_time_est\": \"20:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 12, \"economy\": 1, \"business\": 4}, \"prices\": {\"basic_economy\": 76, \"economy\": 158, \"business\": 342}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}], [{\"flight_number\": \"HAT268\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"status\": \"available\", \"scheduled_departure_time_est\": \"07:00:00\", \"scheduled_arrival_time_est\": \"09:30:00\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 17, \"economy\": 19, \"business\": 12}, \"prices\": {\"basic_economy\": 91, \"economy\": 101, \"business\": 453}}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"status\": \"available\", \"scheduled_departure_time_est\": \"22:00:00\", \"scheduled_arrival_time_est\": \"03:00:00+1\", \"date\": \"2024-05-20\", \"available_seats\": {\"basic_economy\": 18, \"economy\": 10, \"business\": 2}, \"prices\": {\"basic_economy\": 52, \"economy\": 103, \"business\": 283}}]]",
+          "requestor": "assistant",
+          "error": false,
+          "turn_idx": 11,
+          "timestamp": "2026-10-29T00:34:17.167948"
+        },
+        {
+          "role": "assistant",
+          "content": "Here are the one-stop options (all via Atlanta/ATL) departing JFK after 11am EST:\n\n**Option 1:**\n- **HAT136**: JFK \u2192 ATL, dep 19:00, arr 21:30\n- **HAT039**: ATL \u2192 SEA, dep 22:00, arr 03:00+1\n- Basic Economy: $104 | Economy: $255 | Business: $560\n\n**Option 2:**\n- **HAT218**: JFK \u2192 ATL, dep 18:00, arr 20:30\n- **HAT039**: ATL \u2192 SEA, dep 22:00, arr 03:00+1\n- Basic Economy: $128 | Economy: $261 | Business: $625\n\n(There's also an earlier morning option with HAT057 at 7am, but that doesn't meet your 11am requirement, so I've excluded it.)\n\nWhich option and cabin class would you prefer?",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 12,
+          "timestamp": "2026-10-29T00:34:27.123514",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 246,
+            "prompt_tokens": 7350
+          },
+          "raw_data": {
+            "id": "chatcmpl-9a59fbb9-5f55-442b-8cc7-d98f158ae2ca",
+            "created": 1793259257,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Here are the one-stop options (all via Atlanta/ATL) departing JFK after 11am EST:\n\n**Option 1:**\n- **HAT136**: JFK \u2192 ATL, dep 19:00, arr 21:30\n- **HAT039**: ATL \u2192 SEA, dep 22:00, arr 03:00+1\n- Basic Economy: $104 | Economy: $255 | Business: $560\n\n**Option 2:**\n- **HAT218**: JFK \u2192 ATL, dep 18:00, arr 20:30\n- **HAT039**: ATL \u2192 SEA, dep 22:00, arr 03:00+1\n- Basic Economy: $128 | Economy: $261 | Business: $625\n\n(There's also an earlier morning option with HAT057 at 7am, but that doesn't meet your 11am requirement, so I've excluded it.)\n\nWhich option and cabin class would you prefer?",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 246,
+              "prompt_tokens": 7350,
+              "total_tokens": 7596,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 5376,
+                "created_cache_tokens": 1792,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.187925,
+              "energy_wh": 0.55764
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 9.948383000213653,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": "I\u2019d like to go with Option 1 in Economy.",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 13,
+          "timestamp": "2026-10-29T00:34:28.118581",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 13,
+            "prompt_tokens": 1094
+          },
+          "raw_data": {
+            "id": "chatcmpl-d5495e4e-54ba-41ee-a275-a7ea3562cc3f",
+            "created": 1793259267,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "I\u2019d like to go with Option 1 in Economy.",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 13,
+              "prompt_tokens": 1094,
+              "total_tokens": 1107,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0,
+                "created_cache_tokens": 896,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.017404,
+              "energy_wh": 0.051645
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "assistant",
+          "content": "Great! Before I proceed, I need a few more details:\n\n1. **Passenger(s):** Who will be flying? Please provide the first name, last name, and date of birth for each passenger (up to 5). I see you have **Amelia Ahmed (DOB: 1957-03-21)** saved \u2014 is that the passenger, or someone else?\n\n2. **Checked bags:** As a gold member flying Economy, you're entitled to **3 free checked bags per passenger**. Would you like to add any extra bags beyond that?\n\n3. **Travel insurance:** Would you like to add travel insurance for $30 per passenger? This covers full refunds for cancellations due to health or weather reasons.",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 14,
+          "timestamp": "2026-10-29T00:34:34.027083",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 155,
+            "prompt_tokens": 7621
+          },
+          "raw_data": {
+            "id": "chatcmpl-4153facb-901b-47d6-8c18-67dc8b09dca9",
+            "created": 1793259268,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Great! Before I proceed, I need a few more details:\n\n1. **Passenger(s):** Who will be flying? Please provide the first name, last name, and date of birth for each passenger (up to 5). I see you have **Amelia Ahmed (DOB: 1957-03-21)** saved \u2014 is that the passenger, or someone else?\n\n2. **Checked bags:** As a gold member flying Economy, you're entitled to **3 free checked bags per passenger**. Would you like to add any extra bags beyond that?\n\n3. **Travel insurance:** Would you like to add travel insurance for $30 per passenger? This covers full refunds for cancellations due to health or weather reasons.",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 155,
+              "prompt_tokens": 7621,
+              "total_tokens": 7776,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 7168,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.11208,
+              "energy_wh": 0.332583
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 5.902134167030454,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": "The passenger is me, Mia Li. My birthday is in my user profile, so I don't need to provide it again.\n\nI have 3 checked bags, which should be covered by my gold member benefits.\n\nI do not want travel insurance.",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 15,
+          "timestamp": "2026-10-29T00:34:36.912622",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 53,
+            "prompt_tokens": 1274
+          },
+          "raw_data": {
+            "id": "chatcmpl-90442c54-ea46-465d-8442-a7a4f0b4e620",
+            "created": 1793259274,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "The passenger is me, Mia Li. My birthday is in my user profile, so I don't need to provide it again.\n\nI have 3 checked bags, which should be covered by my gold member benefits.\n\nI do not want travel insurance.",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 53,
+              "prompt_tokens": 1274,
+              "total_tokens": 1327,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 0,
+                "created_cache_tokens": 896,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.049916,
+              "energy_wh": 0.14812
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "assistant",
+          "content": "Thank you! Here's a summary of the booking for your confirmation:\n\n- **Trip type:** One-way\n- **Route:** JFK \u2192 SEA (via ATL)\n- **Date:** 2024-05-20\n- **Flights:** HAT136 (JFK \u2192 ATL) + HAT039 (ATL \u2192 SEA)\n- **Cabin:** Economy\n- **Passenger:** Mia Li, DOB 1990-04-05\n- **Total bags:** 3 | **Non-free bags:** 0\n- **Travel insurance:** No\n- **Total fare:** $255 (152 + 103)\n- **Payment:** Please specify which payment method you'd like to use:\n  - Visa ending 7447\n  - Visa ending 1907\n  - Certificate ($100)\n  - Certificate ($250)\n\nCould you confirm the booking and let me know which payment method to use?",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 16,
+          "timestamp": "2026-10-29T00:34:46.396719",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 222,
+            "prompt_tokens": 7841
+          },
+          "raw_data": {
+            "id": "chatcmpl-aed30a7e-fad0-47df-822f-a9f295d55ab6",
+            "created": 1793259277,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Thank you! Here's a summary of the booking for your confirmation:\n\n- **Trip type:** One-way\n- **Route:** JFK \u2192 SEA (via ATL)\n- **Date:** 2024-05-20\n- **Flights:** HAT136 (JFK \u2192 ATL) + HAT039 (ATL \u2192 SEA)\n- **Cabin:** Economy\n- **Passenger:** Mia Li, DOB 1990-04-05\n- **Total bags:** 3 | **Non-free bags:** 0\n- **Travel insurance:** No\n- **Total fare:** $255 (152 + 103)\n- **Payment:** Please specify which payment method you'd like to use:\n  - Visa ending 7447\n  - Visa ending 1907\n  - Certificate ($100)\n  - Certificate ($250)\n\nCould you confirm the booking and let me know which payment method to use?",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 222,
+              "prompt_tokens": 7841,
+              "total_tokens": 8063,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 4480,
+                "created_cache_tokens": 2688,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.171155,
+              "energy_wh": 0.507878
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 9.47792754182592,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": "I'd like to use my two certificates to pay for this.",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 17,
+          "timestamp": "2026-10-29T00:34:47.257266",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 1561
+          },
+          "raw_data": {
+            "id": "chatcmpl-46fd4b80-19d6-47e4-865c-86157f150383",
+            "created": 1793259286,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "I'd like to use my two certificates to pay for this.",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 14,
+              "prompt_tokens": 1561,
+              "total_tokens": 1575,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 896,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.013269,
+              "energy_wh": 0.039374
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "assistant",
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "chatcmpl-tool-858361029fb3de37",
+              "name": "book_reservation",
+              "arguments": {
+                "user_id": "mia_li_3668",
+                "origin": "JFK",
+                "destination": "SEA",
+                "flight_type": "one_way",
+                "cabin": "economy",
+                "flights": [
+                  {
+                    "flight_number": "HAT136",
+                    "date": "2024-05-20"
+                  },
+                  {
+                    "flight_number": "HAT039",
+                    "date": "2024-05-20"
+                  }
+                ],
+                "passengers": [
+                  {
+                    "first_name": "Mia",
+                    "last_name": "Li",
+                    "dob": "1990-04-05"
+                  }
+                ],
+                "payment_methods": [
+                  {
+                    "payment_id": "certificate_4856383",
+                    "amount": 100
+                  },
+                  {
+                    "payment_id": "certificate_7504069",
+                    "amount": 155
+                  }
+                ],
+                "total_baggages": 3,
+                "nonfree_baggages": 0,
+                "insurance": "no"
+              },
+              "requestor": "assistant"
+            }
+          ],
+          "is_audio": false,
+          "turn_idx": 18,
+          "timestamp": "2026-10-29T00:35:04.589734",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 297,
+            "prompt_tokens": 8089
+          },
+          "raw_data": {
+            "id": "chatcmpl-ab861f8e-0ad5-4f1c-8279-995332897d54",
+            "created": 1793259287,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "tool_calls",
+                "index": 0,
+                "message": {
+                  "content": null,
+                  "role": "assistant",
+                  "tool_calls": [
+                    {
+                      "function": {
+                        "arguments": "{\"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT136\", \"date\": \"2024-05-20\"}, {\"flight_number\": \"HAT039\", \"date\": \"2024-05-20\"}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_methods\": [{\"payment_id\": \"certificate_4856383\", \"amount\": 100}, {\"payment_id\": \"certificate_7504069\", \"amount\": 155}], \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\"}",
+                        "name": "book_reservation"
+                      },
+                      "id": "chatcmpl-tool-858361029fb3de37",
+                      "type": "function"
+                    }
+                  ],
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 297,
+              "prompt_tokens": 8089,
+              "total_tokens": 8386,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 7168,
+                "created_cache_tokens": 896,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.32653,
+              "energy_wh": 0.968933
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 17.19699762505479,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "id": "chatcmpl-tool-858361029fb3de37",
+          "role": "tool",
+          "content": "{\"reservation_id\": \"HATHAT\", \"user_id\": \"mia_li_3668\", \"origin\": \"JFK\", \"destination\": \"SEA\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT136\", \"origin\": \"JFK\", \"destination\": \"ATL\", \"date\": \"2024-05-20\", \"price\": 152}, {\"flight_number\": \"HAT039\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"date\": \"2024-05-20\", \"price\": 103}], \"passengers\": [{\"first_name\": \"Mia\", \"last_name\": \"Li\", \"dob\": \"1990-04-05\"}], \"payment_history\": [{\"payment_id\": \"certificate_4856383\", \"amount\": 100}, {\"payment_id\": \"certificate_7504069\", \"amount\": 155}], \"created_at\": \"2024-05-15T15:00:00\", \"total_baggages\": 3, \"nonfree_baggages\": 0, \"insurance\": \"no\", \"status\": null}",
+          "requestor": "assistant",
+          "error": false,
+          "turn_idx": 19,
+          "timestamp": "2026-10-29T00:35:04.590326"
+        },
+        {
+          "role": "assistant",
+          "content": "Your booking is confirmed! Here's the summary:\n\n- **Reservation ID:** HATHAT\n- **Route:** JFK \u2192 SEA (via ATL)\n- **Date:** 2024-05-20\n- **Flights:** HAT136 + HAT039\n- **Cabin:** Economy\n- **Passenger:** Mia Li\n- **Bags:** 3 checked (all covered)\n- **Total fare:** $255\n- **Payment:** Certificate ($100) + Certificate ($155)\n\nSafe travels! Let me know if you need anything else.",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 20,
+          "timestamp": "2026-10-29T00:35:10.313616",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 133,
+            "prompt_tokens": 8693
+          },
+          "raw_data": {
+            "id": "chatcmpl-b0920b90-5a73-4d60-b228-d3e4c6aaa724",
+            "created": 1793259304,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Your booking is confirmed! Here's the summary:\n\n- **Reservation ID:** HATHAT\n- **Route:** JFK \u2192 SEA (via ATL)\n- **Date:** 2024-05-20\n- **Flights:** HAT136 + HAT039\n- **Cabin:** Economy\n- **Passenger:** Mia Li\n- **Bags:** 3 checked (all covered)\n- **Total fare:** $255\n- **Payment:** Certificate ($100) + Certificate ($155)\n\nSafe travels! Let me know if you need anything else.",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 133,
+              "prompt_tokens": 8693,
+              "total_tokens": 8826,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 8064,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.111382,
+              "energy_wh": 0.33051
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": 5.716860916931182,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        },
+        {
+          "role": "user",
+          "content": "###STOP###",
+          "tool_calls": null,
+          "is_audio": false,
+          "turn_idx": 21,
+          "timestamp": "2026-10-29T00:35:11.037228",
+          "cost": 0.0,
+          "usage": {
+            "completion_tokens": 4,
+            "prompt_tokens": 1720
+          },
+          "raw_data": {
+            "id": "chatcmpl-07ffb135-e27a-46ec-a8c7-f1d9f2c2e788",
+            "created": 1793259310,
+            "model": "qwen38-27b",
+            "object": "chat.completion",
+            "system_fingerprint": "vllm-0.26.0-172ad278",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "###STOP###",
+                  "role": "assistant",
+                  "tool_calls": null,
+                  "function_call": null,
+                  "provider_specific_fields": {
+                    "refusal": null,
+                    "reasoning": null
+                  }
+                },
+                "provider_specific_fields": {
+                  "routed_experts": null,
+                  "stop_reason": null,
+                  "token_ids": null
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 4,
+              "prompt_tokens": 1720,
+              "total_tokens": 1724,
+              "completion_tokens_details": null,
+              "prompt_tokens_details": {
+                "audio_tokens": null,
+                "cached_tokens": 896,
+                "created_cache_tokens": 0,
+                "multimodal_tokens": null
+              },
+              "co2_g": 0.010128,
+              "energy_wh": 0.030053
+            },
+            "service_tier": null,
+            "ec_transfer_params": null,
+            "kv_transfer_params": null,
+            "metrics": null,
+            "prompt_logprobs": null,
+            "prompt_text": null,
+            "prompt_token_ids": null
+          },
+          "generation_time_seconds": null,
+          "audio_format": null,
+          "audio_path": null,
+          "audio_script_gold": null,
+          "speech_effects": null,
+          "source_effects": null,
+          "channel_effects": null,
+          "turn_taking_action": null,
+          "utterance_ids": null,
+          "chunk_id": null,
+          "is_final_chunk": true,
+          "source": null,
+          "contains_speech": true
+        }
+      ]
+    }
+  ]
+}

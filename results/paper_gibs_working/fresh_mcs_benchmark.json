@@ -1,0 +1,184 @@
+{
+  "query": "8e48eb60-2175-4eec-b8e0-d6b027c916d0",
+  "reference": "b8802980-fc02-4c16-83ef-57d65f47ed6c",
+  "model": {
+    "model": "microsoft/deberta-large-mnli",
+    "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+    "device": "mps",
+    "encoding": "code_sep_string",
+    "overlength": "truncate",
+    "entailment_index": 2,
+    "id2label": {
+      "0": "CONTRADICTION",
+      "1": "NEUTRAL",
+      "2": "ENTAILMENT"
+    },
+    "max_length": 512,
+    "torch": "2.5.1",
+    "transformers": "4.51.3"
+  },
+  "variants": {
+    "paper": {
+      "seconds": 70.52519591595046,
+      "uncached_nli_pairs": 517,
+      "matched_nodes": 12,
+      "matched_edges": 12,
+      "indicators": {
+        "s0": {
+          "node": "N:s0",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          }
+        },
+        "s2": {
+          "node": "N:s2",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s2": "ROOT->N:u29"
+          }
+        },
+        "s4": {
+          "node": "N:s4",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          }
+        },
+        "s6": {
+          "node": "N:s6",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s6": "ROOT->N:s6"
+          }
+        },
+        "s8": {
+          "node": "N:s8",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s4->N:s8": "N:s4->N:s8"
+          }
+        },
+        "s10": {
+          "node": "N:s10",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s4->N:s10": "N:s4->N:s10"
+          }
+        },
+        "s12": {
+          "node": "N:s12",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s4->N:s12": "N:s4->N:s12"
+          }
+        },
+        "s14": {
+          "node": "N:s14",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s12->N:s14": "N:s12->N:s20",
+            "N:s10->N:s14": "N:s10->N:s20"
+          }
+        },
+        "s16": {
+          "node": "N:s16",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "ROOT->N:s16": null
+          }
+        }
+      }
+    },
+    "c4": {
+      "seconds": 3.292325499933213,
+      "uncached_nli_pairs": 8,
+      "matched_nodes": 11,
+      "matched_edges": 11,
+      "indicators": {
+        "s0": {
+          "node": "N:s0",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s0": "ROOT->N:s0"
+          }
+        },
+        "s2": {
+          "node": "N:s2",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "ROOT->N:s2": null
+          }
+        },
+        "s4": {
+          "node": "N:s4",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:u3->N:s4": "N:u3->N:s4"
+          }
+        },
+        "s6": {
+          "node": "N:s6",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "ROOT->N:s6": "ROOT->N:s6"
+          }
+        },
+        "s8": {
+          "node": "N:s8",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s4->N:s8": "N:s4->N:s8"
+          }
+        },
+        "s10": {
+          "node": "N:s10",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s4->N:s10": "N:s4->N:s10"
+          }
+        },
+        "s12": {
+          "node": "N:s12",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s4->N:s12": "N:s4->N:s12"
+          }
+        },
+        "s14": {
+          "node": "N:s14",
+          "node_level": true,
+          "context_step_level": true,
+          "incoming_edges": {
+            "N:s12->N:s14": "N:s12->N:s20",
+            "N:s10->N:s14": "N:s10->N:s20"
+          }
+        },
+        "s16": {
+          "node": "N:s16",
+          "node_level": false,
+          "context_step_level": false,
+          "incoming_edges": {
+            "ROOT->N:s16": null
+          }
+        }
+      }
+    }
+  }
+}

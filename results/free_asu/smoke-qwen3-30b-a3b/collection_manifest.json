@@ -1,0 +1,90 @@
+{
+  "configuration": {
+    "tau2_commit": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+    "task_sha256": {
+      "13": "3e0f7f7365f5d6c102ee1858bc9ad06f67239eb0dd6df6e9c6d3ba2f8ee090f3"
+    },
+    "model": "qwen3-30b-a3b",
+    "agent_temperature": 1.0,
+    "user_temperature": 0.0,
+    "context": 32768,
+    "max_tokens": 2048,
+    "max_steps": 200,
+    "max_errors": 10,
+    "seed": 300,
+    "concurrency": 1,
+    "simulation_timeout": 900,
+    "trials": 1,
+    "backend": "asu",
+    "reasoning_effort_requested": "none",
+    "gateway_addons": "off",
+    "context_note": "Context is checked against catalog; server controls its window",
+    "model_weights": {
+      "catalog": {
+        "id": "qwen3-30b-a3b",
+        "model_type": "chat",
+        "context_window": 131072,
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "family": {
+          "default_level": "none",
+          "members": {
+            "high": "qwen3-30b-a3b-thinking-2507",
+            "low": "qwen3-30b-a3b-thinking-2507",
+            "medium": "qwen3-30b-a3b-thinking-2507",
+            "none": "qwen3-30b-a3b-instruct-2507"
+          }
+        },
+        "owned_by": "obleth"
+      },
+      "weight_digest": null,
+      "revision_limit": "Hosted catalog metadata is recorded; immutable weights are not exposed by this API"
+    }
+  },
+  "target_trajectories": 1,
+  "paid_api_calls": false,
+  "endpoint": "https://openai.rc.asu.edu/v1",
+  "source_sha256": "e1f7877046e951f2e9e5f4f24c0131fbf7c972afe49710372048a3124d234aff",
+  "started_utc": "2026-10-29T07:02:55.779764+00:00",
+  "before": {
+    "simulations": 0,
+    "outcomes": {},
+    "tasks": {}
+  },
+  "invocations": [
+    {
+      "started_utc": "2026-10-29T07:02:55.779764+00:00",
+      "ended_utc": "2026-10-29T07:03:30.645698+00:00",
+      "endpoint": "https://openai.rc.asu.edu/v1",
+      "source_sha256": "e1f7877046e951f2e9e5f4f24c0131fbf7c972afe49710372048a3124d234aff",
+      "before": {
+        "simulations": 0,
+        "outcomes": {},
+        "tasks": {}
+      },
+      "after": {
+        "simulations": 1,
+        "outcomes": {
+          "success": 1
+        },
+        "tasks": {
+          "13": {
+            "success": 1
+          }
+        }
+      }
+    }
+  ],
+  "ended_utc": "2026-10-29T07:03:30.645698+00:00",
+  "after": {
+    "simulations": 1,
+    "outcomes": {
+      "success": 1
+    },
+    "tasks": {
+      "13": {
+        "success": 1
+      }
+    }
+  }
+}

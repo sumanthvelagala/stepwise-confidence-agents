@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "pid": 22215,
+  "job_ids": [
+    66937131,
+    66946220
+  ],
+  "started_utc": "2026-10-30T00:48:33.339051+00:00",
+  "maximum_gpu_jobs": 7,
+  "sol_job": 66946220,
+  "sol_status": "COMPLETED",
+  "sol_exit_code": "0:0",
+  "checked_utc": "2026-10-30T01:30:34.944520+00:00",
+  "target_progress": {
+    "completed_query_targets": 860,
+    "total_eligible_queries": 860,
+    "elapsed_target_seconds_in_current_job": 1367
+  },
+  "training_command": [
+    "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/bin/python",
+    "-u",
+    "-m",
+    "gibs.fresh.experiment",
+    "train",
+    "--output",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_all_tasks"
+  ],
+  "training_pid": 67663,
+  "ended_utc": "2026-10-30T01:42:05.005949+00:00"
+}

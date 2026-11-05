@@ -1,0 +1,23 @@
+{
+  "query": "789b04a5-c284-4935-8960-c06b3341d58c",
+  "references": [
+    "ca3d7aa8-4769-4dda-ad83-67d6fa6ef49a",
+    "ebf181e6-1cab-4982-8803-f5b6061585e5",
+    "3a80e9de-52d3-4d54-bd75-ba33aef360cc",
+    "1ebdbbf8-e3f2-4b6b-9f2b-e21f1c58c259",
+    "8316a7c9-6aab-4234-b8c7-be996906763c"
+  ],
+  "mask": [
+    1.0,
+    0.4,
+    0.0,
+    1.0
+  ],
+  "events": [
+    "s0",
+    "s2",
+    "s4",
+    "s6"
+  ],
+  "snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c"
+}

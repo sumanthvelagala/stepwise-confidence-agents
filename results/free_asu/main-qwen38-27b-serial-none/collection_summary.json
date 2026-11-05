@@ -1,0 +1,196 @@
+{
+  "simulations": 1000,
+  "outcomes": {
+    "success": 680,
+    "failure": 320
+  },
+  "tasks": {
+    "0": {
+      "success": 20
+    },
+    "1": {
+      "failure": 15,
+      "success": 5
+    },
+    "2": {
+      "success": 13,
+      "failure": 7
+    },
+    "3": {
+      "success": 20
+    },
+    "4": {
+      "success": 20
+    },
+    "5": {
+      "success": 18,
+      "failure": 2
+    },
+    "6": {
+      "success": 20
+    },
+    "7": {
+      "failure": 20
+    },
+    "8": {
+      "success": 19,
+      "failure": 1
+    },
+    "9": {
+      "success": 14,
+      "failure": 6
+    },
+    "10": {
+      "success": 19,
+      "failure": 1
+    },
+    "11": {
+      "success": 13,
+      "failure": 7
+    },
+    "12": {
+      "success": 13,
+      "failure": 7
+    },
+    "13": {
+      "success": 20
+    },
+    "14": {
+      "failure": 18,
+      "success": 2
+    },
+    "15": {
+      "success": 13,
+      "failure": 7
+    },
+    "16": {
+      "success": 11,
+      "failure": 9
+    },
+    "17": {
+      "failure": 15,
+      "success": 5
+    },
+    "18": {
+      "failure": 4,
+      "success": 16
+    },
+    "19": {
+      "success": 18,
+      "failure": 2
+    },
+    "20": {
+      "failure": 17,
+      "success": 3
+    },
+    "21": {
+      "failure": 17,
+      "success": 3
+    },
+    "22": {
+      "failure": 10,
+      "success": 10
+    },
+    "23": {
+      "failure": 7,
+      "success": 13
+    },
+    "24": {
+      "failure": 12,
+      "success": 8
+    },
+    "25": {
+      "success": 20
+    },
+    "26": {
+      "success": 20
+    },
+    "27": {
+      "success": 19,
+      "failure": 1
+    },
+    "28": {
+      "success": 19,
+      "failure": 1
+    },
+    "29": {
+      "failure": 18,
+      "success": 2
+    },
+    "30": {
+      "success": 19,
+      "failure": 1
+    },
+    "31": {
+      "success": 20
+    },
+    "32": {
+      "failure": 17,
+      "success": 3
+    },
+    "33": {
+      "success": 12,
+      "failure": 8
+    },
+    "34": {
+      "success": 20
+    },
+    "35": {
+      "failure": 11,
+      "success": 9
+    },
+    "36": {
+      "success": 20
+    },
+    "37": {
+      "failure": 8,
+      "success": 12
+    },
+    "38": {
+      "success": 18,
+      "failure": 2
+    },
+    "39": {
+      "success": 5,
+      "failure": 15
+    },
+    "40": {
+      "success": 16,
+      "failure": 4
+    },
+    "41": {
+      "failure": 9,
+      "success": 11
+    },
+    "42": {
+      "success": 11,
+      "failure": 9
+    },
+    "43": {
+      "success": 16,
+      "failure": 4
+    },
+    "44": {
+      "failure": 18,
+      "success": 2
+    },
+    "45": {
+      "success": 20
+    },
+    "46": {
+      "success": 19,
+      "failure": 1
+    },
+    "47": {
+      "success": 12,
+      "failure": 8
+    },
+    "48": {
+      "success": 19,
+      "failure": 1
+    },
+    "49": {
+      "success": 20
+    }
+  }
+}

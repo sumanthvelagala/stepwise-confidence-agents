@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/fresh/sol_followup.py", line 131, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/fresh/sol_followup.py", line 86, in main
+    status,code=job_status(job)
+                ^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/fresh/sol_followup.py", line 29, in job_status
+    live=ssh(f'squeue -h -j {int(job)} -o %T 2>/dev/null || true')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/pardhapraneeth/stepwise-confidence-agents/gibs/fresh/sol_followup.py", line 24, in ssh
+    if p.returncode:raise RuntimeError('Sol SSH failed; reconnect VPN before resuming this monitor')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Sol SSH failed; reconnect VPN before resuming this monitor
+Training fold0_paper_gibs_pdf_seed7: 511 graphs; scoring 260 held-out trajectories
+Training fold1_paper_gibs_pdf_seed7: 509 graphs; scoring 260 held-out trajectories
+Training fold2_paper_gibs_pdf_seed7: 509 graphs; scoring 240 held-out trajectories
+Training fold3_paper_gibs_pdf_seed7: 526 graphs; scoring 240 held-out trajectories
+Training fold0_paper_gibs_pdf_seed17: 511 graphs; scoring 260 held-out trajectories
+Training fold1_paper_gibs_pdf_seed17: 509 graphs; scoring 260 held-out trajectories
+Training fold2_paper_gibs_pdf_seed17: 509 graphs; scoring 240 held-out trajectories
+Training fold3_paper_gibs_pdf_seed17: 526 graphs; scoring 240 held-out trajectories
+Training fold0_paper_gibs_pdf_seed27: 511 graphs; scoring 260 held-out trajectories
+Training fold1_paper_gibs_pdf_seed27: 509 graphs; scoring 260 held-out trajectories
+Training fold2_paper_gibs_pdf_seed27: 509 graphs; scoring 240 held-out trajectories
+Training fold3_paper_gibs_pdf_seed27: 526 graphs; scoring 240 held-out trajectories
+Training fold0_c4_gibs_seed7: 511 graphs; scoring 260 held-out trajectories
+Training fold1_c4_gibs_seed7: 509 graphs; scoring 260 held-out trajectories
+Training fold2_c4_gibs_seed7: 509 graphs; scoring 240 held-out trajectories
+Training fold3_c4_gibs_seed7: 526 graphs; scoring 240 held-out trajectories
+Training fold0_c4_gibs_seed17: 511 graphs; scoring 260 held-out trajectories
+Training fold1_c4_gibs_seed17: 509 graphs; scoring 260 held-out trajectories
+Training fold2_c4_gibs_seed17: 509 graphs; scoring 240 held-out trajectories
+Training fold3_c4_gibs_seed17: 526 graphs; scoring 240 held-out trajectories
+Training fold0_c4_gibs_seed27: 511 graphs; scoring 260 held-out trajectories
+Training fold1_c4_gibs_seed27: 509 graphs; scoring 260 held-out trajectories
+Training fold2_c4_gibs_seed27: 509 graphs; scoring 240 held-out trajectories
+Training fold3_c4_gibs_seed27: 526 graphs; scoring 240 held-out trajectories
+Completed 1000 out-of-fold trajectories across all 50 tasks.

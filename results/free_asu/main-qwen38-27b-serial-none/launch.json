@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-29T07:28:48.916098+00:00",
+  "launcher_pid": 19265,
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+    "-m",
+    "collection.job",
+    "--model",
+    "qwen38-27b",
+    "--trials",
+    "20",
+    "--concurrency",
+    "4",
+    "--output",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/free_asu/main-qwen38-27b-serial-none"
+  ],
+  "target_trajectories": 1000,
+  "paid_api_calls": false
+}

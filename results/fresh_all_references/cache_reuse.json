@@ -1,0 +1,17 @@
+{
+  "source": "fresh_all_tasks",
+  "snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c",
+  "methods": {
+    "paper_gibs_pdf": {
+      "reused_pairs": 4228,
+      "copied_bytes_verified": true,
+      "pair_set_sha256": "e54c6ae17bb0710d396adfdfb7ee91ed4f3943b1334aece483889ff3d9727010"
+    },
+    "c4_gibs": {
+      "reused_pairs": 4228,
+      "copied_bytes_verified": true,
+      "pair_set_sha256": "27eb6e071ea644d21ce0e1a04d346047b4d4139a0aa031254d58b051f9ce63ec"
+    }
+  },
+  "teacher_masks_reused": false
+}

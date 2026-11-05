@@ -1,0 +1,36 @@
+{
+  "query": "6b3b4215-211e-4f82-9c60-d13c0e8e7187",
+  "references": [
+    "2f35b3d6-cde8-4dec-adba-7f4a573be456",
+    "36e6a29f-0f85-45cc-9d4b-dc60da5537a0",
+    "7c642cc4-d87b-4939-86c7-f1c6d7a86595",
+    "7da79e69-9ddd-418f-ba3f-4a163a26553e",
+    "ce7d9a51-71ab-4fb9-905f-bce3e1e077f6",
+    "ea4c8dc0-7b09-40db-9a4b-17ba5ee2f01a",
+    "e8990923-8ae4-42e6-ab32-6f2a602bc308",
+    "a44e1290-b205-439e-aacb-b564b5d88bfe",
+    "7dbfc1d0-87c6-4d28-97be-ffad356a252e",
+    "54972ad5-e46f-4925-9113-93d26aee7621",
+    "257dfdcf-1743-4709-8fc7-c3af9ddeef49",
+    "5847d8f7-4150-4008-97a6-3fed53a20d1d",
+    "2e78d8ee-2fa3-4027-9d1a-c4f8d2a8571c",
+    "8b720ec0-a7fb-4f5c-96ac-ec23c5861759",
+    "1f410924-f1c6-4ccd-87e1-66198abfa16d",
+    "f4f28137-6dbc-4a5d-b3e1-f25deb4d65f5"
+  ],
+  "mask": [
+    1.0,
+    0.125,
+    0.3125,
+    0.375,
+    0.625
+  ],
+  "events": [
+    "s0",
+    "s2",
+    "s4",
+    "s6",
+    "s8"
+  ],
+  "snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c"
+}

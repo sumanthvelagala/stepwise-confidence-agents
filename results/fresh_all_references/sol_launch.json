@@ -1,0 +1,33 @@
+{
+  "job_id": 66951841,
+  "followup_pid": 29768,
+  "submitted_utc": "2026-10-30T03:50:10.674200+00:00",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/bin/python",
+    "-u",
+    "-m",
+    "gibs.fresh.sol_followup",
+    "--job-id",
+    "66951841",
+    "--max-gpu-jobs",
+    "8",
+    "--output",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_all_references",
+    "--remote-output",
+    "/scratch/ppudi/sca-free/project/results/fresh_all_references",
+    "--script",
+    "/scratch/ppudi/sca-free/project/collection/sol_gibs_all_references.sbatch",
+    "--compare-with",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_all_tasks"
+  ],
+  "baseline": "results/fresh_all_tasks",
+  "trial": "results/fresh_all_references",
+  "minimum_references": 3,
+  "maximum_references": 0,
+  "max_gpu_allocations": 8,
+  "verified_cached_pairs_per_method": 4228,
+  "new_pairs_per_method": 5823,
+  "remaining_work": "Sol MCS targets -> local 24-checkpoint training/evaluation -> reference-cap comparison"
+}

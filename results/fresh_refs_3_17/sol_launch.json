@@ -1,0 +1,31 @@
+{
+  "job_id": 66952298,
+  "followup_pid": 43747,
+  "submitted_utc": "2026-10-30T04:00:12.604824+00:00",
+  "command": [
+    "/usr/bin/caffeinate",
+    "-i",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/.venv/bin/python",
+    "-u",
+    "-m",
+    "gibs.fresh.sol_followup",
+    "--job-id",
+    "66952298",
+    "--max-gpu-jobs",
+    "8",
+    "--output",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_refs_3_17",
+    "--remote-output",
+    "/scratch/ppudi/sca-free/project/results/fresh_refs_3_17",
+    "--script",
+    "/scratch/ppudi/sca-free/project/collection/sol_gibs_refs_3_17.sbatch",
+    "--compare-with",
+    "/Users/pardhapraneeth/stepwise-confidence-agents/results/fresh_all_tasks"
+  ],
+  "minimum_references": 3,
+  "maximum_references": 17,
+  "baseline": "results/fresh_all_tasks",
+  "trial": "results/fresh_refs_3_17",
+  "remaining_work": "MCS targets -> local 24-checkpoint training and evaluation -> cap-5 versus cap-17 comparison",
+  "superseded_job": 66951841
+}

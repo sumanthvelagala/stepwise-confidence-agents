@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-29T07:11:30.977733+00:00",
+  "endpoint": "https://openai.rc.asu.edu/v1",
+  "requested_model": "qwen38-27b",
+  "served_model": "qwen38-27b",
+  "headers": {
+    "x-obleth-request-id": "52a1c032-1ecf-430b-8075-4ce681e1df0c",
+    "x-obleth-reasoning-effort": "none",
+    "x-obleth-boons": null,
+    "x-obleth-model-variant": null
+  },
+  "tool_probe_passed": true,
+  "usage": {
+    "co2_g": 0.034161,
+    "completion_tokens": 27,
+    "energy_wh": 0.101367,
+    "prompt_tokens": 286,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "created_cache_tokens": 0,
+      "multimodal_tokens": null
+    },
+    "total_tokens": 313
+  },
+  "excluded_from_benchmark": true
+}

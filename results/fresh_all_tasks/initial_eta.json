@@ -1,0 +1,9 @@
+{
+  "estimated_at_utc": "2026-10-29T16:53:18.104590+00:00",
+  "estimated_remaining_hours": [
+    8,
+    16
+  ],
+  "basis": "First fully new full-A100 query targets took 33 and 24 seconds. 855 targets remained; fitting and evaluation follow. Early estimate, not guarantee; trace sizes and queue delays vary.",
+  "job_id": 66924222
+}

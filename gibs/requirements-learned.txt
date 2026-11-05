@@ -1,0 +1,5 @@
+# Local CPU/MPS prototype; separate from the historical NLI environment.
+torch==2.5.1
+transformers==4.51.3
+numpy==1.26.4
+pytest==8.3.5

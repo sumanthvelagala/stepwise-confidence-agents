@@ -27,3 +27,16 @@ Thumbs.db
 
 # Sim cache
 /tmp/sca_sim_cache/
+
+# Local test caches and runtime locks
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+.targets.lock
+.followup.lock
+.experiment.lock
+.collection.lock
+.job.lock
+.worker.lock
+demo_ui/local_server.json

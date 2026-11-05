@@ -1,0 +1,130 @@
+{
+  "configuration": {
+    "tau2_commit": "5bfa7e37b36656b37dc6d022156be6563c1007f3",
+    "task_sha256": {
+      "0": "1d8acbe2dac38aa92504453b9f32a2c2b66eb7419586096c3b8a0e63f2ae3033",
+      "3": "3237866d43ef3e131902f24318548bd15f92d20c444fdc588d360d84e8316561",
+      "9": "5f22669923f850ea31d4cbc260ec21dcbe5a5fc2f1306925eda58c295d51a8ec",
+      "13": "3e0f7f7365f5d6c102ee1858bc9ad06f67239eb0dd6df6e9c6d3ba2f8ee090f3",
+      "20": "7c199562a4e77c1b4c679ee25ba1d3b096e5ca741a476cad9f85f3ba198923ea",
+      "25": "428b76f3db2801d0b7660543f86933a9b709637c1fb21adb992c1f10570b400c",
+      "34": "17525ecf80c3742db7576615692ee8df7602d943bd176e51a214a3e62bfb0e6b",
+      "40": "3247039bd920a4ca10a58875d2aa7902d0b1fb6a5406d2cc7c5522c45e22b590",
+      "45": "96f89cf79a2629b9c6cf59dc2438c8bc714a3bf9a337cc528b9c67a690d43a8a",
+      "48": "cfd8699adab10c27c0ae65b4c753fdc6a28b0456d55eecd60fc20aeae0e204dc"
+    },
+    "model": "qwen38-27b",
+    "agent_temperature": 1.0,
+    "user_temperature": 0.0,
+    "context": 32768,
+    "max_tokens": 2048,
+    "max_steps": 200,
+    "max_errors": 10,
+    "seed": 300,
+    "concurrency": 4,
+    "simulation_timeout": 1200,
+    "trials": 1,
+    "backend": "asu",
+    "reasoning_effort_requested": "none",
+    "gateway_addons": "off",
+    "context_note": "Context is checked against catalog; server controls its window",
+    "model_weights": {
+      "catalog": {
+        "id": "qwen38-27b",
+        "model_type": "chat",
+        "context_window": 262144,
+        "supports_function_calling": true,
+        "supports_tool_choice": true,
+        "reasoning": {
+          "levels": {
+            "high": "high",
+            "low": "low",
+            "medium": "medium",
+            "none": "none"
+          },
+          "mode": "mapped"
+        },
+        "owned_by": "obleth"
+      },
+      "weight_digest": null,
+      "revision_limit": "Hosted catalog metadata is recorded; immutable weights are not exposed by this API"
+    }
+  },
+  "target_trajectories": 10,
+  "paid_api_calls": false,
+  "endpoint": "https://openai.rc.asu.edu/v1",
+  "source_sha256": "cec1822481aedb781b7917408536249e7381aad335b5ed7c047acd445e0481e1",
+  "started_utc": "2026-10-29T07:10:43.947646+00:00",
+  "before": {
+    "simulations": 0,
+    "outcomes": {},
+    "tasks": {}
+  },
+  "infra_error_limit": 10,
+  "invocations": [
+    {
+      "started_utc": "2026-10-29T07:10:43.947646+00:00",
+      "ended_utc": "2026-10-29T07:18:19.088146+00:00",
+      "endpoint": "https://openai.rc.asu.edu/v1",
+      "source_sha256": "cec1822481aedb781b7917408536249e7381aad335b5ed7c047acd445e0481e1",
+      "before": {
+        "simulations": 0,
+        "outcomes": {},
+        "tasks": {}
+      },
+      "after": {
+        "simulations": 6,
+        "outcomes": {
+          "success": 6
+        },
+        "tasks": {
+          "0": {
+            "success": 1
+          },
+          "3": {
+            "success": 1
+          },
+          "9": {
+            "success": 1
+          },
+          "13": {
+            "success": 1
+          },
+          "25": {
+            "success": 1
+          },
+          "40": {
+            "success": 1
+          }
+        }
+      }
+    }
+  ],
+  "ended_utc": "2026-10-29T07:18:19.088146+00:00",
+  "after": {
+    "simulations": 6,
+    "outcomes": {
+      "success": 6
+    },
+    "tasks": {
+      "0": {
+        "success": 1
+      },
+      "3": {
+        "success": 1
+      },
+      "9": {
+        "success": 1
+      },
+      "13": {
+        "success": 1
+      },
+      "25": {
+        "success": 1
+      },
+      "40": {
+        "success": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "author_commit": "1ccc8b8",
+  "sources_sha256": {
+    "src/NIBS/similarity_based_baseline.py": "91b53617e3accdc65e05d4b748f4a999fc6ea713cb3766086dce0b6bfff79e53",
+    "src/GIBS/GIB_MCS_wo_mcs_feature.py": "86d12c9cbff319a14bf79981e755b0abc444641898b775e26d0720a67b07a372",
+    "src/GIBS/find_mcs.py": "6a1c972424f7419adf7e130b1f2fe66938a6fe73453f8c5c342ff02c40610be0",
+    "src/dataset/bert_graph.py": "2eed9ff3217e71f47164b7c9bf9797ecabbdf3125f950d2e5a04f640135b4f35"
+  },
+  "checks": {
+    "released_forward_probabilities_match": true,
+    "released_entropy_and_balanced_loss_match": true,
+    "released_cosine_max_matches": true,
+    "released_cosine_mean_matches": true
+  },
+  "scope": "Selected active functions only; not original dataset/training-procedure replication."
+}

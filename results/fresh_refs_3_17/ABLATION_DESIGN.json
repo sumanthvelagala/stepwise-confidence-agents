@@ -1,0 +1,30 @@
+{
+  "controlled_design": "Same frozen input, groups, folds, seeds, minimum 3 and implementation; maximum references 5 -> 17",
+  "baseline_output": "results/fresh_all_tasks",
+  "trial_output": "results/fresh_refs_3_17",
+  "snapshot_sha256": "7712873512d108a99135c334108c4740bac77bd9721a54e876310dc77ad3a09c",
+  "eligible_queries": 860,
+  "references_per_query": {
+    "3": 12,
+    "4": 48,
+    "5": 6,
+    "6": 21,
+    "7": 21,
+    "8": 39,
+    "9": 113,
+    "10": 91,
+    "11": 9,
+    "12": 39,
+    "13": 63,
+    "14": 123,
+    "15": 227,
+    "16": 48
+  },
+  "pairs_per_method": 10051,
+  "reusable_pairs_per_method": 4228,
+  "new_pairs_per_method": 5823,
+  "snapshot_reuse": "Prepared JSON was semantically identical; original frozen bytes reused to preserve hash.",
+  "source_provenance": "Baseline runtime-verified execution hashes supersede its earlier preparation hashes for the two cache/resumption files.",
+  "minimum_references": 3,
+  "maximum_references": 17
+}

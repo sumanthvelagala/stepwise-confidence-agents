@@ -1,7 +1,10 @@
 # GIBS consensus construction: NLI + heuristic MCS
 
 Status: graph schema, event projection, NLI scoring, MCS and consensus targets are implemented and unit-tested.
-**Not implemented: GCN, mask predictor, training.** Full-task consensus scoring has not been run yet.
+The learned predictor and training now live separately in [`gibs/learned/`](../learned/README.md).
+The unified paper NIBS/GIBS/C4 comparison is in [`gibs/comparison/`](../comparison/README.md).
+That prototype reuses the stored real matching results described here. This module remains the consensus
+construction stage; see the validation reports for completed scoring experiments.
 
 ## References and precedence (decision R0)
 

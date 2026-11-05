@@ -1,0 +1,11 @@
+{
+  "scope": "Whole project publication copy; original working files untouched",
+  "files_scanned": 36413,
+  "credential_values_printed": false,
+  "credential_occurrences_redacted": 0,
+  "redacted_files": [],
+  "credential_field_paths": [],
+  "verification": "No discovered credential value remains in the publication copy",
+  "largest_file_bytes": 84599560,
+  "github_100_mib_file_limit_passed": true
+}
